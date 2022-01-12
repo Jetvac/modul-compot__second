@@ -118,6 +118,7 @@ body, html
         top: 16px;
     }
     #menu__toggle-checkbox:checked ~ .menu__toggle-button > span{
+        top: 20px;
         transform: rotate(45deg);
     }
     #menu__toggle-checkbox:checked ~ .menu__toggle-button > span::before{
@@ -450,6 +451,8 @@ body, html
     &__body {
         background: #EAF8F0;
         padding: 50px;
+        padding-bottom: 25px;
+        padding-right: 75px;
         height: 423px;
         display: flex;
         align-items: center;
@@ -457,16 +460,22 @@ body, html
     }
 
     &__row {
+        height: 100%;
         display: grid;
-        grid-template-columns: 1fr 2fr 3fr;
+        grid-template-columns: 1fr 2fr 3.5fr;
     }
 
     &__column {
+        width: 100%;
         display: flex;
         flex-direction: column;
     }
 
     &__info {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
         margin-left: 20px;
         margin-right: 40px;
     }
@@ -484,16 +493,21 @@ body, html
 
     &__item-list {
         display: flex;
-        flex-wrap: wrap;
-        column-gap: 30px;
-        height: 100%;
+        flex-flow: row wrap;
+        gap: 30px;
+        row-gap: 50px;
+        justify-content: space-between;
     }
 
     &__item {
-        width: 30%;
+        width: 25%;
         display: flex;
         flex-direction: column;
         align-items: center;
+    }
+
+    &__item-image {
+        margin-bottom: 20px;
     }
 
     &__item-text {
