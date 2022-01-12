@@ -1,0 +1,14 @@
+.category-list {
+    &__header {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    &__title {
+        font-weight: 500;
+        font-size: 28px;
+        line-height: 35px;
+        color: #333333;
+    }
+    overflow: hidden;
+}

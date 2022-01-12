@@ -1,0 +1,23 @@
+.category-list {
+  overflow: hidden;
+}
+
+.category-list__header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.category-list__title {
+  font-weight: 500;
+  font-size: 28px;
+  line-height: 35px;
+  color: #333333;
+}

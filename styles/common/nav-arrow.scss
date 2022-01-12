@@ -1,0 +1,19 @@
+.nav-arrow {
+    %button {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: #616161;
+        border-radius: 4px;
+        width: 36px;
+        height: 36px;
+    }
+
+    &__left {
+        @extend %button;
+    }
+
+    &__right {
+        @extend %button;
+    }
+}

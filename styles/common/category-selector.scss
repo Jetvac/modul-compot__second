@@ -1,0 +1,19 @@
+%selector-button {
+    background: #FFFFFF;
+    box-sizing: border-box;
+    border-radius: 100px;
+    width: 120px;
+    height: 40px;
+}
+
+.selector-item {
+    &__button--active {
+        @extend %selector-button;
+        border: 1px solid #188145;
+    }
+
+    &__button {
+        @extend %selector-button;
+        border: 1px solid #E0E0DD;
+    }
+}
