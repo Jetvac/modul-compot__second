@@ -87,16 +87,52 @@ body, html
         opacity: 0;
     }
 
+    //burger-menu open button
     &__toggle-button {
         display: block;
         width: 30px;
         height: 30px;
-        background: url("../../assets/img/burger-menu/List.svg");
         top: calc(50% - 15px);
         position: absolute;
         cursor: pointer;
         z-index: 2;
     }
+    &__toggle-button > span,
+    &__toggle-button > span::before,
+    &__toggle-button > span::after {
+        display: block;
+        position: absolute;
+        top: 5px;
+        height: 2px;
+        width: 26px;
+        background: #333333;
+        transition-duration: .25s;
+    }
+    &__toggle-button > span::before {
+        content: '';
+        width: 65%;
+        top: 8px;
+      }
+      &__toggle-button > span::after {
+        content: '';
+        top: 16px;
+    }
+    #menu__toggle-checkbox:checked ~ .menu__toggle-button > span{
+        transform: rotate(45deg);
+    }
+    #menu__toggle-checkbox:checked ~ .menu__toggle-button > span::before{
+        top: 0;
+        transform: rotate(0);
+      }
+    #menu__toggle-checkbox:checked ~ .menu__toggle-button > span::after{
+        top: 0;
+        transform: rotate(90deg);
+    }
+    #menu__toggle-checkbox:checked ~ .menu__burger-panel {
+        visibility: visible;
+        height: auto;
+    }
+
 
     &__icon {
         padding-left: 20px;
@@ -196,14 +232,6 @@ body, html
         text-align: right;
         text-transform: uppercase;
         color: #9C9C9C;
-    }
-
-    #menu__toggle-checkbox:checked ~ .menu__burger-panel {
-        visibility: visible;
-        height: auto;
-    }
-    #menu__toggle-checkbox:checked ~ .menu__toggle-button {
-        background: url("../../assets/img/burger-menu/X.svg");
     }
 }
 
