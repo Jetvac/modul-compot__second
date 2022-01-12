@@ -1909,7 +1909,7 @@
             </div>
             <div class="frame-menu__item">
               <div class="frame-menu__nav-panel">
-                <a class="frame-menu__back-call-button">
+                <a class="frame-menu__back-call-button" href="#overlay-back-call">
                   <div class="frame-menu__back-call-icon">
                     <img src="./assets/img/frame-menu/backcall-icon.svg">
                   </div>
@@ -1926,36 +1926,90 @@
                   </div>
                 </a>
 
-                <div id="overlay-contact" class="popup-contact">
-                  <div class="popup-contact__frame">
-                    <div class="popup-contact__column">
-                      <div class="popup-contact__row">
-                        <div class="popup-contact__title">Задать вопрос</div>
+                <div id="overlay-submit" class="popup submit">
+                  <div class="popup__frame submit__frame">
+                    <div class="submit__column">
+                      <div class="submit__row">
+                        <img class="submit__image" src="./assets/img/popup/popup-submit-icon.svg">
                       </div>
-                      <div class="popup-contact__row">
-                        <input class="popup-contact__input-text" placeholder="Ваше имя *" type="text">
+                      <div class="submit__row">
+                        <div class="submit__title submit__row">
+                          Ваша заявка успешно отправлена!
+                        </div>
                       </div>
-                      <div class="popup-contact__row">
-                        <input class="popup-contact__input-text" placeholder="Ваш e-mail *" type="text">
+                      <div class="submit__row">
+                        <div class="submit__text">
+                          Наши менеджеры свяжуться с вами в ближайшее время
+                        </div>
                       </div>
-                      <div class="popup-contact__row">
-                        <input class="popup-contact__input-text" placeholder="+7 (999) 999-99-99" type="text">
+                      <form class="submit__input-form" action="#">
+                        <button class="submit__button">Вернуться на главную</button>
+                      </form>
+                    </div>
+                  </div>
+                </div>
+
+                <div id="overlay-back-call" class="popup">
+                  <div class="popup__frame">
+                    <div class="popup__column">
+                      <div class="popup__row">
+                        <div class="popup__title">Обратный звонок</div>
                       </div>
-                      <div class="popup-contact__row">
-                        <textarea class="popup-contact__input-text popup-contact__input-textarea popup-contact__input-text_height_full" placeholder="Ваш вопрос * "></textarea>
+                      <div class="popup__row">
+                        <input class="popup__input-text" placeholder="Ваше имя *" type="text">
                       </div>
-                      <div class="popup-contact__row">
-                        <div class="popup-contact__checkbox-element">
-                          <label class="popup-contact__checkbox-placer">
-                            <input class="popup-contact__checkbox" type="checkbox">
+                      <div class="popup__row">
+                        <input class="popup__input-text" placeholder="+7 (999) 999-99-99" type="text">
+                      </div>
+                      <div class="popup__row">
+                        <div class="popup__checkbox-element">
+                          <label class="popup__checkbox-placer">
+                            <input class="popup__checkbox" type="checkbox">
                           </label>
-                          <div class="popup-contact__agree-text">
+                          <div class="popup__agree-text">
                             Я согласен(а) на обработку персональных данных
                           </div>
                         </div>
                       </div>
-                      <div class="popup-contact__row">
-                        <button class="popup-contact__input-button">Задать вопрос</button>
+                      <form class="popup__input-form" action="#overlay-submit">
+                        <button class="popup__input-button">Заказать звонок</button>
+                      </form>
+                    </div>
+                  </div>
+                </div>
+                
+                <div id="overlay-contact" class="popup">
+                  <div class="popup__frame">
+                    <div class="popup__column">
+                      <div class="popup__row">
+                        <div class="popup__title">Задать вопрос</div>
+                      </div>
+                      <div class="popup__row">
+                        <input class="popup__input-text" placeholder="Ваше имя *" type="text">
+                      </div>
+                      <div class="popup__row">
+                        <input class="popup__input-text" placeholder="Ваш e-mail *" type="text">
+                      </div>
+                      <div class="popup__row">
+                        <input class="popup__input-text" placeholder="+7 (999) 999-99-99" type="text">
+                      </div>
+                      <div class="popup__row">
+                        <textarea class="popup__input-text popup__input-textarea popup__input-text_height_full" placeholder="Ваш вопрос * "></textarea>
+                      </div>
+                      <div class="popup__row">
+                        <div class="popup__checkbox-element">
+                          <label class="popup__checkbox-placer">
+                            <input class="popup__checkbox" type="checkbox">
+                          </label>
+                          <div class="popup__agree-text">
+                            Я согласен(а) на обработку персональных данных
+                          </div>
+                        </div>
+                      </div>
+                      <div class="popup__row">
+                        <form class="popup__input-form" action="#overlay-submit">
+                          <button class="popup__input-button">Задать вопрос</button>
+                        </form>
                       </div>
                     </div>
                   </div>
