@@ -91,7 +91,7 @@ body, html
         display: block;
         width: 30px;
         height: 30px;
-        background: url("../assets/img/burger-menu/List.svg");
+        background: url("../../assets/img/burger-menu/List.svg");
         top: calc(50% - 15px);
         position: absolute;
         cursor: pointer;
@@ -203,7 +203,7 @@ body, html
         height: auto;
     }
     #menu__toggle-checkbox:checked ~ .menu__toggle-button {
-        background: url("../assets/img/burger-menu/X.svg");
+        background: url("../../assets/img/burger-menu/X.svg");
     }
 }
 
