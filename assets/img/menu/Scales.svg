@@ -1,8 +1,7 @@
-<svg width="32" height="37" viewBox="0 0 32 37" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M16 10V32" stroke="#333333" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-<path d="M13 32H19" stroke="#333333" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-<path d="M7 16L25 12" stroke="#333333" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-<path d="M3 26C3 28.2091 5.5 29 7 29C8.5 29 11 28.2091 11 26L7 16L3 26Z" stroke="#333333" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-<path d="M21 22C21 24.2091 23.5 25 25 25C26.5 25 29 24.2091 29 22L25 12L21 22Z" stroke="#333333" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-<circle cx="22" cy="9" r="9" fill="#27AE60"/>
+<svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M16 5V27" stroke="#333333" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M13 27H19" stroke="#333333" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M7 11L25 7" stroke="#333333" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M3 21C3 23.2091 5.5 24 7 24C8.5 24 11 23.2091 11 21L7 11L3 21Z" stroke="#333333" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M21 17C21 19.2091 23.5 20 25 20C26.5 20 29 19.2091 29 17L25 7L21 17Z" stroke="#333333" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
 </svg>

@@ -45,14 +45,15 @@
 }
 
 .product-card__condition-item {
+  height: 100%;
   width: 25%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
 }
 
 .product-card__hit-image {
@@ -431,13 +432,24 @@ body, html {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  gap: 58px;
+  gap: 50px;
 }
 
 .header__button {
+  cursor: pointer;
+  font-size: 15px;
+  line-height: 19px;
   background-color: transparent;
   border-color: transparent;
   color: white;
+}
+
+.header__button:hover {
+  color: #969696;
+}
+
+.header__button:active {
+  color: #535353;
 }
 
 .header__info {
@@ -452,10 +464,15 @@ body, html {
 }
 
 .header__mail-text {
+  font-size: 15px;
+  line-height: 19px;
   color: white;
 }
 
 .header__phone-text {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 25px;
   color: white;
 }
 
@@ -484,6 +501,53 @@ body, html {
   position: sticky;
   top: 0px;
   z-index: 1;
+}
+
+.menu__icon {
+  padding-left: 20px;
+  padding-right: 71px;
+}
+
+.menu__item-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 58px;
+}
+
+.menu__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.menu__item-popup-arrow {
+  margin-left: 6px;
+}
+
+.menu__interactive-panel {
+  margin-left: auto;
+}
+
+.menu__search-button {
+  border: transparent;
+  background: transparent;
+}
+
+.menu__shopping-cart-button {
+  border: transparent;
+  background: transparent;
 }
 
 .menu #menu__toggle-checkbox {
@@ -543,69 +607,24 @@ body, html {
 }
 
 .menu #menu__toggle-checkbox:checked ~ .menu__burger-panel {
-  visibility: visible;
-  height: auto;
-}
-
-.menu__icon {
-  padding-left: 20px;
-  padding-right: 71px;
-}
-
-.menu__item-list {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  gap: 58px;
-}
-
-.menu__item {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-}
-
-.menu__item-popup-arrow {
-  margin-left: 6px;
-}
-
-.menu__interactive-panel {
-  margin-left: auto;
-}
-
-.menu__search-button {
-  border: transparent;
-  background: transparent;
-}
-
-.menu__shopping-cart-button {
-  border: transparent;
-  background: transparent;
+  top: 0;
+  -webkit-transition-duration: .25s;
+          transition-duration: .25s;
 }
 
 .menu__burger-panel {
-  visibility: hidden;
   position: absolute;
   left: 0;
-  top: 0;
+  top: -1000px;
   padding-left: 100px;
   padding-right: 59px;
   background: white;
   width: calc(100% - 159px);
-  height: 0px;
+  height: auto;
   -webkit-box-shadow: 0px 7px 20px rgba(0, 0, 0, 0.05);
           box-shadow: 0px 7px 20px rgba(0, 0, 0, 0.05);
+  -webkit-transition-duration: .25s;
+          transition-duration: .25s;
 }
 
 .menu__burger-list {
@@ -665,17 +684,17 @@ body, html {
 }
 
 .menu__disclaimer {
+  width: 150px;
   font-size: 12px;
   line-height: 15px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  margin-left: auto;
   text-align: right;
   text-transform: uppercase;
   color: #9C9C9C;
+}
+
+.menu .social-network {
+  margin-left: auto;
 }
 
 .menu__burger-footer {
@@ -1406,8 +1425,6 @@ body, html {
       -ms-flex-direction: row;
           flex-direction: row;
   gap: 20px;
-  margin-left: auto;
-  margin-right: auto;
 }
 
 .popup {
