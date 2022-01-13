@@ -1,1566 +1,1438 @@
 <!DOCTYPE html>
 <html lang="ru">
-    <head>
-        <meta charset="UTF-8" />
-        <link rel="icon" type="image/svg+xml" href="favicon.svg" />
-        <link rel="stylesheet" href="./style/main-page.css">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Crystall trees</title>
-    </head>
-    <header class="header">
-        <div class="wrapper">
-            <div class="container">
-                <div class="header__nav-menu">
-                    <button class="header__button">Стать партнером</button>
-                    <button class="header__button">Где купить?</button>
-                    <button class="header__button">О компании</button>
-                    <button class="header__button">Блог</button>
-                    <button class="header__button">Контакты</button>
-                </div>
-                    <div class="header__info">
-                    <div class="header__mail-text">world@crystaltrees.ru</div>
-                    <div class="header__phone-text">8 (800) 55 55 57 24</div>
-                </div>
-            </div>
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+    <link rel="stylesheet" href="./styles/css/main-page.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Crystall trees</title>
+  </head>
+  <header class="header">
+    <div class="wrapper">
+      <div class="container">
+        <div class="header__nav-menu">
+          <button class="header__button">Стать партнером</button>
+          <button class="header__button">Где купить?</button>
+          <button class="header__button">О компании</button>
+          <button class="header__button">Блог</button>
+          <button class="header__button">Контакты</button>
         </div>
-    </header>
-    <body class="body">
-        <div class="menu">
-          <label class="menu__toogle">
-            <div class="menu__toogle-image">
-              <img src="./assets/img/menu/List.svg">
+        <div class="header__info">
+          <button class="header__mail-text header__button">world@crystaltrees.ru</button>
+          <button class="header__phone-text header__button">8 (800) 55 55 57 24</button>
+        </div>
+      </div>
+    </div>
+  </header>
+  <body class="body">
+    <div class="menu">
+      <div class="menu__toggle">
+        <input id="menu__toggle-checkbox" type="checkbox">
+        <label class="menu__toggle-button" for="menu__toggle-checkbox">
+          <span></span>
+        </label>
+        <div class="menu__burger-panel">
+          <div class="menu__burger-list">
+            <div class="menu__burger-item">
+              <img class="menu__category-icon" src="./assets/img/burger-menu/Snow.svg">
+              <div class="menu__category">
+                <div class="menu__category-title">Комнатные ели</div>
+                <div class="menu__category-item">Литые</div>
+                <div class="menu__category-item">Комбинированые</div>
+                <div class="menu__category-item">Елки из ПВХ</div>
+                <div class="menu__category-item">Заснеженные, с освещением</div>
+                <div class="menu__category-item">Дизайнерские</div>
+              </div>
             </div>
-            <input class="menu__toogle-checkbox" type="checkbox">
-          </label>
-          <div class="menu__icon">
-            <img src="./assets/img/menu/menu-icon.svg">
+            <div class="menu__burger-item">
+              <img class="menu__category-icon" src="./assets/img/burger-menu/Tree.svg">
+              <div class="menu__category">
+                <div class="menu__category-title">Высотные ели</div>
+                <div class="menu__category-item">Уличные ели</div>
+                <div class="menu__category-item">Интерьерные ели</div>
+              </div>
+            </div>
+            <div class="menu__burger-item">
+              <img class="menu__category-icon" src="./assets/img/burger-menu/Star.svg">
+              <div class="menu__category">
+                <div class="menu__category-title">Новогодний декор</div>
+                <div class="menu__category-item">Хвойные венки</div>
+                <div class="menu__category-item">Хвойные гирлянды</div>
+                <div class="menu__category-item">Хвойные сваги</div>
+                <div class="menu__category-item">Елочные украшения</div>
+              </div>
+            </div>
+            <div class="menu__burger-item">
+              <img class="menu__category-icon" src="./assets/img/burger-menu/Lamp.svg">
+              <div class="menu__category">
+                <div class="menu__category-title">Гирлянды</div>
+                <div class="menu__category-item">Электрогирлянды</div>
+                <div class="menu__category-item">На батарейках</div>
+                <div class="menu__category-item">Занавесы, сетки</div>
+              </div>
+            </div>
+            <div class="menu__burger-item menu__burger-item_margin_toright">
+              <div class="social-network">
+                <div class="social-network__facebook-icon">
+                  <img src="./assets/img/frame/facebook-icon.svg">
+                </div>
+                <div class="social-network__instagram-icon">
+                  <img src="./assets/img/frame/instagram-icon.svg">
+                </div>
+                <div class="social-network__youtuber-icon">
+                  <img src="./assets/img/frame/youtube-icon.svg">
+                </div>
+              </div>
+              <div class="menu__disclaimer">
+                © 2021 CRYSTAL TREES, Все права защищены
+              </div>
+            </div>
           </div>
-          <div class="menu__item-list">
-            <div class="menu__item">
-              <div class="menu__item-text--active">Комнатные ели</div>
-              <div class="menu__item-popup-arrow">
-                <img src="./assets/img/popup-arrow.svg">
+          <div class="menu__burger-footer">
+            <div class="menu__footer-list">
+              <div class="menu__footer-item">
+                <div class="menu__footer-promote">
+                  Стань партнером, заработай от 700 000 рублей за 3 месяца!
+                </div>
+                <button class="menu__footer-button">Подробнее</button>
+              </div>
+              <img class="menu__footer-image" src="./assets/img/burger-menu/promote-image.png" alt="">
+              <div class="menu__footer-item">
+                <div class="menu__footer-benefits">
+                  <div class="menu__benefits-item">
+                      <img class="menu__benefits-image" src="./assets/img/burger-menu/star-item.svg">
+                      <div class="menu__benefits-text">Мы работаем более 20 лет на рынке искусственных елей</div>
+                  </div>
+                  <div class="menu__benefits-item">
+                    <img class="menu__benefits-image" src="./assets/img/burger-menu/star-item.svg">
+                    <div class="menu__benefits-text">Собственные склады и шоурум в Москве</div>
+                </div>
+                </div>
               </div>
             </div>
-            <div class="menu__item">
-              <div class="menu__item-text">Высотные ели</div>
-              <div class="menu__item-popup-arrow">
-                <img src="./assets/img/popup-arrow.svg">
-              </div>
-            </div>
-            <div class="menu__item">
-              <div class="menu__item-text">Новогодний декор</div>
-              <div class="menu__item-popup-arrow">
-                <img src="./assets/img/popup-arrow.svg">
-              </div>
-            </div>
-            <div class="menu__item">
-              <div class="menu__item-text">Гирлянды</div>
-              <div class="menu__item-popup-arrow">
-                <img src="./assets/img/popup-arrow.svg">
-              </div>
-            </div>
-          </div>
-          <div class="menu__interactive-panel">
-            <button class="menu__search-button">
-              <div class="menu__search-image">
-                <img src="./assets/img/menu/Serach.svg">
-              </div>
-            </button>
-            <button class="menu__shopping-cart-button">
-              <div class="menu__shopping-cart-image">
-                <img src="./assets/img/menu/Scales.svg">
-              </div>
-            </button>
           </div>
         </div>
-        <div class="wrapper">
-            <div class="container">
-                <div class="filter-panel">
+      </div>
+      <div class="menu__icon">
+        <a class="menu__index-nav" href="#">
+          <img src="./assets/img/menu/menu-icon.svg">
+        </a>
+      </div>
+      <div class="menu__item-list">
+        <div class="menu__item">
+          <div class="menu__item-text--active">Комнатные ели</div>
+          <div class="menu__item-popup-arrow">
+            <img src="./assets/img/popup-arrow.svg">
+          </div>
+        </div>
+        <div class="menu__item">
+          <div class="menu__item-text">Высотные ели</div>
+          <div class="menu__item-popup-arrow">
+            <img src="./assets/img/popup-arrow.svg">
+          </div>
+        </div>
+        <div class="menu__item">
+          <div class="menu__item-text">Новогодний декор</div>
+          <div class="menu__item-popup-arrow">
+            <img src="./assets/img/popup-arrow.svg">
+          </div>
+        </div>
+        <div class="menu__item">
+          <div class="menu__item-text">Гирлянды</div>
+          <div class="menu__item-popup-arrow">
+            <img src="./assets/img/popup-arrow.svg">
+          </div>
+        </div>
+      </div>
+      <div class="menu__interactive-panel">
+        <button class="menu__search-button">
+          <div class="menu__search-image">
+            <img src="./assets/img/menu/Serach.svg">
+          </div>
+        </button>
+        <button class="menu__shopping-cart-button">
+          <div class="menu__shopping-cart-image">
+            <img src="./assets/img/menu/Scales.svg">
+          </div>
+        </button>
+      </div>
+    </div>
+    <div class="wrapper">
+      <div class="container">
+        <div class="category-list">
+          <div class="catalog">
+            <div class="catalog__wrapper">
+              <div class="catalog__header category-list__header">
+                <div class="catalog__title category-list__title">Основной каталог</div>
+              </div>
+              <div class="catalog__body category-list__body">
+                <div class="catalog__row">
+                  <div class="catalog__column">
+                    <div class="product-card">
+                      <div class="product-card__body">
+                        <div class="product-card__body-info">
+                          <div class="product-card__condition-item">
+                            <div class="product-card__condition-image product-card__hit-image">
+                              <img src="./assets/img/product-card/Hit.svg">
+                            </div>
+                            <div class="product-card__condition-image product-card__hit-gift">
+                              <img src="./assets/img/product-card/Gift.svg" alt="">
+                            </div>
+                          </div>
+                          <div class="product-card__shoping-cart product-card__shoping-cart--active">
+                            <img src="./assets/img/product-card/shoping-cart--active.svg" alt="">
+                          </div>
+                        </div>
+                        <div class="product-card__box-image">
+                          <img class="product-card__title-image" src="./assets/img/product-card/product-image/christmas-tree.png">
+                        </div>
+                        <div class="product-card__body-text">
+                          <div class="product-card__name">Искусственная Ель Гарда заснеженная</div>
+                          <div class="product-card__id">артикул: KP3018</div>
+                          <div class="product-card__rate">
+                            <div class="product-card__rating">
+                              <div class="product-card__rating-star">
+                                <img src="./assets/img/product-card/star.svg">
+                              </div>
+                              <div class="product-card__rating-star">
+                                <img src="./assets/img/product-card/star.svg">
+                              </div>
+                              <div class="product-card__rating-star">
+                                <img src="./assets/img/product-card/star.svg">
+                              </div>
+                              <div class="product-card__rating-star">
+                                <img src="./assets/img/product-card/star.svg">
+                              </div>
+                              <div class="product-card__rating-star">
+                                <img src="./assets/img/product-card/star.svg">
+                              </div>
+                            </div>
+                            <label class="product-card__comments">
+                              <div class="product-card__comments-image">
+                                <img src="./assets/img/product-card/comments.svg">
+                              </div>
+                              <div class="product-card__comments-ammount">12</div>
+                            </label>
+                        </div>
+                       </div>
+                      </div>
+                      <div class="product-card__footer">
+                        <div class="product-card__panel">
+                          <div class="product-card__tree-size">
+                            <div class="product-card__type-image">
+                              <img src="./assets/img/product-card/ListDashes.svg">
+                            </div>
+                            <div class="product-card__size-text_color_white">180 см</div>
+                          </div>
+                          <div class="product-card__stock--active">
+                            <div class="product-card__stock-text">В наличии</div>
+                          </div>
+                        </div>
+                        <div class="product-card__price-panel">
+                          <div class="product-card__price product-card__price_color_green">43 990 ₽
+                            <div class="product-card__discount-price">43 099 ₽</div>
+                          </div>
+                          <button class="product-card__shop-popup">
+                            <img src="./assets/img/product-card/ShoppingCart.svg" alt="">
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="catalog__column">
+                    <div class="product-card">
+                      <div class="product-card__body">
+                        <div class="product-card__body-info">
+                          <div class="product-card__condition-item">
+                            <div class="product-card__condition-image product-card__new-image">
+                              <img src="./assets/img/product-card/New.svg">
+                            </div>
+                          </div>
+                          <div class="product-card__shoping-cart">
+                            <img src="./assets/img/product-card/shoping-cart.svg" alt="">
+                          </div>
+                        </div>
+                        <div class="product-card__box-image">
+                          <img class="product-card__title-image" src="./assets/img/product-card/product-image/shotlandija 1.png">
+                        </div>
+                        <div class="product-card__body-text">
+                          <div class="product-card__name">Искусственная Ель Шотландия</div>
+                          <div class="product-card__id">артикул: KP3018</div>
+                          <div class="product-card__rate">
+                            <div class="product-card__rating">
+                              <div class="product-card__rating-star">
+                                <img src="./assets/img/product-card/star.svg">
+                              </div>
+                              <div class="product-card__rating-star">
+                                <img src="./assets/img/product-card/star.svg">
+                              </div>
+                              <div class="product-card__rating-star">
+                                <img src="./assets/img/product-card/star.svg">
+                              </div>
+                              <div class="product-card__rating-star">
+                                <img src="./assets/img/product-card/star.svg">
+                              </div>
+                              <div class="product-card__rating-star">
+                                <img src="./assets/img/product-card/star.svg">
+                              </div>
+                            </div>
+                            <label class="product-card__comments">
+                              <div class="product-card__comments-image">
+                                <img src="./assets/img/product-card/comments.svg">
+                              </div>
+                              <div class="product-card__comments-ammount">12</div>
+                            </label>
+                        </div>
+                       </div>
+                      </div>
+                      <div class="product-card__footer">
+                        <div class="product-card__panel">
+                          <div class="product-card__tree-size">
+                            <div class="product-card__type-image">
+                              <img src="./assets/img/product-card/ListDashes.svg">
+                            </div>
+                            <div class="product-card__size-text_color_white">180 см</div>
+                          </div>
+                          <div class="product-card__stock--active">
+                            <div class="product-card__stock-text">В наличии</div>
+                          </div>
+                        </div>
+                        <div class="product-card__price-panel">
+                          <div class="product-card__price">28 990 ₽
+                            <div class="product-card__discount-price"></div>
+                          </div>
+                          <button class="product-card__shop-popup">
+                            <img src="./assets/img/product-card/ShoppingCart.svg" alt="">
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="catalog__column">
+                    <div class="product-card">
+                      <div class="product-card__body">
+                        <div class="product-card__body-info">
+                          <div class="product-card__condition-item">
+                            <div class="product-card__condition-image product-card__new-image">
+                              <img src="./assets/img/product-card/New.svg">
+                            </div>
+                          </div>
+                          <div class="product-card__shoping-cart">
+                            <img src="./assets/img/product-card/shoping-cart.svg">
+                          </div>
+                        </div>
+                        <div class="product-card__box-image">
+                          <img class="product-card__title-image" src="./assets/img/product-card/product-image/image 62.png">
+                        </div>
+                        <div class="product-card__body-text">
+                          <div class="product-card__name">Венок Триумф Императрица с шишками заснеженный</div>
+                          <div class="product-card__id">артикул: KP3018</div>
+                          <div class="product-card__rate">
+                            <div class="product-card__rating">
+                              <div class="product-card__rating-star">
+                                <img src="./assets/img/product-card/star.svg">
+                              </div>
+                              <div class="product-card__rating-star">
+                                <img src="./assets/img/product-card/star.svg">
+                              </div>
+                              <div class="product-card__rating-star">
+                                <img src="./assets/img/product-card/star.svg">
+                              </div>
+                              <div class="product-card__rating-star">
+                                <img src="./assets/img/product-card/star.svg">
+                              </div>
+                              <div class="product-card__rating-star">
+                                <img src="./assets/img/product-card/star.svg">
+                              </div>
+                            </div>
+                            <label class="product-card__comments">
+                              <div class="product-card__comments-image">
+                                <img src="./assets/img/product-card/comments.svg">
+                              </div>
+                              <div class="product-card__comments-ammount">12</div>
+                            </label>
+                        </div>
+                       </div>
+                      </div>
+                      <div class="product-card__footer">
+                        <div class="product-card__panel">
+                          <div class="product-card__item-size">
+                            <div class="product-card__type-image">
+                              <img src="./assets/img/product-card/form-type.svg">
+                            </div>
+                            <div class="product-card__size-text_color_green">45 см</div>
+                          </div>
+                          <div class="product-card__stock--active">
+                            <div class="product-card__stock-text">В наличии</div>
+                          </div>
+                        </div>
+                        <div class="product-card__price-panel">
+                          <div class="product-card__price">5 990 ₽
+                            <div class="product-card__discount-price"></div>
+                          </div>
+                          <button class="product-card__shop-popup">
+                            <img src="./assets/img/product-card/ShoppingCart.svg" alt="">
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="catalog__column">
+                    <div class="product-card">
+                      <div class="product-card__body">
+                        <div class="product-card__body-info">
+                          <div class="product-card__condition-item">
+                            <div class="product-card__condition-image product-card__sale-image">
+                              <img src="./assets/img/product-card/Sale.svg">
+                            </div>
+                            <div class="product-card__condition-image product-card__new-image">
+                              <img src="./assets/img/product-card/New.svg">
+                            </div>
+                          </div>
+                          <div class="product-card__shoping-cart">
+                            <img src="./assets/img/product-card/shoping-cart.svg">
+                          </div>
+                        </div>
+                        <div class="product-card__box-image">
+                          <img class="product-card__title-image" src="./assets/img/product-card/product-image/image 60.png">
+                        </div>
+                        <div class="product-card__body-text">
+                          <div class="product-card__name">Сваг с лампочками Триумф Лесная Красавица</div>
+                          <div class="product-card__id">артикул: KP3018</div>
+                          <div class="product-card__rate">
+                            <div class="product-card__rating">
+                              <div class="product-card__rating-star">
+                                <img src="./assets/img/product-card/star.svg">
+                              </div>
+                              <div class="product-card__rating-star">
+                                <img src="./assets/img/product-card/star.svg">
+                              </div>
+                              <div class="product-card__rating-star">
+                                <img src="./assets/img/product-card/star.svg">
+                              </div>
+                              <div class="product-card__rating-star">
+                                <img src="./assets/img/product-card/star.svg">
+                              </div>
+                              <div class="product-card__rating-star">
+                                <img src="./assets/img/product-card/star.svg">
+                              </div>
+                            </div>
+                            <label class="product-card__comments">
+                              <div class="product-card__comments-image">
+                                <img src="./assets/img/product-card/comments.svg">
+                              </div>
+                              <div class="product-card__comments-ammount">12</div>
+                            </label>
+                        </div>
+                       </div>
+                      </div>
+                      <div class="product-card__footer">
+                        <div class="product-card__panel">
+                          <div class="product-card__item-size">
+                            <div class="product-card__type-image">
+                              <img src="./assets/img/product-card/form-type.svg">
+                            </div>
+                            <div class="product-card__size-text_color_green">180 см</div>
+                          </div>
+                          <div class="product-card__stock--active">
+                            <div class="product-card__stock-text">В наличии</div>
+                          </div>
+                        </div>
+                        <div class="product-card__price-panel">
+                          <div class="product-card__price">8 990 ₽
+                            <div class="product-card__discount-price"></div>
+                          </div>
+                          <button class="product-card__shop-popup">
+                            <img src="./assets/img/product-card/ShoppingCart.svg" alt="">
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="catalog__column">
+                    <div class="product-card">
+                      <div class="product-card__body">
+                        <div class="product-card__body-info">
+                          <div class="product-card__condition-item">
+                            <div class="product-card__condition-image product-card__gift-image">
+                              <img src="./assets/img/product-card/Gift.svg">
+                            </div>
+                          </div>
+                          <div class="product-card__shoping-cart">
+                            <img src="./assets/img/product-card/shoping-cart.svg">
+                          </div>
+                        </div>
+                        <div class="product-card__box-image">
+                          <img class="product-card__title-image" src="./assets/img/product-card/product-image/image 61.png">
+                        </div>
+                        <div class="product-card__body-text">
+                          <div class="product-card__name">Венок Триумф Нормандия 60см</div>
+                          <div class="product-card__id">артикул: KP3018</div>
+                          <div class="product-card__rate">
+                            <div class="product-card__rating">
+                              <div class="product-card__rating-star">
+                                <img src="./assets/img/product-card/star.svg">
+                              </div>
+                              <div class="product-card__rating-star">
+                                <img src="./assets/img/product-card/star.svg">
+                              </div>
+                              <div class="product-card__rating-star">
+                                <img src="./assets/img/product-card/star.svg">
+                              </div>
+                              <div class="product-card__rating-star">
+                                <img src="./assets/img/product-card/star.svg">
+                              </div>
+                              <div class="product-card__rating-star">
+                                <img src="./assets/img/product-card/star.svg">
+                              </div>
+                            </div>
+                            <label class="product-card__comments">
+                              <div class="product-card__comments-image">
+                                <img src="./assets/img/product-card/comments.svg">
+                              </div>
+                              <div class="product-card__comments-ammount">12</div>
+                            </label>
+                        </div>
+                       </div>
+                      </div>
+                      <div class="product-card__footer">
+                        <div class="product-card__panel">
+                          <div class="product-card__item-size">
+                            <div class="product-card__type-image">
+                              <img src="./assets/img/product-card/form-type.svg">
+                            </div>
+                            <div class="product-card__size-text_color_green">60 см</div>
+                          </div>
+                          <div class="product-card__stock--active">
+                            <div class="product-card__stock-text">В наличии</div>
+                          </div>
+                        </div>
+                        <div class="product-card__price-panel">
+                          <div class="product-card__price">10 390 ₽
+                            <div class="product-card__discount-price"></div>
+                          </div>
+                          <button class="product-card__shop-popup">
+                            <img src="./assets/img/product-card/ShoppingCart.svg" alt="">
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <img class="catalog__banner-image" src="./assets/img/banner-list/Banner.png">
+                <div class="catalog__row">
+                  <div class="catalog__column">
+                    <div class="product-card">
+                      <div class="product-card__body">
+                        <div class="product-card__body-info">
+                          <div class="product-card__condition-item">
+                            <div class="product-card__condition-image product-card__hit-image">
+                              <img src="./assets/img/product-card/Hit.svg">
+                            </div>
+                            <div class="product-card__condition-image product-card__hit-gift">
+                              <img src="./assets/img/product-card/Gift.svg" alt="">
+                            </div>
+                          </div>
+                          <div class="product-card__shoping-cart product-card__shoping-cart--active">
+                            <img src="./assets/img/product-card/shoping-cart--active.svg" alt="">
+                          </div>
+                        </div>
+                        <div class="product-card__box-image">
+                          <img class="product-card__title-image" src="./assets/img/product-card/product-image/christmas-tree.png">
+                        </div>
+                        <div class="product-card__body-text">
+                          <div class="product-card__name">Искусственная Ель Гарда заснеженная</div>
+                          <div class="product-card__id">артикул: KP3018</div>
+                          <div class="product-card__rate">
+                            <div class="product-card__rating">
+                              <div class="product-card__rating-star">
+                                <img src="./assets/img/product-card/star.svg">
+                              </div>
+                              <div class="product-card__rating-star">
+                                <img src="./assets/img/product-card/star.svg">
+                              </div>
+                              <div class="product-card__rating-star">
+                                <img src="./assets/img/product-card/star.svg">
+                              </div>
+                              <div class="product-card__rating-star">
+                                <img src="./assets/img/product-card/star.svg">
+                              </div>
+                              <div class="product-card__rating-star">
+                                <img src="./assets/img/product-card/star.svg">
+                              </div>
+                            </div>
+                            <label class="product-card__comments">
+                              <div class="product-card__comments-image">
+                                <img src="./assets/img/product-card/comments.svg">
+                              </div>
+                              <div class="product-card__comments-ammount">12</div>
+                            </label>
+                        </div>
+                       </div>
+                      </div>
+                      <div class="product-card__footer">
+                        <div class="product-card__panel">
+                          <div class="product-card__tree-size">
+                            <div class="product-card__type-image">
+                              <img src="./assets/img/product-card/ListDashes.svg">
+                            </div>
+                            <div class="product-card__size-text_color_white">180 см</div>
+                          </div>
+                          <div class="product-card__stock--active">
+                            <div class="product-card__stock-text">В наличии</div>
+                          </div>
+                        </div>
+                        <div class="product-card__price-panel">
+                          <div class="product-card__price product-card__price_color_green">43 990 ₽
+                            <div class="product-card__discount-price">43 099 ₽</div>
+                          </div>
+                          <button class="product-card__shop-popup">
+                            <img src="./assets/img/product-card/ShoppingCart.svg" alt="">
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="catalog__column">
+                    <div class="product-card">
+                      <div class="product-card__body">
+                        <div class="product-card__body-info">
+                          <div class="product-card__condition-item">
+                            <div class="product-card__condition-image product-card__new-image">
+                              <img src="./assets/img/product-card/New.svg">
+                            </div>
+                          </div>
+                          <div class="product-card__shoping-cart">
+                            <img src="./assets/img/product-card/shoping-cart.svg" alt="">
+                          </div>
+                        </div>
+                        <div class="product-card__box-image">
+                          <img class="product-card__title-image" src="./assets/img/product-card/product-image/shotlandija 1.png">
+                        </div>
+                        <div class="product-card__body-text">
+                          <div class="product-card__name">Искусственная Ель Шотландия</div>
+                          <div class="product-card__id">артикул: KP3018</div>
+                          <div class="product-card__rate">
+                            <div class="product-card__rating">
+                              <div class="product-card__rating-star">
+                                <img src="./assets/img/product-card/star.svg">
+                              </div>
+                              <div class="product-card__rating-star">
+                                <img src="./assets/img/product-card/star.svg">
+                              </div>
+                              <div class="product-card__rating-star">
+                                <img src="./assets/img/product-card/star.svg">
+                              </div>
+                              <div class="product-card__rating-star">
+                                <img src="./assets/img/product-card/star.svg">
+                              </div>
+                              <div class="product-card__rating-star">
+                                <img src="./assets/img/product-card/star.svg">
+                              </div>
+                            </div>
+                            <label class="product-card__comments">
+                              <div class="product-card__comments-image">
+                                <img src="./assets/img/product-card/comments.svg">
+                              </div>
+                              <div class="product-card__comments-ammount">12</div>
+                            </label>
+                        </div>
+                       </div>
+                      </div>
+                      <div class="product-card__footer">
+                        <div class="product-card__panel">
+                          <div class="product-card__tree-size">
+                            <div class="product-card__type-image">
+                              <img src="./assets/img/product-card/ListDashes.svg">
+                            </div>
+                            <div class="product-card__size-text_color_white">180 см</div>
+                          </div>
+                          <div class="product-card__stock--active">
+                            <div class="product-card__stock-text">В наличии</div>
+                          </div>
+                        </div>
+                        <div class="product-card__price-panel">
+                          <div class="product-card__price">28 990 ₽
+                            <div class="product-card__discount-price"></div>
+                          </div>
+                          <button class="product-card__shop-popup">
+                            <img src="./assets/img/product-card/ShoppingCart.svg" alt="">
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="catalog__column">
+                    <div class="product-card">
+                      <div class="product-card__body">
+                        <div class="product-card__body-info">
+                          <div class="product-card__condition-item">
+                            <div class="product-card__condition-image product-card__new-image">
+                              <img src="./assets/img/product-card/New.svg">
+                            </div>
+                          </div>
+                          <div class="product-card__shoping-cart">
+                            <img src="./assets/img/product-card/shoping-cart.svg">
+                          </div>
+                        </div>
+                        <div class="product-card__box-image">
+                          <img class="product-card__title-image" src="./assets/img/product-card/product-image/image 62.png">
+                        </div>
+                        <div class="product-card__body-text">
+                          <div class="product-card__name">Венок Триумф Императрица с шишками заснеженный</div>
+                          <div class="product-card__id">артикул: KP3018</div>
+                          <div class="product-card__rate">
+                            <div class="product-card__rating">
+                              <div class="product-card__rating-star">
+                                <img src="./assets/img/product-card/star.svg">
+                              </div>
+                              <div class="product-card__rating-star">
+                                <img src="./assets/img/product-card/star.svg">
+                              </div>
+                              <div class="product-card__rating-star">
+                                <img src="./assets/img/product-card/star.svg">
+                              </div>
+                              <div class="product-card__rating-star">
+                                <img src="./assets/img/product-card/star.svg">
+                              </div>
+                              <div class="product-card__rating-star">
+                                <img src="./assets/img/product-card/star.svg">
+                              </div>
+                            </div>
+                            <label class="product-card__comments">
+                              <div class="product-card__comments-image">
+                                <img src="./assets/img/product-card/comments.svg">
+                              </div>
+                              <div class="product-card__comments-ammount">12</div>
+                            </label>
+                        </div>
+                       </div>
+                      </div>
+                      <div class="product-card__footer">
+                        <div class="product-card__panel">
+                          <div class="product-card__item-size">
+                            <div class="product-card__type-image">
+                              <img src="./assets/img/product-card/form-type.svg">
+                            </div>
+                            <div class="product-card__size-text_color_green">45 см</div>
+                          </div>
+                          <div class="product-card__stock--active">
+                            <div class="product-card__stock-text">В наличии</div>
+                          </div>
+                        </div>
+                        <div class="product-card__price-panel">
+                          <div class="product-card__price">5 990 ₽
+                            <div class="product-card__discount-price"></div>
+                          </div>
+                          <button class="product-card__shop-popup">
+                            <img src="./assets/img/product-card/ShoppingCart.svg" alt="">
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="catalog__column">
+                    <div class="product-card">
+                      <div class="product-card__body">
+                        <div class="product-card__body-info">
+                          <div class="product-card__condition-item">
+                            <div class="product-card__condition-image product-card__sale-image">
+                              <img src="./assets/img/product-card/Sale.svg">
+                            </div>
+                            <div class="product-card__condition-image product-card__new-image">
+                              <img src="./assets/img/product-card/New.svg">
+                            </div>
+                          </div>
+                          <div class="product-card__shoping-cart">
+                            <img src="./assets/img/product-card/shoping-cart.svg">
+                          </div>
+                        </div>
+                        <div class="product-card__box-image">
+                          <img class="product-card__title-image" src="./assets/img/product-card/product-image/image 60.png">
+                        </div>
+                        <div class="product-card__body-text">
+                          <div class="product-card__name">Сваг с лампочками Триумф Лесная Красавица</div>
+                          <div class="product-card__id">артикул: KP3018</div>
+                          <div class="product-card__rate">
+                            <div class="product-card__rating">
+                              <div class="product-card__rating-star">
+                                <img src="./assets/img/product-card/star.svg">
+                              </div>
+                              <div class="product-card__rating-star">
+                                <img src="./assets/img/product-card/star.svg">
+                              </div>
+                              <div class="product-card__rating-star">
+                                <img src="./assets/img/product-card/star.svg">
+                              </div>
+                              <div class="product-card__rating-star">
+                                <img src="./assets/img/product-card/star.svg">
+                              </div>
+                              <div class="product-card__rating-star">
+                                <img src="./assets/img/product-card/star.svg">
+                              </div>
+                            </div>
+                            <label class="product-card__comments">
+                              <div class="product-card__comments-image">
+                                <img src="./assets/img/product-card/comments.svg">
+                              </div>
+                              <div class="product-card__comments-ammount">12</div>
+                            </label>
+                        </div>
+                       </div>
+                      </div>
+                      <div class="product-card__footer">
+                        <div class="product-card__panel">
+                          <div class="product-card__item-size">
+                            <div class="product-card__type-image">
+                              <img src="./assets/img/product-card/form-type.svg">
+                            </div>
+                            <div class="product-card__size-text_color_green">180 см</div>
+                          </div>
+                          <div class="product-card__stock--active">
+                            <div class="product-card__stock-text">В наличии</div>
+                          </div>
+                        </div>
+                        <div class="product-card__price-panel">
+                          <div class="product-card__price">8 990 ₽
+                            <div class="product-card__discount-price"></div>
+                          </div>
+                          <button class="product-card__shop-popup">
+                            <img src="./assets/img/product-card/ShoppingCart.svg" alt="">
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="catalog__column">
+                    <div class="product-card">
+                      <div class="product-card__body">
+                        <div class="product-card__body-info">
+                          <div class="product-card__condition-item">
+                            <div class="product-card__condition-image product-card__gift-image">
+                              <img src="./assets/img/product-card/Gift.svg">
+                            </div>
+                          </div>
+                          <div class="product-card__shoping-cart">
+                            <img src="./assets/img/product-card/shoping-cart.svg">
+                          </div>
+                        </div>
+                        <div class="product-card__box-image">
+                          <img class="product-card__title-image" src="./assets/img/product-card/product-image/image 61.png">
+                        </div>
+                        <div class="product-card__body-text">
+                          <div class="product-card__name">Венок Триумф Нормандия 60см</div>
+                          <div class="product-card__id">артикул: KP3018</div>
+                          <div class="product-card__rate">
+                            <div class="product-card__rating">
+                              <div class="product-card__rating-star">
+                                <img src="./assets/img/product-card/star.svg">
+                              </div>
+                              <div class="product-card__rating-star">
+                                <img src="./assets/img/product-card/star.svg">
+                              </div>
+                              <div class="product-card__rating-star">
+                                <img src="./assets/img/product-card/star.svg">
+                              </div>
+                              <div class="product-card__rating-star">
+                                <img src="./assets/img/product-card/star.svg">
+                              </div>
+                              <div class="product-card__rating-star">
+                                <img src="./assets/img/product-card/star.svg">
+                              </div>
+                            </div>
+                            <label class="product-card__comments">
+                              <div class="product-card__comments-image">
+                                <img src="./assets/img/product-card/comments.svg">
+                              </div>
+                              <div class="product-card__comments-ammount">12</div>
+                            </label>
+                        </div>
+                       </div>
+                      </div>
+                      <div class="product-card__footer">
+                        <div class="product-card__panel">
+                          <div class="product-card__item-size">
+                            <div class="product-card__type-image">
+                              <img src="./assets/img/product-card/form-type.svg">
+                            </div>
+                            <div class="product-card__size-text_color_green">60 см</div>
+                          </div>
+                          <div class="product-card__stock--active">
+                            <div class="product-card__stock-text">В наличии</div>
+                          </div>
+                        </div>
+                        <div class="product-card__price-panel">
+                          <div class="product-card__price">10 390 ₽
+                            <div class="product-card__discount-price"></div>
+                          </div>
+                          <button class="product-card__shop-popup">
+                            <img src="./assets/img/product-card/ShoppingCart.svg" alt="">
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="catalog__banner-list">
+                  <div class="catalog__banner-item">
+                    <img class="catalog__banner-image" src="./assets/img/banner-list/Frame 26.png" alt="">
+                  </div>
+                  <div class="catalog__banner-item">
+                    <img class="catalog__banner-image" src="./assets/img/banner-list/Frame 27.png">
+                  </div>
+                  <div class="catalog__banner-item">
+                    <img class="catalog__banner-image" src="./assets/img/banner-list/Frame 28.png">
+                  </div>
+                </div>
+                <div class="catalog__row">
+                  <div class="catalog__column">
+                    <div class="product-card">
+                      <div class="product-card__body">
+                        <div class="product-card__body-info">
+                          <div class="product-card__condition-item">
+                            <div class="product-card__condition-image product-card__hit-image">
+                              <img src="./assets/img/product-card/Hit.svg">
+                            </div>
+                            <div class="product-card__condition-image product-card__hit-gift">
+                              <img src="./assets/img/product-card/Gift.svg" alt="">
+                            </div>
+                          </div>
+                          <div class="product-card__shoping-cart product-card__shoping-cart--active">
+                            <img src="./assets/img/product-card/shoping-cart--active.svg" alt="">
+                          </div>
+                        </div>
+                        <div class="product-card__box-image">
+                          <img class="product-card__title-image" src="./assets/img/product-card/product-image/christmas-tree.png">
+                        </div>
+                        <div class="product-card__body-text">
+                          <div class="product-card__name">Искусственная Ель Гарда заснеженная</div>
+                          <div class="product-card__id">артикул: KP3018</div>
+                          <div class="product-card__rate">
+                            <div class="product-card__rating">
+                              <div class="product-card__rating-star">
+                                <img src="./assets/img/product-card/star.svg">
+                              </div>
+                              <div class="product-card__rating-star">
+                                <img src="./assets/img/product-card/star.svg">
+                              </div>
+                              <div class="product-card__rating-star">
+                                <img src="./assets/img/product-card/star.svg">
+                              </div>
+                              <div class="product-card__rating-star">
+                                <img src="./assets/img/product-card/star.svg">
+                              </div>
+                              <div class="product-card__rating-star">
+                                <img src="./assets/img/product-card/star.svg">
+                              </div>
+                            </div>
+                            <label class="product-card__comments">
+                              <div class="product-card__comments-image">
+                                <img src="./assets/img/product-card/comments.svg">
+                              </div>
+                              <div class="product-card__comments-ammount">12</div>
+                            </label>
+                        </div>
+                       </div>
+                      </div>
+                      <div class="product-card__footer">
+                        <div class="product-card__panel">
+                          <div class="product-card__tree-size">
+                            <div class="product-card__type-image">
+                              <img src="./assets/img/product-card/ListDashes.svg">
+                            </div>
+                            <div class="product-card__size-text_color_white">180 см</div>
+                          </div>
+                          <div class="product-card__stock--active">
+                            <div class="product-card__stock-text">В наличии</div>
+                          </div>
+                        </div>
+                        <div class="product-card__price-panel">
+                          <div class="product-card__price product-card__price_color_green">43 990 ₽
+                            <div class="product-card__discount-price">43 099 ₽</div>
+                          </div>
+                          <button class="product-card__shop-popup">
+                            <img src="./assets/img/product-card/ShoppingCart.svg" alt="">
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="catalog__column">
+                    <div class="product-card">
+                      <div class="product-card__body">
+                        <div class="product-card__body-info">
+                          <div class="product-card__condition-item">
+                            <div class="product-card__condition-image product-card__new-image">
+                              <img src="./assets/img/product-card/New.svg">
+                            </div>
+                          </div>
+                          <div class="product-card__shoping-cart">
+                            <img src="./assets/img/product-card/shoping-cart.svg" alt="">
+                          </div>
+                        </div>
+                        <div class="product-card__box-image">
+                          <img class="product-card__title-image" src="./assets/img/product-card/product-image/shotlandija 1.png">
+                        </div>
+                        <div class="product-card__body-text">
+                          <div class="product-card__name">Искусственная Ель Шотландия</div>
+                          <div class="product-card__id">артикул: KP3018</div>
+                          <div class="product-card__rate">
+                            <div class="product-card__rating">
+                              <div class="product-card__rating-star">
+                                <img src="./assets/img/product-card/star.svg">
+                              </div>
+                              <div class="product-card__rating-star">
+                                <img src="./assets/img/product-card/star.svg">
+                              </div>
+                              <div class="product-card__rating-star">
+                                <img src="./assets/img/product-card/star.svg">
+                              </div>
+                              <div class="product-card__rating-star">
+                                <img src="./assets/img/product-card/star.svg">
+                              </div>
+                              <div class="product-card__rating-star">
+                                <img src="./assets/img/product-card/star.svg">
+                              </div>
+                            </div>
+                            <label class="product-card__comments">
+                              <div class="product-card__comments-image">
+                                <img src="./assets/img/product-card/comments.svg">
+                              </div>
+                              <div class="product-card__comments-ammount">12</div>
+                            </label>
+                        </div>
+                       </div>
+                      </div>
+                      <div class="product-card__footer">
+                        <div class="product-card__panel">
+                          <div class="product-card__tree-size">
+                            <div class="product-card__type-image">
+                              <img src="./assets/img/product-card/ListDashes.svg">
+                            </div>
+                            <div class="product-card__size-text_color_white">180 см</div>
+                          </div>
+                          <div class="product-card__stock--active">
+                            <div class="product-card__stock-text">В наличии</div>
+                          </div>
+                        </div>
+                        <div class="product-card__price-panel">
+                          <div class="product-card__price">28 990 ₽
+                            <div class="product-card__discount-price"></div>
+                          </div>
+                          <button class="product-card__shop-popup">
+                            <img src="./assets/img/product-card/ShoppingCart.svg" alt="">
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="catalog__column">
+                    <div class="product-card">
+                      <div class="product-card__body">
+                        <div class="product-card__body-info">
+                          <div class="product-card__condition-item">
+                            <div class="product-card__condition-image product-card__new-image">
+                              <img src="./assets/img/product-card/New.svg">
+                            </div>
+                          </div>
+                          <div class="product-card__shoping-cart">
+                            <img src="./assets/img/product-card/shoping-cart.svg">
+                          </div>
+                        </div>
+                        <div class="product-card__box-image">
+                          <img class="product-card__title-image" src="./assets/img/product-card/product-image/image 62.png">
+                        </div>
+                        <div class="product-card__body-text">
+                          <div class="product-card__name">Венок Триумф Императрица с шишками заснеженный</div>
+                          <div class="product-card__id">артикул: KP3018</div>
+                          <div class="product-card__rate">
+                            <div class="product-card__rating">
+                              <div class="product-card__rating-star">
+                                <img src="./assets/img/product-card/star.svg">
+                              </div>
+                              <div class="product-card__rating-star">
+                                <img src="./assets/img/product-card/star.svg">
+                              </div>
+                              <div class="product-card__rating-star">
+                                <img src="./assets/img/product-card/star.svg">
+                              </div>
+                              <div class="product-card__rating-star">
+                                <img src="./assets/img/product-card/star.svg">
+                              </div>
+                              <div class="product-card__rating-star">
+                                <img src="./assets/img/product-card/star.svg">
+                              </div>
+                            </div>
+                            <label class="product-card__comments">
+                              <div class="product-card__comments-image">
+                                <img src="./assets/img/product-card/comments.svg">
+                              </div>
+                              <div class="product-card__comments-ammount">12</div>
+                            </label>
+                        </div>
+                       </div>
+                      </div>
+                      <div class="product-card__footer">
+                        <div class="product-card__panel">
+                          <div class="product-card__item-size">
+                            <div class="product-card__type-image">
+                              <img src="./assets/img/product-card/form-type.svg">
+                            </div>
+                            <div class="product-card__size-text_color_green">45 см</div>
+                          </div>
+                          <div class="product-card__stock--active">
+                            <div class="product-card__stock-text">В наличии</div>
+                          </div>
+                        </div>
+                        <div class="product-card__price-panel">
+                          <div class="product-card__price">5 990 ₽
+                            <div class="product-card__discount-price"></div>
+                          </div>
+                          <button class="product-card__shop-popup">
+                            <img src="./assets/img/product-card/ShoppingCart.svg" alt="">
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="catalog__column">
+                    <div class="product-card">
+                      <div class="product-card__body">
+                        <div class="product-card__body-info">
+                          <div class="product-card__condition-item">
+                            <div class="product-card__condition-image product-card__sale-image">
+                              <img src="./assets/img/product-card/Sale.svg">
+                            </div>
+                            <div class="product-card__condition-image product-card__new-image">
+                              <img src="./assets/img/product-card/New.svg">
+                            </div>
+                          </div>
+                          <div class="product-card__shoping-cart">
+                            <img src="./assets/img/product-card/shoping-cart.svg">
+                          </div>
+                        </div>
+                        <div class="product-card__box-image">
+                          <img class="product-card__title-image" src="./assets/img/product-card/product-image/image 60.png">
+                        </div>
+                        <div class="product-card__body-text">
+                          <div class="product-card__name">Сваг с лампочками Триумф Лесная Красавица</div>
+                          <div class="product-card__id">артикул: KP3018</div>
+                          <div class="product-card__rate">
+                            <div class="product-card__rating">
+                              <div class="product-card__rating-star">
+                                <img src="./assets/img/product-card/star.svg">
+                              </div>
+                              <div class="product-card__rating-star">
+                                <img src="./assets/img/product-card/star.svg">
+                              </div>
+                              <div class="product-card__rating-star">
+                                <img src="./assets/img/product-card/star.svg">
+                              </div>
+                              <div class="product-card__rating-star">
+                                <img src="./assets/img/product-card/star.svg">
+                              </div>
+                              <div class="product-card__rating-star">
+                                <img src="./assets/img/product-card/star.svg">
+                              </div>
+                            </div>
+                            <label class="product-card__comments">
+                              <div class="product-card__comments-image">
+                                <img src="./assets/img/product-card/comments.svg">
+                              </div>
+                              <div class="product-card__comments-ammount">12</div>
+                            </label>
+                        </div>
+                       </div>
+                      </div>
+                      <div class="product-card__footer">
+                        <div class="product-card__panel">
+                          <div class="product-card__item-size">
+                            <div class="product-card__type-image">
+                              <img src="./assets/img/product-card/form-type.svg">
+                            </div>
+                            <div class="product-card__size-text_color_green">180 см</div>
+                          </div>
+                          <div class="product-card__stock--active">
+                            <div class="product-card__stock-text">В наличии</div>
+                          </div>
+                        </div>
+                        <div class="product-card__price-panel">
+                          <div class="product-card__price">8 990 ₽
+                            <div class="product-card__discount-price"></div>
+                          </div>
+                          <button class="product-card__shop-popup">
+                            <img src="./assets/img/product-card/ShoppingCart.svg" alt="">
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="catalog__column">
+                    <div class="product-card">
+                      <div class="product-card__body">
+                        <div class="product-card__body-info">
+                          <div class="product-card__condition-item">
+                            <div class="product-card__condition-image product-card__gift-image">
+                              <img src="./assets/img/product-card/Gift.svg">
+                            </div>
+                          </div>
+                          <div class="product-card__shoping-cart">
+                            <img src="./assets/img/product-card/shoping-cart.svg">
+                          </div>
+                        </div>
+                        <div class="product-card__box-image">
+                          <img class="product-card__title-image" src="./assets/img/product-card/product-image/image 61.png">
+                        </div>
+                        <div class="product-card__body-text">
+                          <div class="product-card__name">Венок Триумф Нормандия 60см</div>
+                          <div class="product-card__id">артикул: KP3018</div>
+                          <div class="product-card__rate">
+                            <div class="product-card__rating">
+                              <div class="product-card__rating-star">
+                                <img src="./assets/img/product-card/star.svg">
+                              </div>
+                              <div class="product-card__rating-star">
+                                <img src="./assets/img/product-card/star.svg">
+                              </div>
+                              <div class="product-card__rating-star">
+                                <img src="./assets/img/product-card/star.svg">
+                              </div>
+                              <div class="product-card__rating-star">
+                                <img src="./assets/img/product-card/star.svg">
+                              </div>
+                              <div class="product-card__rating-star">
+                                <img src="./assets/img/product-card/star.svg">
+                              </div>
+                            </div>
+                            <label class="product-card__comments">
+                              <div class="product-card__comments-image">
+                                <img src="./assets/img/product-card/comments.svg">
+                              </div>
+                              <div class="product-card__comments-ammount">12</div>
+                            </label>
+                        </div>
+                       </div>
+                      </div>
+                      <div class="product-card__footer">
+                        <div class="product-card__panel">
+                          <div class="product-card__item-size">
+                            <div class="product-card__type-image">
+                              <img src="./assets/img/product-card/form-type.svg">
+                            </div>
+                            <div class="product-card__size-text_color_green">60 см</div>
+                          </div>
+                          <div class="product-card__stock--active">
+                            <div class="product-card__stock-text">В наличии</div>
+                          </div>
+                        </div>
+                        <div class="product-card__price-panel">
+                          <div class="product-card__price">10 390 ₽
+                            <div class="product-card__discount-price"></div>
+                          </div>
+                          <button class="product-card__shop-popup">
+                            <img src="./assets/img/product-card/ShoppingCart.svg" alt="">
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <footer>
+    <div class="frame">
+      <div class="frame__header">
+        <div class="frame__nav-menu">
+          <button class="frame__nav-button">Стать партнером</button>
+          <button class="frame__nav-button">Где купить?</button>
+          <button class="frame__nav-button">О компании</button>
+          <button class="frame__nav-button">Блог</button>
+          <button class="frame__nav-button">Контакты</button>
+        </div>
+        <div class="frame__info">
+          <div class="frame__phone-text">8 (800) 55 55 57 24</div>
+        </div>
+      </div>
+      <div class="wrapper">
+        <div class="frame__body">
+          <div class="frame-menu__row">
+            <div class="frame-menu__column">
+              <div class="frame-menu__icon">
+                <img src="./assets/img/logo-01 2.png">
+              </div>
+            </div>
+            <div class="frame-menu__list">
+              <div class="frame-menu__item">
+                <div class="frame-menu__category">
+                  <div class="frame-menu__category-title">Комнатные ели</div>
+                  <div class="frame-menu__category-text">Литые</div>
+                  <div class="frame-menu__category-text">Комбинированые</div>
+                  <div class="frame-menu__category-text">Елки из ПВХ</div>
+                  <div class="frame-menu__category-text">Заснеженные, с освещением</div>
+                  <div class="frame-menu__category-text">Дизайнерские</div>
+                </div>
+              </div>
+              <div class="frame-menu__item">
+                <div class="frame-menu__category">
+                  <div class="frame-menu__category-title">Высотные ели</div>
+                  <div class="frame-menu__category-text">Уличные ели</div>
+                  <div class="frame-menu__category-text">Интерьерные ели</div>
+                </div>
+              </div>
+              <div class="frame-menu__item">
+                <div class="frame-menu__category">
+                  <div class="frame-menu__category-title">Новогодний декор</div>
+                  <div class="frame-menu__category-text">Хвойные венки</div>
+                  <div class="frame-menu__category-text">Хвойные гирлянды</div>
+                  <div class="frame-menu__category-text">Хвойные сваги</div>
+                  <div class="frame-menu__category-text">Елочные украшения</div>
+                </div>
+              </div>
+              <div class="frame-menu__item">
+                <div class="frame-menu__category">
+                  <div class="frame-menu__category-title">Гирлянды</div>
+                  <div class="frame-menu__category-text">Электрогирлянды</div>
+                  <div class="frame-menu__category-text">На батарейках</div>
+                  <div class="frame-menu__category-text">Занавесы, сетки</div>
+                </div>
+              </div>
+            </div>
+            <div class="frame-menu__item">
+              <div class="frame-menu__nav-panel">
+                <a class="frame-menu__back-call-button" href="#overlay-back-call">
+                  <div class="frame-menu__back-call-icon">
+                    <img src="./assets/img/frame-menu/backcall-icon.svg">
+                  </div>
+                  <div class="frame-menu__back-call-text">
+                    Обратный звонок
+                  </div>
+                </a>
+                <a class="frame-menu__contact-button" href="#overlay-contact">
+                  <div class="frame-menu__contact-icon">
+                    <img src="./assets/img/frame-menu/telegram-icon.svg">
+                  </div>
+                  <div class="frame-menu__contact-text">
+                    Напишите нам
+                  </div>
+                </a>
 
-                </div>
-                <div class="category-list">
-                    <div class="catalog">
-                        <div class="catalog__wrapper">
-                            <div class="catalog__header category-list__header">
-                            <div class="catalog__title category-list__title">Основной каталог</div>
-                            </div>
-                            <div class="catalog__body category-list__body">
-                            <div class="catalog__row">
-                                <div class="catalog__column">
-                                <div class="product-card">
-                                    <div class="product-card__body">
-                                    <div class="product-card__body-info">
-                                        <div class="product-card__condition-item">
-                                        <div class="product-card__hit-image">
-                                            <img src="./assets/img/product-card/Hit.svg">
-                                        </div>
-                                        <div class="product-card__gift-image">
-                                            <img src="./assets/img/product-card/Gift.svg" alt="">
-                                        </div>
-                                        </div>
-                                        <img class="product-card__title-image" src="./assets/img/product-card/christmas-tree.png" alt="">
-                                        <div class="product-card__shoping-cart--active">
-                                        <img src="./assets/img/product-card/shoping-cart--active.svg" alt="">
-                                        </div>
-                                    </div>
-                                    <div class="product-card__body-text">
-                                    <div class="product-card__name">Искусственная Ель Гарда заснеженная</div>
-                                    <div class="product-card__id">артикул: KP3018</div>
-                                    <div class="product-card__rate">
-                                        <div class="product-card__rating">
-                                        <div class="product-card__rating-star">
-                                            <img src="./assets/img/product-card/star.svg">
-                                        </div>
-                                        <div class="product-card__rating-star">
-                                            <img src="./assets/img/product-card/star.svg">
-                                        </div>
-                                        <div class="product-card__rating-star">
-                                            <img src="./assets/img/product-card/star.svg">
-                                        </div>
-                                        <div class="product-card__rating-star">
-                                            <img src="./assets/img/product-card/star.svg">
-                                        </div>
-                                        <div class="product-card__rating-star">
-                                            <img src="./assets/img/product-card/star.svg">
-                                        </div>
-                                        </div>
-                                        <label class="product-card__comments">
-                                        <div class="product-card__comments-image">
-                                            <img src="./assets/img/product-card/comments.svg">
-                                        </div>
-                                        <div class="product-card__comments-ammount">12</div>
-                                        </label>
-                                    </div>
-                                    </div>
-                                    </div>
-                                    <div class="product-card__footer">
-                                    <div class="product-card__panel">
-                                        <div class="product-card__tree-size">
-                                        <div class="product-card__type-image">
-                                            <img src="./assets/img/product-card/ListDashes.svg">
-                                        </div>
-                                        <div class="product-card__size-text">180 см</div>
-                                        </div>
-                                        <div class="product-card__stock--active">
-                                        <div class="product-card__stock-text">В наличии</div>
-                                        </div>
-                                    </div>
-                                    <div class="product-card__price-panel">
-                                        <div class="product-card__price">28 990 ₽</div>
-                                        <button class="product-card__shop-popup">
-                                        <img src="./assets/img/product-card/ShoppingCart.svg" alt="">
-                                        </button>
-                                    </div>
-                                    </div>
-                                </div>
-                                </div>
-                                <div class="catalog__column">
-                                <div class="product-card">
-                                    <div class="product-card__body">
-                                    <div class="product-card__body-info">
-                                        <div class="product-card__condition-item">
-                                        <div class="product-card__hit-image">
-                                            <img src="./assets/img/product-card/Hit.svg">
-                                        </div>
-                                        <div class="product-card__gift-image">
-                                            <img src="./assets/img/product-card/Gift.svg" alt="">
-                                        </div>
-                                        </div>
-                                        <img class="product-card__title-image" src="./assets/img/product-card/christmas-tree.png" alt="">
-                                        <div class="product-card__shoping-cart--active">
-                                        <img src="./assets/img/product-card/shoping-cart--active.svg" alt="">
-                                        </div>
-                                    </div>
-                                    <div class="product-card__body-text">
-                                    <div class="product-card__name">Искусственная Ель Гарда заснеженная</div>
-                                    <div class="product-card__id">артикул: KP3018</div>
-                                    <div class="product-card__rate">
-                                        <div class="product-card__rating">
-                                        <div class="product-card__rating-star">
-                                            <img src="./assets/img/product-card/star.svg">
-                                        </div>
-                                        <div class="product-card__rating-star">
-                                            <img src="./assets/img/product-card/star.svg">
-                                        </div>
-                                        <div class="product-card__rating-star">
-                                            <img src="./assets/img/product-card/star.svg">
-                                        </div>
-                                        <div class="product-card__rating-star">
-                                            <img src="./assets/img/product-card/star.svg">
-                                        </div>
-                                        <div class="product-card__rating-star">
-                                            <img src="./assets/img/product-card/star.svg">
-                                        </div>
-                                        </div>
-                                        <label class="product-card__comments">
-                                        <div class="product-card__comments-image">
-                                            <img src="./assets/img/product-card/comments.svg">
-                                        </div>
-                                        <div class="product-card__comments-ammount">12</div>
-                                        </label>
-                                    </div>
-                                    </div>
-                                    </div>
-                                    <div class="product-card__footer">
-                                    <div class="product-card__panel">
-                                        <div class="product-card__tree-size">
-                                        <div class="product-card__type-image">
-                                            <img src="./assets/img/product-card/ListDashes.svg">
-                                        </div>
-                                        <div class="product-card__size-text">180 см</div>
-                                        </div>
-                                        <div class="product-card__stock--active">
-                                        <div class="product-card__stock-text">В наличии</div>
-                                        </div>
-                                    </div>
-                                    <div class="product-card__price-panel">
-                                        <div class="product-card__price">28 990 ₽</div>
-                                        <button class="product-card__shop-popup">
-                                        <img src="./assets/img/product-card/ShoppingCart.svg" alt="">
-                                        </button>
-                                    </div>
-                                    </div>
-                                </div>
-                                </div>
-                                <div class="catalog__column">
-                                <div class="product-card">
-                                    <div class="product-card__body">
-                                    <div class="product-card__body-info">
-                                        <div class="product-card__condition-item">
-                                        <div class="product-card__hit-image">
-                                            <img src="./assets/img/product-card/Hit.svg">
-                                        </div>
-                                        <div class="product-card__gift-image">
-                                            <img src="./assets/img/product-card/Gift.svg" alt="">
-                                        </div>
-                                        </div>
-                                        <img class="product-card__title-image" src="./assets/img/product-card/christmas-tree.png" alt="">
-                                        <div class="product-card__shoping-cart--active">
-                                        <img src="./assets/img/product-card/shoping-cart--active.svg" alt="">
-                                        </div>
-                                    </div>
-                                    <div class="product-card__body-text">
-                                    <div class="product-card__name">Искусственная Ель Гарда заснеженная</div>
-                                    <div class="product-card__id">артикул: KP3018</div>
-                                    <div class="product-card__rate">
-                                        <div class="product-card__rating">
-                                        <div class="product-card__rating-star">
-                                            <img src="./assets/img/product-card/star.svg">
-                                        </div>
-                                        <div class="product-card__rating-star">
-                                            <img src="./assets/img/product-card/star.svg">
-                                        </div>
-                                        <div class="product-card__rating-star">
-                                            <img src="./assets/img/product-card/star.svg">
-                                        </div>
-                                        <div class="product-card__rating-star">
-                                            <img src="./assets/img/product-card/star.svg">
-                                        </div>
-                                        <div class="product-card__rating-star">
-                                            <img src="./assets/img/product-card/star.svg">
-                                        </div>
-                                        </div>
-                                        <label class="product-card__comments">
-                                        <div class="product-card__comments-image">
-                                            <img src="./assets/img/product-card/comments.svg">
-                                        </div>
-                                        <div class="product-card__comments-ammount">12</div>
-                                        </label>
-                                    </div>
-                                    </div>
-                                    </div>
-                                    <div class="product-card__footer">
-                                    <div class="product-card__panel">
-                                        <div class="product-card__tree-size">
-                                        <div class="product-card__type-image">
-                                            <img src="./assets/img/product-card/ListDashes.svg">
-                                        </div>
-                                        <div class="product-card__size-text">180 см</div>
-                                        </div>
-                                        <div class="product-card__stock--active">
-                                        <div class="product-card__stock-text">В наличии</div>
-                                        </div>
-                                    </div>
-                                    <div class="product-card__price-panel">
-                                        <div class="product-card__price">28 990 ₽</div>
-                                        <button class="product-card__shop-popup">
-                                        <img src="./assets/img/product-card/ShoppingCart.svg" alt="">
-                                        </button>
-                                    </div>
-                                    </div>
-                                </div>
-                                </div>
-                                <div class="catalog__column">
-                                <div class="product-card">
-                                    <div class="product-card__body">
-                                    <div class="product-card__body-info">
-                                        <div class="product-card__condition-item">
-                                        <div class="product-card__hit-image">
-                                            <img src="./assets/img/product-card/Hit.svg">
-                                        </div>
-                                        <div class="product-card__gift-image">
-                                            <img src="./assets/img/product-card/Gift.svg" alt="">
-                                        </div>
-                                        </div>
-                                        <img class="product-card__title-image" src="./assets/img/product-card/christmas-tree.png" alt="">
-                                        <div class="product-card__shoping-cart--active">
-                                        <img src="./assets/img/product-card/shoping-cart--active.svg" alt="">
-                                        </div>
-                                    </div>
-                                    <div class="product-card__body-text">
-                                    <div class="product-card__name">Искусственная Ель Гарда заснеженная</div>
-                                    <div class="product-card__id">артикул: KP3018</div>
-                                    <div class="product-card__rate">
-                                        <div class="product-card__rating">
-                                        <div class="product-card__rating-star">
-                                            <img src="./assets/img/product-card/star.svg">
-                                        </div>
-                                        <div class="product-card__rating-star">
-                                            <img src="./assets/img/product-card/star.svg">
-                                        </div>
-                                        <div class="product-card__rating-star">
-                                            <img src="./assets/img/product-card/star.svg">
-                                        </div>
-                                        <div class="product-card__rating-star">
-                                            <img src="./assets/img/product-card/star.svg">
-                                        </div>
-                                        <div class="product-card__rating-star">
-                                            <img src="./assets/img/product-card/star.svg">
-                                        </div>
-                                        </div>
-                                        <label class="product-card__comments">
-                                        <div class="product-card__comments-image">
-                                            <img src="./assets/img/product-card/comments.svg">
-                                        </div>
-                                        <div class="product-card__comments-ammount">12</div>
-                                        </label>
-                                    </div>
-                                    </div>
-                                    </div>
-                                    <div class="product-card__footer">
-                                    <div class="product-card__panel">
-                                        <div class="product-card__tree-size">
-                                        <div class="product-card__type-image">
-                                            <img src="./assets/img/product-card/ListDashes.svg">
-                                        </div>
-                                        <div class="product-card__size-text">180 см</div>
-                                        </div>
-                                        <div class="product-card__stock--active">
-                                        <div class="product-card__stock-text">В наличии</div>
-                                        </div>
-                                    </div>
-                                    <div class="product-card__price-panel">
-                                        <div class="product-card__price">28 990 ₽</div>
-                                        <button class="product-card__shop-popup">
-                                        <img src="./assets/img/product-card/ShoppingCart.svg" alt="">
-                                        </button>
-                                    </div>
-                                    </div>
-                                </div>
-                                </div>
-                                <div class="catalog__column">
-                                <div class="product-card">
-                                    <div class="product-card__body">
-                                    <div class="product-card__body-info">
-                                        <div class="product-card__condition-item">
-                                        <div class="product-card__hit-image">
-                                            <img src="./assets/img/product-card/Hit.svg">
-                                        </div>
-                                        <div class="product-card__gift-image">
-                                            <img src="./assets/img/product-card/Gift.svg" alt="">
-                                        </div>
-                                        </div>
-                                        <img class="product-card__title-image" src="./assets/img/product-card/christmas-tree.png" alt="">
-                                        <div class="product-card__shoping-cart--active">
-                                        <img src="./assets/img/product-card/shoping-cart--active.svg" alt="">
-                                        </div>
-                                    </div>
-                                    <div class="product-card__body-text">
-                                    <div class="product-card__name">Искусственная Ель Гарда заснеженная</div>
-                                    <div class="product-card__id">артикул: KP3018</div>
-                                    <div class="product-card__rate">
-                                        <div class="product-card__rating">
-                                        <div class="product-card__rating-star">
-                                            <img src="./assets/img/product-card/star.svg">
-                                        </div>
-                                        <div class="product-card__rating-star">
-                                            <img src="./assets/img/product-card/star.svg">
-                                        </div>
-                                        <div class="product-card__rating-star">
-                                            <img src="./assets/img/product-card/star.svg">
-                                        </div>
-                                        <div class="product-card__rating-star">
-                                            <img src="./assets/img/product-card/star.svg">
-                                        </div>
-                                        <div class="product-card__rating-star">
-                                            <img src="./assets/img/product-card/star.svg">
-                                        </div>
-                                        </div>
-                                        <label class="product-card__comments">
-                                        <div class="product-card__comments-image">
-                                            <img src="./assets/img/product-card/comments.svg">
-                                        </div>
-                                        <div class="product-card__comments-ammount">12</div>
-                                        </label>
-                                    </div>
-                                    </div>
-                                    </div>
-                                    <div class="product-card__footer">
-                                    <div class="product-card__panel">
-                                        <div class="product-card__tree-size">
-                                        <div class="product-card__type-image">
-                                            <img src="./assets/img/product-card/ListDashes.svg">
-                                        </div>
-                                        <div class="product-card__size-text">180 см</div>
-                                        </div>
-                                        <div class="product-card__stock--active">
-                                        <div class="product-card__stock-text">В наличии</div>
-                                        </div>
-                                    </div>
-                                    <div class="product-card__price-panel">
-                                        <div class="product-card__price">28 990 ₽</div>
-                                        <button class="product-card__shop-popup">
-                                        <img src="./assets/img/product-card/ShoppingCart.svg" alt="">
-                                        </button>
-                                    </div>
-                                    </div>
-                                </div>
-                                </div>
-                            </div>
-                            <div class="catalog__row">
-                                <div class="catalog__column">
-                                <div class="product-card">
-                                    <div class="product-card__body">
-                                    <div class="product-card__body-info">
-                                        <div class="product-card__condition-item">
-                                        <div class="product-card__hit-image">
-                                            <img src="./assets/img/product-card/Hit.svg">
-                                        </div>
-                                        <div class="product-card__gift-image">
-                                            <img src="./assets/img/product-card/Gift.svg" alt="">
-                                        </div>
-                                        </div>
-                                        <img class="product-card__title-image" src="./assets/img/product-card/christmas-tree.png" alt="">
-                                        <div class="product-card__shoping-cart--active">
-                                        <img src="./assets/img/product-card/shoping-cart--active.svg" alt="">
-                                        </div>
-                                    </div>
-                                    <div class="product-card__body-text">
-                                    <div class="product-card__name">Искусственная Ель Гарда заснеженная</div>
-                                    <div class="product-card__id">артикул: KP3018</div>
-                                    <div class="product-card__rate">
-                                        <div class="product-card__rating">
-                                        <div class="product-card__rating-star">
-                                            <img src="./assets/img/product-card/star.svg">
-                                        </div>
-                                        <div class="product-card__rating-star">
-                                            <img src="./assets/img/product-card/star.svg">
-                                        </div>
-                                        <div class="product-card__rating-star">
-                                            <img src="./assets/img/product-card/star.svg">
-                                        </div>
-                                        <div class="product-card__rating-star">
-                                            <img src="./assets/img/product-card/star.svg">
-                                        </div>
-                                        <div class="product-card__rating-star">
-                                            <img src="./assets/img/product-card/star.svg">
-                                        </div>
-                                        </div>
-                                        <label class="product-card__comments">
-                                        <div class="product-card__comments-image">
-                                            <img src="./assets/img/product-card/comments.svg">
-                                        </div>
-                                        <div class="product-card__comments-ammount">12</div>
-                                        </label>
-                                    </div>
-                                    </div>
-                                    </div>
-                                    <div class="product-card__footer">
-                                    <div class="product-card__panel">
-                                        <div class="product-card__tree-size">
-                                        <div class="product-card__type-image">
-                                            <img src="./assets/img/product-card/ListDashes.svg">
-                                        </div>
-                                        <div class="product-card__size-text">180 см</div>
-                                        </div>
-                                        <div class="product-card__stock--active">
-                                        <div class="product-card__stock-text">В наличии</div>
-                                        </div>
-                                    </div>
-                                    <div class="product-card__price-panel">
-                                        <div class="product-card__price">28 990 ₽</div>
-                                        <button class="product-card__shop-popup">
-                                        <img src="./assets/img/product-card/ShoppingCart.svg" alt="">
-                                        </button>
-                                    </div>
-                                    </div>
-                                </div>
-                                </div>
-                                <div class="catalog__column">
-                                <div class="product-card">
-                                    <div class="product-card__body">
-                                    <div class="product-card__body-info">
-                                        <div class="product-card__condition-item">
-                                        <div class="product-card__hit-image">
-                                            <img src="./assets/img/product-card/Hit.svg">
-                                        </div>
-                                        <div class="product-card__gift-image">
-                                            <img src="./assets/img/product-card/Gift.svg" alt="">
-                                        </div>
-                                        </div>
-                                        <img class="product-card__title-image" src="./assets/img/product-card/christmas-tree.png" alt="">
-                                        <div class="product-card__shoping-cart--active">
-                                        <img src="./assets/img/product-card/shoping-cart--active.svg" alt="">
-                                        </div>
-                                    </div>
-                                    <div class="product-card__body-text">
-                                    <div class="product-card__name">Искусственная Ель Гарда заснеженная</div>
-                                    <div class="product-card__id">артикул: KP3018</div>
-                                    <div class="product-card__rate">
-                                        <div class="product-card__rating">
-                                        <div class="product-card__rating-star">
-                                            <img src="./assets/img/product-card/star.svg">
-                                        </div>
-                                        <div class="product-card__rating-star">
-                                            <img src="./assets/img/product-card/star.svg">
-                                        </div>
-                                        <div class="product-card__rating-star">
-                                            <img src="./assets/img/product-card/star.svg">
-                                        </div>
-                                        <div class="product-card__rating-star">
-                                            <img src="./assets/img/product-card/star.svg">
-                                        </div>
-                                        <div class="product-card__rating-star">
-                                            <img src="./assets/img/product-card/star.svg">
-                                        </div>
-                                        </div>
-                                        <label class="product-card__comments">
-                                        <div class="product-card__comments-image">
-                                            <img src="./assets/img/product-card/comments.svg">
-                                        </div>
-                                        <div class="product-card__comments-ammount">12</div>
-                                        </label>
-                                    </div>
-                                    </div>
-                                    </div>
-                                    <div class="product-card__footer">
-                                    <div class="product-card__panel">
-                                        <div class="product-card__tree-size">
-                                        <div class="product-card__type-image">
-                                            <img src="./assets/img/product-card/ListDashes.svg">
-                                        </div>
-                                        <div class="product-card__size-text">180 см</div>
-                                        </div>
-                                        <div class="product-card__stock--active">
-                                        <div class="product-card__stock-text">В наличии</div>
-                                        </div>
-                                    </div>
-                                    <div class="product-card__price-panel">
-                                        <div class="product-card__price">28 990 ₽</div>
-                                        <button class="product-card__shop-popup">
-                                        <img src="./assets/img/product-card/ShoppingCart.svg" alt="">
-                                        </button>
-                                    </div>
-                                    </div>
-                                </div>
-                                </div>
-                                <div class="catalog__column">
-                                <div class="product-card">
-                                    <div class="product-card__body">
-                                    <div class="product-card__body-info">
-                                        <div class="product-card__condition-item">
-                                        <div class="product-card__hit-image">
-                                            <img src="./assets/img/product-card/Hit.svg">
-                                        </div>
-                                        <div class="product-card__gift-image">
-                                            <img src="./assets/img/product-card/Gift.svg" alt="">
-                                        </div>
-                                        </div>
-                                        <img class="product-card__title-image" src="./assets/img/product-card/christmas-tree.png" alt="">
-                                        <div class="product-card__shoping-cart--active">
-                                        <img src="./assets/img/product-card/shoping-cart--active.svg" alt="">
-                                        </div>
-                                    </div>
-                                    <div class="product-card__body-text">
-                                    <div class="product-card__name">Искусственная Ель Гарда заснеженная</div>
-                                    <div class="product-card__id">артикул: KP3018</div>
-                                    <div class="product-card__rate">
-                                        <div class="product-card__rating">
-                                        <div class="product-card__rating-star">
-                                            <img src="./assets/img/product-card/star.svg">
-                                        </div>
-                                        <div class="product-card__rating-star">
-                                            <img src="./assets/img/product-card/star.svg">
-                                        </div>
-                                        <div class="product-card__rating-star">
-                                            <img src="./assets/img/product-card/star.svg">
-                                        </div>
-                                        <div class="product-card__rating-star">
-                                            <img src="./assets/img/product-card/star.svg">
-                                        </div>
-                                        <div class="product-card__rating-star">
-                                            <img src="./assets/img/product-card/star.svg">
-                                        </div>
-                                        </div>
-                                        <label class="product-card__comments">
-                                        <div class="product-card__comments-image">
-                                            <img src="./assets/img/product-card/comments.svg">
-                                        </div>
-                                        <div class="product-card__comments-ammount">12</div>
-                                        </label>
-                                    </div>
-                                    </div>
-                                    </div>
-                                    <div class="product-card__footer">
-                                    <div class="product-card__panel">
-                                        <div class="product-card__tree-size">
-                                        <div class="product-card__type-image">
-                                            <img src="./assets/img/product-card/ListDashes.svg">
-                                        </div>
-                                        <div class="product-card__size-text">180 см</div>
-                                        </div>
-                                        <div class="product-card__stock--active">
-                                        <div class="product-card__stock-text">В наличии</div>
-                                        </div>
-                                    </div>
-                                    <div class="product-card__price-panel">
-                                        <div class="product-card__price">28 990 ₽</div>
-                                        <button class="product-card__shop-popup">
-                                        <img src="./assets/img/product-card/ShoppingCart.svg" alt="">
-                                        </button>
-                                    </div>
-                                    </div>
-                                </div>
-                                </div>
-                                <div class="catalog__column">
-                                <div class="product-card">
-                                    <div class="product-card__body">
-                                    <div class="product-card__body-info">
-                                        <div class="product-card__condition-item">
-                                        <div class="product-card__hit-image">
-                                            <img src="./assets/img/product-card/Hit.svg">
-                                        </div>
-                                        <div class="product-card__gift-image">
-                                            <img src="./assets/img/product-card/Gift.svg" alt="">
-                                        </div>
-                                        </div>
-                                        <img class="product-card__title-image" src="./assets/img/product-card/christmas-tree.png" alt="">
-                                        <div class="product-card__shoping-cart--active">
-                                        <img src="./assets/img/product-card/shoping-cart--active.svg" alt="">
-                                        </div>
-                                    </div>
-                                    <div class="product-card__body-text">
-                                    <div class="product-card__name">Искусственная Ель Гарда заснеженная</div>
-                                    <div class="product-card__id">артикул: KP3018</div>
-                                    <div class="product-card__rate">
-                                        <div class="product-card__rating">
-                                        <div class="product-card__rating-star">
-                                            <img src="./assets/img/product-card/star.svg">
-                                        </div>
-                                        <div class="product-card__rating-star">
-                                            <img src="./assets/img/product-card/star.svg">
-                                        </div>
-                                        <div class="product-card__rating-star">
-                                            <img src="./assets/img/product-card/star.svg">
-                                        </div>
-                                        <div class="product-card__rating-star">
-                                            <img src="./assets/img/product-card/star.svg">
-                                        </div>
-                                        <div class="product-card__rating-star">
-                                            <img src="./assets/img/product-card/star.svg">
-                                        </div>
-                                        </div>
-                                        <label class="product-card__comments">
-                                        <div class="product-card__comments-image">
-                                            <img src="./assets/img/product-card/comments.svg">
-                                        </div>
-                                        <div class="product-card__comments-ammount">12</div>
-                                        </label>
-                                    </div>
-                                    </div>
-                                    </div>
-                                    <div class="product-card__footer">
-                                    <div class="product-card__panel">
-                                        <div class="product-card__tree-size">
-                                        <div class="product-card__type-image">
-                                            <img src="./assets/img/product-card/ListDashes.svg">
-                                        </div>
-                                        <div class="product-card__size-text">180 см</div>
-                                        </div>
-                                        <div class="product-card__stock--active">
-                                        <div class="product-card__stock-text">В наличии</div>
-                                        </div>
-                                    </div>
-                                    <div class="product-card__price-panel">
-                                        <div class="product-card__price">28 990 ₽</div>
-                                        <button class="product-card__shop-popup">
-                                        <img src="./assets/img/product-card/ShoppingCart.svg" alt="">
-                                        </button>
-                                    </div>
-                                    </div>
-                                </div>
-                                </div>
-                                <div class="catalog__column">
-                                <div class="product-card">
-                                    <div class="product-card__body">
-                                    <div class="product-card__body-info">
-                                        <div class="product-card__condition-item">
-                                        <div class="product-card__hit-image">
-                                            <img src="./assets/img/product-card/Hit.svg">
-                                        </div>
-                                        <div class="product-card__gift-image">
-                                            <img src="./assets/img/product-card/Gift.svg" alt="">
-                                        </div>
-                                        </div>
-                                        <img class="product-card__title-image" src="./assets/img/product-card/christmas-tree.png" alt="">
-                                        <div class="product-card__shoping-cart--active">
-                                        <img src="./assets/img/product-card/shoping-cart--active.svg" alt="">
-                                        </div>
-                                    </div>
-                                    <div class="product-card__body-text">
-                                    <div class="product-card__name">Искусственная Ель Гарда заснеженная</div>
-                                    <div class="product-card__id">артикул: KP3018</div>
-                                    <div class="product-card__rate">
-                                        <div class="product-card__rating">
-                                        <div class="product-card__rating-star">
-                                            <img src="./assets/img/product-card/star.svg">
-                                        </div>
-                                        <div class="product-card__rating-star">
-                                            <img src="./assets/img/product-card/star.svg">
-                                        </div>
-                                        <div class="product-card__rating-star">
-                                            <img src="./assets/img/product-card/star.svg">
-                                        </div>
-                                        <div class="product-card__rating-star">
-                                            <img src="./assets/img/product-card/star.svg">
-                                        </div>
-                                        <div class="product-card__rating-star">
-                                            <img src="./assets/img/product-card/star.svg">
-                                        </div>
-                                        </div>
-                                        <label class="product-card__comments">
-                                        <div class="product-card__comments-image">
-                                            <img src="./assets/img/product-card/comments.svg">
-                                        </div>
-                                        <div class="product-card__comments-ammount">12</div>
-                                        </label>
-                                    </div>
-                                    </div>
-                                    </div>
-                                    <div class="product-card__footer">
-                                    <div class="product-card__panel">
-                                        <div class="product-card__tree-size">
-                                        <div class="product-card__type-image">
-                                            <img src="./assets/img/product-card/ListDashes.svg">
-                                        </div>
-                                        <div class="product-card__size-text">180 см</div>
-                                        </div>
-                                        <div class="product-card__stock--active">
-                                        <div class="product-card__stock-text">В наличии</div>
-                                        </div>
-                                    </div>
-                                    <div class="product-card__price-panel">
-                                        <div class="product-card__price">28 990 ₽</div>
-                                        <button class="product-card__shop-popup">
-                                        <img src="./assets/img/product-card/ShoppingCart.svg" alt="">
-                                        </button>
-                                    </div>
-                                    </div>
-                                </div>
-                                </div>
-                            </div>
-                            <img class="catalog__banner-image" src="./assets/img/banner-list/Banner.png">
-                            <div class="catalog__row">
-                                <div class="catalog__column">
-                                <div class="product-card">
-                                    <div class="product-card__body">
-                                    <div class="product-card__body-info">
-                                        <div class="product-card__condition-item">
-                                        <div class="product-card__hit-image">
-                                            <img src="./assets/img/product-card/Hit.svg">
-                                        </div>
-                                        <div class="product-card__gift-image">
-                                            <img src="./assets/img/product-card/Gift.svg" alt="">
-                                        </div>
-                                        </div>
-                                        <img class="product-card__title-image" src="./assets/img/product-card/christmas-tree.png" alt="">
-                                        <div class="product-card__shoping-cart--active">
-                                        <img src="./assets/img/product-card/shoping-cart--active.svg" alt="">
-                                        </div>
-                                    </div>
-                                    <div class="product-card__body-text">
-                                    <div class="product-card__name">Искусственная Ель Гарда заснеженная</div>
-                                    <div class="product-card__id">артикул: KP3018</div>
-                                    <div class="product-card__rate">
-                                        <div class="product-card__rating">
-                                        <div class="product-card__rating-star">
-                                            <img src="./assets/img/product-card/star.svg">
-                                        </div>
-                                        <div class="product-card__rating-star">
-                                            <img src="./assets/img/product-card/star.svg">
-                                        </div>
-                                        <div class="product-card__rating-star">
-                                            <img src="./assets/img/product-card/star.svg">
-                                        </div>
-                                        <div class="product-card__rating-star">
-                                            <img src="./assets/img/product-card/star.svg">
-                                        </div>
-                                        <div class="product-card__rating-star">
-                                            <img src="./assets/img/product-card/star.svg">
-                                        </div>
-                                        </div>
-                                        <label class="product-card__comments">
-                                        <div class="product-card__comments-image">
-                                            <img src="./assets/img/product-card/comments.svg">
-                                        </div>
-                                        <div class="product-card__comments-ammount">12</div>
-                                        </label>
-                                    </div>
-                                    </div>
-                                    </div>
-                                    <div class="product-card__footer">
-                                    <div class="product-card__panel">
-                                        <div class="product-card__tree-size">
-                                        <div class="product-card__type-image">
-                                            <img src="./assets/img/product-card/ListDashes.svg">
-                                        </div>
-                                        <div class="product-card__size-text">180 см</div>
-                                        </div>
-                                        <div class="product-card__stock--active">
-                                        <div class="product-card__stock-text">В наличии</div>
-                                        </div>
-                                    </div>
-                                    <div class="product-card__price-panel">
-                                        <div class="product-card__price">28 990 ₽</div>
-                                        <button class="product-card__shop-popup">
-                                        <img src="./assets/img/product-card/ShoppingCart.svg" alt="">
-                                        </button>
-                                    </div>
-                                    </div>
-                                </div>
-                                </div>
-                                <div class="catalog__column">
-                                <div class="product-card">
-                                    <div class="product-card__body">
-                                    <div class="product-card__body-info">
-                                        <div class="product-card__condition-item">
-                                        <div class="product-card__hit-image">
-                                            <img src="./assets/img/product-card/Hit.svg">
-                                        </div>
-                                        <div class="product-card__gift-image">
-                                            <img src="./assets/img/product-card/Gift.svg" alt="">
-                                        </div>
-                                        </div>
-                                        <img class="product-card__title-image" src="./assets/img/product-card/christmas-tree.png" alt="">
-                                        <div class="product-card__shoping-cart--active">
-                                        <img src="./assets/img/product-card/shoping-cart--active.svg" alt="">
-                                        </div>
-                                    </div>
-                                    <div class="product-card__body-text">
-                                    <div class="product-card__name">Искусственная Ель Гарда заснеженная</div>
-                                    <div class="product-card__id">артикул: KP3018</div>
-                                    <div class="product-card__rate">
-                                        <div class="product-card__rating">
-                                        <div class="product-card__rating-star">
-                                            <img src="./assets/img/product-card/star.svg">
-                                        </div>
-                                        <div class="product-card__rating-star">
-                                            <img src="./assets/img/product-card/star.svg">
-                                        </div>
-                                        <div class="product-card__rating-star">
-                                            <img src="./assets/img/product-card/star.svg">
-                                        </div>
-                                        <div class="product-card__rating-star">
-                                            <img src="./assets/img/product-card/star.svg">
-                                        </div>
-                                        <div class="product-card__rating-star">
-                                            <img src="./assets/img/product-card/star.svg">
-                                        </div>
-                                        </div>
-                                        <label class="product-card__comments">
-                                        <div class="product-card__comments-image">
-                                            <img src="./assets/img/product-card/comments.svg">
-                                        </div>
-                                        <div class="product-card__comments-ammount">12</div>
-                                        </label>
-                                    </div>
-                                    </div>
-                                    </div>
-                                    <div class="product-card__footer">
-                                    <div class="product-card__panel">
-                                        <div class="product-card__tree-size">
-                                        <div class="product-card__type-image">
-                                            <img src="./assets/img/product-card/ListDashes.svg">
-                                        </div>
-                                        <div class="product-card__size-text">180 см</div>
-                                        </div>
-                                        <div class="product-card__stock--active">
-                                        <div class="product-card__stock-text">В наличии</div>
-                                        </div>
-                                    </div>
-                                    <div class="product-card__price-panel">
-                                        <div class="product-card__price">28 990 ₽</div>
-                                        <button class="product-card__shop-popup">
-                                        <img src="./assets/img/product-card/ShoppingCart.svg" alt="">
-                                        </button>
-                                    </div>
-                                    </div>
-                                </div>
-                                </div>
-                                <div class="catalog__column">
-                                <div class="product-card">
-                                    <div class="product-card__body">
-                                    <div class="product-card__body-info">
-                                        <div class="product-card__condition-item">
-                                        <div class="product-card__hit-image">
-                                            <img src="./assets/img/product-card/Hit.svg">
-                                        </div>
-                                        <div class="product-card__gift-image">
-                                            <img src="./assets/img/product-card/Gift.svg" alt="">
-                                        </div>
-                                        </div>
-                                        <img class="product-card__title-image" src="./assets/img/product-card/christmas-tree.png" alt="">
-                                        <div class="product-card__shoping-cart--active">
-                                        <img src="./assets/img/product-card/shoping-cart--active.svg" alt="">
-                                        </div>
-                                    </div>
-                                    <div class="product-card__body-text">
-                                    <div class="product-card__name">Искусственная Ель Гарда заснеженная</div>
-                                    <div class="product-card__id">артикул: KP3018</div>
-                                    <div class="product-card__rate">
-                                        <div class="product-card__rating">
-                                        <div class="product-card__rating-star">
-                                            <img src="./assets/img/product-card/star.svg">
-                                        </div>
-                                        <div class="product-card__rating-star">
-                                            <img src="./assets/img/product-card/star.svg">
-                                        </div>
-                                        <div class="product-card__rating-star">
-                                            <img src="./assets/img/product-card/star.svg">
-                                        </div>
-                                        <div class="product-card__rating-star">
-                                            <img src="./assets/img/product-card/star.svg">
-                                        </div>
-                                        <div class="product-card__rating-star">
-                                            <img src="./assets/img/product-card/star.svg">
-                                        </div>
-                                        </div>
-                                        <label class="product-card__comments">
-                                        <div class="product-card__comments-image">
-                                            <img src="./assets/img/product-card/comments.svg">
-                                        </div>
-                                        <div class="product-card__comments-ammount">12</div>
-                                        </label>
-                                    </div>
-                                    </div>
-                                    </div>
-                                    <div class="product-card__footer">
-                                    <div class="product-card__panel">
-                                        <div class="product-card__tree-size">
-                                        <div class="product-card__type-image">
-                                            <img src="./assets/img/product-card/ListDashes.svg">
-                                        </div>
-                                        <div class="product-card__size-text">180 см</div>
-                                        </div>
-                                        <div class="product-card__stock--active">
-                                        <div class="product-card__stock-text">В наличии</div>
-                                        </div>
-                                    </div>
-                                    <div class="product-card__price-panel">
-                                        <div class="product-card__price">28 990 ₽</div>
-                                        <button class="product-card__shop-popup">
-                                        <img src="./assets/img/product-card/ShoppingCart.svg" alt="">
-                                        </button>
-                                    </div>
-                                    </div>
-                                </div>
-                                </div>
-                                <div class="catalog__column">
-                                <div class="product-card">
-                                    <div class="product-card__body">
-                                    <div class="product-card__body-info">
-                                        <div class="product-card__condition-item">
-                                        <div class="product-card__hit-image">
-                                            <img src="./assets/img/product-card/Hit.svg">
-                                        </div>
-                                        <div class="product-card__gift-image">
-                                            <img src="./assets/img/product-card/Gift.svg" alt="">
-                                        </div>
-                                        </div>
-                                        <img class="product-card__title-image" src="./assets/img/product-card/christmas-tree.png" alt="">
-                                        <div class="product-card__shoping-cart--active">
-                                        <img src="./assets/img/product-card/shoping-cart--active.svg" alt="">
-                                        </div>
-                                    </div>
-                                    <div class="product-card__body-text">
-                                    <div class="product-card__name">Искусственная Ель Гарда заснеженная</div>
-                                    <div class="product-card__id">артикул: KP3018</div>
-                                    <div class="product-card__rate">
-                                        <div class="product-card__rating">
-                                        <div class="product-card__rating-star">
-                                            <img src="./assets/img/product-card/star.svg">
-                                        </div>
-                                        <div class="product-card__rating-star">
-                                            <img src="./assets/img/product-card/star.svg">
-                                        </div>
-                                        <div class="product-card__rating-star">
-                                            <img src="./assets/img/product-card/star.svg">
-                                        </div>
-                                        <div class="product-card__rating-star">
-                                            <img src="./assets/img/product-card/star.svg">
-                                        </div>
-                                        <div class="product-card__rating-star">
-                                            <img src="./assets/img/product-card/star.svg">
-                                        </div>
-                                        </div>
-                                        <label class="product-card__comments">
-                                        <div class="product-card__comments-image">
-                                            <img src="./assets/img/product-card/comments.svg">
-                                        </div>
-                                        <div class="product-card__comments-ammount">12</div>
-                                        </label>
-                                    </div>
-                                    </div>
-                                    </div>
-                                    <div class="product-card__footer">
-                                    <div class="product-card__panel">
-                                        <div class="product-card__tree-size">
-                                        <div class="product-card__type-image">
-                                            <img src="./assets/img/product-card/ListDashes.svg">
-                                        </div>
-                                        <div class="product-card__size-text">180 см</div>
-                                        </div>
-                                        <div class="product-card__stock--active">
-                                        <div class="product-card__stock-text">В наличии</div>
-                                        </div>
-                                    </div>
-                                    <div class="product-card__price-panel">
-                                        <div class="product-card__price">28 990 ₽</div>
-                                        <button class="product-card__shop-popup">
-                                        <img src="./assets/img/product-card/ShoppingCart.svg" alt="">
-                                        </button>
-                                    </div>
-                                    </div>
-                                </div>
-                                </div>
-                                <div class="catalog__column">
-                                <div class="product-card">
-                                    <div class="product-card__body">
-                                    <div class="product-card__body-info">
-                                        <div class="product-card__condition-item">
-                                        <div class="product-card__hit-image">
-                                            <img src="./assets/img/product-card/Hit.svg">
-                                        </div>
-                                        <div class="product-card__gift-image">
-                                            <img src="./assets/img/product-card/Gift.svg" alt="">
-                                        </div>
-                                        </div>
-                                        <img class="product-card__title-image" src="./assets/img/product-card/christmas-tree.png" alt="">
-                                        <div class="product-card__shoping-cart--active">
-                                        <img src="./assets/img/product-card/shoping-cart--active.svg" alt="">
-                                        </div>
-                                    </div>
-                                    <div class="product-card__body-text">
-                                    <div class="product-card__name">Искусственная Ель Гарда заснеженная</div>
-                                    <div class="product-card__id">артикул: KP3018</div>
-                                    <div class="product-card__rate">
-                                        <div class="product-card__rating">
-                                        <div class="product-card__rating-star">
-                                            <img src="./assets/img/product-card/star.svg">
-                                        </div>
-                                        <div class="product-card__rating-star">
-                                            <img src="./assets/img/product-card/star.svg">
-                                        </div>
-                                        <div class="product-card__rating-star">
-                                            <img src="./assets/img/product-card/star.svg">
-                                        </div>
-                                        <div class="product-card__rating-star">
-                                            <img src="./assets/img/product-card/star.svg">
-                                        </div>
-                                        <div class="product-card__rating-star">
-                                            <img src="./assets/img/product-card/star.svg">
-                                        </div>
-                                        </div>
-                                        <label class="product-card__comments">
-                                        <div class="product-card__comments-image">
-                                            <img src="./assets/img/product-card/comments.svg">
-                                        </div>
-                                        <div class="product-card__comments-ammount">12</div>
-                                        </label>
-                                    </div>
-                                    </div>
-                                    </div>
-                                    <div class="product-card__footer">
-                                    <div class="product-card__panel">
-                                        <div class="product-card__tree-size">
-                                        <div class="product-card__type-image">
-                                            <img src="./assets/img/product-card/ListDashes.svg">
-                                        </div>
-                                        <div class="product-card__size-text">180 см</div>
-                                        </div>
-                                        <div class="product-card__stock--active">
-                                        <div class="product-card__stock-text">В наличии</div>
-                                        </div>
-                                    </div>
-                                    <div class="product-card__price-panel">
-                                        <div class="product-card__price">28 990 ₽</div>
-                                        <button class="product-card__shop-popup">
-                                        <img src="./assets/img/product-card/ShoppingCart.svg" alt="">
-                                        </button>
-                                    </div>
-                                    </div>
-                                </div>
-                                </div>
-                            </div>
-                            <div class="catalog__row">
-                                <div class="catalog__column">
-                                <div class="product-card">
-                                    <div class="product-card__body">
-                                    <div class="product-card__body-info">
-                                        <div class="product-card__condition-item">
-                                        <div class="product-card__hit-image">
-                                            <img src="./assets/img/product-card/Hit.svg">
-                                        </div>
-                                        <div class="product-card__gift-image">
-                                            <img src="./assets/img/product-card/Gift.svg" alt="">
-                                        </div>
-                                        </div>
-                                        <img class="product-card__title-image" src="./assets/img/product-card/christmas-tree.png" alt="">
-                                        <div class="product-card__shoping-cart--active">
-                                        <img src="./assets/img/product-card/shoping-cart--active.svg" alt="">
-                                        </div>
-                                    </div>
-                                    <div class="product-card__body-text">
-                                    <div class="product-card__name">Искусственная Ель Гарда заснеженная</div>
-                                    <div class="product-card__id">артикул: KP3018</div>
-                                    <div class="product-card__rate">
-                                        <div class="product-card__rating">
-                                        <div class="product-card__rating-star">
-                                            <img src="./assets/img/product-card/star.svg">
-                                        </div>
-                                        <div class="product-card__rating-star">
-                                            <img src="./assets/img/product-card/star.svg">
-                                        </div>
-                                        <div class="product-card__rating-star">
-                                            <img src="./assets/img/product-card/star.svg">
-                                        </div>
-                                        <div class="product-card__rating-star">
-                                            <img src="./assets/img/product-card/star.svg">
-                                        </div>
-                                        <div class="product-card__rating-star">
-                                            <img src="./assets/img/product-card/star.svg">
-                                        </div>
-                                        </div>
-                                        <label class="product-card__comments">
-                                        <div class="product-card__comments-image">
-                                            <img src="./assets/img/product-card/comments.svg">
-                                        </div>
-                                        <div class="product-card__comments-ammount">12</div>
-                                        </label>
-                                    </div>
-                                    </div>
-                                    </div>
-                                    <div class="product-card__footer">
-                                    <div class="product-card__panel">
-                                        <div class="product-card__tree-size">
-                                        <div class="product-card__type-image">
-                                            <img src="./assets/img/product-card/ListDashes.svg">
-                                        </div>
-                                        <div class="product-card__size-text">180 см</div>
-                                        </div>
-                                        <div class="product-card__stock--active">
-                                        <div class="product-card__stock-text">В наличии</div>
-                                        </div>
-                                    </div>
-                                    <div class="product-card__price-panel">
-                                        <div class="product-card__price">28 990 ₽</div>
-                                        <button class="product-card__shop-popup">
-                                        <img src="./assets/img/product-card/ShoppingCart.svg" alt="">
-                                        </button>
-                                    </div>
-                                    </div>
-                                </div>
-                                </div>
-                                <div class="catalog__column">
-                                <div class="product-card">
-                                    <div class="product-card__body">
-                                    <div class="product-card__body-info">
-                                        <div class="product-card__condition-item">
-                                        <div class="product-card__hit-image">
-                                            <img src="./assets/img/product-card/Hit.svg">
-                                        </div>
-                                        <div class="product-card__gift-image">
-                                            <img src="./assets/img/product-card/Gift.svg" alt="">
-                                        </div>
-                                        </div>
-                                        <img class="product-card__title-image" src="./assets/img/product-card/christmas-tree.png" alt="">
-                                        <div class="product-card__shoping-cart--active">
-                                        <img src="./assets/img/product-card/shoping-cart--active.svg" alt="">
-                                        </div>
-                                    </div>
-                                    <div class="product-card__body-text">
-                                    <div class="product-card__name">Искусственная Ель Гарда заснеженная</div>
-                                    <div class="product-card__id">артикул: KP3018</div>
-                                    <div class="product-card__rate">
-                                        <div class="product-card__rating">
-                                        <div class="product-card__rating-star">
-                                            <img src="./assets/img/product-card/star.svg">
-                                        </div>
-                                        <div class="product-card__rating-star">
-                                            <img src="./assets/img/product-card/star.svg">
-                                        </div>
-                                        <div class="product-card__rating-star">
-                                            <img src="./assets/img/product-card/star.svg">
-                                        </div>
-                                        <div class="product-card__rating-star">
-                                            <img src="./assets/img/product-card/star.svg">
-                                        </div>
-                                        <div class="product-card__rating-star">
-                                            <img src="./assets/img/product-card/star.svg">
-                                        </div>
-                                        </div>
-                                        <label class="product-card__comments">
-                                        <div class="product-card__comments-image">
-                                            <img src="./assets/img/product-card/comments.svg">
-                                        </div>
-                                        <div class="product-card__comments-ammount">12</div>
-                                        </label>
-                                    </div>
-                                    </div>
-                                    </div>
-                                    <div class="product-card__footer">
-                                    <div class="product-card__panel">
-                                        <div class="product-card__tree-size">
-                                        <div class="product-card__type-image">
-                                            <img src="./assets/img/product-card/ListDashes.svg">
-                                        </div>
-                                        <div class="product-card__size-text">180 см</div>
-                                        </div>
-                                        <div class="product-card__stock--active">
-                                        <div class="product-card__stock-text">В наличии</div>
-                                        </div>
-                                    </div>
-                                    <div class="product-card__price-panel">
-                                        <div class="product-card__price">28 990 ₽</div>
-                                        <button class="product-card__shop-popup">
-                                        <img src="./assets/img/product-card/ShoppingCart.svg" alt="">
-                                        </button>
-                                    </div>
-                                    </div>
-                                </div>
-                                </div>
-                                <div class="catalog__column">
-                                <div class="product-card">
-                                    <div class="product-card__body">
-                                    <div class="product-card__body-info">
-                                        <div class="product-card__condition-item">
-                                        <div class="product-card__hit-image">
-                                            <img src="./assets/img/product-card/Hit.svg">
-                                        </div>
-                                        <div class="product-card__gift-image">
-                                            <img src="./assets/img/product-card/Gift.svg" alt="">
-                                        </div>
-                                        </div>
-                                        <img class="product-card__title-image" src="./assets/img/product-card/christmas-tree.png" alt="">
-                                        <div class="product-card__shoping-cart--active">
-                                        <img src="./assets/img/product-card/shoping-cart--active.svg" alt="">
-                                        </div>
-                                    </div>
-                                    <div class="product-card__body-text">
-                                    <div class="product-card__name">Искусственная Ель Гарда заснеженная</div>
-                                    <div class="product-card__id">артикул: KP3018</div>
-                                    <div class="product-card__rate">
-                                        <div class="product-card__rating">
-                                        <div class="product-card__rating-star">
-                                            <img src="./assets/img/product-card/star.svg">
-                                        </div>
-                                        <div class="product-card__rating-star">
-                                            <img src="./assets/img/product-card/star.svg">
-                                        </div>
-                                        <div class="product-card__rating-star">
-                                            <img src="./assets/img/product-card/star.svg">
-                                        </div>
-                                        <div class="product-card__rating-star">
-                                            <img src="./assets/img/product-card/star.svg">
-                                        </div>
-                                        <div class="product-card__rating-star">
-                                            <img src="./assets/img/product-card/star.svg">
-                                        </div>
-                                        </div>
-                                        <label class="product-card__comments">
-                                        <div class="product-card__comments-image">
-                                            <img src="./assets/img/product-card/comments.svg">
-                                        </div>
-                                        <div class="product-card__comments-ammount">12</div>
-                                        </label>
-                                    </div>
-                                    </div>
-                                    </div>
-                                    <div class="product-card__footer">
-                                    <div class="product-card__panel">
-                                        <div class="product-card__tree-size">
-                                        <div class="product-card__type-image">
-                                            <img src="./assets/img/product-card/ListDashes.svg">
-                                        </div>
-                                        <div class="product-card__size-text">180 см</div>
-                                        </div>
-                                        <div class="product-card__stock--active">
-                                        <div class="product-card__stock-text">В наличии</div>
-                                        </div>
-                                    </div>
-                                    <div class="product-card__price-panel">
-                                        <div class="product-card__price">28 990 ₽</div>
-                                        <button class="product-card__shop-popup">
-                                        <img src="./assets/img/product-card/ShoppingCart.svg" alt="">
-                                        </button>
-                                    </div>
-                                    </div>
-                                </div>
-                                </div>
-                                <div class="catalog__column">
-                                <div class="product-card">
-                                    <div class="product-card__body">
-                                    <div class="product-card__body-info">
-                                        <div class="product-card__condition-item">
-                                        <div class="product-card__hit-image">
-                                            <img src="./assets/img/product-card/Hit.svg">
-                                        </div>
-                                        <div class="product-card__gift-image">
-                                            <img src="./assets/img/product-card/Gift.svg" alt="">
-                                        </div>
-                                        </div>
-                                        <img class="product-card__title-image" src="./assets/img/product-card/christmas-tree.png" alt="">
-                                        <div class="product-card__shoping-cart--active">
-                                        <img src="./assets/img/product-card/shoping-cart--active.svg" alt="">
-                                        </div>
-                                    </div>
-                                    <div class="product-card__body-text">
-                                    <div class="product-card__name">Искусственная Ель Гарда заснеженная</div>
-                                    <div class="product-card__id">артикул: KP3018</div>
-                                    <div class="product-card__rate">
-                                        <div class="product-card__rating">
-                                        <div class="product-card__rating-star">
-                                            <img src="./assets/img/product-card/star.svg">
-                                        </div>
-                                        <div class="product-card__rating-star">
-                                            <img src="./assets/img/product-card/star.svg">
-                                        </div>
-                                        <div class="product-card__rating-star">
-                                            <img src="./assets/img/product-card/star.svg">
-                                        </div>
-                                        <div class="product-card__rating-star">
-                                            <img src="./assets/img/product-card/star.svg">
-                                        </div>
-                                        <div class="product-card__rating-star">
-                                            <img src="./assets/img/product-card/star.svg">
-                                        </div>
-                                        </div>
-                                        <label class="product-card__comments">
-                                        <div class="product-card__comments-image">
-                                            <img src="./assets/img/product-card/comments.svg">
-                                        </div>
-                                        <div class="product-card__comments-ammount">12</div>
-                                        </label>
-                                    </div>
-                                    </div>
-                                    </div>
-                                    <div class="product-card__footer">
-                                    <div class="product-card__panel">
-                                        <div class="product-card__tree-size">
-                                        <div class="product-card__type-image">
-                                            <img src="./assets/img/product-card/ListDashes.svg">
-                                        </div>
-                                        <div class="product-card__size-text">180 см</div>
-                                        </div>
-                                        <div class="product-card__stock--active">
-                                        <div class="product-card__stock-text">В наличии</div>
-                                        </div>
-                                    </div>
-                                    <div class="product-card__price-panel">
-                                        <div class="product-card__price">28 990 ₽</div>
-                                        <button class="product-card__shop-popup">
-                                        <img src="./assets/img/product-card/ShoppingCart.svg" alt="">
-                                        </button>
-                                    </div>
-                                    </div>
-                                </div>
-                                </div>
-                                <div class="catalog__column">
-                                <div class="product-card">
-                                    <div class="product-card__body">
-                                    <div class="product-card__body-info">
-                                        <div class="product-card__condition-item">
-                                        <div class="product-card__hit-image">
-                                            <img src="./assets/img/product-card/Hit.svg">
-                                        </div>
-                                        <div class="product-card__gift-image">
-                                            <img src="./assets/img/product-card/Gift.svg" alt="">
-                                        </div>
-                                        </div>
-                                        <img class="product-card__title-image" src="./assets/img/product-card/christmas-tree.png" alt="">
-                                        <div class="product-card__shoping-cart--active">
-                                        <img src="./assets/img/product-card/shoping-cart--active.svg" alt="">
-                                        </div>
-                                    </div>
-                                    <div class="product-card__body-text">
-                                    <div class="product-card__name">Искусственная Ель Гарда заснеженная</div>
-                                    <div class="product-card__id">артикул: KP3018</div>
-                                    <div class="product-card__rate">
-                                        <div class="product-card__rating">
-                                        <div class="product-card__rating-star">
-                                            <img src="./assets/img/product-card/star.svg">
-                                        </div>
-                                        <div class="product-card__rating-star">
-                                            <img src="./assets/img/product-card/star.svg">
-                                        </div>
-                                        <div class="product-card__rating-star">
-                                            <img src="./assets/img/product-card/star.svg">
-                                        </div>
-                                        <div class="product-card__rating-star">
-                                            <img src="./assets/img/product-card/star.svg">
-                                        </div>
-                                        <div class="product-card__rating-star">
-                                            <img src="./assets/img/product-card/star.svg">
-                                        </div>
-                                        </div>
-                                        <label class="product-card__comments">
-                                        <div class="product-card__comments-image">
-                                            <img src="./assets/img/product-card/comments.svg">
-                                        </div>
-                                        <div class="product-card__comments-ammount">12</div>
-                                        </label>
-                                    </div>
-                                    </div>
-                                    </div>
-                                    <div class="product-card__footer">
-                                    <div class="product-card__panel">
-                                        <div class="product-card__tree-size">
-                                        <div class="product-card__type-image">
-                                            <img src="./assets/img/product-card/ListDashes.svg">
-                                        </div>
-                                        <div class="product-card__size-text">180 см</div>
-                                        </div>
-                                        <div class="product-card__stock--active">
-                                        <div class="product-card__stock-text">В наличии</div>
-                                        </div>
-                                    </div>
-                                    <div class="product-card__price-panel">
-                                        <div class="product-card__price">28 990 ₽</div>
-                                        <button class="product-card__shop-popup">
-                                        <img src="./assets/img/product-card/ShoppingCart.svg" alt="">
-                                        </button>
-                                    </div>
-                                    </div>
-                                </div>
-                                </div>
-                            </div>
+                <div id="overlay-submit" class="popup submit">
+                  <div class="popup__frame submit__frame">
+                    <div class="submit__column">
+                      <div class="submit__row">
+                        <img class="submit__image" src="./assets/img/popup/popup-submit-icon.svg">
+                      </div>
+                      <div class="submit__row">
+                        <div class="submit__title submit__row">
+                          Ваша заявка успешно отправлена!
                         </div>
+                      </div>
+                      <div class="submit__row">
+                        <div class="submit__text">
+                          Наши менеджеры свяжуться с вами в ближайшее время
+                        </div>
+                      </div>
+                      <form class="submit__input-form" action="#">
+                        <button class="submit__button">Вернуться на главную</button>
+                      </form>
                     </div>
+                  </div>
                 </div>
-            </div>
-        </div>
-    </body>
-    <footer>
-        <div class="frame">
-          <div class="frame__header">
-            <div class="frame__nav-menu">
-              <button class="frame__nav-button">Стать партнером</button>
-              <button class="frame__nav-button">Где купить?</button>
-              <button class="frame__nav-button">О компании</button>
-              <button class="frame__nav-button">Блог</button>
-              <button class="frame__nav-button">Контакты</button>
-            </div>
-            <div class="frame__info">
-              <div class="frame__phone-text">8 (800) 55 55 57 24</div>
-            </div>
-            </div>
-            <div class="wrapper">
-                <div class="frame__body">
-                    <div class="frame-menu__row">
-                        <div class="frame-menu__column">
-                        <div class="frame-menu__icon">
-                            <img src="./assets/img/logo-01 2.png">
+
+                <div id="overlay-back-call" class="popup">
+                  <div class="popup__frame">
+                    <div class="popup__column">
+                      <div class="popup__row">
+                        <div class="popup__title">Обратный звонок</div>
+                      </div>
+                      <div class="popup__row">
+                        <input class="popup__input-text" placeholder="Ваше имя *" type="text">
+                      </div>
+                      <div class="popup__row">
+                        <input class="popup__input-text" placeholder="+7 (999) 999-99-99" type="text">
+                      </div>
+                      <div class="popup__row">
+                        <div class="popup__checkbox-element">
+                          <label class="popup__checkbox-placer">
+                            <input class="popup__checkbox" type="checkbox">
+                          </label>
+                          <div class="popup__agree-text">
+                            Я согласен(а) на обработку персональных данных
+                          </div>
                         </div>
-                        </div>
-                        <div class="frame-menu__list">
-                        <div class="frame-menu__item">
-                            <div class="frame-menu__category">
-                            <div class="frame-menu__category-title">Комнатные ели</div>
-                            <div class="frame-menu__category-text">Литые</div>
-                            <div class="frame-menu__category-text">Комбинированые</div>
-                            <div class="frame-menu__category-text">Елки из ПВХ</div>
-                            <div class="frame-menu__category-text">Заснеженные, с освещением</div>
-                            <div class="frame-menu__category-text">Дизайнерские</div>
-                            </div>
-                        </div>
-                        <div class="frame-menu__item">
-                            <div class="frame-menu__category">
-                            <div class="frame-menu__category-title">Высотные ели</div>
-                            <div class="frame-menu__category-text">Уличные ели</div>
-                            <div class="frame-menu__category-text">Интерьерные ели</div>
-                            </div>
-                        </div>
-                        <div class="frame-menu__item">
-                            <div class="frame-menu__category">
-                            <div class="frame-menu__category-title">Новогодний декор</div>
-                            <div class="frame-menu__category-text">Хвойные венки</div>
-                            <div class="frame-menu__category-text">Хвойные гирлянды</div>
-                            <div class="frame-menu__category-text">Хвойные сваги</div>
-                            <div class="frame-menu__category-text">Елочные украшения</div>
-                            </div>
-                        </div>
-                        <div class="frame-menu__item">
-                            <div class="frame-menu__category">
-                            <div class="frame-menu__category-title">Гирлянды</div>
-                            <div class="frame-menu__category-text">Электрогирлянды</div>
-                            <div class="frame-menu__category-text">На батарейках</div>
-                            <div class="frame-menu__category-text">Занавесы, сетки</div>
-                            </div>
-                        </div>
-                        </div>
-                        <div class="frame-menu__item">
-                        <div class="frame-menu__nav-panel">
-                            <button class="frame-menu__back-call-button">
-                            <div class="frame-menu__back-call-icon">
-                                <img src="./assets/img/frame-menu/backcall-icon.svg">
-                            </div>
-                            <div class="frame-menu__back-call-text">
-                                Обратный звонок
-                            </div>
-                            </button>
-                            <button class="frame-menu__contact-button">
-                            <div class="frame-menu__contact-icon">
-                                <img src="./assets/img/frame-menu/telegram-icon.svg">
-                            </div>
-                            <div class="frame-menu__contact-text">
-                                Напишите нам
-                            </div>
-                            </button>
-                        </div>
+                      </div>
+                      <form class="popup__input-form" action="#overlay-submit">
+                        <button class="popup__input-button">Заказать звонок</button>
+                      </form>
                     </div>
-                </div>
-            </div>
-            <div class="frame__footer">
-              <div class="frame__footer-list">
-                <div class="frame__disclaimer">© 2021 CRYSTAL TREES, Все права защищены</div>
-                <div class="frame__social-network">
-                  <div class="frame__facebook-icon">
-                    <img src="./assets/img/frame/facebook-icon.svg">
-                  </div>
-                  <div class="frame__instagram-icon">
-                    <img src="./assets/img/frame/instagram-icon.svg">
-                  </div>
-                  <div class="frame__youtuber-icon">
-                    <img src="./assets/img/frame/youtube-icon.svg">
                   </div>
                 </div>
-                <div class="frame__kompot-icon">
-                  <img src="./assets/img/frame/kompot-icon.svg">
+                
+                <div id="overlay-contact" class="popup">
+                  <div class="popup__frame">
+                    <div class="popup__column">
+                      <div class="popup__row">
+                        <div class="popup__title">Задать вопрос</div>
+                      </div>
+                      <div class="popup__row">
+                        <input class="popup__input-text" placeholder="Ваше имя *" type="text">
+                      </div>
+                      <div class="popup__row">
+                        <input class="popup__input-text" placeholder="Ваш e-mail *" type="text">
+                      </div>
+                      <div class="popup__row">
+                        <input class="popup__input-text" placeholder="+7 (999) 999-99-99" type="text">
+                      </div>
+                      <div class="popup__row">
+                        <textarea class="popup__input-text popup__input-textarea popup__input-text_height_full" placeholder="Ваш вопрос * "></textarea>
+                      </div>
+                      <div class="popup__row">
+                        <div class="popup__checkbox-element">
+                          <label class="popup__checkbox-placer">
+                            <input class="popup__checkbox" type="checkbox">
+                          </label>
+                          <div class="popup__agree-text">
+                            Я согласен(а) на обработку персональных данных
+                          </div>
+                        </div>
+                      </div>
+                      <div class="popup__row">
+                        <form class="popup__input-form" action="#overlay-submit">
+                          <button class="popup__input-button">Задать вопрос</button>
+                        </form>
+                      </div>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
-    </footer>
+        <div class="frame__footer">
+          <div class="frame__footer-list">
+            <div class="frame__disclaimer">© 2021 CRYSTAL TREES, Все права защищены</div>
+            <div class="social-network">
+              <div class="social-network__facebook-icon">
+                <img src="./assets/img/frame/facebook-icon.svg">
+              </div>
+              <div class="social-network__instagram-icon">
+                <img src="./assets/img/frame/instagram-icon.svg">
+              </div>
+              <div class="social-network__youtuber-icon">
+                <img src="./assets/img/frame/youtube-icon.svg">
+              </div>
+            </div>
+            <div class="frame__kompot-icon">
+              <img src="./assets/img/frame/kompot-icon.svg">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
 </html>

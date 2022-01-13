@@ -18,8 +18,8 @@
           <button class="header__button">Контакты</button>
         </div>
         <div class="header__info">
-          <button class="header__mail-text header__button">world@crystaltrees.ru</button>
-          <button class="header__phone-text header__button">8 (800) 55 55 57 24</button>
+          <a class="header__mail-text header__button" href="mailto:world@crystaltrees.ru">world@crystaltrees.ru</a>
+          <a class="header__phone-text header__button" href="tel:+780055555724">8 (800) 55 55 57 24</a>
         </div>
       </div>
     </div>
@@ -1953,7 +1953,7 @@
                 </div>
               </div>
             </div>
-            <div class="frame-menu__item">
+            <div class="frame-menu__item" id="overlay-anchor">
               <div class="frame-menu__nav-panel">
                 <a class="frame-menu__back-call-button" href="#overlay-back-call">
                   <div class="frame-menu__back-call-icon">
@@ -1997,6 +1997,11 @@
 
                 <div id="overlay-back-call" class="popup">
                   <div class="popup__frame">
+                    <form class="popup__close-form" action="#">
+                      <button class="popup__close-button">
+                        <img src="./assets/img/popup/X.svg">
+                      </button>
+                    </form>
                     <div class="popup__column">
                       <div class="popup__row">
                         <div class="popup__title">Обратный звонок</div>
@@ -2017,7 +2022,7 @@
                           </div>
                         </div>
                       </div>
-                      <form class="popup__input-form" action="#overlay-submit">
+                      <form class="popup__input-form" action="#">
                         <button class="popup__input-button">Заказать звонок</button>
                       </form>
                     </div>
@@ -2026,6 +2031,11 @@
                 
                 <div id="overlay-contact" class="popup">
                   <div class="popup__frame">
+                    <form class="popup__close-form" action="#">
+                      <button class="popup__close-button">
+                        <img src="./assets/img/popup/X.svg">
+                      </button>
+                    </form>
                     <div class="popup__column">
                       <div class="popup__row">
                         <div class="popup__title">Задать вопрос</div>
