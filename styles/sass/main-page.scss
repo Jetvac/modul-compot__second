@@ -345,11 +345,13 @@ body, html
         position: absolute;
         top: 0;
         left: 0;
+        display: flex;
+        align-items: flex-end;
     }
 
     &__product-description {
         margin-left: 34px;
-        margin-top: 65%;
+        margin-bottom: 40px;
     }
 
     &__category {
@@ -565,13 +567,18 @@ body, html
     }
 
     &__item {
-        display: flex;
-        flex-direction: row;
+        display: grid;
+        grid-template-columns: 65% 35%;
+    }
+
+    &__item-box {
+        width: auto;
+        height: auto;
     }
 
     &__item-image {
         width: 100%;
-        height: auto;
+        height: 100%;
     }
 
     &__item-panel_color_light-purple {
@@ -696,15 +703,23 @@ body, html
         gap: 60px;
     }
 
-    &__nav-button {
+    &__button {
+        cursor: pointer;
         font-size: 15px;
         line-height: 19px;
         background: transparent;
         border: transparent;
         color: #BDBDBD;
     }
+    &__button:hover {
+        color: #969696;
+    }
+    &__button:active {
+        color: #535353;
+    }
 
     &__phone-text {
+        text-decoration: none;
         font-weight: 500;
         font-size: 24px;
         line-height: 30px;
@@ -714,6 +729,31 @@ body, html
     &__body {
         margin-top: 40px;
         margin-bottom: 40px;
+    }
+    &__footer {
+        padding-bottom: 40px;
+    }
+
+    &__footer-list {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        align-items: center;
+    }
+
+    &__disclaimer {
+        font-size: 12px;
+        line-height: 15px;
+        color: #9C9C9C;
+        text-transform: uppercase;
+    }
+
+    &__kompot-icon {
+        margin-left: auto;
+    }
+
+    .social-network {
+        margin-left: auto;
+        margin-right: auto;
     }
 }
 
@@ -801,35 +841,6 @@ body, html
         font-size: 16px;
         line-height: 29px;
         color: #FFFFFF;
-    }
-}
-
-.frame {
-
-    &__footer {
-        padding-bottom: 40px;
-    }
-
-    &__footer-list {
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-        align-items: center;
-    }
-
-    &__disclaimer {
-        font-size: 12px;
-        line-height: 15px;
-        color: #9C9C9C;
-        text-transform: uppercase;
-    }
-
-    &__kompot-icon {
-        margin-left: auto;
-    }
-
-    .social-network {
-        margin-left: auto;
-        margin-right: auto;
     }
 }
 
