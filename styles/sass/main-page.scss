@@ -188,10 +188,10 @@ body, html
         position: absolute;
         left: 0;
         top: -1000px;
-        padding-left: 100px;
-        padding-right: 59px;
+        padding-left: 140px;
+        padding-right: 99px;
         background: white;
-        width: calc(100% - 159px);
+        width: calc(100% - 239px);
         height: auto;
         box-shadow: 0px 7px 20px rgba(0, 0, 0, 0.05);
         transition-duration: .25s;
@@ -199,7 +199,8 @@ body, html
 
     &__burger-list {
         display: grid;
-        margin: 40px;
+        margin-top: 40px;
+        margin-bottom: 60px;
         grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
         gap: 80px;
     }
@@ -400,8 +401,8 @@ body, html
     }
 
     &__row {
-        display: flex;
-        flex-direction: row;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
     }
 }
 
@@ -415,9 +416,8 @@ body, html
     }
 
     &__row {
-        display: flex;
-        flex-direction: row;
-        margin: 0px;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
     }
 
     &__banner-list {
@@ -822,6 +822,11 @@ body, html
 
     &__kompot-icon {
         margin-left: auto;
+    }
+
+    .social-network {
+        margin-left: auto;
+        margin-right: auto;
     }
 }
 
