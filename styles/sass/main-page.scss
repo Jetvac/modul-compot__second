@@ -86,6 +86,7 @@ body, html
     }
 }
 
+//burger menu
 .menu {
     padding-left: 61px;
     padding-right: 59px;
@@ -116,10 +117,6 @@ body, html
         flex-direction: row;
     }
 
-    &__item-popup-arrow {
-        margin-left: 6px;
-    }
-
     &__interactive-panel {
         margin-left: auto;
     }
@@ -133,10 +130,9 @@ body, html
         border: transparent;
         background: transparent;
     }
-}
 
-//burger menu
-.menu {
+
+    //burger-menu    
     #menu__toggle-checkbox {
         opacity: 0;
     }
@@ -220,6 +216,74 @@ body, html
         margin-bottom: 27px;
     }
 
+    //drop-menu
+    &__item {
+        display: flex;
+        align-items: center;
+    }
+
+    &__submenu-wrapper {
+        top: 0px; left: 0px;
+        position: absolute;
+        visibility: hidden;
+        display: flex;
+        transform:  translate(0px, -60px) scaleY(0.6);
+        transition: .2s ease-in-out;
+    }
+
+    &__submenu-container {
+        width: 228px;
+        list-style: none;
+        margin: 40px;
+        padding: 20px;
+        background: #FFFFFF;
+        border: 1px solid #E0E0DD;
+        box-shadow: 0px 7px 20px rgba(0, 0, 0, 0.05);
+        border-radius: 6px;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+    }
+
+    &__drop-menu {
+        position: relative;
+        list-style: none;
+    }
+    &__drop-menu:hover &__item-title {
+        color: #219653;
+    }
+    &__drop-menu:hover &__submenu-wrapper {
+        transform:  translate(0px) scaleY(1);
+        visibility: visible;
+    }
+
+    &__item-title {
+        display: flex;
+        align-items: center;
+        user-select: none;
+        font-size: 18px;
+        line-height: 23px;
+    }
+
+    &__item-popup-arrow {
+        display: flex;
+        align-items: center;
+        margin-top: 4px;
+        margin-left: 6px;
+    }
+
+    &__item-text {
+        a {
+            color: #333333;
+            text-decoration: none;
+            font-size: 16px;
+            line-height: 249.5%;
+        }
+    }
+
+
+
+    //another stuff
     &__category {
         display: flex;
         flex-direction: column;
