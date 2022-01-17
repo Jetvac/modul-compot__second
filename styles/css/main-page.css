@@ -574,6 +574,8 @@ body, html {
   position: sticky;
   top: 0px;
   z-index: 1;
+  -webkit-box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.1);
+          box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.1);
 }
 
 .menu__icon {
@@ -630,7 +632,7 @@ body, html {
   top: calc(50% - 15px);
   position: absolute;
   cursor: pointer;
-  z-index: 2;
+  z-index: 3;
 }
 
 .menu__toggle-button > span,
@@ -694,6 +696,7 @@ body, html {
           box-shadow: 0px 7px 20px rgba(0, 0, 0, 0.05);
   -webkit-transition-duration: .25s;
           transition-duration: .25s;
+  z-index: 2;
 }
 
 .menu__burger-list {
@@ -769,6 +772,7 @@ body, html {
 }
 
 .menu__drop-menu {
+  z-index: 1;
   position: relative;
   list-style: none;
 }
@@ -933,13 +937,15 @@ body, html {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
+  width: 100%;
   height: auto;
   gap: 21px;
   margin-top: 13px;
 }
 
 .promote__frame {
-  max-width: 33%;
+  width: 33%;
+  height: auto;
 }
 
 .frame-card {
@@ -1073,6 +1079,11 @@ body, html {
   margin-bottom: 30px;
 }
 
+.catalog__banner-item {
+  width: calc(100% / 3);
+  height: auto;
+}
+
 .catalog__banner-box {
   width: 100%;
   height: 90%;
@@ -1084,6 +1095,7 @@ body, html {
 }
 
 .catalog__button {
+  text-decoration: none;
   margin-top: 20px;
   margin-bottom: 20px;
   display: -webkit-box;
@@ -1103,6 +1115,12 @@ body, html {
           justify-content: center;
   width: 100%;
   border: 0px;
+  -webkit-transition-duration: .25s;
+          transition-duration: .25s;
+}
+
+.catalog__button:hover {
+  background: #27814d;
 }
 
 .catalog__button-text {
@@ -1357,15 +1375,18 @@ body, html {
   display: grid;
   -ms-grid-columns: auto auto auto auto auto;
       grid-template-columns: auto auto auto auto auto;
+  row-gap: 0px;
   -ms-grid-rows: auto auto;
       grid-template-rows: auto auto;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  width: 100%;
+  height: auto;
 }
 
 .instagram__item {
-  max-width: 395px;
-  max-height: 395px;
+  width: 100%;
+  height: 100%;
   position: relative;
 }
 
