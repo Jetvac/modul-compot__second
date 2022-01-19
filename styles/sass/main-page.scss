@@ -487,6 +487,7 @@ body, html
     
     &__header {
         margin-bottom: 60px;
+  
     }
 
     &__row {
@@ -554,7 +555,6 @@ body, html
         padding: 50px;
         padding-bottom: 25px;
         padding-right: 75px;
-        height: 423px;
         display: flex;
         align-items: center;
         justify-content: center;
@@ -593,15 +593,14 @@ body, html
     }
 
     &__item-list {
-        display: flex;
-        flex-flow: row wrap;
-        gap: 30px;
-        row-gap: 50px;
+        display: grid;
+        height: 100%;
+        grid-template-columns: 25% 25% 25%;
+        grid-template-rows: 50% 50%;
         justify-content: space-between;
     }
 
     &__item {
-        width: 25%;
         display: flex;
         flex-direction: column;
         align-items: center;
