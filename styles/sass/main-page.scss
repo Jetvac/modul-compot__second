@@ -4,6 +4,7 @@
 @import "./common/nav-arrow.scss";
 @import "./common/nav-button.scss";
 @import "./common/cera-pro-font.scss";
+@import "./media/main-page__media.scss";
 
 body, html
 {
@@ -91,6 +92,7 @@ body, html
     padding-left: 61px;
     padding-right: 59px;
     border-bottom: 1px solid #E0E0DD;
+    width: calc(100% - 120px);
     background: white;
     display: flex;
     flex-direction: row;

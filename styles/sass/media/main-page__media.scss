@@ -1,3 +1,24 @@
 @media screen and (max-width: 680px) {
-    
+    .header {
+        &__nav-menu {
+            visibility: hidden;
+            width: 0;
+            height: 0;
+        }
+
+        &__mail-text {
+            visibility: hidden;
+            width: 0;
+            height: 0;
+        }
+
+        &__phone-text {
+            margin-left: 0;
+            margin-right: auto;
+        }
+
+        &__info {
+            gap: 0px;
+        }
+    }
 }
