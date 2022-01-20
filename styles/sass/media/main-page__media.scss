@@ -187,7 +187,7 @@
         //body - row
         &__row {
             overflow: hidden;
-            width: 500%;
+            width: 470%;
         }
     }
     .catalog {
@@ -200,14 +200,25 @@
         //body
         &__row {
             overflow: hidden;
-            width: 500%;
+            width: 470%;
         }
 
         &__banner-image {
-            margin-right: auto;
-            margin-left: auto;
+            margin-top: 60px;
+            margin-bottom: 60px;
             overflow: hidden;
             width: 250%;
+        }
+
+        &__banner-list {
+            overflow: hidden;
+            width: 300%;
+        }
+    }
+    .about {
+        &__row {
+            display: flex;
+            flex-direction: column-reverse;
         }
     }
 }

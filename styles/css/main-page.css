@@ -1139,6 +1139,18 @@ body, html {
       grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
 }
 
+.best-deals__filter {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
 .catalog__wrapper {
   margin-top: 70px;
 }
@@ -1165,11 +1177,6 @@ body, html {
   gap: 20px;
   margin-top: 30px;
   margin-bottom: 30px;
-}
-
-.catalog__banner-item {
-  width: calc(100% / 3);
-  height: auto;
 }
 
 .catalog__banner-box {
@@ -2096,7 +2103,7 @@ body, html {
   }
   .best-deals__row {
     overflow: hidden;
-    width: 500%;
+    width: 470%;
   }
   .catalog__header {
     margin-left: auto;
@@ -2104,12 +2111,25 @@ body, html {
   }
   .catalog__row {
     overflow: hidden;
-    width: 500%;
+    width: 470%;
   }
   .catalog__banner-image {
-    margin-right: auto;
-    margin-left: auto;
+    margin-top: 60px;
+    margin-bottom: 60px;
     overflow: hidden;
     width: 250%;
+  }
+  .catalog__banner-list {
+    overflow: hidden;
+    width: 300%;
+  }
+  .about__row {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
   }
 }

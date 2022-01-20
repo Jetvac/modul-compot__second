@@ -1,0 +1,138 @@
+.viewed-later {
+    &__wrapper {
+        margin-top: 70px;
+        padding-bottom: 200px;
+    }
+
+    &__header {
+        margin-bottom: 60px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    &__title {
+        margin-right: auto;
+    }
+
+    &__selector {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    &__nav-arrow {
+        margin-left: auto;
+        display: flex;
+        flex-direction: row;
+        gap: 30px;
+    }
+
+    &__row {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    }
+}
+
+.catalog {
+    &__wrapper {
+        height: auto;
+        width: 100%;
+        display: grid;
+        grid-template-columns: max($numbers: 360px) auto;
+        grid-template-rows: 90px auto;
+    }
+
+    &__row {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+
+    &__body {
+        width: 100%;
+        grid-row: 2;
+        grid-column: 2;
+    }
+
+    &__filter-panel {
+        grid-column: 1;
+        grid-row: 2;
+    }
+
+    &__filter-container {
+        max-width: 360px;
+        background: #FFFFFF;
+        border: 1px solid #E0E0DD;
+        padding: 20px;
+    }
+
+    &__filter-header {
+        display: flex;
+        flex-direction: row;
+        grid-column: 1 / span 2;
+        gap: 15px;
+    }
+
+    &__filter-delimiter {
+        height: 1px;
+        width: 100%;
+        background: #E0E0DD;
+        margin-bottom: 40px;
+    }
+
+    &__header-title {
+        font-weight: 500;
+        font-size: 22px;
+        line-height: 50px;
+        color: #333333;
+    }
+
+    &__filter-item {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        margin-bottom: 20px;
+    }
+
+    &__filter-title {
+        grid-row: 1;
+        grid-column: 1 / span 2;
+        font-size: 14px;
+        line-height: 17px;
+        letter-spacing: 0.05em;
+        text-transform: uppercase;
+        color: #101010;
+        opacity: 0.9;
+        margin-bottom: 10px;
+    }
+
+    &__filter-label {
+        display: flex;
+        flex-direction: row;
+        gap: 10px;
+    }
+
+    &__filter-text {
+        font-size: 18px;
+        line-height: 23px;
+        color: #6F6F6F;
+    }
+
+    &__filter-ammount-text {
+        font-size: 18px;
+        line-height: 23px;
+        color: #27AE60;
+    }
+
+    &__filter-button {
+        width: 100%;
+        border: none;
+        height: 44px;
+        background: #F1F1F1;
+        font-size: 15px;
+        line-height: 50px;
+        color: #333333;
+    }
+}
+
+.slider-range {
+}

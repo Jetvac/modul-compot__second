@@ -184,7 +184,7 @@
   }
   .best-deals__row {
     overflow: hidden;
-    width: 500%;
+    width: 470%;
   }
   .catalog__header {
     margin-left: auto;
@@ -192,12 +192,25 @@
   }
   .catalog__row {
     overflow: hidden;
-    width: 500%;
+    width: 470%;
   }
   .catalog__banner-image {
-    margin-right: auto;
-    margin-left: auto;
+    margin-top: 60px;
+    margin-bottom: 60px;
     overflow: hidden;
     width: 250%;
+  }
+  .catalog__banner-list {
+    overflow: hidden;
+    width: 300%;
+  }
+  .about__row {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
   }
 }
