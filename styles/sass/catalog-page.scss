@@ -1,3 +1,28 @@
+@import "./common/product-card.scss";
+@import "./common/category-list.scss";
+@import "./common/filter-panel.scss";
+@import "./common/nav-arrow.scss";
+@import "./common/cera-pro-font.scss";
+@import "./common/header.scss";
+@import "./common/frame-footer.scss";
+@import "./common/popup.scss";
+@import "./common/menu.scss";
+
+body, html
+{
+  font-family: 'CeraPro';
+  color: #333333;
+  padding: 0;
+  margin: 0;
+}
+
+body { 
+  .body__wrapper {
+    padding-left: 60px;
+    padding-right: 60px;
+  }
+}
+
 .viewed-later {
     &__wrapper {
         margin-top: 70px;
@@ -38,8 +63,13 @@
         height: auto;
         width: 100%;
         display: grid;
+        margin-top: 70px;
         grid-template-columns: max($numbers: 360px) auto;
         grid-template-rows: 90px auto;
+    }
+
+    &__header {
+        margin-bottom: 60px;
     }
 
     &__row {
@@ -53,6 +83,25 @@
         grid-column: 2;
     }
 
+    &__header-title {
+        font-weight: 500;
+        font-size: 22px;
+        line-height: 50px;
+        color: #333333;
+    }
+
+    &__banner-box {
+        width: auto;
+        height: auto;
+    }
+
+    &__banner-image {
+        width: 100%;
+        height: auto;
+    }
+
+
+    //filter
     &__filter-panel {
         grid-column: 1;
         grid-row: 2;
@@ -77,13 +126,6 @@
         width: 100%;
         background: #E0E0DD;
         margin-bottom: 40px;
-    }
-
-    &__header-title {
-        font-weight: 500;
-        font-size: 22px;
-        line-height: 50px;
-        color: #333333;
     }
 
     &__filter-item {
@@ -131,8 +173,17 @@
         font-size: 15px;
         line-height: 50px;
         color: #333333;
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
 }
 
 .slider-range {
+}
+
+.social-network {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
 }
