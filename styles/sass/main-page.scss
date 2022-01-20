@@ -1,6 +1,6 @@
 @import "./common/product-card.scss";
 @import "./common/category-list.scss";
-@import "./common/category-selector.scss";
+@import "./common/filter-panel.scss";
 @import "./common/nav-arrow.scss";
 @import "./common/nav-button.scss";
 @import "./common/cera-pro-font.scss";
@@ -523,8 +523,8 @@ body, html
     }
 
     &__banner-box {
-        width: 100%;
-        height: 90%;
+        width: auto;
+        height: auto;
     }
 
     &__banner-image {

@@ -374,7 +374,7 @@
   color: #333333;
 }
 
-.selector-item__button--active, .selector-item__button {
+.filter-panel__button--active, .filter-panel__button {
   background: #FFFFFF;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -383,11 +383,11 @@
   height: 40px;
 }
 
-.selector-item__button--active {
+.filter-panel__button--active {
   border: 1px solid #188145;
 }
 
-.selector-item__button {
+.filter-panel__button {
   border: 1px solid #E0E0DD;
 }
 
@@ -1173,8 +1173,8 @@ body, html {
 }
 
 .catalog__banner-box {
-  width: 100%;
-  height: 90%;
+  width: auto;
+  height: auto;
 }
 
 .catalog__banner-image {
@@ -1915,6 +1915,14 @@ body, html {
     padding-left: 25px;
     padding-right: 25px;
   }
+  .category-list__header {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 25px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
   .header .container {
     -webkit-box-pack: start;
         -ms-flex-pack: start;
@@ -2046,10 +2054,62 @@ body, html {
     margin-top: 40px;
   }
   .promote {
-    width: 1500px;
+    overflow: hidden;
+    width: 300%;
     gap: 10px;
   }
   .promote__frame {
     width: 90%;
+  }
+  .best-deals__header {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    gap: 30px;
+    margin-bottom: 15px;
+  }
+  .best-deals__title {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .best-deals .filter-panel {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    gap: 10px;
+  }
+  .best-deals .filter-panel button {
+    height: 29.19px;
+    width: 87.57px;
+  }
+  .best-deals__nav-arrow {
+    visibility: hidden;
+    width: 0;
+    height: 0;
+  }
+  .best-deals__row {
+    overflow: hidden;
+    width: 500%;
+  }
+  .catalog__header {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .catalog__row {
+    overflow: hidden;
+    width: 500%;
+  }
+  .catalog__banner-image {
+    margin-right: auto;
+    margin-left: auto;
+    overflow: hidden;
+    width: 250%;
   }
 }

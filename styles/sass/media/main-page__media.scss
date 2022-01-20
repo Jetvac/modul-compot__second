@@ -5,6 +5,14 @@
             padding-right: 25px;
         }
     }    
+    .category-list {
+        &__header {
+            font-weight: 500;
+            font-size: 20px;
+            line-height: 25px;
+            justify-content: center;
+        }
+    }
 
     .header {
         .container {
@@ -138,11 +146,68 @@
         }
     }
     .promote {
-        width: 1500px;
+        overflow: hidden;
+        width: 300%;
         gap: 10px;
 
         &__frame {
             width: 90%;
+        }
+    }
+    .best-deals {
+        //header        
+        &__header {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 30px;
+            margin-bottom: 15px;
+        }
+        
+        &__title {
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .filter-panel {
+            display: flex;
+            gap: 10px;
+
+            button {
+                height: 29.19px;
+                width: 87.57px;
+            }
+        }
+
+        &__nav-arrow {
+            visibility: hidden;
+            width: 0; height: 0;
+        }
+
+        //body - row
+        &__row {
+            overflow: hidden;
+            width: 500%;
+        }
+    }
+    .catalog {
+        //header
+        &__header {
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        //body
+        &__row {
+            overflow: hidden;
+            width: 500%;
+        }
+
+        &__banner-image {
+            margin-right: auto;
+            margin-left: auto;
+            overflow: hidden;
+            width: 250%;
         }
     }
 }

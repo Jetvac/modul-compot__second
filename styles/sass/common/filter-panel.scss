@@ -1,4 +1,4 @@
-%selector-button {
+%filter-button {
     background: #FFFFFF;
     box-sizing: border-box;
     border-radius: 100px;
@@ -6,14 +6,14 @@
     height: 40px;
 }
 
-.selector-item {
+.filter-panel {
     &__button--active {
-        @extend %selector-button;
+        @extend %filter-button;
         border: 1px solid #188145;
     }
 
     &__button {
-        @extend %selector-button;
+        @extend %filter-button;
         border: 1px solid #E0E0DD;
     }
 }
