@@ -159,8 +159,8 @@ body {
     }
 
     &__banner-box {
-        width: auto;
-        height: auto;
+        width: 100%;
+        height: 100%;
     }
 
     &__banner-image {
@@ -229,6 +229,7 @@ body {
         justify-content: space-between;
         margin-left: 20px;
         margin-right: 40px;
+        gap: 40px;
     }
 
     &__info-title {
