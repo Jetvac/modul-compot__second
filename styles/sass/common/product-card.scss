@@ -112,30 +112,6 @@
         justify-content: space-between;
     }
 
-    %size-type {
-        height: 26px;
-        display: flex;
-        flex-direction: row;
-        border-radius: 6px;
-        align-items: center;
-        justify-content: center;
-        padding-left: 8px;
-        padding-right: 8px;
-        gap: 6px;
-    }
-
-    &__tree-size {
-        @extend %size-type;
-        background: #616161;
-        border: 1px solid #616161;
-    }
-
-    &__item-size {
-        @extend %size-type;
-        background: white;
-        border: 1px solid #188145;
-    }
-
     &__type-image {
         display: flex;
         align-items: center;
@@ -258,20 +234,10 @@
         justify-content: center;
     }
 
-    #product-card__shop-popup-checkbox {
-        position: absolute;
-        top: 10000px; left: 10000px;
-        visibility: hidden;
-        width: 0px; height: 0px;
-    }
-    #product-card__shop-popup-checkbox:checked ~ &__shop-list {
-        visibility: visible;
-    }
-
     &__shop-list {
         display: none;
         position: absolute;
-        left: 0;
+        left: -270px;
         bottom: 55px;
         background: #FFFFFF;
         border: 1px solid #E0E0DD;
@@ -289,6 +255,7 @@
     }
     &__shop-item:hover {
         background: rgba(111, 207, 151, 0.15);
+        cursor: pointer;
     }
 
     &__shop-item-stock {
@@ -324,8 +291,128 @@
             color: #ACACAC;
         }
     }
-}
 
-.show {
-    display: block;
+    //popup size menu
+    &__size-popup {
+        position: relative;
+        border-radius: 5px;
+        border: 0px;
+    }
+
+    &__size-popup-button {
+        padding: 0; margin: 0;
+        background: transparent;
+        border: none;
+    }
+
+    &__size-list {
+        display: none;
+        position: absolute;
+        left: 0px;
+        bottom: 40px;
+        background: transparent;
+        box-sizing: border-box;
+        z-index: 2;
+    }
+
+    &__size-container {
+        display: flex;
+        flex-direction: column;
+        gap: 6px;
+    }
+
+    &__size-item {
+        border: 1px solid #E0E0DD;
+        background: #FFFFFF;
+        box-shadow: 0px 7px 20px rgba(0, 0, 0, 0.05);
+        border-radius: 6px;
+        display: grid;
+        grid-template-columns: 80% 20%;
+        width: 160px;
+        padding: 10px;
+    }
+    &__size-item_disable {
+        img {
+            filter: grayscale(100%);
+        }
+        .product-card__size-size-text {
+            color: #ACACAC;
+        }
+        .product-card__size-item-price {
+            color: #ACACAC;
+        }   
+    }
+    &__size-item:hover {
+        border: 1px solid #27AE60;
+        cursor: pointer;
+        background: #EAF8F0;
+    }
+
+    %size-type {
+        height: 26px;
+        display: flex;
+        flex-direction: row;
+        border-radius: 6px;
+        align-items: center;
+        justify-content: center;
+        padding-left: 8px;
+        padding-right: 8px;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 18px;
+        gap: 6px;
+    }
+
+    &__tree-size {
+        @extend %size-type;
+        background: #616161;
+        border: 1px solid #616161;
+    }
+
+    &__item-size {
+        @extend %size-type;
+        background: white;
+        border: 1px solid #188145;
+    }
+
+    &__size-left-panel {
+        display: flex;
+        flex-direction: column;
+        gap: 9px;
+    }
+
+    &__size-left-header {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 7px;
+    }
+    
+    &__size-size-text {
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 18px;
+        color: #27AE60;
+    }
+
+    &__size-item-price {
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 25px;
+        color: #333333;
+    }
+
+    &__size-item-price-discount {
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 25px;
+        color: #198045;
+    }
+
+    &__size-item-price_text-decoration-line_line-through {
+        font-size: 14px;
+        line-height: 18px;
+        text-decoration-line: line-through;
+        color: #626262;
+    }
 }
