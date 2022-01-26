@@ -4,8 +4,9 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="favicon.svg" />
     <link rel="stylesheet" href="./styles/css/main-page.css">
-    <script src="./js/drop-menu.js"></script>
-    <title>Crystall trees</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+    <script type="module" src="./js/drop-menu.min.js"></script>
+    <title>Crystall Tree</title>
   </head>
   <header class="header">
     <div class="wrapper">
@@ -363,33 +364,81 @@
                             <div class="product-card__discount-price">43 099 ₽</div>
                           </div>
                           <div class="product-card__shop-popup">
-                            <button class="product-card__shop-popup-button" onclick="showByID('.product-card__shop-list')">
+                            <button class="product-card__shop-popup-button">
                               <img class="product-card__shop-cart-image" src="./assets/img/product-card/ShoppingCart.svg">
                             </button>
                             <div class="product-card__shop-list">
                               <div class="product-card__shop-list-wrapper">
                                 <div class="product-card__shop-item">
-                                  <!-- <div class="product-card__shop-left-panel">
-                                    <div class="product-card__shop-left-header">
-                                      <div class="product-card__shop-item-size">
-                                        <div class="product-card__shop-size-icon">
-                                          <img src="./assets/img/product-card/TreeEvergreen.svg">
-                                        </div>
-                                        <div class="product-card__shop-size-text">260 см</div>
-                                      </div>
-                                      <div class="product-card__shop-item-price">
-                                        
-                                      </div>
-                                      <div class="product-card__shop-item-discount">
-
-                                      </div>
-                                    </div>
-                                  </div> -->
                                   <div class="product-card__shop-item-stock">в наличии</div>
                                   <div class="product-card__shop-image">
-                                    <img src="./assets/img/product-card/shop-images/EBay_logo 2.svg">
+                                    <img src="./assets/img/product-card/shop-images/Leroy 2.svg">
                                   </div>
-                                  <div class="product-card__shop-name">EBAY</div>
+                                  <div class="product-card__shop-name">Леруа Мерлен</div>
+                                </div>
+                                <div class="product-card__shop-separator"></div>
+                                <div class="product-card__shop-item">
+                                  <div class="product-card__shop-item-stock">в наличии</div>
+                                  <div class="product-card__shop-image">
+                                    <img src="./assets/img/product-card/shop-images/Vector.svg">
+                                  </div>
+                                  <div class="product-card__shop-name">OZON</div>
+                                </div>
+                                <div class="product-card__shop-separator"></div>
+                                <div class="product-card__shop-item">
+                                  <div class="product-card__shop-item-stock">в наличии</div>
+                                  <div class="product-card__shop-image">
+                                    <img src="./assets/img/product-card/shop-images/Wildberries 2.svg">
+                                  </div>
+                                  <div class="product-card__shop-name">Wildberries</div>
+                                </div>
+                                <div class="product-card__shop-separator"></div>
+                                <div class="product-card__shop-item">
+                                  <div class="product-card__shop-item-stock">в наличии</div>
+                                  <div class="product-card__shop-image">
+                                    <img src="./assets/img/product-card/shop-images/Group 214.svg">
+                                  </div>
+                                  <div class="product-card__shop-name">Яндекс Маркет</div>
+                                </div>
+                                <div class="product-card__shop-separator"></div>
+                                <div class="product-card__shop-item product-card__shop-item_disable">
+                                  <div class="product-card__shop-item-stock">закончился</div>
+                                  <div class="product-card__shop-image">
+                                    <img src="./assets/img/product-card/shop-images/DM_logo_3_RGB 2.svg">
+                                  </div>
+                                  <div class="product-card__shop-name">Детский Мир</div>
+                                </div>
+                                <div class="product-card__shop-separator"></div>
+                                <div class="product-card__shop-item">
+                                  <div class="product-card__shop-item-stock">в наличии</div>
+                                  <div class="product-card__shop-image">
+                                    <img src="./assets/img/product-card/shop-images/Aliexpress_logo 2.svg">
+                                  </div>
+                                  <div class="product-card__shop-name">АлиЭкспресс</div>
+                                </div>
+                                <div class="product-card__shop-separator"></div>
+                                <div class="product-card__shop-item">
+                                  <div class="product-card__shop-item-stock">в наличии</div>
+                                  <div class="product-card__shop-image">
+                                    <img src="./assets/img/product-card/shop-images/image 16.svg">
+                                  </div>
+                                  <div class="product-card__shop-name">Коломенка.ру</div>
+                                </div>
+                                <div class="product-card__shop-separator"></div>
+                                <div class="product-card__shop-item product-card__shop-item_disable">
+                                  <div class="product-card__shop-item-stock">закончился</div>
+                                  <div class="product-card__shop-image">
+                                    <img src="./assets/img/product-card/shop-images/image 17.svg">
+                                  </div>
+                                  <div class="product-card__shop-name">Все инструменты</div>
+                                </div>
+                                <div class="product-card__shop-separator"></div>
+                                <div class="product-card__shop-item">
+                                  <div class="product-card__shop-item-stock">в наличии</div>
+                                  <div class="product-card__shop-image">
+                                    <img src="./assets/img/product-card/shop-images/Sbermarket 2.svg">
+                                  </div>
+                                  <div class="product-card__shop-name">Сбер Маркет</div>
                                 </div>
                                 <div class="product-card__shop-separator"></div>
                                 <div class="product-card__shop-item">
@@ -480,33 +529,81 @@
                             <div class="product-card__discount-price"></div>
                           </div>
                           <div class="product-card__shop-popup">
-                            <button class="product-card__shop-popup-button" onclick="showElement('.product-card__shop-list')">
+                            <button class="product-card__shop-popup-button">
                               <img class="product-card__shop-cart-image" src="./assets/img/product-card/ShoppingCart.svg">
                             </button>
                             <div class="product-card__shop-list">
                               <div class="product-card__shop-list-wrapper">
                                 <div class="product-card__shop-item">
-                                  <!-- <div class="product-card__shop-left-panel">
-                                    <div class="product-card__shop-left-header">
-                                      <div class="product-card__shop-item-size">
-                                        <div class="product-card__shop-size-icon">
-                                          <img src="./assets/img/product-card/TreeEvergreen.svg">
-                                        </div>
-                                        <div class="product-card__shop-size-text">260 см</div>
-                                      </div>
-                                      <div class="product-card__shop-item-price">
-                                        
-                                      </div>
-                                      <div class="product-card__shop-item-discount">
-
-                                      </div>
-                                    </div>
-                                  </div> -->
                                   <div class="product-card__shop-item-stock">в наличии</div>
                                   <div class="product-card__shop-image">
-                                    <img src="./assets/img/product-card/shop-images/EBay_logo 2.svg">
+                                    <img src="./assets/img/product-card/shop-images/Leroy 2.svg">
                                   </div>
-                                  <div class="product-card__shop-name">EBAY</div>
+                                  <div class="product-card__shop-name">Леруа Мерлен</div>
+                                </div>
+                                <div class="product-card__shop-separator"></div>
+                                <div class="product-card__shop-item">
+                                  <div class="product-card__shop-item-stock">в наличии</div>
+                                  <div class="product-card__shop-image">
+                                    <img src="./assets/img/product-card/shop-images/Vector.svg">
+                                  </div>
+                                  <div class="product-card__shop-name">OZON</div>
+                                </div>
+                                <div class="product-card__shop-separator"></div>
+                                <div class="product-card__shop-item">
+                                  <div class="product-card__shop-item-stock">в наличии</div>
+                                  <div class="product-card__shop-image">
+                                    <img src="./assets/img/product-card/shop-images/Wildberries 2.svg">
+                                  </div>
+                                  <div class="product-card__shop-name">Wildberries</div>
+                                </div>
+                                <div class="product-card__shop-separator"></div>
+                                <div class="product-card__shop-item">
+                                  <div class="product-card__shop-item-stock">в наличии</div>
+                                  <div class="product-card__shop-image">
+                                    <img src="./assets/img/product-card/shop-images/Group 214.svg">
+                                  </div>
+                                  <div class="product-card__shop-name">Яндекс Маркет</div>
+                                </div>
+                                <div class="product-card__shop-separator"></div>
+                                <div class="product-card__shop-item product-card__shop-item_disable">
+                                  <div class="product-card__shop-item-stock">закончился</div>
+                                  <div class="product-card__shop-image">
+                                    <img src="./assets/img/product-card/shop-images/DM_logo_3_RGB 2.svg">
+                                  </div>
+                                  <div class="product-card__shop-name">Детский Мир</div>
+                                </div>
+                                <div class="product-card__shop-separator"></div>
+                                <div class="product-card__shop-item">
+                                  <div class="product-card__shop-item-stock">в наличии</div>
+                                  <div class="product-card__shop-image">
+                                    <img src="./assets/img/product-card/shop-images/Aliexpress_logo 2.svg">
+                                  </div>
+                                  <div class="product-card__shop-name">АлиЭкспресс</div>
+                                </div>
+                                <div class="product-card__shop-separator"></div>
+                                <div class="product-card__shop-item">
+                                  <div class="product-card__shop-item-stock">в наличии</div>
+                                  <div class="product-card__shop-image">
+                                    <img src="./assets/img/product-card/shop-images/image 16.svg">
+                                  </div>
+                                  <div class="product-card__shop-name">Коломенка.ру</div>
+                                </div>
+                                <div class="product-card__shop-separator"></div>
+                                <div class="product-card__shop-item product-card__shop-item_disable">
+                                  <div class="product-card__shop-item-stock">закончился</div>
+                                  <div class="product-card__shop-image">
+                                    <img src="./assets/img/product-card/shop-images/image 17.svg">
+                                  </div>
+                                  <div class="product-card__shop-name">Все инструменты</div>
+                                </div>
+                                <div class="product-card__shop-separator"></div>
+                                <div class="product-card__shop-item">
+                                  <div class="product-card__shop-item-stock">в наличии</div>
+                                  <div class="product-card__shop-image">
+                                    <img src="./assets/img/product-card/shop-images/Sbermarket 2.svg">
+                                  </div>
+                                  <div class="product-card__shop-name">Сбер Маркет</div>
                                 </div>
                                 <div class="product-card__shop-separator"></div>
                                 <div class="product-card__shop-item">
@@ -596,9 +693,94 @@
                           <div class="product-card__price">5 990 ₽
                             <div class="product-card__discount-price"></div>
                           </div>
-                          <button class="product-card__shop-popup">
-                            <img src="./assets/img/product-card/ShoppingCart.svg" alt="">
-                          </button>
+                          <div class="product-card__shop-popup">
+                            <button class="product-card__shop-popup-button">
+                              <img class="product-card__shop-cart-image" src="./assets/img/product-card/ShoppingCart.svg">
+                            </button>
+                            <div class="product-card__shop-list">
+                              <div class="product-card__shop-list-wrapper">
+                                <div class="product-card__shop-item">
+                                  <div class="product-card__shop-item-stock">в наличии</div>
+                                  <div class="product-card__shop-image">
+                                    <img src="./assets/img/product-card/shop-images/Leroy 2.svg">
+                                  </div>
+                                  <div class="product-card__shop-name">Леруа Мерлен</div>
+                                </div>
+                                <div class="product-card__shop-separator"></div>
+                                <div class="product-card__shop-item">
+                                  <div class="product-card__shop-item-stock">в наличии</div>
+                                  <div class="product-card__shop-image">
+                                    <img src="./assets/img/product-card/shop-images/Vector.svg">
+                                  </div>
+                                  <div class="product-card__shop-name">OZON</div>
+                                </div>
+                                <div class="product-card__shop-separator"></div>
+                                <div class="product-card__shop-item">
+                                  <div class="product-card__shop-item-stock">в наличии</div>
+                                  <div class="product-card__shop-image">
+                                    <img src="./assets/img/product-card/shop-images/Wildberries 2.svg">
+                                  </div>
+                                  <div class="product-card__shop-name">Wildberries</div>
+                                </div>
+                                <div class="product-card__shop-separator"></div>
+                                <div class="product-card__shop-item">
+                                  <div class="product-card__shop-item-stock">в наличии</div>
+                                  <div class="product-card__shop-image">
+                                    <img src="./assets/img/product-card/shop-images/Group 214.svg">
+                                  </div>
+                                  <div class="product-card__shop-name">Яндекс Маркет</div>
+                                </div>
+                                <div class="product-card__shop-separator"></div>
+                                <div class="product-card__shop-item product-card__shop-item_disable">
+                                  <div class="product-card__shop-item-stock">закончился</div>
+                                  <div class="product-card__shop-image">
+                                    <img src="./assets/img/product-card/shop-images/DM_logo_3_RGB 2.svg">
+                                  </div>
+                                  <div class="product-card__shop-name">Детский Мир</div>
+                                </div>
+                                <div class="product-card__shop-separator"></div>
+                                <div class="product-card__shop-item">
+                                  <div class="product-card__shop-item-stock">в наличии</div>
+                                  <div class="product-card__shop-image">
+                                    <img src="./assets/img/product-card/shop-images/Aliexpress_logo 2.svg">
+                                  </div>
+                                  <div class="product-card__shop-name">АлиЭкспресс</div>
+                                </div>
+                                <div class="product-card__shop-separator"></div>
+                                <div class="product-card__shop-item">
+                                  <div class="product-card__shop-item-stock">в наличии</div>
+                                  <div class="product-card__shop-image">
+                                    <img src="./assets/img/product-card/shop-images/image 16.svg">
+                                  </div>
+                                  <div class="product-card__shop-name">Коломенка.ру</div>
+                                </div>
+                                <div class="product-card__shop-separator"></div>
+                                <div class="product-card__shop-item product-card__shop-item_disable">
+                                  <div class="product-card__shop-item-stock">закончился</div>
+                                  <div class="product-card__shop-image">
+                                    <img src="./assets/img/product-card/shop-images/image 17.svg">
+                                  </div>
+                                  <div class="product-card__shop-name">Все инструменты</div>
+                                </div>
+                                <div class="product-card__shop-separator"></div>
+                                <div class="product-card__shop-item">
+                                  <div class="product-card__shop-item-stock">в наличии</div>
+                                  <div class="product-card__shop-image">
+                                    <img src="./assets/img/product-card/shop-images/Sbermarket 2.svg">
+                                  </div>
+                                  <div class="product-card__shop-name">Сбер Маркет</div>
+                                </div>
+                                <div class="product-card__shop-separator"></div>
+                                <div class="product-card__shop-item">
+                                  <div class="product-card__shop-item-stock">в наличии</div>
+                                  <div class="product-card__shop-image">
+                                    <img src="./assets/img/product-card/shop-images/EBay_logo 2.svg">
+                                  </div>
+                                  <div class="product-card__shop-name">EBAY</div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
                         </div>
                       </div>
                     </div>
@@ -690,9 +872,94 @@
                           <div class="product-card__price">8 990 ₽
                             <div class="product-card__discount-price"></div>
                           </div>
-                          <button class="product-card__shop-popup">
-                            <img src="./assets/img/product-card/ShoppingCart.svg" alt="">
-                          </button>
+                          <div class="product-card__shop-popup">
+                            <button class="product-card__shop-popup-button">
+                              <img class="product-card__shop-cart-image" src="./assets/img/product-card/ShoppingCart.svg">
+                            </button>
+                            <div class="product-card__shop-list">
+                              <div class="product-card__shop-list-wrapper">
+                                <div class="product-card__shop-item">
+                                  <div class="product-card__shop-item-stock">в наличии</div>
+                                  <div class="product-card__shop-image">
+                                    <img src="./assets/img/product-card/shop-images/Leroy 2.svg">
+                                  </div>
+                                  <div class="product-card__shop-name">Леруа Мерлен</div>
+                                </div>
+                                <div class="product-card__shop-separator"></div>
+                                <div class="product-card__shop-item">
+                                  <div class="product-card__shop-item-stock">в наличии</div>
+                                  <div class="product-card__shop-image">
+                                    <img src="./assets/img/product-card/shop-images/Vector.svg">
+                                  </div>
+                                  <div class="product-card__shop-name">OZON</div>
+                                </div>
+                                <div class="product-card__shop-separator"></div>
+                                <div class="product-card__shop-item">
+                                  <div class="product-card__shop-item-stock">в наличии</div>
+                                  <div class="product-card__shop-image">
+                                    <img src="./assets/img/product-card/shop-images/Wildberries 2.svg">
+                                  </div>
+                                  <div class="product-card__shop-name">Wildberries</div>
+                                </div>
+                                <div class="product-card__shop-separator"></div>
+                                <div class="product-card__shop-item">
+                                  <div class="product-card__shop-item-stock">в наличии</div>
+                                  <div class="product-card__shop-image">
+                                    <img src="./assets/img/product-card/shop-images/Group 214.svg">
+                                  </div>
+                                  <div class="product-card__shop-name">Яндекс Маркет</div>
+                                </div>
+                                <div class="product-card__shop-separator"></div>
+                                <div class="product-card__shop-item product-card__shop-item_disable">
+                                  <div class="product-card__shop-item-stock">закончился</div>
+                                  <div class="product-card__shop-image">
+                                    <img src="./assets/img/product-card/shop-images/DM_logo_3_RGB 2.svg">
+                                  </div>
+                                  <div class="product-card__shop-name">Детский Мир</div>
+                                </div>
+                                <div class="product-card__shop-separator"></div>
+                                <div class="product-card__shop-item">
+                                  <div class="product-card__shop-item-stock">в наличии</div>
+                                  <div class="product-card__shop-image">
+                                    <img src="./assets/img/product-card/shop-images/Aliexpress_logo 2.svg">
+                                  </div>
+                                  <div class="product-card__shop-name">АлиЭкспресс</div>
+                                </div>
+                                <div class="product-card__shop-separator"></div>
+                                <div class="product-card__shop-item">
+                                  <div class="product-card__shop-item-stock">в наличии</div>
+                                  <div class="product-card__shop-image">
+                                    <img src="./assets/img/product-card/shop-images/image 16.svg">
+                                  </div>
+                                  <div class="product-card__shop-name">Коломенка.ру</div>
+                                </div>
+                                <div class="product-card__shop-separator"></div>
+                                <div class="product-card__shop-item product-card__shop-item_disable">
+                                  <div class="product-card__shop-item-stock">закончился</div>
+                                  <div class="product-card__shop-image">
+                                    <img src="./assets/img/product-card/shop-images/image 17.svg">
+                                  </div>
+                                  <div class="product-card__shop-name">Все инструменты</div>
+                                </div>
+                                <div class="product-card__shop-separator"></div>
+                                <div class="product-card__shop-item">
+                                  <div class="product-card__shop-item-stock">в наличии</div>
+                                  <div class="product-card__shop-image">
+                                    <img src="./assets/img/product-card/shop-images/Sbermarket 2.svg">
+                                  </div>
+                                  <div class="product-card__shop-name">Сбер Маркет</div>
+                                </div>
+                                <div class="product-card__shop-separator"></div>
+                                <div class="product-card__shop-item">
+                                  <div class="product-card__shop-item-stock">в наличии</div>
+                                  <div class="product-card__shop-image">
+                                    <img src="./assets/img/product-card/shop-images/EBay_logo 2.svg">
+                                  </div>
+                                  <div class="product-card__shop-name">EBAY</div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
                         </div>
                       </div>
                     </div>
@@ -770,9 +1037,94 @@
                           <div class="product-card__price">10 390 ₽
                             <div class="product-card__discount-price"></div>
                           </div>
-                          <button class="product-card__shop-popup">
-                            <img src="./assets/img/product-card/ShoppingCart.svg" alt="">
-                          </button>
+                          <div class="product-card__shop-popup">
+                            <button class="product-card__shop-popup-button">
+                              <img class="product-card__shop-cart-image" src="./assets/img/product-card/ShoppingCart.svg">
+                            </button>
+                            <div class="product-card__shop-list">
+                              <div class="product-card__shop-list-wrapper">
+                                <div class="product-card__shop-item">
+                                  <div class="product-card__shop-item-stock">в наличии</div>
+                                  <div class="product-card__shop-image">
+                                    <img src="./assets/img/product-card/shop-images/Leroy 2.svg">
+                                  </div>
+                                  <div class="product-card__shop-name">Леруа Мерлен</div>
+                                </div>
+                                <div class="product-card__shop-separator"></div>
+                                <div class="product-card__shop-item">
+                                  <div class="product-card__shop-item-stock">в наличии</div>
+                                  <div class="product-card__shop-image">
+                                    <img src="./assets/img/product-card/shop-images/Vector.svg">
+                                  </div>
+                                  <div class="product-card__shop-name">OZON</div>
+                                </div>
+                                <div class="product-card__shop-separator"></div>
+                                <div class="product-card__shop-item">
+                                  <div class="product-card__shop-item-stock">в наличии</div>
+                                  <div class="product-card__shop-image">
+                                    <img src="./assets/img/product-card/shop-images/Wildberries 2.svg">
+                                  </div>
+                                  <div class="product-card__shop-name">Wildberries</div>
+                                </div>
+                                <div class="product-card__shop-separator"></div>
+                                <div class="product-card__shop-item">
+                                  <div class="product-card__shop-item-stock">в наличии</div>
+                                  <div class="product-card__shop-image">
+                                    <img src="./assets/img/product-card/shop-images/Group 214.svg">
+                                  </div>
+                                  <div class="product-card__shop-name">Яндекс Маркет</div>
+                                </div>
+                                <div class="product-card__shop-separator"></div>
+                                <div class="product-card__shop-item product-card__shop-item_disable">
+                                  <div class="product-card__shop-item-stock">закончился</div>
+                                  <div class="product-card__shop-image">
+                                    <img src="./assets/img/product-card/shop-images/DM_logo_3_RGB 2.svg">
+                                  </div>
+                                  <div class="product-card__shop-name">Детский Мир</div>
+                                </div>
+                                <div class="product-card__shop-separator"></div>
+                                <div class="product-card__shop-item">
+                                  <div class="product-card__shop-item-stock">в наличии</div>
+                                  <div class="product-card__shop-image">
+                                    <img src="./assets/img/product-card/shop-images/Aliexpress_logo 2.svg">
+                                  </div>
+                                  <div class="product-card__shop-name">АлиЭкспресс</div>
+                                </div>
+                                <div class="product-card__shop-separator"></div>
+                                <div class="product-card__shop-item">
+                                  <div class="product-card__shop-item-stock">в наличии</div>
+                                  <div class="product-card__shop-image">
+                                    <img src="./assets/img/product-card/shop-images/image 16.svg">
+                                  </div>
+                                  <div class="product-card__shop-name">Коломенка.ру</div>
+                                </div>
+                                <div class="product-card__shop-separator"></div>
+                                <div class="product-card__shop-item product-card__shop-item_disable">
+                                  <div class="product-card__shop-item-stock">закончился</div>
+                                  <div class="product-card__shop-image">
+                                    <img src="./assets/img/product-card/shop-images/image 17.svg">
+                                  </div>
+                                  <div class="product-card__shop-name">Все инструменты</div>
+                                </div>
+                                <div class="product-card__shop-separator"></div>
+                                <div class="product-card__shop-item">
+                                  <div class="product-card__shop-item-stock">в наличии</div>
+                                  <div class="product-card__shop-image">
+                                    <img src="./assets/img/product-card/shop-images/Sbermarket 2.svg">
+                                  </div>
+                                  <div class="product-card__shop-name">Сбер Маркет</div>
+                                </div>
+                                <div class="product-card__shop-separator"></div>
+                                <div class="product-card__shop-item">
+                                  <div class="product-card__shop-item-stock">в наличии</div>
+                                  <div class="product-card__shop-image">
+                                    <img src="./assets/img/product-card/shop-images/EBay_logo 2.svg">
+                                  </div>
+                                  <div class="product-card__shop-name">EBAY</div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
                         </div>
                       </div>
                     </div>
@@ -875,9 +1227,94 @@
                           <div class="product-card__price product-card__price_color_green">43 990 ₽
                             <div class="product-card__discount-price">43 099 ₽</div>
                           </div>
-                          <button class="product-card__shop-popup">
-                            <img src="./assets/img/product-card/ShoppingCart.svg" alt="">
-                          </button>
+                          <div class="product-card__shop-popup">
+                            <button class="product-card__shop-popup-button">
+                              <img class="product-card__shop-cart-image" src="./assets/img/product-card/ShoppingCart.svg">
+                            </button>
+                            <div class="product-card__shop-list">
+                              <div class="product-card__shop-list-wrapper">
+                                <div class="product-card__shop-item">
+                                  <div class="product-card__shop-item-stock">в наличии</div>
+                                  <div class="product-card__shop-image">
+                                    <img src="./assets/img/product-card/shop-images/Leroy 2.svg">
+                                  </div>
+                                  <div class="product-card__shop-name">Леруа Мерлен</div>
+                                </div>
+                                <div class="product-card__shop-separator"></div>
+                                <div class="product-card__shop-item">
+                                  <div class="product-card__shop-item-stock">в наличии</div>
+                                  <div class="product-card__shop-image">
+                                    <img src="./assets/img/product-card/shop-images/Vector.svg">
+                                  </div>
+                                  <div class="product-card__shop-name">OZON</div>
+                                </div>
+                                <div class="product-card__shop-separator"></div>
+                                <div class="product-card__shop-item">
+                                  <div class="product-card__shop-item-stock">в наличии</div>
+                                  <div class="product-card__shop-image">
+                                    <img src="./assets/img/product-card/shop-images/Wildberries 2.svg">
+                                  </div>
+                                  <div class="product-card__shop-name">Wildberries</div>
+                                </div>
+                                <div class="product-card__shop-separator"></div>
+                                <div class="product-card__shop-item">
+                                  <div class="product-card__shop-item-stock">в наличии</div>
+                                  <div class="product-card__shop-image">
+                                    <img src="./assets/img/product-card/shop-images/Group 214.svg">
+                                  </div>
+                                  <div class="product-card__shop-name">Яндекс Маркет</div>
+                                </div>
+                                <div class="product-card__shop-separator"></div>
+                                <div class="product-card__shop-item product-card__shop-item_disable">
+                                  <div class="product-card__shop-item-stock">закончился</div>
+                                  <div class="product-card__shop-image">
+                                    <img src="./assets/img/product-card/shop-images/DM_logo_3_RGB 2.svg">
+                                  </div>
+                                  <div class="product-card__shop-name">Детский Мир</div>
+                                </div>
+                                <div class="product-card__shop-separator"></div>
+                                <div class="product-card__shop-item">
+                                  <div class="product-card__shop-item-stock">в наличии</div>
+                                  <div class="product-card__shop-image">
+                                    <img src="./assets/img/product-card/shop-images/Aliexpress_logo 2.svg">
+                                  </div>
+                                  <div class="product-card__shop-name">АлиЭкспресс</div>
+                                </div>
+                                <div class="product-card__shop-separator"></div>
+                                <div class="product-card__shop-item">
+                                  <div class="product-card__shop-item-stock">в наличии</div>
+                                  <div class="product-card__shop-image">
+                                    <img src="./assets/img/product-card/shop-images/image 16.svg">
+                                  </div>
+                                  <div class="product-card__shop-name">Коломенка.ру</div>
+                                </div>
+                                <div class="product-card__shop-separator"></div>
+                                <div class="product-card__shop-item product-card__shop-item_disable">
+                                  <div class="product-card__shop-item-stock">закончился</div>
+                                  <div class="product-card__shop-image">
+                                    <img src="./assets/img/product-card/shop-images/image 17.svg">
+                                  </div>
+                                  <div class="product-card__shop-name">Все инструменты</div>
+                                </div>
+                                <div class="product-card__shop-separator"></div>
+                                <div class="product-card__shop-item">
+                                  <div class="product-card__shop-item-stock">в наличии</div>
+                                  <div class="product-card__shop-image">
+                                    <img src="./assets/img/product-card/shop-images/Sbermarket 2.svg">
+                                  </div>
+                                  <div class="product-card__shop-name">Сбер Маркет</div>
+                                </div>
+                                <div class="product-card__shop-separator"></div>
+                                <div class="product-card__shop-item">
+                                  <div class="product-card__shop-item-stock">в наличии</div>
+                                  <div class="product-card__shop-image">
+                                    <img src="./assets/img/product-card/shop-images/EBay_logo 2.svg">
+                                  </div>
+                                  <div class="product-card__shop-name">EBAY</div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
                         </div>
                       </div>
                     </div>
@@ -955,9 +1392,94 @@
                           <div class="product-card__price">28 990 ₽
                             <div class="product-card__discount-price"></div>
                           </div>
-                          <button class="product-card__shop-popup">
-                            <img src="./assets/img/product-card/ShoppingCart.svg" alt="">
-                          </button>
+                          <div class="product-card__shop-popup">
+                            <button class="product-card__shop-popup-button">
+                              <img class="product-card__shop-cart-image" src="./assets/img/product-card/ShoppingCart.svg">
+                            </button>
+                            <div class="product-card__shop-list">
+                              <div class="product-card__shop-list-wrapper">
+                                <div class="product-card__shop-item">
+                                  <div class="product-card__shop-item-stock">в наличии</div>
+                                  <div class="product-card__shop-image">
+                                    <img src="./assets/img/product-card/shop-images/Leroy 2.svg">
+                                  </div>
+                                  <div class="product-card__shop-name">Леруа Мерлен</div>
+                                </div>
+                                <div class="product-card__shop-separator"></div>
+                                <div class="product-card__shop-item">
+                                  <div class="product-card__shop-item-stock">в наличии</div>
+                                  <div class="product-card__shop-image">
+                                    <img src="./assets/img/product-card/shop-images/Vector.svg">
+                                  </div>
+                                  <div class="product-card__shop-name">OZON</div>
+                                </div>
+                                <div class="product-card__shop-separator"></div>
+                                <div class="product-card__shop-item">
+                                  <div class="product-card__shop-item-stock">в наличии</div>
+                                  <div class="product-card__shop-image">
+                                    <img src="./assets/img/product-card/shop-images/Wildberries 2.svg">
+                                  </div>
+                                  <div class="product-card__shop-name">Wildberries</div>
+                                </div>
+                                <div class="product-card__shop-separator"></div>
+                                <div class="product-card__shop-item">
+                                  <div class="product-card__shop-item-stock">в наличии</div>
+                                  <div class="product-card__shop-image">
+                                    <img src="./assets/img/product-card/shop-images/Group 214.svg">
+                                  </div>
+                                  <div class="product-card__shop-name">Яндекс Маркет</div>
+                                </div>
+                                <div class="product-card__shop-separator"></div>
+                                <div class="product-card__shop-item product-card__shop-item_disable">
+                                  <div class="product-card__shop-item-stock">закончился</div>
+                                  <div class="product-card__shop-image">
+                                    <img src="./assets/img/product-card/shop-images/DM_logo_3_RGB 2.svg">
+                                  </div>
+                                  <div class="product-card__shop-name">Детский Мир</div>
+                                </div>
+                                <div class="product-card__shop-separator"></div>
+                                <div class="product-card__shop-item">
+                                  <div class="product-card__shop-item-stock">в наличии</div>
+                                  <div class="product-card__shop-image">
+                                    <img src="./assets/img/product-card/shop-images/Aliexpress_logo 2.svg">
+                                  </div>
+                                  <div class="product-card__shop-name">АлиЭкспресс</div>
+                                </div>
+                                <div class="product-card__shop-separator"></div>
+                                <div class="product-card__shop-item">
+                                  <div class="product-card__shop-item-stock">в наличии</div>
+                                  <div class="product-card__shop-image">
+                                    <img src="./assets/img/product-card/shop-images/image 16.svg">
+                                  </div>
+                                  <div class="product-card__shop-name">Коломенка.ру</div>
+                                </div>
+                                <div class="product-card__shop-separator"></div>
+                                <div class="product-card__shop-item product-card__shop-item_disable">
+                                  <div class="product-card__shop-item-stock">закончился</div>
+                                  <div class="product-card__shop-image">
+                                    <img src="./assets/img/product-card/shop-images/image 17.svg">
+                                  </div>
+                                  <div class="product-card__shop-name">Все инструменты</div>
+                                </div>
+                                <div class="product-card__shop-separator"></div>
+                                <div class="product-card__shop-item">
+                                  <div class="product-card__shop-item-stock">в наличии</div>
+                                  <div class="product-card__shop-image">
+                                    <img src="./assets/img/product-card/shop-images/Sbermarket 2.svg">
+                                  </div>
+                                  <div class="product-card__shop-name">Сбер Маркет</div>
+                                </div>
+                                <div class="product-card__shop-separator"></div>
+                                <div class="product-card__shop-item">
+                                  <div class="product-card__shop-item-stock">в наличии</div>
+                                  <div class="product-card__shop-image">
+                                    <img src="./assets/img/product-card/shop-images/EBay_logo 2.svg">
+                                  </div>
+                                  <div class="product-card__shop-name">EBAY</div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
                         </div>
                       </div>
                     </div>
@@ -1035,9 +1557,94 @@
                           <div class="product-card__price">5 990 ₽
                             <div class="product-card__discount-price"></div>
                           </div>
-                          <button class="product-card__shop-popup">
-                            <img src="./assets/img/product-card/ShoppingCart.svg" alt="">
-                          </button>
+                          <div class="product-card__shop-popup">
+                            <button class="product-card__shop-popup-button">
+                              <img class="product-card__shop-cart-image" src="./assets/img/product-card/ShoppingCart.svg">
+                            </button>
+                            <div class="product-card__shop-list">
+                              <div class="product-card__shop-list-wrapper">
+                                <div class="product-card__shop-item">
+                                  <div class="product-card__shop-item-stock">в наличии</div>
+                                  <div class="product-card__shop-image">
+                                    <img src="./assets/img/product-card/shop-images/Leroy 2.svg">
+                                  </div>
+                                  <div class="product-card__shop-name">Леруа Мерлен</div>
+                                </div>
+                                <div class="product-card__shop-separator"></div>
+                                <div class="product-card__shop-item">
+                                  <div class="product-card__shop-item-stock">в наличии</div>
+                                  <div class="product-card__shop-image">
+                                    <img src="./assets/img/product-card/shop-images/Vector.svg">
+                                  </div>
+                                  <div class="product-card__shop-name">OZON</div>
+                                </div>
+                                <div class="product-card__shop-separator"></div>
+                                <div class="product-card__shop-item">
+                                  <div class="product-card__shop-item-stock">в наличии</div>
+                                  <div class="product-card__shop-image">
+                                    <img src="./assets/img/product-card/shop-images/Wildberries 2.svg">
+                                  </div>
+                                  <div class="product-card__shop-name">Wildberries</div>
+                                </div>
+                                <div class="product-card__shop-separator"></div>
+                                <div class="product-card__shop-item">
+                                  <div class="product-card__shop-item-stock">в наличии</div>
+                                  <div class="product-card__shop-image">
+                                    <img src="./assets/img/product-card/shop-images/Group 214.svg">
+                                  </div>
+                                  <div class="product-card__shop-name">Яндекс Маркет</div>
+                                </div>
+                                <div class="product-card__shop-separator"></div>
+                                <div class="product-card__shop-item product-card__shop-item_disable">
+                                  <div class="product-card__shop-item-stock">закончился</div>
+                                  <div class="product-card__shop-image">
+                                    <img src="./assets/img/product-card/shop-images/DM_logo_3_RGB 2.svg">
+                                  </div>
+                                  <div class="product-card__shop-name">Детский Мир</div>
+                                </div>
+                                <div class="product-card__shop-separator"></div>
+                                <div class="product-card__shop-item">
+                                  <div class="product-card__shop-item-stock">в наличии</div>
+                                  <div class="product-card__shop-image">
+                                    <img src="./assets/img/product-card/shop-images/Aliexpress_logo 2.svg">
+                                  </div>
+                                  <div class="product-card__shop-name">АлиЭкспресс</div>
+                                </div>
+                                <div class="product-card__shop-separator"></div>
+                                <div class="product-card__shop-item">
+                                  <div class="product-card__shop-item-stock">в наличии</div>
+                                  <div class="product-card__shop-image">
+                                    <img src="./assets/img/product-card/shop-images/image 16.svg">
+                                  </div>
+                                  <div class="product-card__shop-name">Коломенка.ру</div>
+                                </div>
+                                <div class="product-card__shop-separator"></div>
+                                <div class="product-card__shop-item product-card__shop-item_disable">
+                                  <div class="product-card__shop-item-stock">закончился</div>
+                                  <div class="product-card__shop-image">
+                                    <img src="./assets/img/product-card/shop-images/image 17.svg">
+                                  </div>
+                                  <div class="product-card__shop-name">Все инструменты</div>
+                                </div>
+                                <div class="product-card__shop-separator"></div>
+                                <div class="product-card__shop-item">
+                                  <div class="product-card__shop-item-stock">в наличии</div>
+                                  <div class="product-card__shop-image">
+                                    <img src="./assets/img/product-card/shop-images/Sbermarket 2.svg">
+                                  </div>
+                                  <div class="product-card__shop-name">Сбер Маркет</div>
+                                </div>
+                                <div class="product-card__shop-separator"></div>
+                                <div class="product-card__shop-item">
+                                  <div class="product-card__shop-item-stock">в наличии</div>
+                                  <div class="product-card__shop-image">
+                                    <img src="./assets/img/product-card/shop-images/EBay_logo 2.svg">
+                                  </div>
+                                  <div class="product-card__shop-name">EBAY</div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
                         </div>
                       </div>
                     </div>
@@ -1129,9 +1736,94 @@
                           <div class="product-card__price">8 990 ₽
                             <div class="product-card__discount-price"></div>
                           </div>
-                          <button class="product-card__shop-popup">
-                            <img src="./assets/img/product-card/ShoppingCart.svg" alt="">
-                          </button>
+                          <div class="product-card__shop-popup">
+                            <button class="product-card__shop-popup-button">
+                              <img class="product-card__shop-cart-image" src="./assets/img/product-card/ShoppingCart.svg">
+                            </button>
+                            <div class="product-card__shop-list">
+                              <div class="product-card__shop-list-wrapper">
+                                <div class="product-card__shop-item">
+                                  <div class="product-card__shop-item-stock">в наличии</div>
+                                  <div class="product-card__shop-image">
+                                    <img src="./assets/img/product-card/shop-images/Leroy 2.svg">
+                                  </div>
+                                  <div class="product-card__shop-name">Леруа Мерлен</div>
+                                </div>
+                                <div class="product-card__shop-separator"></div>
+                                <div class="product-card__shop-item">
+                                  <div class="product-card__shop-item-stock">в наличии</div>
+                                  <div class="product-card__shop-image">
+                                    <img src="./assets/img/product-card/shop-images/Vector.svg">
+                                  </div>
+                                  <div class="product-card__shop-name">OZON</div>
+                                </div>
+                                <div class="product-card__shop-separator"></div>
+                                <div class="product-card__shop-item">
+                                  <div class="product-card__shop-item-stock">в наличии</div>
+                                  <div class="product-card__shop-image">
+                                    <img src="./assets/img/product-card/shop-images/Wildberries 2.svg">
+                                  </div>
+                                  <div class="product-card__shop-name">Wildberries</div>
+                                </div>
+                                <div class="product-card__shop-separator"></div>
+                                <div class="product-card__shop-item">
+                                  <div class="product-card__shop-item-stock">в наличии</div>
+                                  <div class="product-card__shop-image">
+                                    <img src="./assets/img/product-card/shop-images/Group 214.svg">
+                                  </div>
+                                  <div class="product-card__shop-name">Яндекс Маркет</div>
+                                </div>
+                                <div class="product-card__shop-separator"></div>
+                                <div class="product-card__shop-item product-card__shop-item_disable">
+                                  <div class="product-card__shop-item-stock">закончился</div>
+                                  <div class="product-card__shop-image">
+                                    <img src="./assets/img/product-card/shop-images/DM_logo_3_RGB 2.svg">
+                                  </div>
+                                  <div class="product-card__shop-name">Детский Мир</div>
+                                </div>
+                                <div class="product-card__shop-separator"></div>
+                                <div class="product-card__shop-item">
+                                  <div class="product-card__shop-item-stock">в наличии</div>
+                                  <div class="product-card__shop-image">
+                                    <img src="./assets/img/product-card/shop-images/Aliexpress_logo 2.svg">
+                                  </div>
+                                  <div class="product-card__shop-name">АлиЭкспресс</div>
+                                </div>
+                                <div class="product-card__shop-separator"></div>
+                                <div class="product-card__shop-item">
+                                  <div class="product-card__shop-item-stock">в наличии</div>
+                                  <div class="product-card__shop-image">
+                                    <img src="./assets/img/product-card/shop-images/image 16.svg">
+                                  </div>
+                                  <div class="product-card__shop-name">Коломенка.ру</div>
+                                </div>
+                                <div class="product-card__shop-separator"></div>
+                                <div class="product-card__shop-item product-card__shop-item_disable">
+                                  <div class="product-card__shop-item-stock">закончился</div>
+                                  <div class="product-card__shop-image">
+                                    <img src="./assets/img/product-card/shop-images/image 17.svg">
+                                  </div>
+                                  <div class="product-card__shop-name">Все инструменты</div>
+                                </div>
+                                <div class="product-card__shop-separator"></div>
+                                <div class="product-card__shop-item">
+                                  <div class="product-card__shop-item-stock">в наличии</div>
+                                  <div class="product-card__shop-image">
+                                    <img src="./assets/img/product-card/shop-images/Sbermarket 2.svg">
+                                  </div>
+                                  <div class="product-card__shop-name">Сбер Маркет</div>
+                                </div>
+                                <div class="product-card__shop-separator"></div>
+                                <div class="product-card__shop-item">
+                                  <div class="product-card__shop-item-stock">в наличии</div>
+                                  <div class="product-card__shop-image">
+                                    <img src="./assets/img/product-card/shop-images/EBay_logo 2.svg">
+                                  </div>
+                                  <div class="product-card__shop-name">EBAY</div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
                         </div>
                       </div>
                     </div>
@@ -1209,9 +1901,94 @@
                           <div class="product-card__price">10 390 ₽
                             <div class="product-card__discount-price"></div>
                           </div>
-                          <button class="product-card__shop-popup">
-                            <img src="./assets/img/product-card/ShoppingCart.svg" alt="">
-                          </button>
+                          <div class="product-card__shop-popup">
+                            <button class="product-card__shop-popup-button">
+                              <img class="product-card__shop-cart-image" src="./assets/img/product-card/ShoppingCart.svg">
+                            </button>
+                            <div class="product-card__shop-list">
+                              <div class="product-card__shop-list-wrapper">
+                                <div class="product-card__shop-item">
+                                  <div class="product-card__shop-item-stock">в наличии</div>
+                                  <div class="product-card__shop-image">
+                                    <img src="./assets/img/product-card/shop-images/Leroy 2.svg">
+                                  </div>
+                                  <div class="product-card__shop-name">Леруа Мерлен</div>
+                                </div>
+                                <div class="product-card__shop-separator"></div>
+                                <div class="product-card__shop-item">
+                                  <div class="product-card__shop-item-stock">в наличии</div>
+                                  <div class="product-card__shop-image">
+                                    <img src="./assets/img/product-card/shop-images/Vector.svg">
+                                  </div>
+                                  <div class="product-card__shop-name">OZON</div>
+                                </div>
+                                <div class="product-card__shop-separator"></div>
+                                <div class="product-card__shop-item">
+                                  <div class="product-card__shop-item-stock">в наличии</div>
+                                  <div class="product-card__shop-image">
+                                    <img src="./assets/img/product-card/shop-images/Wildberries 2.svg">
+                                  </div>
+                                  <div class="product-card__shop-name">Wildberries</div>
+                                </div>
+                                <div class="product-card__shop-separator"></div>
+                                <div class="product-card__shop-item">
+                                  <div class="product-card__shop-item-stock">в наличии</div>
+                                  <div class="product-card__shop-image">
+                                    <img src="./assets/img/product-card/shop-images/Group 214.svg">
+                                  </div>
+                                  <div class="product-card__shop-name">Яндекс Маркет</div>
+                                </div>
+                                <div class="product-card__shop-separator"></div>
+                                <div class="product-card__shop-item product-card__shop-item_disable">
+                                  <div class="product-card__shop-item-stock">закончился</div>
+                                  <div class="product-card__shop-image">
+                                    <img src="./assets/img/product-card/shop-images/DM_logo_3_RGB 2.svg">
+                                  </div>
+                                  <div class="product-card__shop-name">Детский Мир</div>
+                                </div>
+                                <div class="product-card__shop-separator"></div>
+                                <div class="product-card__shop-item">
+                                  <div class="product-card__shop-item-stock">в наличии</div>
+                                  <div class="product-card__shop-image">
+                                    <img src="./assets/img/product-card/shop-images/Aliexpress_logo 2.svg">
+                                  </div>
+                                  <div class="product-card__shop-name">АлиЭкспресс</div>
+                                </div>
+                                <div class="product-card__shop-separator"></div>
+                                <div class="product-card__shop-item">
+                                  <div class="product-card__shop-item-stock">в наличии</div>
+                                  <div class="product-card__shop-image">
+                                    <img src="./assets/img/product-card/shop-images/image 16.svg">
+                                  </div>
+                                  <div class="product-card__shop-name">Коломенка.ру</div>
+                                </div>
+                                <div class="product-card__shop-separator"></div>
+                                <div class="product-card__shop-item product-card__shop-item_disable">
+                                  <div class="product-card__shop-item-stock">закончился</div>
+                                  <div class="product-card__shop-image">
+                                    <img src="./assets/img/product-card/shop-images/image 17.svg">
+                                  </div>
+                                  <div class="product-card__shop-name">Все инструменты</div>
+                                </div>
+                                <div class="product-card__shop-separator"></div>
+                                <div class="product-card__shop-item">
+                                  <div class="product-card__shop-item-stock">в наличии</div>
+                                  <div class="product-card__shop-image">
+                                    <img src="./assets/img/product-card/shop-images/Sbermarket 2.svg">
+                                  </div>
+                                  <div class="product-card__shop-name">Сбер Маркет</div>
+                                </div>
+                                <div class="product-card__shop-separator"></div>
+                                <div class="product-card__shop-item">
+                                  <div class="product-card__shop-item-stock">в наличии</div>
+                                  <div class="product-card__shop-image">
+                                    <img src="./assets/img/product-card/shop-images/EBay_logo 2.svg">
+                                  </div>
+                                  <div class="product-card__shop-name">EBAY</div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
                         </div>
                       </div>
                     </div>
@@ -1308,9 +2085,94 @@
                           <div class="product-card__price product-card__price_color_green">43 990 ₽
                             <div class="product-card__discount-price">43 099 ₽</div>
                           </div>
-                          <button class="product-card__shop-popup">
-                            <img src="./assets/img/product-card/ShoppingCart.svg" alt="">
-                          </button>
+                          <div class="product-card__shop-popup">
+                            <button class="product-card__shop-popup-button">
+                              <img class="product-card__shop-cart-image" src="./assets/img/product-card/ShoppingCart.svg">
+                            </button>
+                            <div class="product-card__shop-list">
+                              <div class="product-card__shop-list-wrapper">
+                                <div class="product-card__shop-item">
+                                  <div class="product-card__shop-item-stock">в наличии</div>
+                                  <div class="product-card__shop-image">
+                                    <img src="./assets/img/product-card/shop-images/Leroy 2.svg">
+                                  </div>
+                                  <div class="product-card__shop-name">Леруа Мерлен</div>
+                                </div>
+                                <div class="product-card__shop-separator"></div>
+                                <div class="product-card__shop-item">
+                                  <div class="product-card__shop-item-stock">в наличии</div>
+                                  <div class="product-card__shop-image">
+                                    <img src="./assets/img/product-card/shop-images/Vector.svg">
+                                  </div>
+                                  <div class="product-card__shop-name">OZON</div>
+                                </div>
+                                <div class="product-card__shop-separator"></div>
+                                <div class="product-card__shop-item">
+                                  <div class="product-card__shop-item-stock">в наличии</div>
+                                  <div class="product-card__shop-image">
+                                    <img src="./assets/img/product-card/shop-images/Wildberries 2.svg">
+                                  </div>
+                                  <div class="product-card__shop-name">Wildberries</div>
+                                </div>
+                                <div class="product-card__shop-separator"></div>
+                                <div class="product-card__shop-item">
+                                  <div class="product-card__shop-item-stock">в наличии</div>
+                                  <div class="product-card__shop-image">
+                                    <img src="./assets/img/product-card/shop-images/Group 214.svg">
+                                  </div>
+                                  <div class="product-card__shop-name">Яндекс Маркет</div>
+                                </div>
+                                <div class="product-card__shop-separator"></div>
+                                <div class="product-card__shop-item product-card__shop-item_disable">
+                                  <div class="product-card__shop-item-stock">закончился</div>
+                                  <div class="product-card__shop-image">
+                                    <img src="./assets/img/product-card/shop-images/DM_logo_3_RGB 2.svg">
+                                  </div>
+                                  <div class="product-card__shop-name">Детский Мир</div>
+                                </div>
+                                <div class="product-card__shop-separator"></div>
+                                <div class="product-card__shop-item">
+                                  <div class="product-card__shop-item-stock">в наличии</div>
+                                  <div class="product-card__shop-image">
+                                    <img src="./assets/img/product-card/shop-images/Aliexpress_logo 2.svg">
+                                  </div>
+                                  <div class="product-card__shop-name">АлиЭкспресс</div>
+                                </div>
+                                <div class="product-card__shop-separator"></div>
+                                <div class="product-card__shop-item">
+                                  <div class="product-card__shop-item-stock">в наличии</div>
+                                  <div class="product-card__shop-image">
+                                    <img src="./assets/img/product-card/shop-images/image 16.svg">
+                                  </div>
+                                  <div class="product-card__shop-name">Коломенка.ру</div>
+                                </div>
+                                <div class="product-card__shop-separator"></div>
+                                <div class="product-card__shop-item product-card__shop-item_disable">
+                                  <div class="product-card__shop-item-stock">закончился</div>
+                                  <div class="product-card__shop-image">
+                                    <img src="./assets/img/product-card/shop-images/image 17.svg">
+                                  </div>
+                                  <div class="product-card__shop-name">Все инструменты</div>
+                                </div>
+                                <div class="product-card__shop-separator"></div>
+                                <div class="product-card__shop-item">
+                                  <div class="product-card__shop-item-stock">в наличии</div>
+                                  <div class="product-card__shop-image">
+                                    <img src="./assets/img/product-card/shop-images/Sbermarket 2.svg">
+                                  </div>
+                                  <div class="product-card__shop-name">Сбер Маркет</div>
+                                </div>
+                                <div class="product-card__shop-separator"></div>
+                                <div class="product-card__shop-item">
+                                  <div class="product-card__shop-item-stock">в наличии</div>
+                                  <div class="product-card__shop-image">
+                                    <img src="./assets/img/product-card/shop-images/EBay_logo 2.svg">
+                                  </div>
+                                  <div class="product-card__shop-name">EBAY</div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
                         </div>
                       </div>
                     </div>
@@ -1388,9 +2250,94 @@
                           <div class="product-card__price">28 990 ₽
                             <div class="product-card__discount-price"></div>
                           </div>
-                          <button class="product-card__shop-popup">
-                            <img src="./assets/img/product-card/ShoppingCart.svg" alt="">
-                          </button>
+                          <div class="product-card__shop-popup">
+                            <button class="product-card__shop-popup-button">
+                              <img class="product-card__shop-cart-image" src="./assets/img/product-card/ShoppingCart.svg">
+                            </button>
+                            <div class="product-card__shop-list">
+                              <div class="product-card__shop-list-wrapper">
+                                <div class="product-card__shop-item">
+                                  <div class="product-card__shop-item-stock">в наличии</div>
+                                  <div class="product-card__shop-image">
+                                    <img src="./assets/img/product-card/shop-images/Leroy 2.svg">
+                                  </div>
+                                  <div class="product-card__shop-name">Леруа Мерлен</div>
+                                </div>
+                                <div class="product-card__shop-separator"></div>
+                                <div class="product-card__shop-item">
+                                  <div class="product-card__shop-item-stock">в наличии</div>
+                                  <div class="product-card__shop-image">
+                                    <img src="./assets/img/product-card/shop-images/Vector.svg">
+                                  </div>
+                                  <div class="product-card__shop-name">OZON</div>
+                                </div>
+                                <div class="product-card__shop-separator"></div>
+                                <div class="product-card__shop-item">
+                                  <div class="product-card__shop-item-stock">в наличии</div>
+                                  <div class="product-card__shop-image">
+                                    <img src="./assets/img/product-card/shop-images/Wildberries 2.svg">
+                                  </div>
+                                  <div class="product-card__shop-name">Wildberries</div>
+                                </div>
+                                <div class="product-card__shop-separator"></div>
+                                <div class="product-card__shop-item">
+                                  <div class="product-card__shop-item-stock">в наличии</div>
+                                  <div class="product-card__shop-image">
+                                    <img src="./assets/img/product-card/shop-images/Group 214.svg">
+                                  </div>
+                                  <div class="product-card__shop-name">Яндекс Маркет</div>
+                                </div>
+                                <div class="product-card__shop-separator"></div>
+                                <div class="product-card__shop-item product-card__shop-item_disable">
+                                  <div class="product-card__shop-item-stock">закончился</div>
+                                  <div class="product-card__shop-image">
+                                    <img src="./assets/img/product-card/shop-images/DM_logo_3_RGB 2.svg">
+                                  </div>
+                                  <div class="product-card__shop-name">Детский Мир</div>
+                                </div>
+                                <div class="product-card__shop-separator"></div>
+                                <div class="product-card__shop-item">
+                                  <div class="product-card__shop-item-stock">в наличии</div>
+                                  <div class="product-card__shop-image">
+                                    <img src="./assets/img/product-card/shop-images/Aliexpress_logo 2.svg">
+                                  </div>
+                                  <div class="product-card__shop-name">АлиЭкспресс</div>
+                                </div>
+                                <div class="product-card__shop-separator"></div>
+                                <div class="product-card__shop-item">
+                                  <div class="product-card__shop-item-stock">в наличии</div>
+                                  <div class="product-card__shop-image">
+                                    <img src="./assets/img/product-card/shop-images/image 16.svg">
+                                  </div>
+                                  <div class="product-card__shop-name">Коломенка.ру</div>
+                                </div>
+                                <div class="product-card__shop-separator"></div>
+                                <div class="product-card__shop-item product-card__shop-item_disable">
+                                  <div class="product-card__shop-item-stock">закончился</div>
+                                  <div class="product-card__shop-image">
+                                    <img src="./assets/img/product-card/shop-images/image 17.svg">
+                                  </div>
+                                  <div class="product-card__shop-name">Все инструменты</div>
+                                </div>
+                                <div class="product-card__shop-separator"></div>
+                                <div class="product-card__shop-item">
+                                  <div class="product-card__shop-item-stock">в наличии</div>
+                                  <div class="product-card__shop-image">
+                                    <img src="./assets/img/product-card/shop-images/Sbermarket 2.svg">
+                                  </div>
+                                  <div class="product-card__shop-name">Сбер Маркет</div>
+                                </div>
+                                <div class="product-card__shop-separator"></div>
+                                <div class="product-card__shop-item">
+                                  <div class="product-card__shop-item-stock">в наличии</div>
+                                  <div class="product-card__shop-image">
+                                    <img src="./assets/img/product-card/shop-images/EBay_logo 2.svg">
+                                  </div>
+                                  <div class="product-card__shop-name">EBAY</div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
                         </div>
                       </div>
                     </div>
@@ -1468,9 +2415,94 @@
                           <div class="product-card__price">5 990 ₽
                             <div class="product-card__discount-price"></div>
                           </div>
-                          <button class="product-card__shop-popup">
-                            <img src="./assets/img/product-card/ShoppingCart.svg" alt="">
-                          </button>
+                          <div class="product-card__shop-popup">
+                            <button class="product-card__shop-popup-button">
+                              <img class="product-card__shop-cart-image" src="./assets/img/product-card/ShoppingCart.svg">
+                            </button>
+                            <div class="product-card__shop-list">
+                              <div class="product-card__shop-list-wrapper">
+                                <div class="product-card__shop-item">
+                                  <div class="product-card__shop-item-stock">в наличии</div>
+                                  <div class="product-card__shop-image">
+                                    <img src="./assets/img/product-card/shop-images/Leroy 2.svg">
+                                  </div>
+                                  <div class="product-card__shop-name">Леруа Мерлен</div>
+                                </div>
+                                <div class="product-card__shop-separator"></div>
+                                <div class="product-card__shop-item">
+                                  <div class="product-card__shop-item-stock">в наличии</div>
+                                  <div class="product-card__shop-image">
+                                    <img src="./assets/img/product-card/shop-images/Vector.svg">
+                                  </div>
+                                  <div class="product-card__shop-name">OZON</div>
+                                </div>
+                                <div class="product-card__shop-separator"></div>
+                                <div class="product-card__shop-item">
+                                  <div class="product-card__shop-item-stock">в наличии</div>
+                                  <div class="product-card__shop-image">
+                                    <img src="./assets/img/product-card/shop-images/Wildberries 2.svg">
+                                  </div>
+                                  <div class="product-card__shop-name">Wildberries</div>
+                                </div>
+                                <div class="product-card__shop-separator"></div>
+                                <div class="product-card__shop-item">
+                                  <div class="product-card__shop-item-stock">в наличии</div>
+                                  <div class="product-card__shop-image">
+                                    <img src="./assets/img/product-card/shop-images/Group 214.svg">
+                                  </div>
+                                  <div class="product-card__shop-name">Яндекс Маркет</div>
+                                </div>
+                                <div class="product-card__shop-separator"></div>
+                                <div class="product-card__shop-item product-card__shop-item_disable">
+                                  <div class="product-card__shop-item-stock">закончился</div>
+                                  <div class="product-card__shop-image">
+                                    <img src="./assets/img/product-card/shop-images/DM_logo_3_RGB 2.svg">
+                                  </div>
+                                  <div class="product-card__shop-name">Детский Мир</div>
+                                </div>
+                                <div class="product-card__shop-separator"></div>
+                                <div class="product-card__shop-item">
+                                  <div class="product-card__shop-item-stock">в наличии</div>
+                                  <div class="product-card__shop-image">
+                                    <img src="./assets/img/product-card/shop-images/Aliexpress_logo 2.svg">
+                                  </div>
+                                  <div class="product-card__shop-name">АлиЭкспресс</div>
+                                </div>
+                                <div class="product-card__shop-separator"></div>
+                                <div class="product-card__shop-item">
+                                  <div class="product-card__shop-item-stock">в наличии</div>
+                                  <div class="product-card__shop-image">
+                                    <img src="./assets/img/product-card/shop-images/image 16.svg">
+                                  </div>
+                                  <div class="product-card__shop-name">Коломенка.ру</div>
+                                </div>
+                                <div class="product-card__shop-separator"></div>
+                                <div class="product-card__shop-item product-card__shop-item_disable">
+                                  <div class="product-card__shop-item-stock">закончился</div>
+                                  <div class="product-card__shop-image">
+                                    <img src="./assets/img/product-card/shop-images/image 17.svg">
+                                  </div>
+                                  <div class="product-card__shop-name">Все инструменты</div>
+                                </div>
+                                <div class="product-card__shop-separator"></div>
+                                <div class="product-card__shop-item">
+                                  <div class="product-card__shop-item-stock">в наличии</div>
+                                  <div class="product-card__shop-image">
+                                    <img src="./assets/img/product-card/shop-images/Sbermarket 2.svg">
+                                  </div>
+                                  <div class="product-card__shop-name">Сбер Маркет</div>
+                                </div>
+                                <div class="product-card__shop-separator"></div>
+                                <div class="product-card__shop-item">
+                                  <div class="product-card__shop-item-stock">в наличии</div>
+                                  <div class="product-card__shop-image">
+                                    <img src="./assets/img/product-card/shop-images/EBay_logo 2.svg">
+                                  </div>
+                                  <div class="product-card__shop-name">EBAY</div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
                         </div>
                       </div>
                     </div>
@@ -1562,9 +2594,94 @@
                           <div class="product-card__price">8 990 ₽
                             <div class="product-card__discount-price"></div>
                           </div>
-                          <button class="product-card__shop-popup">
-                            <img src="./assets/img/product-card/ShoppingCart.svg" alt="">
-                          </button>
+                          <div class="product-card__shop-popup">
+                            <button class="product-card__shop-popup-button">
+                              <img class="product-card__shop-cart-image" src="./assets/img/product-card/ShoppingCart.svg">
+                            </button>
+                            <div class="product-card__shop-list">
+                              <div class="product-card__shop-list-wrapper">
+                                <div class="product-card__shop-item">
+                                  <div class="product-card__shop-item-stock">в наличии</div>
+                                  <div class="product-card__shop-image">
+                                    <img src="./assets/img/product-card/shop-images/Leroy 2.svg">
+                                  </div>
+                                  <div class="product-card__shop-name">Леруа Мерлен</div>
+                                </div>
+                                <div class="product-card__shop-separator"></div>
+                                <div class="product-card__shop-item">
+                                  <div class="product-card__shop-item-stock">в наличии</div>
+                                  <div class="product-card__shop-image">
+                                    <img src="./assets/img/product-card/shop-images/Vector.svg">
+                                  </div>
+                                  <div class="product-card__shop-name">OZON</div>
+                                </div>
+                                <div class="product-card__shop-separator"></div>
+                                <div class="product-card__shop-item">
+                                  <div class="product-card__shop-item-stock">в наличии</div>
+                                  <div class="product-card__shop-image">
+                                    <img src="./assets/img/product-card/shop-images/Wildberries 2.svg">
+                                  </div>
+                                  <div class="product-card__shop-name">Wildberries</div>
+                                </div>
+                                <div class="product-card__shop-separator"></div>
+                                <div class="product-card__shop-item">
+                                  <div class="product-card__shop-item-stock">в наличии</div>
+                                  <div class="product-card__shop-image">
+                                    <img src="./assets/img/product-card/shop-images/Group 214.svg">
+                                  </div>
+                                  <div class="product-card__shop-name">Яндекс Маркет</div>
+                                </div>
+                                <div class="product-card__shop-separator"></div>
+                                <div class="product-card__shop-item product-card__shop-item_disable">
+                                  <div class="product-card__shop-item-stock">закончился</div>
+                                  <div class="product-card__shop-image">
+                                    <img src="./assets/img/product-card/shop-images/DM_logo_3_RGB 2.svg">
+                                  </div>
+                                  <div class="product-card__shop-name">Детский Мир</div>
+                                </div>
+                                <div class="product-card__shop-separator"></div>
+                                <div class="product-card__shop-item">
+                                  <div class="product-card__shop-item-stock">в наличии</div>
+                                  <div class="product-card__shop-image">
+                                    <img src="./assets/img/product-card/shop-images/Aliexpress_logo 2.svg">
+                                  </div>
+                                  <div class="product-card__shop-name">АлиЭкспресс</div>
+                                </div>
+                                <div class="product-card__shop-separator"></div>
+                                <div class="product-card__shop-item">
+                                  <div class="product-card__shop-item-stock">в наличии</div>
+                                  <div class="product-card__shop-image">
+                                    <img src="./assets/img/product-card/shop-images/image 16.svg">
+                                  </div>
+                                  <div class="product-card__shop-name">Коломенка.ру</div>
+                                </div>
+                                <div class="product-card__shop-separator"></div>
+                                <div class="product-card__shop-item product-card__shop-item_disable">
+                                  <div class="product-card__shop-item-stock">закончился</div>
+                                  <div class="product-card__shop-image">
+                                    <img src="./assets/img/product-card/shop-images/image 17.svg">
+                                  </div>
+                                  <div class="product-card__shop-name">Все инструменты</div>
+                                </div>
+                                <div class="product-card__shop-separator"></div>
+                                <div class="product-card__shop-item">
+                                  <div class="product-card__shop-item-stock">в наличии</div>
+                                  <div class="product-card__shop-image">
+                                    <img src="./assets/img/product-card/shop-images/Sbermarket 2.svg">
+                                  </div>
+                                  <div class="product-card__shop-name">Сбер Маркет</div>
+                                </div>
+                                <div class="product-card__shop-separator"></div>
+                                <div class="product-card__shop-item">
+                                  <div class="product-card__shop-item-stock">в наличии</div>
+                                  <div class="product-card__shop-image">
+                                    <img src="./assets/img/product-card/shop-images/EBay_logo 2.svg">
+                                  </div>
+                                  <div class="product-card__shop-name">EBAY</div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
                         </div>
                       </div>
                     </div>
@@ -1642,9 +2759,94 @@
                           <div class="product-card__price">10 390 ₽
                             <div class="product-card__discount-price"></div>
                           </div>
-                          <button class="product-card__shop-popup">
-                            <img src="./assets/img/product-card/ShoppingCart.svg" alt="">
-                          </button>
+                          <div class="product-card__shop-popup">
+                            <button class="product-card__shop-popup-button">
+                              <img class="product-card__shop-cart-image" src="./assets/img/product-card/ShoppingCart.svg">
+                            </button>
+                            <div class="product-card__shop-list">
+                              <div class="product-card__shop-list-wrapper">
+                                <div class="product-card__shop-item">
+                                  <div class="product-card__shop-item-stock">в наличии</div>
+                                  <div class="product-card__shop-image">
+                                    <img src="./assets/img/product-card/shop-images/Leroy 2.svg">
+                                  </div>
+                                  <div class="product-card__shop-name">Леруа Мерлен</div>
+                                </div>
+                                <div class="product-card__shop-separator"></div>
+                                <div class="product-card__shop-item">
+                                  <div class="product-card__shop-item-stock">в наличии</div>
+                                  <div class="product-card__shop-image">
+                                    <img src="./assets/img/product-card/shop-images/Vector.svg">
+                                  </div>
+                                  <div class="product-card__shop-name">OZON</div>
+                                </div>
+                                <div class="product-card__shop-separator"></div>
+                                <div class="product-card__shop-item">
+                                  <div class="product-card__shop-item-stock">в наличии</div>
+                                  <div class="product-card__shop-image">
+                                    <img src="./assets/img/product-card/shop-images/Wildberries 2.svg">
+                                  </div>
+                                  <div class="product-card__shop-name">Wildberries</div>
+                                </div>
+                                <div class="product-card__shop-separator"></div>
+                                <div class="product-card__shop-item">
+                                  <div class="product-card__shop-item-stock">в наличии</div>
+                                  <div class="product-card__shop-image">
+                                    <img src="./assets/img/product-card/shop-images/Group 214.svg">
+                                  </div>
+                                  <div class="product-card__shop-name">Яндекс Маркет</div>
+                                </div>
+                                <div class="product-card__shop-separator"></div>
+                                <div class="product-card__shop-item product-card__shop-item_disable">
+                                  <div class="product-card__shop-item-stock">закончился</div>
+                                  <div class="product-card__shop-image">
+                                    <img src="./assets/img/product-card/shop-images/DM_logo_3_RGB 2.svg">
+                                  </div>
+                                  <div class="product-card__shop-name">Детский Мир</div>
+                                </div>
+                                <div class="product-card__shop-separator"></div>
+                                <div class="product-card__shop-item">
+                                  <div class="product-card__shop-item-stock">в наличии</div>
+                                  <div class="product-card__shop-image">
+                                    <img src="./assets/img/product-card/shop-images/Aliexpress_logo 2.svg">
+                                  </div>
+                                  <div class="product-card__shop-name">АлиЭкспресс</div>
+                                </div>
+                                <div class="product-card__shop-separator"></div>
+                                <div class="product-card__shop-item">
+                                  <div class="product-card__shop-item-stock">в наличии</div>
+                                  <div class="product-card__shop-image">
+                                    <img src="./assets/img/product-card/shop-images/image 16.svg">
+                                  </div>
+                                  <div class="product-card__shop-name">Коломенка.ру</div>
+                                </div>
+                                <div class="product-card__shop-separator"></div>
+                                <div class="product-card__shop-item product-card__shop-item_disable">
+                                  <div class="product-card__shop-item-stock">закончился</div>
+                                  <div class="product-card__shop-image">
+                                    <img src="./assets/img/product-card/shop-images/image 17.svg">
+                                  </div>
+                                  <div class="product-card__shop-name">Все инструменты</div>
+                                </div>
+                                <div class="product-card__shop-separator"></div>
+                                <div class="product-card__shop-item">
+                                  <div class="product-card__shop-item-stock">в наличии</div>
+                                  <div class="product-card__shop-image">
+                                    <img src="./assets/img/product-card/shop-images/Sbermarket 2.svg">
+                                  </div>
+                                  <div class="product-card__shop-name">Сбер Маркет</div>
+                                </div>
+                                <div class="product-card__shop-separator"></div>
+                                <div class="product-card__shop-item">
+                                  <div class="product-card__shop-item-stock">в наличии</div>
+                                  <div class="product-card__shop-image">
+                                    <img src="./assets/img/product-card/shop-images/EBay_logo 2.svg">
+                                  </div>
+                                  <div class="product-card__shop-name">EBAY</div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
                         </div>
                       </div>
                     </div>
@@ -1749,9 +2951,94 @@
                           <div class="product-card__price product-card__price_color_green">43 990 ₽
                             <div class="product-card__discount-price">43 099 ₽</div>
                           </div>
-                          <button class="product-card__shop-popup">
-                            <img src="./assets/img/product-card/ShoppingCart.svg" alt="">
-                          </button>
+                          <div class="product-card__shop-popup">
+                            <button class="product-card__shop-popup-button">
+                              <img class="product-card__shop-cart-image" src="./assets/img/product-card/ShoppingCart.svg">
+                            </button>
+                            <div class="product-card__shop-list">
+                              <div class="product-card__shop-list-wrapper">
+                                <div class="product-card__shop-item">
+                                  <div class="product-card__shop-item-stock">в наличии</div>
+                                  <div class="product-card__shop-image">
+                                    <img src="./assets/img/product-card/shop-images/Leroy 2.svg">
+                                  </div>
+                                  <div class="product-card__shop-name">Леруа Мерлен</div>
+                                </div>
+                                <div class="product-card__shop-separator"></div>
+                                <div class="product-card__shop-item">
+                                  <div class="product-card__shop-item-stock">в наличии</div>
+                                  <div class="product-card__shop-image">
+                                    <img src="./assets/img/product-card/shop-images/Vector.svg">
+                                  </div>
+                                  <div class="product-card__shop-name">OZON</div>
+                                </div>
+                                <div class="product-card__shop-separator"></div>
+                                <div class="product-card__shop-item">
+                                  <div class="product-card__shop-item-stock">в наличии</div>
+                                  <div class="product-card__shop-image">
+                                    <img src="./assets/img/product-card/shop-images/Wildberries 2.svg">
+                                  </div>
+                                  <div class="product-card__shop-name">Wildberries</div>
+                                </div>
+                                <div class="product-card__shop-separator"></div>
+                                <div class="product-card__shop-item">
+                                  <div class="product-card__shop-item-stock">в наличии</div>
+                                  <div class="product-card__shop-image">
+                                    <img src="./assets/img/product-card/shop-images/Group 214.svg">
+                                  </div>
+                                  <div class="product-card__shop-name">Яндекс Маркет</div>
+                                </div>
+                                <div class="product-card__shop-separator"></div>
+                                <div class="product-card__shop-item product-card__shop-item_disable">
+                                  <div class="product-card__shop-item-stock">закончился</div>
+                                  <div class="product-card__shop-image">
+                                    <img src="./assets/img/product-card/shop-images/DM_logo_3_RGB 2.svg">
+                                  </div>
+                                  <div class="product-card__shop-name">Детский Мир</div>
+                                </div>
+                                <div class="product-card__shop-separator"></div>
+                                <div class="product-card__shop-item">
+                                  <div class="product-card__shop-item-stock">в наличии</div>
+                                  <div class="product-card__shop-image">
+                                    <img src="./assets/img/product-card/shop-images/Aliexpress_logo 2.svg">
+                                  </div>
+                                  <div class="product-card__shop-name">АлиЭкспресс</div>
+                                </div>
+                                <div class="product-card__shop-separator"></div>
+                                <div class="product-card__shop-item">
+                                  <div class="product-card__shop-item-stock">в наличии</div>
+                                  <div class="product-card__shop-image">
+                                    <img src="./assets/img/product-card/shop-images/image 16.svg">
+                                  </div>
+                                  <div class="product-card__shop-name">Коломенка.ру</div>
+                                </div>
+                                <div class="product-card__shop-separator"></div>
+                                <div class="product-card__shop-item product-card__shop-item_disable">
+                                  <div class="product-card__shop-item-stock">закончился</div>
+                                  <div class="product-card__shop-image">
+                                    <img src="./assets/img/product-card/shop-images/image 17.svg">
+                                  </div>
+                                  <div class="product-card__shop-name">Все инструменты</div>
+                                </div>
+                                <div class="product-card__shop-separator"></div>
+                                <div class="product-card__shop-item">
+                                  <div class="product-card__shop-item-stock">в наличии</div>
+                                  <div class="product-card__shop-image">
+                                    <img src="./assets/img/product-card/shop-images/Sbermarket 2.svg">
+                                  </div>
+                                  <div class="product-card__shop-name">Сбер Маркет</div>
+                                </div>
+                                <div class="product-card__shop-separator"></div>
+                                <div class="product-card__shop-item">
+                                  <div class="product-card__shop-item-stock">в наличии</div>
+                                  <div class="product-card__shop-image">
+                                    <img src="./assets/img/product-card/shop-images/EBay_logo 2.svg">
+                                  </div>
+                                  <div class="product-card__shop-name">EBAY</div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
                         </div>
                       </div>
                     </div>
@@ -1829,9 +3116,94 @@
                           <div class="product-card__price">28 990 ₽
                             <div class="product-card__discount-price"></div>
                           </div>
-                          <button class="product-card__shop-popup">
-                            <img src="./assets/img/product-card/ShoppingCart.svg" alt="">
-                          </button>
+                          <div class="product-card__shop-popup">
+                            <button class="product-card__shop-popup-button">
+                              <img class="product-card__shop-cart-image" src="./assets/img/product-card/ShoppingCart.svg">
+                            </button>
+                            <div class="product-card__shop-list">
+                              <div class="product-card__shop-list-wrapper">
+                                <div class="product-card__shop-item">
+                                  <div class="product-card__shop-item-stock">в наличии</div>
+                                  <div class="product-card__shop-image">
+                                    <img src="./assets/img/product-card/shop-images/Leroy 2.svg">
+                                  </div>
+                                  <div class="product-card__shop-name">Леруа Мерлен</div>
+                                </div>
+                                <div class="product-card__shop-separator"></div>
+                                <div class="product-card__shop-item">
+                                  <div class="product-card__shop-item-stock">в наличии</div>
+                                  <div class="product-card__shop-image">
+                                    <img src="./assets/img/product-card/shop-images/Vector.svg">
+                                  </div>
+                                  <div class="product-card__shop-name">OZON</div>
+                                </div>
+                                <div class="product-card__shop-separator"></div>
+                                <div class="product-card__shop-item">
+                                  <div class="product-card__shop-item-stock">в наличии</div>
+                                  <div class="product-card__shop-image">
+                                    <img src="./assets/img/product-card/shop-images/Wildberries 2.svg">
+                                  </div>
+                                  <div class="product-card__shop-name">Wildberries</div>
+                                </div>
+                                <div class="product-card__shop-separator"></div>
+                                <div class="product-card__shop-item">
+                                  <div class="product-card__shop-item-stock">в наличии</div>
+                                  <div class="product-card__shop-image">
+                                    <img src="./assets/img/product-card/shop-images/Group 214.svg">
+                                  </div>
+                                  <div class="product-card__shop-name">Яндекс Маркет</div>
+                                </div>
+                                <div class="product-card__shop-separator"></div>
+                                <div class="product-card__shop-item product-card__shop-item_disable">
+                                  <div class="product-card__shop-item-stock">закончился</div>
+                                  <div class="product-card__shop-image">
+                                    <img src="./assets/img/product-card/shop-images/DM_logo_3_RGB 2.svg">
+                                  </div>
+                                  <div class="product-card__shop-name">Детский Мир</div>
+                                </div>
+                                <div class="product-card__shop-separator"></div>
+                                <div class="product-card__shop-item">
+                                  <div class="product-card__shop-item-stock">в наличии</div>
+                                  <div class="product-card__shop-image">
+                                    <img src="./assets/img/product-card/shop-images/Aliexpress_logo 2.svg">
+                                  </div>
+                                  <div class="product-card__shop-name">АлиЭкспресс</div>
+                                </div>
+                                <div class="product-card__shop-separator"></div>
+                                <div class="product-card__shop-item">
+                                  <div class="product-card__shop-item-stock">в наличии</div>
+                                  <div class="product-card__shop-image">
+                                    <img src="./assets/img/product-card/shop-images/image 16.svg">
+                                  </div>
+                                  <div class="product-card__shop-name">Коломенка.ру</div>
+                                </div>
+                                <div class="product-card__shop-separator"></div>
+                                <div class="product-card__shop-item product-card__shop-item_disable">
+                                  <div class="product-card__shop-item-stock">закончился</div>
+                                  <div class="product-card__shop-image">
+                                    <img src="./assets/img/product-card/shop-images/image 17.svg">
+                                  </div>
+                                  <div class="product-card__shop-name">Все инструменты</div>
+                                </div>
+                                <div class="product-card__shop-separator"></div>
+                                <div class="product-card__shop-item">
+                                  <div class="product-card__shop-item-stock">в наличии</div>
+                                  <div class="product-card__shop-image">
+                                    <img src="./assets/img/product-card/shop-images/Sbermarket 2.svg">
+                                  </div>
+                                  <div class="product-card__shop-name">Сбер Маркет</div>
+                                </div>
+                                <div class="product-card__shop-separator"></div>
+                                <div class="product-card__shop-item">
+                                  <div class="product-card__shop-item-stock">в наличии</div>
+                                  <div class="product-card__shop-image">
+                                    <img src="./assets/img/product-card/shop-images/EBay_logo 2.svg">
+                                  </div>
+                                  <div class="product-card__shop-name">EBAY</div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
                         </div>
                       </div>
                     </div>
@@ -1909,9 +3281,94 @@
                           <div class="product-card__price">5 990 ₽
                             <div class="product-card__discount-price"></div>
                           </div>
-                          <button class="product-card__shop-popup">
-                            <img src="./assets/img/product-card/ShoppingCart.svg" alt="">
-                          </button>
+                          <div class="product-card__shop-popup">
+                            <button class="product-card__shop-popup-button">
+                              <img class="product-card__shop-cart-image" src="./assets/img/product-card/ShoppingCart.svg">
+                            </button>
+                            <div class="product-card__shop-list">
+                              <div class="product-card__shop-list-wrapper">
+                                <div class="product-card__shop-item">
+                                  <div class="product-card__shop-item-stock">в наличии</div>
+                                  <div class="product-card__shop-image">
+                                    <img src="./assets/img/product-card/shop-images/Leroy 2.svg">
+                                  </div>
+                                  <div class="product-card__shop-name">Леруа Мерлен</div>
+                                </div>
+                                <div class="product-card__shop-separator"></div>
+                                <div class="product-card__shop-item">
+                                  <div class="product-card__shop-item-stock">в наличии</div>
+                                  <div class="product-card__shop-image">
+                                    <img src="./assets/img/product-card/shop-images/Vector.svg">
+                                  </div>
+                                  <div class="product-card__shop-name">OZON</div>
+                                </div>
+                                <div class="product-card__shop-separator"></div>
+                                <div class="product-card__shop-item">
+                                  <div class="product-card__shop-item-stock">в наличии</div>
+                                  <div class="product-card__shop-image">
+                                    <img src="./assets/img/product-card/shop-images/Wildberries 2.svg">
+                                  </div>
+                                  <div class="product-card__shop-name">Wildberries</div>
+                                </div>
+                                <div class="product-card__shop-separator"></div>
+                                <div class="product-card__shop-item">
+                                  <div class="product-card__shop-item-stock">в наличии</div>
+                                  <div class="product-card__shop-image">
+                                    <img src="./assets/img/product-card/shop-images/Group 214.svg">
+                                  </div>
+                                  <div class="product-card__shop-name">Яндекс Маркет</div>
+                                </div>
+                                <div class="product-card__shop-separator"></div>
+                                <div class="product-card__shop-item product-card__shop-item_disable">
+                                  <div class="product-card__shop-item-stock">закончился</div>
+                                  <div class="product-card__shop-image">
+                                    <img src="./assets/img/product-card/shop-images/DM_logo_3_RGB 2.svg">
+                                  </div>
+                                  <div class="product-card__shop-name">Детский Мир</div>
+                                </div>
+                                <div class="product-card__shop-separator"></div>
+                                <div class="product-card__shop-item">
+                                  <div class="product-card__shop-item-stock">в наличии</div>
+                                  <div class="product-card__shop-image">
+                                    <img src="./assets/img/product-card/shop-images/Aliexpress_logo 2.svg">
+                                  </div>
+                                  <div class="product-card__shop-name">АлиЭкспресс</div>
+                                </div>
+                                <div class="product-card__shop-separator"></div>
+                                <div class="product-card__shop-item">
+                                  <div class="product-card__shop-item-stock">в наличии</div>
+                                  <div class="product-card__shop-image">
+                                    <img src="./assets/img/product-card/shop-images/image 16.svg">
+                                  </div>
+                                  <div class="product-card__shop-name">Коломенка.ру</div>
+                                </div>
+                                <div class="product-card__shop-separator"></div>
+                                <div class="product-card__shop-item product-card__shop-item_disable">
+                                  <div class="product-card__shop-item-stock">закончился</div>
+                                  <div class="product-card__shop-image">
+                                    <img src="./assets/img/product-card/shop-images/image 17.svg">
+                                  </div>
+                                  <div class="product-card__shop-name">Все инструменты</div>
+                                </div>
+                                <div class="product-card__shop-separator"></div>
+                                <div class="product-card__shop-item">
+                                  <div class="product-card__shop-item-stock">в наличии</div>
+                                  <div class="product-card__shop-image">
+                                    <img src="./assets/img/product-card/shop-images/Sbermarket 2.svg">
+                                  </div>
+                                  <div class="product-card__shop-name">Сбер Маркет</div>
+                                </div>
+                                <div class="product-card__shop-separator"></div>
+                                <div class="product-card__shop-item">
+                                  <div class="product-card__shop-item-stock">в наличии</div>
+                                  <div class="product-card__shop-image">
+                                    <img src="./assets/img/product-card/shop-images/EBay_logo 2.svg">
+                                  </div>
+                                  <div class="product-card__shop-name">EBAY</div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
                         </div>
                       </div>
                     </div>
@@ -2003,9 +3460,94 @@
                           <div class="product-card__price">8 990 ₽
                             <div class="product-card__discount-price"></div>
                           </div>
-                          <button class="product-card__shop-popup">
-                            <img src="./assets/img/product-card/ShoppingCart.svg" alt="">
-                          </button>
+                          <div class="product-card__shop-popup">
+                            <button class="product-card__shop-popup-button">
+                              <img class="product-card__shop-cart-image" src="./assets/img/product-card/ShoppingCart.svg">
+                            </button>
+                            <div class="product-card__shop-list">
+                              <div class="product-card__shop-list-wrapper">
+                                <div class="product-card__shop-item">
+                                  <div class="product-card__shop-item-stock">в наличии</div>
+                                  <div class="product-card__shop-image">
+                                    <img src="./assets/img/product-card/shop-images/Leroy 2.svg">
+                                  </div>
+                                  <div class="product-card__shop-name">Леруа Мерлен</div>
+                                </div>
+                                <div class="product-card__shop-separator"></div>
+                                <div class="product-card__shop-item">
+                                  <div class="product-card__shop-item-stock">в наличии</div>
+                                  <div class="product-card__shop-image">
+                                    <img src="./assets/img/product-card/shop-images/Vector.svg">
+                                  </div>
+                                  <div class="product-card__shop-name">OZON</div>
+                                </div>
+                                <div class="product-card__shop-separator"></div>
+                                <div class="product-card__shop-item">
+                                  <div class="product-card__shop-item-stock">в наличии</div>
+                                  <div class="product-card__shop-image">
+                                    <img src="./assets/img/product-card/shop-images/Wildberries 2.svg">
+                                  </div>
+                                  <div class="product-card__shop-name">Wildberries</div>
+                                </div>
+                                <div class="product-card__shop-separator"></div>
+                                <div class="product-card__shop-item">
+                                  <div class="product-card__shop-item-stock">в наличии</div>
+                                  <div class="product-card__shop-image">
+                                    <img src="./assets/img/product-card/shop-images/Group 214.svg">
+                                  </div>
+                                  <div class="product-card__shop-name">Яндекс Маркет</div>
+                                </div>
+                                <div class="product-card__shop-separator"></div>
+                                <div class="product-card__shop-item product-card__shop-item_disable">
+                                  <div class="product-card__shop-item-stock">закончился</div>
+                                  <div class="product-card__shop-image">
+                                    <img src="./assets/img/product-card/shop-images/DM_logo_3_RGB 2.svg">
+                                  </div>
+                                  <div class="product-card__shop-name">Детский Мир</div>
+                                </div>
+                                <div class="product-card__shop-separator"></div>
+                                <div class="product-card__shop-item">
+                                  <div class="product-card__shop-item-stock">в наличии</div>
+                                  <div class="product-card__shop-image">
+                                    <img src="./assets/img/product-card/shop-images/Aliexpress_logo 2.svg">
+                                  </div>
+                                  <div class="product-card__shop-name">АлиЭкспресс</div>
+                                </div>
+                                <div class="product-card__shop-separator"></div>
+                                <div class="product-card__shop-item">
+                                  <div class="product-card__shop-item-stock">в наличии</div>
+                                  <div class="product-card__shop-image">
+                                    <img src="./assets/img/product-card/shop-images/image 16.svg">
+                                  </div>
+                                  <div class="product-card__shop-name">Коломенка.ру</div>
+                                </div>
+                                <div class="product-card__shop-separator"></div>
+                                <div class="product-card__shop-item product-card__shop-item_disable">
+                                  <div class="product-card__shop-item-stock">закончился</div>
+                                  <div class="product-card__shop-image">
+                                    <img src="./assets/img/product-card/shop-images/image 17.svg">
+                                  </div>
+                                  <div class="product-card__shop-name">Все инструменты</div>
+                                </div>
+                                <div class="product-card__shop-separator"></div>
+                                <div class="product-card__shop-item">
+                                  <div class="product-card__shop-item-stock">в наличии</div>
+                                  <div class="product-card__shop-image">
+                                    <img src="./assets/img/product-card/shop-images/Sbermarket 2.svg">
+                                  </div>
+                                  <div class="product-card__shop-name">Сбер Маркет</div>
+                                </div>
+                                <div class="product-card__shop-separator"></div>
+                                <div class="product-card__shop-item">
+                                  <div class="product-card__shop-item-stock">в наличии</div>
+                                  <div class="product-card__shop-image">
+                                    <img src="./assets/img/product-card/shop-images/EBay_logo 2.svg">
+                                  </div>
+                                  <div class="product-card__shop-name">EBAY</div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
                         </div>
                       </div>
                     </div>
@@ -2083,9 +3625,94 @@
                           <div class="product-card__price">10 390 ₽
                             <div class="product-card__discount-price"></div>
                           </div>
-                          <button class="product-card__shop-popup">
-                            <img src="./assets/img/product-card/ShoppingCart.svg" alt="">
-                          </button>
+                          <div class="product-card__shop-popup">
+                            <button class="product-card__shop-popup-button">
+                              <img class="product-card__shop-cart-image" src="./assets/img/product-card/ShoppingCart.svg">
+                            </button>
+                            <div class="product-card__shop-list">
+                              <div class="product-card__shop-list-wrapper">
+                                <div class="product-card__shop-item">
+                                  <div class="product-card__shop-item-stock">в наличии</div>
+                                  <div class="product-card__shop-image">
+                                    <img src="./assets/img/product-card/shop-images/Leroy 2.svg">
+                                  </div>
+                                  <div class="product-card__shop-name">Леруа Мерлен</div>
+                                </div>
+                                <div class="product-card__shop-separator"></div>
+                                <div class="product-card__shop-item">
+                                  <div class="product-card__shop-item-stock">в наличии</div>
+                                  <div class="product-card__shop-image">
+                                    <img src="./assets/img/product-card/shop-images/Vector.svg">
+                                  </div>
+                                  <div class="product-card__shop-name">OZON</div>
+                                </div>
+                                <div class="product-card__shop-separator"></div>
+                                <div class="product-card__shop-item">
+                                  <div class="product-card__shop-item-stock">в наличии</div>
+                                  <div class="product-card__shop-image">
+                                    <img src="./assets/img/product-card/shop-images/Wildberries 2.svg">
+                                  </div>
+                                  <div class="product-card__shop-name">Wildberries</div>
+                                </div>
+                                <div class="product-card__shop-separator"></div>
+                                <div class="product-card__shop-item">
+                                  <div class="product-card__shop-item-stock">в наличии</div>
+                                  <div class="product-card__shop-image">
+                                    <img src="./assets/img/product-card/shop-images/Group 214.svg">
+                                  </div>
+                                  <div class="product-card__shop-name">Яндекс Маркет</div>
+                                </div>
+                                <div class="product-card__shop-separator"></div>
+                                <div class="product-card__shop-item product-card__shop-item_disable">
+                                  <div class="product-card__shop-item-stock">закончился</div>
+                                  <div class="product-card__shop-image">
+                                    <img src="./assets/img/product-card/shop-images/DM_logo_3_RGB 2.svg">
+                                  </div>
+                                  <div class="product-card__shop-name">Детский Мир</div>
+                                </div>
+                                <div class="product-card__shop-separator"></div>
+                                <div class="product-card__shop-item">
+                                  <div class="product-card__shop-item-stock">в наличии</div>
+                                  <div class="product-card__shop-image">
+                                    <img src="./assets/img/product-card/shop-images/Aliexpress_logo 2.svg">
+                                  </div>
+                                  <div class="product-card__shop-name">АлиЭкспресс</div>
+                                </div>
+                                <div class="product-card__shop-separator"></div>
+                                <div class="product-card__shop-item">
+                                  <div class="product-card__shop-item-stock">в наличии</div>
+                                  <div class="product-card__shop-image">
+                                    <img src="./assets/img/product-card/shop-images/image 16.svg">
+                                  </div>
+                                  <div class="product-card__shop-name">Коломенка.ру</div>
+                                </div>
+                                <div class="product-card__shop-separator"></div>
+                                <div class="product-card__shop-item product-card__shop-item_disable">
+                                  <div class="product-card__shop-item-stock">закончился</div>
+                                  <div class="product-card__shop-image">
+                                    <img src="./assets/img/product-card/shop-images/image 17.svg">
+                                  </div>
+                                  <div class="product-card__shop-name">Все инструменты</div>
+                                </div>
+                                <div class="product-card__shop-separator"></div>
+                                <div class="product-card__shop-item">
+                                  <div class="product-card__shop-item-stock">в наличии</div>
+                                  <div class="product-card__shop-image">
+                                    <img src="./assets/img/product-card/shop-images/Sbermarket 2.svg">
+                                  </div>
+                                  <div class="product-card__shop-name">Сбер Маркет</div>
+                                </div>
+                                <div class="product-card__shop-separator"></div>
+                                <div class="product-card__shop-item">
+                                  <div class="product-card__shop-item-stock">в наличии</div>
+                                  <div class="product-card__shop-image">
+                                    <img src="./assets/img/product-card/shop-images/EBay_logo 2.svg">
+                                  </div>
+                                  <div class="product-card__shop-name">EBAY</div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
                         </div>
                       </div>
                     </div>
