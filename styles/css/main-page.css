@@ -379,7 +379,7 @@
 }
 
 .product-card__shop-list {
-  visibility: hidden;
+  display: none;
   position: absolute;
   left: 0;
   bottom: 55px;
@@ -434,6 +434,10 @@
 .product-card__shop-name {
   font-size: 14px;
   color: #333333;
+}
+
+.show {
+  display: block;
 }
 
 .category-list {

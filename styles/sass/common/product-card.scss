@@ -266,7 +266,7 @@
     }
 
     &__shop-list {
-        visibility: hidden;
+        display: none;
         position: absolute;
         left: 0;
         bottom: 55px;
@@ -308,4 +308,8 @@
         font-size: 14px;
         color: #333333;
     }
+}
+
+.show {
+    display: block;
 }
