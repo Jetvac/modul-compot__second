@@ -29,9 +29,10 @@
         background: transparent;
         border: transparent;
         color: #BDBDBD;
+        transition: all 0.3s;
     }
     &__button:hover {
-        color: #969696;
+        color: #27AE60;
     }
     &__button:active {
         color: #535353;
@@ -68,11 +69,25 @@
 
     &__kompot-icon {
         margin-left: auto;
+        transition: all 0.3s;
+    }
+    &__kompot-icon:hover {
+        filter: invert(100%);
+    }
+    &__kompot-icon:active {
+        filter: drop-shadow(0px 5px 5px black);
     }
 
     .social-network {
         margin-left: auto;
         margin-right: auto;
+
+        &__item {
+            transition: all .3s;
+        }
+        &__item:hover {
+            filter: invert(100%);
+        }
     }
 }
 
@@ -109,7 +124,14 @@
     &__category-text {
         font-size: 14px;
         line-height: 38px;
+    }
+    &__category-ref {
         color: #BDBDBD;
+        text-decoration: none;
+        transition: all 0.3s;
+    }
+    &__category-ref:hover {
+        color: #27AE60;
     }
 
     &__nav-panel {
@@ -131,6 +153,10 @@
         height: 54px;
         width: 200px;
         background: #27AE60;
+        transition: all .3s;
+    }
+    &__back-call-button:hover {
+        filter: opacity(0.75);
     }
 
     &__back-call-text {
@@ -152,6 +178,10 @@
         height: 54px;
         width: 200px;
         background: #4B4B4B;
+        transition: all 0.3s;
+    }
+    &__contact-button:hover {
+        filter: opacity(.75);
     }
 
     &__contact-text {

@@ -864,10 +864,12 @@
   background: transparent;
   border: transparent;
   color: #BDBDBD;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
 }
 
 .frame__button:hover {
-  color: #969696;
+  color: #27AE60;
 }
 
 .frame__button:active {
@@ -910,11 +912,33 @@
 
 .frame__kompot-icon {
   margin-left: auto;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.frame__kompot-icon:hover {
+  -webkit-filter: invert(100%);
+          filter: invert(100%);
+}
+
+.frame__kompot-icon:active {
+  -webkit-filter: drop-shadow(0px 5px 5px black);
+          filter: drop-shadow(0px 5px 5px black);
 }
 
 .frame .social-network {
   margin-left: auto;
   margin-right: auto;
+}
+
+.frame .social-network__item {
+  -webkit-transition: all .3s;
+  transition: all .3s;
+}
+
+.frame .social-network__item:hover {
+  -webkit-filter: invert(100%);
+          filter: invert(100%);
 }
 
 .frame-menu__row {
@@ -960,7 +984,17 @@
 .frame-menu__category-text {
   font-size: 14px;
   line-height: 38px;
+}
+
+.frame-menu__category-ref {
   color: #BDBDBD;
+  text-decoration: none;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.frame-menu__category-ref:hover {
+  color: #27AE60;
 }
 
 .frame-menu__nav-panel {
@@ -996,6 +1030,13 @@
   height: 54px;
   width: 200px;
   background: #27AE60;
+  -webkit-transition: all .3s;
+  transition: all .3s;
+}
+
+.frame-menu__back-call-button:hover {
+  -webkit-filter: opacity(0.75);
+          filter: opacity(0.75);
 }
 
 .frame-menu__back-call-text {
@@ -1026,6 +1067,13 @@
   height: 54px;
   width: 200px;
   background: #4B4B4B;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.frame-menu__contact-button:hover {
+  -webkit-filter: opacity(0.75);
+          filter: opacity(0.75);
 }
 
 .frame-menu__contact-text {
