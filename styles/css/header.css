@@ -50,14 +50,16 @@
   background-color: transparent;
   border-color: transparent;
   color: white;
+  -webkit-transition: all .3s;
+  transition: all .3s;
 }
 
 .header__button:hover {
-  color: #969696;
+  color: #27AE60;
 }
 
 .header__button:active {
-  color: #535353;
+  color: #227042;
 }
 
 .header__info {

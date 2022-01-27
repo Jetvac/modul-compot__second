@@ -1,6 +1,11 @@
 .product-card {
   background: #FFFFFF;
   border: 1px solid #E0E0DD;
+  -webkit-transition: all .3s;
+  transition: all .3s;
+}
+
+.product-card__ref {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -13,6 +18,7 @@
           justify-content: space-between;
   padding: 20px;
   height: 560px;
+  text-decoration: none;
 }
 
 .product-card__body {
@@ -293,6 +299,7 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  color: #626262;
 }
 
 .product-card__tool-wrapper {
@@ -335,6 +342,12 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -webkit-transition: all .3s;
+  transition: all .3s;
+}
+
+.product-card__shop-popup-button:hover {
+  background: #207543;
 }
 
 .product-card__shop-list {
@@ -565,6 +578,11 @@
   color: #626262;
 }
 
+.product-card:hover {
+  -webkit-transform: scale(1.01);
+          transform: scale(1.01);
+}
+
 .category-list {
   overflow: hidden;
 }
@@ -778,14 +796,16 @@
   background-color: transparent;
   border-color: transparent;
   color: white;
+  -webkit-transition: all .3s;
+  transition: all .3s;
 }
 
 .header__button:hover {
-  color: #969696;
+  color: #27AE60;
 }
 
 .header__button:active {
-  color: #535353;
+  color: #227042;
 }
 
 .header__info {
@@ -1721,6 +1741,13 @@ body .body__wrapper {
 .promote__frame {
   width: 33%;
   height: auto;
+  -webkit-transition: all .3s;
+  transition: all .3s;
+}
+
+.promote__frame:hover {
+  -webkit-transform: scale(1.01);
+          transform: scale(1.01);
 }
 
 .frame-card {
@@ -1864,6 +1891,16 @@ body .body__wrapper {
   gap: 20px;
   margin-top: 30px;
   margin-bottom: 30px;
+}
+
+.catalog__banner-item {
+  -webkit-transition: all .3s;
+  transition: all .3s;
+}
+
+.catalog__banner-item:hover {
+  -webkit-transform: scale(1.01);
+          transform: scale(1.01);
 }
 
 .catalog__banner-box {

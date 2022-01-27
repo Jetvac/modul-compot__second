@@ -36,6 +36,10 @@ body {
     &__frame {
         width: 33%;
         height: auto;
+        transition: all .3s;
+    }
+    &__frame:hover {
+        transform: scale(1.01);
     }
 }
 
@@ -157,6 +161,13 @@ body {
         gap: 20px;
         margin-top: 30px;
         margin-bottom: 30px;
+    }
+
+    &__banner-item {
+        transition: all .3s;
+    }
+    &__banner-item:hover {
+        transform: scale(1.01);
     }
 
     &__banner-box {

@@ -31,12 +31,13 @@
         background-color: transparent;
         border-color: transparent;
         color: white;
+        transition: all .3s;
     }
     &__button:hover {
-        color: #969696;
+        color: #27AE60;
     }
     &__button:active {
-        color: #535353;
+        color: #227042;
     }
 
     &__info {
