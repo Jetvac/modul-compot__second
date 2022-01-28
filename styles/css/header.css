@@ -55,11 +55,11 @@
 }
 
 .header__button:hover {
-  color: #27AE60;
+  color: #A5A5A5;
 }
 
 .header__button:active {
-  color: #227042;
+  color: #7a7878;
 }
 
 .header__info {

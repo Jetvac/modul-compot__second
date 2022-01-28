@@ -5,7 +5,7 @@
     <link rel="icon" type="image/svg+xml" href="favicon.svg" />
     <link rel="stylesheet" href="./styles/css/main-page.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
-    <script type="module" src="./js/drop-menu.min.js"></script>
+    <script type="module" src="./js/index.min.js"></script>
     <title>Crystall Tree</title>
   </head>
   <header class="header">
@@ -27,6 +27,7 @@
   </header>
   <body class="body">
     <div class="menu">
+      <!-- Burger panel -->
       <div class="menu__toggle">
         <input id="menu__toggle-checkbox" type="checkbox">
         <label class="menu__toggle-button" for="menu__toggle-checkbox">
@@ -39,11 +40,11 @@
               <ul class="menu__category">
                 <li class="menu__category-title">Комнатные ели</li>
                 <ul class="menu__category-subcategory">
-                  <li class="menu__category-item">Литые</li>
-                  <li class="menu__category-item">Комбинированые</li>
-                  <li class="menu__category-item">Елки из ПВХ</li>
-                  <li class="menu__category-item">Заснеженные, с освещением</li>
-                  <li class="menu__category-item">Дизайнерские</li>
+                  <li class="menu__category-item"><a class="menu__category-item-ref" href="catalog.html">Литые</a></li>
+                  <li class="menu__category-item"><a class="menu__category-item-ref" href="catalog.html">Комбинированые</a></li>
+                  <li class="menu__category-item"><a class="menu__category-item-ref" href="catalog.html">Елки из ПВХ</a></li>
+                  <li class="menu__category-item"><a class="menu__category-item-ref" href="catalog.html">Заснеженные, с освещением</a></li>
+                  <li class="menu__category-item"><a class="menu__category-item-ref" href="catalog.html">Дизайнерские</a></li>
                 </ul>
               </ul>
             </div>
@@ -52,8 +53,8 @@
               <ul class="menu__category">
                 <li class="menu__category-title">Высотные ели</li>
                 <ul class="menu__category-subcategory">
-                  <li class="menu__category-item">Уличные ели</li>
-                  <li class="menu__category-item">Интерьерные ели</li>
+                  <li class="menu__category-item"><a class="menu__category-item-ref" href="catalog.html">Уличные ели</a></li>
+                  <li class="menu__category-item"><a class="menu__category-item-ref" href="catalog.html">Интерьерные ели</a></li>
                 </ul>
               </ul>
             </div>
@@ -62,11 +63,11 @@
               <ul class="menu__category">
                 <li class="menu__category-title">Новогодний декор</li>
                 <ul class="menu__category-subcategory">
-                  <li class="menu__category-item">Хвойные венки</li>
-                  <li class="menu__category-item">Хвойные гирлянды</li>
-                  <li class="menu__category-item">Хвойные сваги</li>
-                  <li class="menu__category-item">Елочные украшения</li>
-                  <li class="menu__category-item">Дизайнерские</li>
+                  <li class="menu__category-item"><a class="menu__category-item-ref" href="catalog.html">Хвойные венки</a></li>
+                  <li class="menu__category-item"><a class="menu__category-item-ref" href="catalog.html">Хвойные гирлянды</a></li>
+                  <li class="menu__category-item"><a class="menu__category-item-ref" href="catalog.html">Хвойные сваги</a></li>
+                  <li class="menu__category-item"><a class="menu__category-item-ref" href="catalog.html">Елочные украшения</a></li>
+                  <li class="menu__category-item"><a class="menu__category-item-ref" href="catalog.html">Дизайнерские</a></li>
                 </ul>
               </ul>
             </div>
@@ -75,22 +76,28 @@
               <ul class="menu__category">
                 <li class="menu__category-title">Гирлянды</li>
                 <ul class="menu__category-subcategory">
-                  <li class="menu__category-item">Электрогирлянды</li>
-                  <li class="menu__category-item">На батарейках</li>
-                  <li class="menu__category-item">Занавесы, сетки</li>
+                  <li class="menu__category-item"><a class="menu__category-item-ref" href="catalog.html">Электрогирлянды</a></li>
+                  <li class="menu__category-item"><a class="menu__category-item-ref" href="catalog.html">На батарейках</a></li>
+                  <li class="menu__category-item"><a class="menu__category-item-ref" href="catalog.html">Занавесы, сетки</a></li>
                 </ul>
               </ul>
             </div>
             <div class="menu__burger-item menu__burger-item-social">
               <div class="social-network">
-                <div class="social-network__facebook-icon">
-                  <img src="./assets/img/frame/facebook-icon.svg">
+                <div class="social-network__item social-network__facebook-icon">
+                  <a class="social-network__item-ref" href="#">
+                    <img src="./assets/img/frame/facebook-icon.svg">
+                  </a>
                 </div>
-                <div class="social-network__instagram-icon">
-                  <img src="./assets/img/frame/instagram-icon.svg">
+                <div class="social-network__item social-network__instagram-icon">
+                  <a class="social-network__item-ref" href="#">
+                    <img src="./assets/img/frame/instagram-icon.svg">
+                  </a>
                 </div>
-                <div class="social-network__youtuber-icon">
-                  <img src="./assets/img/frame/youtube-icon.svg">
+                <div class="social-network__item social-network__youtuber-icon">
+                  <a class="social-network__item-ref" href="#">
+                    <img src="./assets/img/frame/youtube-icon.svg">
+                  </a>
                 </div>
               </div>
               <div class="menu__disclaimer">
@@ -102,7 +109,7 @@
                 <div class="menu__footer-promote">
                   Стань партнером, заработай от 700 000 рублей за 3 месяца!
                 </div>
-                <button class="menu__footer-button">Подробнее</button>
+                <a class="menu__footer-button" href="#">Подробнее</a>
                 <img class="menu__footer-image" src="./assets/img/burger-menu/promote-image.png" alt="">
                 <div class="menu__footer-benefits">
                   <div class="menu__benefits-item">
@@ -119,6 +126,7 @@
           </div>
         </div>
       </div>
+
       <div class="menu__icon">
         <a class="menu__index-nav" href="#">
           <img src="./assets/img/menu/menu-icon.svg">
@@ -193,16 +201,17 @@
         </div>
       </div>
       <div class="menu__interactive-panel">
-        <button class="menu__search-button">
-          <div class="menu__search-image">
-            <img src="./assets/img/menu/Serach.svg">
+        <a class="menu__search-ref" href="#">
+          <div class="menu__search">
+            <img class="menu__serach-image" src="./assets/img/menu/serach.svg">
           </div>
-        </button>
-        <button class="menu__shopping-cart-button">
-          <div class="menu__shopping-cart-image">
-            <img src="./assets/img/menu/Scales.svg">
+        </a>
+        <a class="menu__shopping-cart-ref" href="#">
+          <div class="menu__shopping-cart">
+            <img class="menu__shoping-cart-image" src="./assets/img/menu/scales.svg">
+            <div class="menu__shoping-cart-counter"></div>
           </div>
-        </button>
+        </a>
       </div>
     </div>
     <div class="body__wrapper">
@@ -317,8 +326,8 @@
                                 </ul>
                               </ul>
                             </div>
-                            <div class="product-card__shoping-cart product-card__shoping-cart--active">
-                              <img src="./assets/img/product-card/shoping-cart--active.svg" alt="">
+                            <div class="product-card__shoping-cart">
+                              <img class="product-card__shoping-cart-image" src="./assets/img/product-card/shoping-cart.svg">
                             </div>
                           </div>
                           <div class="product-card__box-image">
@@ -638,7 +647,7 @@
                               </ul>
                             </div>
                             <div class="product-card__shoping-cart">
-                              <img src="./assets/img/product-card/shoping-cart.svg" alt="">
+                              <img class="product-card__shoping-cart-image" src="./assets/img/product-card/shoping-cart.svg" alt="">
                             </div>
                           </div>
                           <div class="product-card__box-image">
@@ -958,7 +967,7 @@
                                 </ul>
                             </div>
                             <div class="product-card__shoping-cart">
-                              <img src="./assets/img/product-card/shoping-cart.svg">
+                              <img class="product-card__shoping-cart-image" src="./assets/img/product-card/shoping-cart.svg">
                             </div>
                           </div>
                           <div class="product-card__box-image">
@@ -1292,7 +1301,7 @@
                                 </ul>
                             </div>
                             <div class="product-card__shoping-cart">
-                              <img src="./assets/img/product-card/shoping-cart.svg">
+                              <img class="product-card__shoping-cart-image" src="./assets/img/product-card/shoping-cart.svg">
                             </div>
                           </div>
                           <div class="product-card__box-image">
@@ -1612,7 +1621,7 @@
                               </ul>
                             </div>
                             <div class="product-card__shoping-cart">
-                              <img src="./assets/img/product-card/shoping-cart.svg">
+                              <img class="product-card__shoping-cart-image" src="./assets/img/product-card/shoping-cart.svg">
                             </div>
                           </div>
                           <div class="product-card__box-image">
@@ -1956,8 +1965,8 @@
                                 </ul>
                               </ul>
                             </div>
-                            <div class="product-card__shoping-cart product-card__shoping-cart--active">
-                              <img src="./assets/img/product-card/shoping-cart--active.svg" alt="">
+                            <div class="product-card__shoping-cart">
+                              <img class="product-card__shoping-cart-image" src="./assets/img/product-card/shoping-cart.svg" alt="">
                             </div>
                           </div>
                           <div class="product-card__box-image">
@@ -2277,7 +2286,7 @@
                               </ul>
                             </div>
                             <div class="product-card__shoping-cart">
-                              <img src="./assets/img/product-card/shoping-cart.svg" alt="">
+                              <img class="product-card__shoping-cart-image" src="./assets/img/product-card/shoping-cart.svg" alt="">
                             </div>
                           </div>
                           <div class="product-card__box-image">
@@ -2597,7 +2606,7 @@
                                 </ul>
                             </div>
                             <div class="product-card__shoping-cart">
-                              <img src="./assets/img/product-card/shoping-cart.svg">
+                              <img class="product-card__shoping-cart-image" src="./assets/img/product-card/shoping-cart.svg">
                             </div>
                           </div>
                           <div class="product-card__box-image">
@@ -2931,7 +2940,7 @@
                                 </ul>
                             </div>
                             <div class="product-card__shoping-cart">
-                              <img src="./assets/img/product-card/shoping-cart.svg">
+                              <img class="product-card__shoping-cart-image" src="./assets/img/product-card/shoping-cart.svg">
                             </div>
                           </div>
                           <div class="product-card__box-image">
@@ -3251,7 +3260,7 @@
                               </ul>
                             </div>
                             <div class="product-card__shoping-cart">
-                              <img src="./assets/img/product-card/shoping-cart.svg">
+                              <img class="product-card__shoping-cart-image" src="./assets/img/product-card/shoping-cart.svg">
                             </div>
                           </div>
                           <div class="product-card__box-image">
@@ -3589,8 +3598,8 @@
                                 </ul>
                               </ul>
                             </div>
-                            <div class="product-card__shoping-cart product-card__shoping-cart--active">
-                              <img src="./assets/img/product-card/shoping-cart--active.svg" alt="">
+                            <div class="product-card__shoping-cart">
+                              <img class="product-card__shoping-cart-image" src="./assets/img/product-card/shoping-cart.svg" alt="">
                             </div>
                           </div>
                           <div class="product-card__box-image">
@@ -3910,7 +3919,7 @@
                               </ul>
                             </div>
                             <div class="product-card__shoping-cart">
-                              <img src="./assets/img/product-card/shoping-cart.svg" alt="">
+                              <img class="product-card__shoping-cart-image" src="./assets/img/product-card/shoping-cart.svg" alt="">
                             </div>
                           </div>
                           <div class="product-card__box-image">
@@ -4230,7 +4239,7 @@
                                 </ul>
                             </div>
                             <div class="product-card__shoping-cart">
-                              <img src="./assets/img/product-card/shoping-cart.svg">
+                              <img class="product-card__shoping-cart-image" src="./assets/img/product-card/shoping-cart.svg">
                             </div>
                           </div>
                           <div class="product-card__box-image">
@@ -4564,7 +4573,7 @@
                                 </ul>
                             </div>
                             <div class="product-card__shoping-cart">
-                              <img src="./assets/img/product-card/shoping-cart.svg">
+                              <img class="product-card__shoping-cart-image" src="./assets/img/product-card/shoping-cart.svg">
                             </div>
                           </div>
                           <div class="product-card__box-image">
@@ -4884,7 +4893,7 @@
                               </ul>
                             </div>
                             <div class="product-card__shoping-cart">
-                              <img src="./assets/img/product-card/shoping-cart.svg">
+                              <img class="product-card__shoping-cart-image" src="./assets/img/product-card/shoping-cart.svg">
                             </div>
                           </div>
                           <div class="product-card__box-image">
@@ -5230,8 +5239,8 @@
                                 </ul>
                               </ul>
                             </div>
-                            <div class="product-card__shoping-cart product-card__shoping-cart--active">
-                              <img src="./assets/img/product-card/shoping-cart--active.svg" alt="">
+                            <div class="product-card__shoping-cart">
+                              <img class="product-card__shoping-cart-image" src="./assets/img/product-card/shoping-cart.svg" alt="">
                             </div>
                           </div>
                           <div class="product-card__box-image">
@@ -5551,7 +5560,7 @@
                               </ul>
                             </div>
                             <div class="product-card__shoping-cart">
-                              <img src="./assets/img/product-card/shoping-cart.svg" alt="">
+                              <img class="product-card__shoping-cart-image" src="./assets/img/product-card/shoping-cart.svg" alt="">
                             </div>
                           </div>
                           <div class="product-card__box-image">
@@ -5871,7 +5880,7 @@
                                 </ul>
                             </div>
                             <div class="product-card__shoping-cart">
-                              <img src="./assets/img/product-card/shoping-cart.svg">
+                              <img class="product-card__shoping-cart-image" src="./assets/img/product-card/shoping-cart.svg">
                             </div>
                           </div>
                           <div class="product-card__box-image">
@@ -6205,7 +6214,7 @@
                                 </ul>
                             </div>
                             <div class="product-card__shoping-cart">
-                              <img src="./assets/img/product-card/shoping-cart.svg">
+                              <img class="product-card__shoping-cart-image" src="./assets/img/product-card/shoping-cart.svg">
                             </div>
                           </div>
                           <div class="product-card__box-image">
@@ -6525,7 +6534,7 @@
                               </ul>
                             </div>
                             <div class="product-card__shoping-cart">
-                              <img src="./assets/img/product-card/shoping-cart.svg">
+                              <img class="product-card__shoping-cart-image" src="./assets/img/product-card/shoping-cart.svg">
                             </div>
                           </div>
                           <div class="product-card__box-image">

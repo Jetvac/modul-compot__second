@@ -239,9 +239,11 @@
         align-items: center;
         justify-content: center;
         transition: all .3s;
+        cursor: pointer;
     }
     &__shop-popup-button:hover {
         background: #207543;
+        transition: all .3s;
     }
 
     &__shop-list {
@@ -266,6 +268,7 @@
     &__shop-item:hover {
         background: rgba(111, 207, 151, 0.15);
         cursor: pointer;
+        transition: all .3s;
     }
 
     &__shop-item-stock {
@@ -313,6 +316,11 @@
         padding: 0; margin: 0;
         background: transparent;
         border: none;
+        cursor: pointer;
+    }
+    &__size-popup-button:hover {
+        filter: opacity(.85);
+        transition: all .3s;
     }
 
     &__size-list {
@@ -356,6 +364,12 @@
         border: 1px solid #27AE60;
         cursor: pointer;
         background: #EAF8F0;
+    }
+    &__item-size:hover {
+        filter:  none; //Active filter in &__size-popup-button
+        background: rgba(111, 207, 151, 0.15);
+        border: 1px solid #27AE60;
+        transition: all .3s;
     }
 
     %size-type {
@@ -425,6 +439,8 @@
         text-decoration-line: line-through;
         color: #626262;
     }
+
+    
 }
 .product-card:hover {
     transform: scale(1.01);

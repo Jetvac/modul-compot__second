@@ -54,16 +54,17 @@
 
 .menu__interactive-panel {
   margin-left: auto;
-}
-
-.menu__search-button {
-  border: transparent;
-  background: transparent;
-}
-
-.menu__shopping-cart-button {
-  border: transparent;
-  background: transparent;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 21px;
 }
 
 .menu #menu__toggle-checkbox {
@@ -191,6 +192,17 @@
   list-style: none;
 }
 
+.menu__category-item-ref {
+  text-decoration: none;
+  color: #333333;
+  -webkit-transition: all .3s;
+  transition: all .3s;
+}
+
+.menu__category-item-ref:hover {
+  color: #27AE60;
+}
+
 .menu__burger-item {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -243,8 +255,25 @@
   margin-top: 35px;
   border: transparent;
   background: #333333;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   border-radius: 4px;
   color: #FFFFFF;
+  text-decoration: none;
+}
+
+.menu__footer-button:hover {
+  -webkit-filter: opacity(0.85);
+          filter: opacity(0.85);
+  -webkit-transition: all .3s;
+  transition: all .3s;
 }
 
 .menu__footer-image {
@@ -283,6 +312,16 @@
 .menu__benefits-text {
   font-size: 18px;
   line-height: 24px;
+}
+
+.menu .social-network__item {
+  -webkit-transition: all .3s;
+  transition: all .3s;
+}
+
+.menu .social-network__item:hover {
+  -webkit-filter: invert(100%);
+          filter: invert(100%);
 }
 
 .menu__item {
@@ -344,6 +383,12 @@
   -webkit-transform: translate(0px) scaleY(1);
           transform: translate(0px) scaleY(1);
   visibility: visible;
+}
+
+.menu__item-text:hover a {
+  -webkit-transition: all .3s;
+  transition: all .3s;
+  color: #27AE60;
 }
 
 .menu__item-title {

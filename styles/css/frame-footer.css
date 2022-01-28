@@ -50,11 +50,11 @@
 }
 
 .frame__button:hover {
-  color: #27AE60;
+  color: #535353;
 }
 
 .frame__button:active {
-  color: #535353;
+  color: #3d3d3d;
 }
 
 .frame__phone-text {
@@ -175,7 +175,7 @@
 }
 
 .frame-menu__category-ref:hover {
-  color: #27AE60;
+  color: #535353;
 }
 
 .frame-menu__nav-panel {

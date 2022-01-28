@@ -32,16 +32,10 @@
 
     &__interactive-panel {
         margin-left: auto;
-    }
-
-    &__search-button {
-        border: transparent;
-        background: transparent;
-    }
-
-    &__shopping-cart-button {
-        border: transparent;
-        background: transparent;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 21px;
     }
 
 
@@ -141,6 +135,15 @@
         list-style: none;
     }
 
+    &__category-item-ref {
+        text-decoration: none;
+        color: #333333;
+        transition: all .3s;
+    }
+    &__category-item-ref:hover {
+        color: #27AE60;
+    }
+
     &__burger-item {
         display: flex;
         flex-direction: column;
@@ -181,8 +184,16 @@
         margin-top: 35px;
         border: transparent;
         background: #333333;
+        display: flex;
+        align-items: center;
+        justify-content: center;
         border-radius: 4px;
         color: #FFFFFF;
+        text-decoration: none;
+    }
+    &__footer-button:hover {
+        filter: opacity(.85);
+        transition: all .3s;
     }
 
     &__footer-image {
@@ -207,6 +218,15 @@
     &__benefits-text {
         font-size: 18px;
         line-height: 24px;
+    }
+
+    .social-network {
+        &__item {
+            transition: all .3s;
+        }
+        &__item:hover {
+            filter: invert(100%);
+        }
     }
 
 
@@ -251,6 +271,10 @@
     &__drop-menu:hover &__submenu-wrapper {
         transform:  translate(0px) scaleY(1);
         visibility: visible;
+    }
+    &__item-text:hover a {
+        transition: all .3s;
+        color: #27AE60;
     }
 
     &__item-title {
