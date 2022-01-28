@@ -60,6 +60,36 @@
         color: #FFFFFF;
     }
 
+    &__search {
+        position: relative;
+    }
+
+    &__search-panel {
+        visibility: hidden;
+        position: absolute;
+        right: 0; top: 0;
+        background: #FFFFFF;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+    
+    &__search-field {
+        width: 350px;
+        outline: none;
+        border: none;
+        font-size: 18px;
+        line-height: 25px;
+        color: #9C9C9C;
+    }
+
+    &__search-separator {
+        height: 1px;
+        width: 48px;
+        background: #E0E0DD;
+        transform: rotate(90deg);
+    }
+
     //burger-menu    
     #menu__toggle-checkbox {
         opacity: 0;
