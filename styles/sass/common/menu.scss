@@ -38,6 +38,27 @@
         gap: 21px;
     }
 
+    &__shopping-cart-ref {
+        position: relative;
+        height: 48px;
+        display: flex;
+        align-items: center;
+    }
+
+    &__shoping-cart-counter {
+        position: absolute;
+        top: 0; right: 0;
+        background: #27AE60;
+        border-radius: 50%;
+        width: 18px; height: 18px;
+        display: flex;
+        padding-top: 2px;
+        justify-content: center;
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 15px;
+        color: #FFFFFF;
+    }
 
     //burger-menu    
     #menu__toggle-checkbox {

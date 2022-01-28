@@ -1396,6 +1396,38 @@
   gap: 21px;
 }
 
+.menu__shopping-cart-ref {
+  position: relative;
+  height: 48px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.menu__shoping-cart-counter {
+  position: absolute;
+  top: 0;
+  right: 0;
+  background: #27AE60;
+  border-radius: 50%;
+  width: 18px;
+  height: 18px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-top: 2px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 15px;
+  color: #FFFFFF;
+}
+
 .menu #menu__toggle-checkbox {
   opacity: 0;
 }
