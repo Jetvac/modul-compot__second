@@ -1,6 +1,5 @@
 @import "./common/product-card.scss";
 @import "./common/category-list.scss";
-@import "./common/filter-panel.scss";
 @import "./common/nav-arrow.scss";
 @import "./common/nav-button.scss";
 @import "./common/cera-pro-font.scss";
@@ -126,6 +125,18 @@ body {
         display: flex;
         flex-direction: row;
         gap: 30px;
+    }
+    
+    &__filter-panel-button {
+        background: #FFFFFF;
+        box-sizing: border-box;
+        border-radius: 100px;
+        border: 1px solid #E0E0DD;
+        width: 120px;
+        height: 40px;
+    }
+    &__filter-panel-button:hover {
+        border: 1px solid #188145;
     }
 
     &__row {

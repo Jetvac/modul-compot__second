@@ -12,6 +12,23 @@
         text-decoration: none;
     }
 
+    &__shoping-cart {
+        position: relative;
+    }
+    &__shoping-cart-image:hover ~ &__shoping-cart-image--active {
+        visibility: visible;
+    }
+    &__shoping-cart-image--active:hover {
+        visibility: visible;
+    }
+
+    &__shoping-cart-image--active {
+        position: absolute;
+        top: 4px;
+        left: 4px;
+        visibility: hidden;
+    }
+
     &__body {
         display: grid;
         align-items: center;
@@ -229,6 +246,23 @@
         border: 0px;
     }
 
+    &__shop-list {
+        visibility: hidden;
+        position: absolute;
+        left: -270px;
+        bottom: 36px;
+        width: 363px;
+        z-index: 2;
+    }
+    &__shop-list-wrapper {
+        margin-bottom: 12px;
+        background: #FFFFFF;
+        border: 1px solid #E0E0DD;
+        border-radius: 4px;
+        box-sizing: border-box;
+        box-shadow: 0px 7px 20px rgba(0, 0, 0, 0.05);
+    }
+
     &__shop-popup-button {
         width: 100%;
         height: 100%;
@@ -245,19 +279,11 @@
         background: #207543;
         transition: all .3s;
     }
-
-    &__shop-list {
-        display: none;
-        position: absolute;
-        left: -270px;
-        bottom: 55px;
-        background: #FFFFFF;
-        border: 1px solid #E0E0DD;
-        box-sizing: border-box;
-        box-shadow: 0px 7px 20px rgba(0, 0, 0, 0.05);
-        border-radius: 4px;
-        width: 363px;
-        z-index: 2;
+    &__shop-popup-button:hover ~ &__shop-list {
+        visibility: visible;
+    }
+    &__shop-list:hover {
+        visibility: visible;
     }
 
     &__shop-item {
@@ -312,6 +338,17 @@
         border: 0px;
     }
 
+    &__size-list {
+        visibility: hidden;
+        position: absolute;
+        left: 0px;
+        bottom: 28px;
+        padding-bottom: 12px;
+        background: transparent;
+        box-sizing: border-box;
+        z-index: 2;
+    }
+
     &__size-popup-button {
         padding: 0; margin: 0;
         background: transparent;
@@ -322,15 +359,11 @@
         filter: opacity(.85);
         transition: all .3s;
     }
-
-    &__size-list {
-        display: none;
-        position: absolute;
-        left: 0px;
-        bottom: 40px;
-        background: transparent;
-        box-sizing: border-box;
-        z-index: 2;
+    &__size-popup-button:hover ~ &__size-list {
+        visibility: visible;
+    }
+    &__size-list:hover {
+        visibility: visible;
     }
 
     &__size-container {
@@ -440,7 +473,7 @@
         color: #626262;
     }
 
-    
+
 }
 .product-card:hover {
     transform: scale(1.01);

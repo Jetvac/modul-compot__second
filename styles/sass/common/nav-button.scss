@@ -5,3 +5,7 @@
     background: #FFFFFF;
     border: 0px;
 }
+.nav-button:hover {
+    filter: invert(10%);
+    transition: all .3s;
+}

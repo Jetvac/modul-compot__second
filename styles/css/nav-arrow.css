@@ -12,4 +12,11 @@
   border-radius: 4px;
   width: 36px;
   height: 36px;
+  border: none;
+  cursor: pointer;
+}
+
+.nav-arrow .nav-arrow__left:hover, .nav-arrow .nav-arrow__right:hover {
+  -webkit-filter: opacity(0.85);
+          filter: opacity(0.85);
 }

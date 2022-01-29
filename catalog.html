@@ -4,8 +4,6 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="favicon.svg"/>
     <link rel="stylesheet" href="./styles/css/catalog-page.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
-    <script type="module" src="./js/index.min.js"></script>
     <title>Crystall Tree</title>
   </head>
   <header class="header">
@@ -203,12 +201,45 @@
       <div class="menu__interactive-panel">
         <a class="menu__search-ref" href="#">
           <div class="menu__search">
-            <img class="menu__search-image" src="./assets/img/menu/search.svg">
+            <input class="menu__search-checkbox" id="menu__checkbox" type="checkbox">
+            <label class="menu__search-button" for="menu__checkbox">
+              <svg class="menu__search-image" width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M13.5938 23.4375C19.0303 23.4375 23.4375 19.0303 23.4375 13.5938C23.4375 8.1572 19.0303 3.75 13.5938 3.75C8.1572 3.75 3.75 8.1572 3.75 13.5938C3.75 19.0303 8.1572 23.4375 13.5938 23.4375Z" stroke="#333333" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M20.554 20.5547L26.2493 26.2501" stroke="#333333" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </label>
+            <div class="menu__search-panel">
+              <div class="menu__search-separator"></div>
+              <input class="menu__search-field" type="text" placeholder="Искать Ель 180см">
+              <label class="menu__search-close-button" for="menu__checkbox">
+                <img class="menu__search-button-close" src="./assets/img/menu/button-close.svg">
+              </label>
+
+              <div class="menu__search-block">
+                <div class="menu__search-result-list">
+                  <div class="menu__search-result-item">Искусственная Ель Шотландия</div>
+                  <div class="menu__search-result-item">Комнатная ель</div>
+                  <div class="menu__search-result-item">Ель искусственная Шотландия</div>
+                  <div class="menu__search-result-item">Искусственная ель Данхил заснеженная</div>
+                  <div class="menu__search-result-item">Искусственная Ель Шотландия</div>
+                  <div class="menu__search-result-item">Комнатная ель</div>
+                  <div class="menu__search-result-item">Ель искусственная Шотландия</div>
+                  <div class="menu__search-result-item">Искусственная ель Данхил заснеженная</div>
+                  <button class="menu__search-result-item-button">Показать все</button>
+                </div>
+              </div>
+            </div>
           </div>
         </a>
         <a class="menu__shopping-cart-ref" href="#">
           <div class="menu__shopping-cart">
-            <img class="menu__shoping-cart-image" src="./assets/img/menu/scales.svg">
+            <svg class="menu__shoping-cart-image" width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M16 5V27" stroke="#333333" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M13 27H19" stroke="#333333" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M7 11L25 7" stroke="#333333" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M3 21C3 23.2091 5.5 24 7 24C8.5 24 11 23.2091 11 21L7 11L3 21Z" stroke="#333333" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M21 17C21 19.2091 23.5 20 25 20C26.5 20 29 19.2091 29 17L25 7L21 17Z" stroke="#333333" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
             <div class="menu__shoping-cart-counter"></div>
           </div>
         </a>
@@ -387,44 +418,31 @@
                         <div class="product-card__body">
                           <div class="product-card__body-info">
                             <div class="product-card__condition-item">
-                               <!--hot-->
+                              <!--new-->
                               <ul class="product-card__tool-box">
-                                <li class="product-card__tool-header">
-                                  <img class="product-card__condition-image" src="./assets/img/product-card/Hit.svg">
-                                </li>
-                                <ul class="product-card__tool-wrapper">
-                                  <span class="product-card__box-arrow"></span>
-                                  <ul class="product-card__tool-description">
-                                    <li class="product-card__tool-text">
-                                      Хит
-                                    </li>
-                                  </ul>
+                              <li class="product-card__tool-header">
+                                <img class="product-card__condition-image" src="./assets/img/product-card/New.svg">
+                              </li>
+                              <ul class="product-card__tool-wrapper">
+                                <span class="product-card__box-arrow"></span>
+                                <ul class="product-card__tool-description">
+                                  <li class="product-card__tool-text">
+                                    Новинка
+                                  </li>
                                 </ul>
                               </ul>
-                              <!--gift-box-->
-                              <ul class="product-card__tool-box">
-                                <li class="product-card__tool-header">
-                                  <img class="product-card__condition-image" src="./assets/img/product-card/Gift.svg" alt="">
-                                </li>
-                                <ul class="product-card__tool-wrapper">
-                                  <span class="product-card__box-arrow"></span>
-                                  <ul class="product-card__tool-description">
-                                    <li class="product-card__tool-text">
-                                      Светодиодная гирлянда в подарок!
-                                    </li>
-                                  </ul>
-                                </ul>
                               </ul>
                             </div>
-                            <div class="product-card__shoping-cart ">
-                              <img class="product-card__shoping-cart-image" src="../assets/img/product-card/shoping-cart.svg">
+                            <div class="product-card__shoping-cart">
+                              <img class="product-card__shoping-cart-image" src="./assets/img/product-card/shoping-cart.svg">
+                              <img class="product-card__shoping-cart-image--active" src="./assets/img/product-card/shoping-cart--active.svg">
                             </div>
                           </div>
                           <div class="product-card__box-image">
-                            <img class="product-card__title-image" src="./assets/img/product-card/product-image/christmas-tree.png">
+                            <img class="product-card__title-image" src="./assets/img/product-card/product-image/shotlandija 1.png">
                           </div>
                           <div class="product-card__body-text">
-                            <div class="product-card__name">Искусственная Ель Гарда заснеженная</div>
+                            <div class="product-card__name">Искусственная Ель Шотландия</div>
                             <div class="product-card__id">артикул: KP3018</div>
                             <div class="product-card__rate">
                               <div class="product-card__rating">
@@ -619,8 +637,8 @@
                             </div>
                           </div>
                           <div class="product-card__price-panel">
-                            <div class="product-card__price product-card__price_color_green">43 990 ₽
-                              <div class="product-card__discount-price">43 099 ₽</div>
+                            <div class="product-card__price">28 990 ₽
+                              <div class="product-card__discount-price"></div>
                             </div>
                             <div class="product-card__shop-popup">
                               <button class="product-card__shop-popup-button">
@@ -721,44 +739,31 @@
                         <div class="product-card__body">
                           <div class="product-card__body-info">
                             <div class="product-card__condition-item">
-                               <!--hot-->
+                              <!--new-->
                               <ul class="product-card__tool-box">
-                                <li class="product-card__tool-header">
-                                  <img class="product-card__condition-image" src="./assets/img/product-card/Hit.svg">
-                                </li>
-                                <ul class="product-card__tool-wrapper">
-                                  <span class="product-card__box-arrow"></span>
-                                  <ul class="product-card__tool-description">
-                                    <li class="product-card__tool-text">
-                                      Хит
-                                    </li>
-                                  </ul>
+                              <li class="product-card__tool-header">
+                                <img class="product-card__condition-image" src="./assets/img/product-card/New.svg">
+                              </li>
+                              <ul class="product-card__tool-wrapper">
+                                <span class="product-card__box-arrow"></span>
+                                <ul class="product-card__tool-description">
+                                  <li class="product-card__tool-text">
+                                    Новинка
+                                  </li>
                                 </ul>
                               </ul>
-                              <!--gift-box-->
-                              <ul class="product-card__tool-box">
-                                <li class="product-card__tool-header">
-                                  <img class="product-card__condition-image" src="./assets/img/product-card/Gift.svg" alt="">
-                                </li>
-                                <ul class="product-card__tool-wrapper">
-                                  <span class="product-card__box-arrow"></span>
-                                  <ul class="product-card__tool-description">
-                                    <li class="product-card__tool-text">
-                                      Светодиодная гирлянда в подарок!
-                                    </li>
-                                  </ul>
-                                </ul>
                               </ul>
                             </div>
-                            <div class="product-card__shoping-cart ">
-                              <img class="product-card__shoping-cart-image" src="../assets/img/product-card/shoping-cart.svg">
+                            <div class="product-card__shoping-cart">
+                              <img class="product-card__shoping-cart-image" src="./assets/img/product-card/shoping-cart.svg">
+                              <img class="product-card__shoping-cart-image--active" src="./assets/img/product-card/shoping-cart--active.svg">
                             </div>
                           </div>
                           <div class="product-card__box-image">
-                            <img class="product-card__title-image" src="./assets/img/product-card/product-image/christmas-tree.png">
+                            <img class="product-card__title-image" src="./assets/img/product-card/product-image/shotlandija 1.png">
                           </div>
                           <div class="product-card__body-text">
-                            <div class="product-card__name">Искусственная Ель Гарда заснеженная</div>
+                            <div class="product-card__name">Искусственная Ель Шотландия</div>
                             <div class="product-card__id">артикул: KP3018</div>
                             <div class="product-card__rate">
                               <div class="product-card__rating">
@@ -953,8 +958,8 @@
                             </div>
                           </div>
                           <div class="product-card__price-panel">
-                            <div class="product-card__price product-card__price_color_green">43 990 ₽
-                              <div class="product-card__discount-price">43 099 ₽</div>
+                            <div class="product-card__price">28 990 ₽
+                              <div class="product-card__discount-price"></div>
                             </div>
                             <div class="product-card__shop-popup">
                               <button class="product-card__shop-popup-button">
@@ -1055,44 +1060,31 @@
                         <div class="product-card__body">
                           <div class="product-card__body-info">
                             <div class="product-card__condition-item">
-                               <!--hot-->
+                              <!--new-->
                               <ul class="product-card__tool-box">
-                                <li class="product-card__tool-header">
-                                  <img class="product-card__condition-image" src="./assets/img/product-card/Hit.svg">
-                                </li>
-                                <ul class="product-card__tool-wrapper">
-                                  <span class="product-card__box-arrow"></span>
-                                  <ul class="product-card__tool-description">
-                                    <li class="product-card__tool-text">
-                                      Хит
-                                    </li>
-                                  </ul>
+                              <li class="product-card__tool-header">
+                                <img class="product-card__condition-image" src="./assets/img/product-card/New.svg">
+                              </li>
+                              <ul class="product-card__tool-wrapper">
+                                <span class="product-card__box-arrow"></span>
+                                <ul class="product-card__tool-description">
+                                  <li class="product-card__tool-text">
+                                    Новинка
+                                  </li>
                                 </ul>
                               </ul>
-                              <!--gift-box-->
-                              <ul class="product-card__tool-box">
-                                <li class="product-card__tool-header">
-                                  <img class="product-card__condition-image" src="./assets/img/product-card/Gift.svg" alt="">
-                                </li>
-                                <ul class="product-card__tool-wrapper">
-                                  <span class="product-card__box-arrow"></span>
-                                  <ul class="product-card__tool-description">
-                                    <li class="product-card__tool-text">
-                                      Светодиодная гирлянда в подарок!
-                                    </li>
-                                  </ul>
-                                </ul>
                               </ul>
                             </div>
-                            <div class="product-card__shoping-cart ">
-                              <img class="product-card__shoping-cart-image" src="../assets/img/product-card/shoping-cart.svg">
+                            <div class="product-card__shoping-cart">
+                              <img class="product-card__shoping-cart-image" src="./assets/img/product-card/shoping-cart.svg">
+                              <img class="product-card__shoping-cart-image--active" src="./assets/img/product-card/shoping-cart--active.svg">
                             </div>
                           </div>
                           <div class="product-card__box-image">
-                            <img class="product-card__title-image" src="./assets/img/product-card/product-image/christmas-tree.png">
+                            <img class="product-card__title-image" src="./assets/img/product-card/product-image/shotlandija 1.png">
                           </div>
                           <div class="product-card__body-text">
-                            <div class="product-card__name">Искусственная Ель Гарда заснеженная</div>
+                            <div class="product-card__name">Искусственная Ель Шотландия</div>
                             <div class="product-card__id">артикул: KP3018</div>
                             <div class="product-card__rate">
                               <div class="product-card__rating">
@@ -1287,8 +1279,8 @@
                             </div>
                           </div>
                           <div class="product-card__price-panel">
-                            <div class="product-card__price product-card__price_color_green">43 990 ₽
-                              <div class="product-card__discount-price">43 099 ₽</div>
+                            <div class="product-card__price">28 990 ₽
+                              <div class="product-card__discount-price"></div>
                             </div>
                             <div class="product-card__shop-popup">
                               <button class="product-card__shop-popup-button">
@@ -1389,44 +1381,31 @@
                         <div class="product-card__body">
                           <div class="product-card__body-info">
                             <div class="product-card__condition-item">
-                               <!--hot-->
+                              <!--new-->
                               <ul class="product-card__tool-box">
-                                <li class="product-card__tool-header">
-                                  <img class="product-card__condition-image" src="./assets/img/product-card/Hit.svg">
-                                </li>
-                                <ul class="product-card__tool-wrapper">
-                                  <span class="product-card__box-arrow"></span>
-                                  <ul class="product-card__tool-description">
-                                    <li class="product-card__tool-text">
-                                      Хит
-                                    </li>
-                                  </ul>
+                              <li class="product-card__tool-header">
+                                <img class="product-card__condition-image" src="./assets/img/product-card/New.svg">
+                              </li>
+                              <ul class="product-card__tool-wrapper">
+                                <span class="product-card__box-arrow"></span>
+                                <ul class="product-card__tool-description">
+                                  <li class="product-card__tool-text">
+                                    Новинка
+                                  </li>
                                 </ul>
                               </ul>
-                              <!--gift-box-->
-                              <ul class="product-card__tool-box">
-                                <li class="product-card__tool-header">
-                                  <img class="product-card__condition-image" src="./assets/img/product-card/Gift.svg" alt="">
-                                </li>
-                                <ul class="product-card__tool-wrapper">
-                                  <span class="product-card__box-arrow"></span>
-                                  <ul class="product-card__tool-description">
-                                    <li class="product-card__tool-text">
-                                      Светодиодная гирлянда в подарок!
-                                    </li>
-                                  </ul>
-                                </ul>
                               </ul>
                             </div>
-                            <div class="product-card__shoping-cart ">
-                              <img class="product-card__shoping-cart-image" src="../assets/img/product-card/shoping-cart.svg">
+                            <div class="product-card__shoping-cart">
+                              <img class="product-card__shoping-cart-image" src="./assets/img/product-card/shoping-cart.svg">
+                              <img class="product-card__shoping-cart-image--active" src="./assets/img/product-card/shoping-cart--active.svg">
                             </div>
                           </div>
                           <div class="product-card__box-image">
-                            <img class="product-card__title-image" src="./assets/img/product-card/product-image/christmas-tree.png">
+                            <img class="product-card__title-image" src="./assets/img/product-card/product-image/shotlandija 1.png">
                           </div>
                           <div class="product-card__body-text">
-                            <div class="product-card__name">Искусственная Ель Гарда заснеженная</div>
+                            <div class="product-card__name">Искусственная Ель Шотландия</div>
                             <div class="product-card__id">артикул: KP3018</div>
                             <div class="product-card__rate">
                               <div class="product-card__rating">
@@ -1621,8 +1600,8 @@
                             </div>
                           </div>
                           <div class="product-card__price-panel">
-                            <div class="product-card__price product-card__price_color_green">43 990 ₽
-                              <div class="product-card__discount-price">43 099 ₽</div>
+                            <div class="product-card__price">28 990 ₽
+                              <div class="product-card__discount-price"></div>
                             </div>
                             <div class="product-card__shop-popup">
                               <button class="product-card__shop-popup-button">
@@ -1725,44 +1704,31 @@
                         <div class="product-card__body">
                           <div class="product-card__body-info">
                             <div class="product-card__condition-item">
-                               <!--hot-->
+                              <!--new-->
                               <ul class="product-card__tool-box">
-                                <li class="product-card__tool-header">
-                                  <img class="product-card__condition-image" src="./assets/img/product-card/Hit.svg">
-                                </li>
-                                <ul class="product-card__tool-wrapper">
-                                  <span class="product-card__box-arrow"></span>
-                                  <ul class="product-card__tool-description">
-                                    <li class="product-card__tool-text">
-                                      Хит
-                                    </li>
-                                  </ul>
+                              <li class="product-card__tool-header">
+                                <img class="product-card__condition-image" src="./assets/img/product-card/New.svg">
+                              </li>
+                              <ul class="product-card__tool-wrapper">
+                                <span class="product-card__box-arrow"></span>
+                                <ul class="product-card__tool-description">
+                                  <li class="product-card__tool-text">
+                                    Новинка
+                                  </li>
                                 </ul>
                               </ul>
-                              <!--gift-box-->
-                              <ul class="product-card__tool-box">
-                                <li class="product-card__tool-header">
-                                  <img class="product-card__condition-image" src="./assets/img/product-card/Gift.svg" alt="">
-                                </li>
-                                <ul class="product-card__tool-wrapper">
-                                  <span class="product-card__box-arrow"></span>
-                                  <ul class="product-card__tool-description">
-                                    <li class="product-card__tool-text">
-                                      Светодиодная гирлянда в подарок!
-                                    </li>
-                                  </ul>
-                                </ul>
                               </ul>
                             </div>
-                            <div class="product-card__shoping-cart ">
-                              <img class="product-card__shoping-cart-image" src="../assets/img/product-card/shoping-cart.svg">
+                            <div class="product-card__shoping-cart">
+                              <img class="product-card__shoping-cart-image" src="./assets/img/product-card/shoping-cart.svg">
+                              <img class="product-card__shoping-cart-image--active" src="./assets/img/product-card/shoping-cart--active.svg">
                             </div>
                           </div>
                           <div class="product-card__box-image">
-                            <img class="product-card__title-image" src="./assets/img/product-card/product-image/christmas-tree.png">
+                            <img class="product-card__title-image" src="./assets/img/product-card/product-image/shotlandija 1.png">
                           </div>
                           <div class="product-card__body-text">
-                            <div class="product-card__name">Искусственная Ель Гарда заснеженная</div>
+                            <div class="product-card__name">Искусственная Ель Шотландия</div>
                             <div class="product-card__id">артикул: KP3018</div>
                             <div class="product-card__rate">
                               <div class="product-card__rating">
@@ -1957,8 +1923,8 @@
                             </div>
                           </div>
                           <div class="product-card__price-panel">
-                            <div class="product-card__price product-card__price_color_green">43 990 ₽
-                              <div class="product-card__discount-price">43 099 ₽</div>
+                            <div class="product-card__price">28 990 ₽
+                              <div class="product-card__discount-price"></div>
                             </div>
                             <div class="product-card__shop-popup">
                               <button class="product-card__shop-popup-button">
@@ -2059,44 +2025,31 @@
                         <div class="product-card__body">
                           <div class="product-card__body-info">
                             <div class="product-card__condition-item">
-                               <!--hot-->
+                              <!--new-->
                               <ul class="product-card__tool-box">
-                                <li class="product-card__tool-header">
-                                  <img class="product-card__condition-image" src="./assets/img/product-card/Hit.svg">
-                                </li>
-                                <ul class="product-card__tool-wrapper">
-                                  <span class="product-card__box-arrow"></span>
-                                  <ul class="product-card__tool-description">
-                                    <li class="product-card__tool-text">
-                                      Хит
-                                    </li>
-                                  </ul>
+                              <li class="product-card__tool-header">
+                                <img class="product-card__condition-image" src="./assets/img/product-card/New.svg">
+                              </li>
+                              <ul class="product-card__tool-wrapper">
+                                <span class="product-card__box-arrow"></span>
+                                <ul class="product-card__tool-description">
+                                  <li class="product-card__tool-text">
+                                    Новинка
+                                  </li>
                                 </ul>
                               </ul>
-                              <!--gift-box-->
-                              <ul class="product-card__tool-box">
-                                <li class="product-card__tool-header">
-                                  <img class="product-card__condition-image" src="./assets/img/product-card/Gift.svg" alt="">
-                                </li>
-                                <ul class="product-card__tool-wrapper">
-                                  <span class="product-card__box-arrow"></span>
-                                  <ul class="product-card__tool-description">
-                                    <li class="product-card__tool-text">
-                                      Светодиодная гирлянда в подарок!
-                                    </li>
-                                  </ul>
-                                </ul>
                               </ul>
                             </div>
-                            <div class="product-card__shoping-cart ">
-                              <img class="product-card__shoping-cart-image" src="../assets/img/product-card/shoping-cart.svg">
+                            <div class="product-card__shoping-cart">
+                              <img class="product-card__shoping-cart-image" src="./assets/img/product-card/shoping-cart.svg">
+                              <img class="product-card__shoping-cart-image--active" src="./assets/img/product-card/shoping-cart--active.svg">
                             </div>
                           </div>
                           <div class="product-card__box-image">
-                            <img class="product-card__title-image" src="./assets/img/product-card/product-image/christmas-tree.png">
+                            <img class="product-card__title-image" src="./assets/img/product-card/product-image/shotlandija 1.png">
                           </div>
                           <div class="product-card__body-text">
-                            <div class="product-card__name">Искусственная Ель Гарда заснеженная</div>
+                            <div class="product-card__name">Искусственная Ель Шотландия</div>
                             <div class="product-card__id">артикул: KP3018</div>
                             <div class="product-card__rate">
                               <div class="product-card__rating">
@@ -2291,8 +2244,8 @@
                             </div>
                           </div>
                           <div class="product-card__price-panel">
-                            <div class="product-card__price product-card__price_color_green">43 990 ₽
-                              <div class="product-card__discount-price">43 099 ₽</div>
+                            <div class="product-card__price">28 990 ₽
+                              <div class="product-card__discount-price"></div>
                             </div>
                             <div class="product-card__shop-popup">
                               <button class="product-card__shop-popup-button">
@@ -2393,44 +2346,31 @@
                         <div class="product-card__body">
                           <div class="product-card__body-info">
                             <div class="product-card__condition-item">
-                               <!--hot-->
+                              <!--new-->
                               <ul class="product-card__tool-box">
-                                <li class="product-card__tool-header">
-                                  <img class="product-card__condition-image" src="./assets/img/product-card/Hit.svg">
-                                </li>
-                                <ul class="product-card__tool-wrapper">
-                                  <span class="product-card__box-arrow"></span>
-                                  <ul class="product-card__tool-description">
-                                    <li class="product-card__tool-text">
-                                      Хит
-                                    </li>
-                                  </ul>
+                              <li class="product-card__tool-header">
+                                <img class="product-card__condition-image" src="./assets/img/product-card/New.svg">
+                              </li>
+                              <ul class="product-card__tool-wrapper">
+                                <span class="product-card__box-arrow"></span>
+                                <ul class="product-card__tool-description">
+                                  <li class="product-card__tool-text">
+                                    Новинка
+                                  </li>
                                 </ul>
                               </ul>
-                              <!--gift-box-->
-                              <ul class="product-card__tool-box">
-                                <li class="product-card__tool-header">
-                                  <img class="product-card__condition-image" src="./assets/img/product-card/Gift.svg" alt="">
-                                </li>
-                                <ul class="product-card__tool-wrapper">
-                                  <span class="product-card__box-arrow"></span>
-                                  <ul class="product-card__tool-description">
-                                    <li class="product-card__tool-text">
-                                      Светодиодная гирлянда в подарок!
-                                    </li>
-                                  </ul>
-                                </ul>
                               </ul>
                             </div>
-                            <div class="product-card__shoping-cart ">
-                              <img class="product-card__shoping-cart-image" src="../assets/img/product-card/shoping-cart.svg">
+                            <div class="product-card__shoping-cart">
+                              <img class="product-card__shoping-cart-image" src="./assets/img/product-card/shoping-cart.svg">
+                              <img class="product-card__shoping-cart-image--active" src="./assets/img/product-card/shoping-cart--active.svg">
                             </div>
                           </div>
                           <div class="product-card__box-image">
-                            <img class="product-card__title-image" src="./assets/img/product-card/product-image/christmas-tree.png">
+                            <img class="product-card__title-image" src="./assets/img/product-card/product-image/shotlandija 1.png">
                           </div>
                           <div class="product-card__body-text">
-                            <div class="product-card__name">Искусственная Ель Гарда заснеженная</div>
+                            <div class="product-card__name">Искусственная Ель Шотландия</div>
                             <div class="product-card__id">артикул: KP3018</div>
                             <div class="product-card__rate">
                               <div class="product-card__rating">
@@ -2625,8 +2565,8 @@
                             </div>
                           </div>
                           <div class="product-card__price-panel">
-                            <div class="product-card__price product-card__price_color_green">43 990 ₽
-                              <div class="product-card__discount-price">43 099 ₽</div>
+                            <div class="product-card__price">28 990 ₽
+                              <div class="product-card__discount-price"></div>
                             </div>
                             <div class="product-card__shop-popup">
                               <button class="product-card__shop-popup-button">
@@ -2727,44 +2667,31 @@
                         <div class="product-card__body">
                           <div class="product-card__body-info">
                             <div class="product-card__condition-item">
-                               <!--hot-->
+                              <!--new-->
                               <ul class="product-card__tool-box">
-                                <li class="product-card__tool-header">
-                                  <img class="product-card__condition-image" src="./assets/img/product-card/Hit.svg">
-                                </li>
-                                <ul class="product-card__tool-wrapper">
-                                  <span class="product-card__box-arrow"></span>
-                                  <ul class="product-card__tool-description">
-                                    <li class="product-card__tool-text">
-                                      Хит
-                                    </li>
-                                  </ul>
+                              <li class="product-card__tool-header">
+                                <img class="product-card__condition-image" src="./assets/img/product-card/New.svg">
+                              </li>
+                              <ul class="product-card__tool-wrapper">
+                                <span class="product-card__box-arrow"></span>
+                                <ul class="product-card__tool-description">
+                                  <li class="product-card__tool-text">
+                                    Новинка
+                                  </li>
                                 </ul>
                               </ul>
-                              <!--gift-box-->
-                              <ul class="product-card__tool-box">
-                                <li class="product-card__tool-header">
-                                  <img class="product-card__condition-image" src="./assets/img/product-card/Gift.svg" alt="">
-                                </li>
-                                <ul class="product-card__tool-wrapper">
-                                  <span class="product-card__box-arrow"></span>
-                                  <ul class="product-card__tool-description">
-                                    <li class="product-card__tool-text">
-                                      Светодиодная гирлянда в подарок!
-                                    </li>
-                                  </ul>
-                                </ul>
                               </ul>
                             </div>
-                            <div class="product-card__shoping-cart ">
-                              <img class="product-card__shoping-cart-image" src="../assets/img/product-card/shoping-cart.svg">
+                            <div class="product-card__shoping-cart">
+                              <img class="product-card__shoping-cart-image" src="./assets/img/product-card/shoping-cart.svg">
+                              <img class="product-card__shoping-cart-image--active" src="./assets/img/product-card/shoping-cart--active.svg">
                             </div>
                           </div>
                           <div class="product-card__box-image">
-                            <img class="product-card__title-image" src="./assets/img/product-card/product-image/christmas-tree.png">
+                            <img class="product-card__title-image" src="./assets/img/product-card/product-image/shotlandija 1.png">
                           </div>
                           <div class="product-card__body-text">
-                            <div class="product-card__name">Искусственная Ель Гарда заснеженная</div>
+                            <div class="product-card__name">Искусственная Ель Шотландия</div>
                             <div class="product-card__id">артикул: KP3018</div>
                             <div class="product-card__rate">
                               <div class="product-card__rating">
@@ -2959,8 +2886,8 @@
                             </div>
                           </div>
                           <div class="product-card__price-panel">
-                            <div class="product-card__price product-card__price_color_green">43 990 ₽
-                              <div class="product-card__discount-price">43 099 ₽</div>
+                            <div class="product-card__price">28 990 ₽
+                              <div class="product-card__discount-price"></div>
                             </div>
                             <div class="product-card__shop-popup">
                               <button class="product-card__shop-popup-button">
@@ -3066,44 +2993,31 @@
                         <div class="product-card__body">
                           <div class="product-card__body-info">
                             <div class="product-card__condition-item">
-                               <!--hot-->
+                              <!--new-->
                               <ul class="product-card__tool-box">
-                                <li class="product-card__tool-header">
-                                  <img class="product-card__condition-image" src="./assets/img/product-card/Hit.svg">
-                                </li>
-                                <ul class="product-card__tool-wrapper">
-                                  <span class="product-card__box-arrow"></span>
-                                  <ul class="product-card__tool-description">
-                                    <li class="product-card__tool-text">
-                                      Хит
-                                    </li>
-                                  </ul>
+                              <li class="product-card__tool-header">
+                                <img class="product-card__condition-image" src="./assets/img/product-card/New.svg">
+                              </li>
+                              <ul class="product-card__tool-wrapper">
+                                <span class="product-card__box-arrow"></span>
+                                <ul class="product-card__tool-description">
+                                  <li class="product-card__tool-text">
+                                    Новинка
+                                  </li>
                                 </ul>
                               </ul>
-                              <!--gift-box-->
-                              <ul class="product-card__tool-box">
-                                <li class="product-card__tool-header">
-                                  <img class="product-card__condition-image" src="./assets/img/product-card/Gift.svg" alt="">
-                                </li>
-                                <ul class="product-card__tool-wrapper">
-                                  <span class="product-card__box-arrow"></span>
-                                  <ul class="product-card__tool-description">
-                                    <li class="product-card__tool-text">
-                                      Светодиодная гирлянда в подарок!
-                                    </li>
-                                  </ul>
-                                </ul>
                               </ul>
                             </div>
-                            <div class="product-card__shoping-cart ">
-                              <img class="product-card__shoping-cart-image" src="../assets/img/product-card/shoping-cart.svg">
+                            <div class="product-card__shoping-cart">
+                              <img class="product-card__shoping-cart-image" src="./assets/img/product-card/shoping-cart.svg">
+                              <img class="product-card__shoping-cart-image--active" src="./assets/img/product-card/shoping-cart--active.svg">
                             </div>
                           </div>
                           <div class="product-card__box-image">
-                            <img class="product-card__title-image" src="./assets/img/product-card/product-image/christmas-tree.png">
+                            <img class="product-card__title-image" src="./assets/img/product-card/product-image/shotlandija 1.png">
                           </div>
                           <div class="product-card__body-text">
-                            <div class="product-card__name">Искусственная Ель Гарда заснеженная</div>
+                            <div class="product-card__name">Искусственная Ель Шотландия</div>
                             <div class="product-card__id">артикул: KP3018</div>
                             <div class="product-card__rate">
                               <div class="product-card__rating">
@@ -3298,8 +3212,8 @@
                             </div>
                           </div>
                           <div class="product-card__price-panel">
-                            <div class="product-card__price product-card__price_color_green">43 990 ₽
-                              <div class="product-card__discount-price">43 099 ₽</div>
+                            <div class="product-card__price">28 990 ₽
+                              <div class="product-card__discount-price"></div>
                             </div>
                             <div class="product-card__shop-popup">
                               <button class="product-card__shop-popup-button">
@@ -3400,44 +3314,31 @@
                         <div class="product-card__body">
                           <div class="product-card__body-info">
                             <div class="product-card__condition-item">
-                               <!--hot-->
+                              <!--new-->
                               <ul class="product-card__tool-box">
-                                <li class="product-card__tool-header">
-                                  <img class="product-card__condition-image" src="./assets/img/product-card/Hit.svg">
-                                </li>
-                                <ul class="product-card__tool-wrapper">
-                                  <span class="product-card__box-arrow"></span>
-                                  <ul class="product-card__tool-description">
-                                    <li class="product-card__tool-text">
-                                      Хит
-                                    </li>
-                                  </ul>
+                              <li class="product-card__tool-header">
+                                <img class="product-card__condition-image" src="./assets/img/product-card/New.svg">
+                              </li>
+                              <ul class="product-card__tool-wrapper">
+                                <span class="product-card__box-arrow"></span>
+                                <ul class="product-card__tool-description">
+                                  <li class="product-card__tool-text">
+                                    Новинка
+                                  </li>
                                 </ul>
                               </ul>
-                              <!--gift-box-->
-                              <ul class="product-card__tool-box">
-                                <li class="product-card__tool-header">
-                                  <img class="product-card__condition-image" src="./assets/img/product-card/Gift.svg" alt="">
-                                </li>
-                                <ul class="product-card__tool-wrapper">
-                                  <span class="product-card__box-arrow"></span>
-                                  <ul class="product-card__tool-description">
-                                    <li class="product-card__tool-text">
-                                      Светодиодная гирлянда в подарок!
-                                    </li>
-                                  </ul>
-                                </ul>
                               </ul>
                             </div>
-                            <div class="product-card__shoping-cart ">
-                              <img class="product-card__shoping-cart-image" src="../assets/img/product-card/shoping-cart.svg">
+                            <div class="product-card__shoping-cart">
+                              <img class="product-card__shoping-cart-image" src="./assets/img/product-card/shoping-cart.svg">
+                              <img class="product-card__shoping-cart-image--active" src="./assets/img/product-card/shoping-cart--active.svg">
                             </div>
                           </div>
                           <div class="product-card__box-image">
-                            <img class="product-card__title-image" src="./assets/img/product-card/product-image/christmas-tree.png">
+                            <img class="product-card__title-image" src="./assets/img/product-card/product-image/shotlandija 1.png">
                           </div>
                           <div class="product-card__body-text">
-                            <div class="product-card__name">Искусственная Ель Гарда заснеженная</div>
+                            <div class="product-card__name">Искусственная Ель Шотландия</div>
                             <div class="product-card__id">артикул: KP3018</div>
                             <div class="product-card__rate">
                               <div class="product-card__rating">
@@ -3632,8 +3533,8 @@
                             </div>
                           </div>
                           <div class="product-card__price-panel">
-                            <div class="product-card__price product-card__price_color_green">43 990 ₽
-                              <div class="product-card__discount-price">43 099 ₽</div>
+                            <div class="product-card__price">28 990 ₽
+                              <div class="product-card__discount-price"></div>
                             </div>
                             <div class="product-card__shop-popup">
                               <button class="product-card__shop-popup-button">
@@ -3734,44 +3635,31 @@
                         <div class="product-card__body">
                           <div class="product-card__body-info">
                             <div class="product-card__condition-item">
-                               <!--hot-->
+                              <!--new-->
                               <ul class="product-card__tool-box">
-                                <li class="product-card__tool-header">
-                                  <img class="product-card__condition-image" src="./assets/img/product-card/Hit.svg">
-                                </li>
-                                <ul class="product-card__tool-wrapper">
-                                  <span class="product-card__box-arrow"></span>
-                                  <ul class="product-card__tool-description">
-                                    <li class="product-card__tool-text">
-                                      Хит
-                                    </li>
-                                  </ul>
+                              <li class="product-card__tool-header">
+                                <img class="product-card__condition-image" src="./assets/img/product-card/New.svg">
+                              </li>
+                              <ul class="product-card__tool-wrapper">
+                                <span class="product-card__box-arrow"></span>
+                                <ul class="product-card__tool-description">
+                                  <li class="product-card__tool-text">
+                                    Новинка
+                                  </li>
                                 </ul>
                               </ul>
-                              <!--gift-box-->
-                              <ul class="product-card__tool-box">
-                                <li class="product-card__tool-header">
-                                  <img class="product-card__condition-image" src="./assets/img/product-card/Gift.svg" alt="">
-                                </li>
-                                <ul class="product-card__tool-wrapper">
-                                  <span class="product-card__box-arrow"></span>
-                                  <ul class="product-card__tool-description">
-                                    <li class="product-card__tool-text">
-                                      Светодиодная гирлянда в подарок!
-                                    </li>
-                                  </ul>
-                                </ul>
                               </ul>
                             </div>
-                            <div class="product-card__shoping-cart ">
-                              <img class="product-card__shoping-cart-image" src="../assets/img/product-card/shoping-cart.svg">
+                            <div class="product-card__shoping-cart">
+                              <img class="product-card__shoping-cart-image" src="./assets/img/product-card/shoping-cart.svg">
+                              <img class="product-card__shoping-cart-image--active" src="./assets/img/product-card/shoping-cart--active.svg">
                             </div>
                           </div>
                           <div class="product-card__box-image">
-                            <img class="product-card__title-image" src="./assets/img/product-card/product-image/christmas-tree.png">
+                            <img class="product-card__title-image" src="./assets/img/product-card/product-image/shotlandija 1.png">
                           </div>
                           <div class="product-card__body-text">
-                            <div class="product-card__name">Искусственная Ель Гарда заснеженная</div>
+                            <div class="product-card__name">Искусственная Ель Шотландия</div>
                             <div class="product-card__id">артикул: KP3018</div>
                             <div class="product-card__rate">
                               <div class="product-card__rating">
@@ -3966,8 +3854,8 @@
                             </div>
                           </div>
                           <div class="product-card__price-panel">
-                            <div class="product-card__price product-card__price_color_green">43 990 ₽
-                              <div class="product-card__discount-price">43 099 ₽</div>
+                            <div class="product-card__price">28 990 ₽
+                              <div class="product-card__discount-price"></div>
                             </div>
                             <div class="product-card__shop-popup">
                               <button class="product-card__shop-popup-button">
@@ -4068,44 +3956,31 @@
                         <div class="product-card__body">
                           <div class="product-card__body-info">
                             <div class="product-card__condition-item">
-                               <!--hot-->
+                              <!--new-->
                               <ul class="product-card__tool-box">
-                                <li class="product-card__tool-header">
-                                  <img class="product-card__condition-image" src="./assets/img/product-card/Hit.svg">
-                                </li>
-                                <ul class="product-card__tool-wrapper">
-                                  <span class="product-card__box-arrow"></span>
-                                  <ul class="product-card__tool-description">
-                                    <li class="product-card__tool-text">
-                                      Хит
-                                    </li>
-                                  </ul>
+                              <li class="product-card__tool-header">
+                                <img class="product-card__condition-image" src="./assets/img/product-card/New.svg">
+                              </li>
+                              <ul class="product-card__tool-wrapper">
+                                <span class="product-card__box-arrow"></span>
+                                <ul class="product-card__tool-description">
+                                  <li class="product-card__tool-text">
+                                    Новинка
+                                  </li>
                                 </ul>
                               </ul>
-                              <!--gift-box-->
-                              <ul class="product-card__tool-box">
-                                <li class="product-card__tool-header">
-                                  <img class="product-card__condition-image" src="./assets/img/product-card/Gift.svg" alt="">
-                                </li>
-                                <ul class="product-card__tool-wrapper">
-                                  <span class="product-card__box-arrow"></span>
-                                  <ul class="product-card__tool-description">
-                                    <li class="product-card__tool-text">
-                                      Светодиодная гирлянда в подарок!
-                                    </li>
-                                  </ul>
-                                </ul>
                               </ul>
                             </div>
-                            <div class="product-card__shoping-cart ">
-                              <img class="product-card__shoping-cart-image" src="../assets/img/product-card/shoping-cart.svg">
+                            <div class="product-card__shoping-cart">
+                              <img class="product-card__shoping-cart-image" src="./assets/img/product-card/shoping-cart.svg">
+                              <img class="product-card__shoping-cart-image--active" src="./assets/img/product-card/shoping-cart--active.svg">
                             </div>
                           </div>
                           <div class="product-card__box-image">
-                            <img class="product-card__title-image" src="./assets/img/product-card/product-image/christmas-tree.png">
+                            <img class="product-card__title-image" src="./assets/img/product-card/product-image/shotlandija 1.png">
                           </div>
                           <div class="product-card__body-text">
-                            <div class="product-card__name">Искусственная Ель Гарда заснеженная</div>
+                            <div class="product-card__name">Искусственная Ель Шотландия</div>
                             <div class="product-card__id">артикул: KP3018</div>
                             <div class="product-card__rate">
                               <div class="product-card__rating">
@@ -4300,8 +4175,8 @@
                             </div>
                           </div>
                           <div class="product-card__price-panel">
-                            <div class="product-card__price product-card__price_color_green">43 990 ₽
-                              <div class="product-card__discount-price">43 099 ₽</div>
+                            <div class="product-card__price">28 990 ₽
+                              <div class="product-card__discount-price"></div>
                             </div>
                             <div class="product-card__shop-popup">
                               <button class="product-card__shop-popup-button">
@@ -4404,712 +4279,31 @@
                         <div class="product-card__body">
                           <div class="product-card__body-info">
                             <div class="product-card__condition-item">
-                               <!--hot-->
+                              <!--new-->
                               <ul class="product-card__tool-box">
-                                <li class="product-card__tool-header">
-                                  <img class="product-card__condition-image" src="./assets/img/product-card/Hit.svg">
-                                </li>
-                                <ul class="product-card__tool-wrapper">
-                                  <span class="product-card__box-arrow"></span>
-                                  <ul class="product-card__tool-description">
-                                    <li class="product-card__tool-text">
-                                      Хит
-                                    </li>
-                                  </ul>
+                              <li class="product-card__tool-header">
+                                <img class="product-card__condition-image" src="./assets/img/product-card/New.svg">
+                              </li>
+                              <ul class="product-card__tool-wrapper">
+                                <span class="product-card__box-arrow"></span>
+                                <ul class="product-card__tool-description">
+                                  <li class="product-card__tool-text">
+                                    Новинка
+                                  </li>
                                 </ul>
                               </ul>
-                              <!--gift-box-->
-                              <ul class="product-card__tool-box">
-                                <li class="product-card__tool-header">
-                                  <img class="product-card__condition-image" src="./assets/img/product-card/Gift.svg" alt="">
-                                </li>
-                                <ul class="product-card__tool-wrapper">
-                                  <span class="product-card__box-arrow"></span>
-                                  <ul class="product-card__tool-description">
-                                    <li class="product-card__tool-text">
-                                      Светодиодная гирлянда в подарок!
-                                    </li>
-                                  </ul>
-                                </ul>
-                              </ul>
-                            </div>
-                            <div class="product-card__shoping-cart ">
-                              <img class="product-card__shoping-cart-image" src="../assets/img/product-card/shoping-cart.svg">
-                            </div>
-                          </div>
-                          <div class="product-card__box-image">
-                            <img class="product-card__title-image" src="./assets/img/product-card/product-image/christmas-tree.png">
-                          </div>
-                          <div class="product-card__body-text">
-                            <div class="product-card__name">Искусственная Ель Гарда заснеженная</div>
-                            <div class="product-card__id">артикул: KP3018</div>
-                            <div class="product-card__rate">
-                              <div class="product-card__rating">
-                                <div class="product-card__rating-star">
-                                  <img src="./assets/img/product-card/star.svg">
-                                </div>
-                                <div class="product-card__rating-star">
-                                  <img src="./assets/img/product-card/star.svg">
-                                </div>
-                                <div class="product-card__rating-star">
-                                  <img src="./assets/img/product-card/star.svg">
-                                </div>
-                                <div class="product-card__rating-star">
-                                  <img src="./assets/img/product-card/star.svg">
-                                </div>
-                                <div class="product-card__rating-star">
-                                  <img src="./assets/img/product-card/star.svg">
-                                </div>
-                              </div>
-                              <label class="product-card__comments">
-                                <div class="product-card__comments-image">
-                                  <img src="./assets/img/product-card/comments.svg">
-                                </div>
-                                <div class="product-card__comments-ammount">12</div>
-                              </label>
-                          </div>
-                         </div>
-                        </div>
-                        <div class="product-card__footer">
-                          <div class="product-card__panel">
-                            <div class="product-card__size-popup">
-                              <button class="product-card__size-popup-button">
-                                <div class="product-card__tree-size">
-                                  <div class="product-card__type-image">
-                                    <img src="./assets/img/product-card/ListDashes.svg">
-                                  </div>
-                                  <div class="product-card__size-text_color_white">180 см</div>
-                                </div>
-                              </button>
-                              <div class="product-card__size-list">
-                                <div class="product-card__size-container">
-                                  <div class="product-card__size-item">
-                                    <div class="product-card__size-left-panel">
-                                      <div class="product-card__size-left-header">
-                                        <div class="product-card__size-size-icon">
-                                          <img src="./assets/img/product-card/TreeEvergreen.svg">
-                                        </div>
-                                        <div class="product-card__size-size-text">120 см</div>
-                                      </div>
-                                      <div class="product-card__size-price-panel">
-                                        <div class="product-card__size-item-price">
-                                          8 590 ₽
-                                        </div>
-                                      </div>
-                                    </div>
-                                    <div class="product-card__size-right-panel">
-                                      <div class="product-card__size-condition-list">
-                                      </div>
-                                    </div>
-                                  </div>
-                                  <div class="product-card__size-item">
-                                    <div class="product-card__size-left-panel">
-                                      <div class="product-card__size-left-header">
-                                        <div class="product-card__size-size-icon">
-                                          <img src="./assets/img/product-card/TreeEvergreen.svg">
-                                        </div>
-                                        <div class="product-card__size-size-text">155 см</div>
-                                      </div>
-                                      <div class="product-card__size-price-panel">
-                                        <div class="product-card__size-item-price">
-                                          15 990 ₽
-                                        </div>
-                                      </div>
-                                    </div>
-                                    <div class="product-card__size-right-panel">
-                                      <div class="product-card__size-condition-list">
-                                        <div class="product-card__size-condition-item">
-                                          <img class="product-card__condition-image" src="./assets/img/product-card/Gift.svg" alt="">
-                                        </div>
-                                      </div>
-                                    </div>
-                                  </div>
-                                  <div class="product-card__size-item">
-                                    <div class="product-card__size-left-panel">
-                                      <div class="product-card__size-left-header">
-                                        <div class="product-card__size-size-icon">
-                                          <img src="./assets/img/product-card/TreeEvergreen.svg">
-                                        </div>
-                                        <div class="product-card__size-size-text">180 см</div>
-                                      </div>
-                                      <div class="product-card__size-price-panel">
-                                        <div class="product-card__size-item-price">
-                                          35 990 ₽
-                                        </div>
-                                      </div>
-                                    </div>
-                                    <div class="product-card__size-right-panel">
-                                      <div class="product-card__size-condition-list">
-                                        <div class="product-card__size-condition-item">
-                                          <img class="product-card__condition-image" src="./assets/img/product-card/Gift.svg" alt="">
-                                        </div>
-                                      </div>
-                                    </div>
-                                  </div>
-                                  <div class="product-card__size-item product-card__size-item_disable">
-                                    <div class="product-card__size-left-panel">
-                                      <div class="product-card__size-left-header">
-                                        <div class="product-card__size-size-icon">
-                                          <img src="./assets/img/product-card/TreeEvergreen.svg">
-                                        </div>
-                                        <div class="product-card__size-size-text">200 см</div>
-                                      </div>
-                                      <div class="product-card__size-price-panel">
-                                        <div class="product-card__size-item-price">
-                                          40 490 ₽
-                                        </div>
-                                      </div>
-                                    </div>
-                                    <div class="product-card__size-right-panel">
-                                      <div class="product-card__size-condition-list">
-                                      </div>
-                                    </div>
-                                  </div>
-                                  <div class="product-card__size-item">
-                                    <div class="product-card__size-left-panel">
-                                      <div class="product-card__size-left-header">
-                                        <div class="product-card__size-size-icon">
-                                          <img src="./assets/img/product-card/TreeEvergreen.svg">
-                                        </div>
-                                        <div class="product-card__size-size-text">215 см</div>
-                                      </div>
-                                      <div class="product-card__size-price-panel">
-                                        <div class="product-card__size-item-price">
-                                          50 590 ₽
-                                        </div>
-                                      </div>
-                                    </div>
-                                    <div class="product-card__size-right-panel">
-                                      <div class="product-card__size-condition-list">
-                                      </div>
-                                    </div>
-                                  </div>
-                                  <div class="product-card__size-item product-card__size-item_disable">
-                                    <div class="product-card__size-left-panel">
-                                      <div class="product-card__size-left-header">
-                                        <div class="product-card__size-size-icon">
-                                          <img src="./assets/img/product-card/TreeEvergreen.svg">
-                                        </div>
-                                        <div class="product-card__size-size-text">230 см</div>
-                                      </div>
-                                      <div class="product-card__size-price-panel">
-                                        <div class="product-card__size-item-price">
-                                          60 790 ₽
-                                        </div>
-                                      </div>
-                                    </div>
-                                    <div class="product-card__size-right-panel">
-                                      <div class="product-card__size-condition-list">
-                                      </div>
-                                    </div>
-                                  </div>
-                                  <div class="product-card__size-item">
-                                    <div class="product-card__size-left-panel">
-                                      <div class="product-card__size-left-header">
-                                        <div class="product-card__size-size-icon">
-                                          <img src="./assets/img/product-card/TreeEvergreen.svg">
-                                        </div>
-                                        <div class="product-card__size-size-text">260 см</div>
-                                      </div>
-                                      <div class="product-card__size-price-panel">
-                                        <div class="product-card__size-item-price-discount">
-                                          68 190 ₽
-                                        </div>
-                                        <div class="product-card__size-item-price_text-decoration-line_line-through">
-                                          43 099 ₽
-                                        </div>
-                                      </div>
-                                    </div>
-                                    <div class="product-card__size-right-panel">
-                                      <div class="product-card__size-condition-list">
-                                        <div class="product-card__size-condition-item">
-                                          <img class="product-card__size-condition-image" src="./assets/img/product-card/Sale.svg">
-                                        </div>
-                                      </div>
-                                    </div>
-                                  </div>
-                                </div>
-                              </div>
-                            </div>
-                            <div class="product-card__stock--active">
-                              <div class="product-card__stock-text">В наличии</div>
-                            </div>
-                          </div>
-                          <div class="product-card__price-panel">
-                            <div class="product-card__price product-card__price_color_green">43 990 ₽
-                              <div class="product-card__discount-price">43 099 ₽</div>
-                            </div>
-                            <div class="product-card__shop-popup">
-                              <button class="product-card__shop-popup-button">
-                                <img class="product-card__shop-cart-image" src="./assets/img/product-card/ShoppingCart.svg">
-                              </button>
-                              <div class="product-card__shop-list">
-                                <div class="product-card__shop-list-wrapper">
-                                  <div class="product-card__shop-item">
-                                    <div class="product-card__shop-item-stock">в наличии</div>
-                                    <div class="product-card__shop-image">
-                                      <img src="./assets/img/product-card/shop-images/Leroy 2.svg">
-                                    </div>
-                                    <div class="product-card__shop-name">Леруа Мерлен</div>
-                                  </div>
-                                  <div class="product-card__shop-separator"></div>
-                                  <div class="product-card__shop-item">
-                                    <div class="product-card__shop-item-stock">в наличии</div>
-                                    <div class="product-card__shop-image">
-                                      <img src="./assets/img/product-card/shop-images/Vector.svg">
-                                    </div>
-                                    <div class="product-card__shop-name">OZON</div>
-                                  </div>
-                                  <div class="product-card__shop-separator"></div>
-                                  <div class="product-card__shop-item">
-                                    <div class="product-card__shop-item-stock">в наличии</div>
-                                    <div class="product-card__shop-image">
-                                      <img src="./assets/img/product-card/shop-images/Wildberries 2.svg">
-                                    </div>
-                                    <div class="product-card__shop-name">Wildberries</div>
-                                  </div>
-                                  <div class="product-card__shop-separator"></div>
-                                  <div class="product-card__shop-item">
-                                    <div class="product-card__shop-item-stock">в наличии</div>
-                                    <div class="product-card__shop-image">
-                                      <img src="./assets/img/product-card/shop-images/Group 214.svg">
-                                    </div>
-                                    <div class="product-card__shop-name">Яндекс Маркет</div>
-                                  </div>
-                                  <div class="product-card__shop-separator"></div>
-                                  <div class="product-card__shop-item product-card__shop-item_disable">
-                                    <div class="product-card__shop-item-stock">закончился</div>
-                                    <div class="product-card__shop-image">
-                                      <img src="./assets/img/product-card/shop-images/DM_logo_3_RGB 2.svg">
-                                    </div>
-                                    <div class="product-card__shop-name">Детский Мир</div>
-                                  </div>
-                                  <div class="product-card__shop-separator"></div>
-                                  <div class="product-card__shop-item">
-                                    <div class="product-card__shop-item-stock">в наличии</div>
-                                    <div class="product-card__shop-image">
-                                      <img src="./assets/img/product-card/shop-images/Aliexpress_logo 2.svg">
-                                    </div>
-                                    <div class="product-card__shop-name">АлиЭкспресс</div>
-                                  </div>
-                                  <div class="product-card__shop-separator"></div>
-                                  <div class="product-card__shop-item">
-                                    <div class="product-card__shop-item-stock">в наличии</div>
-                                    <div class="product-card__shop-image">
-                                      <img src="./assets/img/product-card/shop-images/image 16.svg">
-                                    </div>
-                                    <div class="product-card__shop-name">Коломенка.ру</div>
-                                  </div>
-                                  <div class="product-card__shop-separator"></div>
-                                  <div class="product-card__shop-item product-card__shop-item_disable">
-                                    <div class="product-card__shop-item-stock">закончился</div>
-                                    <div class="product-card__shop-image">
-                                      <img src="./assets/img/product-card/shop-images/image 17.svg">
-                                    </div>
-                                    <div class="product-card__shop-name">Все инструменты</div>
-                                  </div>
-                                  <div class="product-card__shop-separator"></div>
-                                  <div class="product-card__shop-item">
-                                    <div class="product-card__shop-item-stock">в наличии</div>
-                                    <div class="product-card__shop-image">
-                                      <img src="./assets/img/product-card/shop-images/Sbermarket 2.svg">
-                                    </div>
-                                    <div class="product-card__shop-name">Сбер Маркет</div>
-                                  </div>
-                                  <div class="product-card__shop-separator"></div>
-                                  <div class="product-card__shop-item">
-                                    <div class="product-card__shop-item-stock">в наличии</div>
-                                    <div class="product-card__shop-image">
-                                      <img src="./assets/img/product-card/shop-images/EBay_logo 2.svg">
-                                    </div>
-                                    <div class="product-card__shop-name">EBAY</div>
-                                  </div>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </a>
-                    </div>
-                  </div>
-                  <div class="catalog__column">
-                    <div class="product-card">
-                      <a class="product-card__ref" href="catalog.html">
-                        <div class="product-card__body">
-                          <div class="product-card__body-info">
-                            <div class="product-card__condition-item">
-                               <!--hot-->
-                              <ul class="product-card__tool-box">
-                                <li class="product-card__tool-header">
-                                  <img class="product-card__condition-image" src="./assets/img/product-card/Hit.svg">
-                                </li>
-                                <ul class="product-card__tool-wrapper">
-                                  <span class="product-card__box-arrow"></span>
-                                  <ul class="product-card__tool-description">
-                                    <li class="product-card__tool-text">
-                                      Хит
-                                    </li>
-                                  </ul>
-                                </ul>
-                              </ul>
-                              <!--gift-box-->
-                              <ul class="product-card__tool-box">
-                                <li class="product-card__tool-header">
-                                  <img class="product-card__condition-image" src="./assets/img/product-card/Gift.svg" alt="">
-                                </li>
-                                <ul class="product-card__tool-wrapper">
-                                  <span class="product-card__box-arrow"></span>
-                                  <ul class="product-card__tool-description">
-                                    <li class="product-card__tool-text">
-                                      Светодиодная гирлянда в подарок!
-                                    </li>
-                                  </ul>
-                                </ul>
-                              </ul>
-                            </div>
-                            <div class="product-card__shoping-cart ">
-                              <img class="product-card__shoping-cart-image" src="../assets/img/product-card/shoping-cart.svg">
-                            </div>
-                          </div>
-                          <div class="product-card__box-image">
-                            <img class="product-card__title-image" src="./assets/img/product-card/product-image/christmas-tree.png">
-                          </div>
-                          <div class="product-card__body-text">
-                            <div class="product-card__name">Искусственная Ель Гарда заснеженная</div>
-                            <div class="product-card__id">артикул: KP3018</div>
-                            <div class="product-card__rate">
-                              <div class="product-card__rating">
-                                <div class="product-card__rating-star">
-                                  <img src="./assets/img/product-card/star.svg">
-                                </div>
-                                <div class="product-card__rating-star">
-                                  <img src="./assets/img/product-card/star.svg">
-                                </div>
-                                <div class="product-card__rating-star">
-                                  <img src="./assets/img/product-card/star.svg">
-                                </div>
-                                <div class="product-card__rating-star">
-                                  <img src="./assets/img/product-card/star.svg">
-                                </div>
-                                <div class="product-card__rating-star">
-                                  <img src="./assets/img/product-card/star.svg">
-                                </div>
-                              </div>
-                              <label class="product-card__comments">
-                                <div class="product-card__comments-image">
-                                  <img src="./assets/img/product-card/comments.svg">
-                                </div>
-                                <div class="product-card__comments-ammount">12</div>
-                              </label>
-                          </div>
-                         </div>
-                        </div>
-                        <div class="product-card__footer">
-                          <div class="product-card__panel">
-                            <div class="product-card__size-popup">
-                              <button class="product-card__size-popup-button">
-                                <div class="product-card__tree-size">
-                                  <div class="product-card__type-image">
-                                    <img src="./assets/img/product-card/ListDashes.svg">
-                                  </div>
-                                  <div class="product-card__size-text_color_white">180 см</div>
-                                </div>
-                              </button>
-                              <div class="product-card__size-list">
-                                <div class="product-card__size-container">
-                                  <div class="product-card__size-item">
-                                    <div class="product-card__size-left-panel">
-                                      <div class="product-card__size-left-header">
-                                        <div class="product-card__size-size-icon">
-                                          <img src="./assets/img/product-card/TreeEvergreen.svg">
-                                        </div>
-                                        <div class="product-card__size-size-text">120 см</div>
-                                      </div>
-                                      <div class="product-card__size-price-panel">
-                                        <div class="product-card__size-item-price">
-                                          8 590 ₽
-                                        </div>
-                                      </div>
-                                    </div>
-                                    <div class="product-card__size-right-panel">
-                                      <div class="product-card__size-condition-list">
-                                      </div>
-                                    </div>
-                                  </div>
-                                  <div class="product-card__size-item">
-                                    <div class="product-card__size-left-panel">
-                                      <div class="product-card__size-left-header">
-                                        <div class="product-card__size-size-icon">
-                                          <img src="./assets/img/product-card/TreeEvergreen.svg">
-                                        </div>
-                                        <div class="product-card__size-size-text">155 см</div>
-                                      </div>
-                                      <div class="product-card__size-price-panel">
-                                        <div class="product-card__size-item-price">
-                                          15 990 ₽
-                                        </div>
-                                      </div>
-                                    </div>
-                                    <div class="product-card__size-right-panel">
-                                      <div class="product-card__size-condition-list">
-                                        <div class="product-card__size-condition-item">
-                                          <img class="product-card__condition-image" src="./assets/img/product-card/Gift.svg" alt="">
-                                        </div>
-                                      </div>
-                                    </div>
-                                  </div>
-                                  <div class="product-card__size-item">
-                                    <div class="product-card__size-left-panel">
-                                      <div class="product-card__size-left-header">
-                                        <div class="product-card__size-size-icon">
-                                          <img src="./assets/img/product-card/TreeEvergreen.svg">
-                                        </div>
-                                        <div class="product-card__size-size-text">180 см</div>
-                                      </div>
-                                      <div class="product-card__size-price-panel">
-                                        <div class="product-card__size-item-price">
-                                          35 990 ₽
-                                        </div>
-                                      </div>
-                                    </div>
-                                    <div class="product-card__size-right-panel">
-                                      <div class="product-card__size-condition-list">
-                                        <div class="product-card__size-condition-item">
-                                          <img class="product-card__condition-image" src="./assets/img/product-card/Gift.svg" alt="">
-                                        </div>
-                                      </div>
-                                    </div>
-                                  </div>
-                                  <div class="product-card__size-item product-card__size-item_disable">
-                                    <div class="product-card__size-left-panel">
-                                      <div class="product-card__size-left-header">
-                                        <div class="product-card__size-size-icon">
-                                          <img src="./assets/img/product-card/TreeEvergreen.svg">
-                                        </div>
-                                        <div class="product-card__size-size-text">200 см</div>
-                                      </div>
-                                      <div class="product-card__size-price-panel">
-                                        <div class="product-card__size-item-price">
-                                          40 490 ₽
-                                        </div>
-                                      </div>
-                                    </div>
-                                    <div class="product-card__size-right-panel">
-                                      <div class="product-card__size-condition-list">
-                                      </div>
-                                    </div>
-                                  </div>
-                                  <div class="product-card__size-item">
-                                    <div class="product-card__size-left-panel">
-                                      <div class="product-card__size-left-header">
-                                        <div class="product-card__size-size-icon">
-                                          <img src="./assets/img/product-card/TreeEvergreen.svg">
-                                        </div>
-                                        <div class="product-card__size-size-text">215 см</div>
-                                      </div>
-                                      <div class="product-card__size-price-panel">
-                                        <div class="product-card__size-item-price">
-                                          50 590 ₽
-                                        </div>
-                                      </div>
-                                    </div>
-                                    <div class="product-card__size-right-panel">
-                                      <div class="product-card__size-condition-list">
-                                      </div>
-                                    </div>
-                                  </div>
-                                  <div class="product-card__size-item product-card__size-item_disable">
-                                    <div class="product-card__size-left-panel">
-                                      <div class="product-card__size-left-header">
-                                        <div class="product-card__size-size-icon">
-                                          <img src="./assets/img/product-card/TreeEvergreen.svg">
-                                        </div>
-                                        <div class="product-card__size-size-text">230 см</div>
-                                      </div>
-                                      <div class="product-card__size-price-panel">
-                                        <div class="product-card__size-item-price">
-                                          60 790 ₽
-                                        </div>
-                                      </div>
-                                    </div>
-                                    <div class="product-card__size-right-panel">
-                                      <div class="product-card__size-condition-list">
-                                      </div>
-                                    </div>
-                                  </div>
-                                  <div class="product-card__size-item">
-                                    <div class="product-card__size-left-panel">
-                                      <div class="product-card__size-left-header">
-                                        <div class="product-card__size-size-icon">
-                                          <img src="./assets/img/product-card/TreeEvergreen.svg">
-                                        </div>
-                                        <div class="product-card__size-size-text">260 см</div>
-                                      </div>
-                                      <div class="product-card__size-price-panel">
-                                        <div class="product-card__size-item-price-discount">
-                                          68 190 ₽
-                                        </div>
-                                        <div class="product-card__size-item-price_text-decoration-line_line-through">
-                                          43 099 ₽
-                                        </div>
-                                      </div>
-                                    </div>
-                                    <div class="product-card__size-right-panel">
-                                      <div class="product-card__size-condition-list">
-                                        <div class="product-card__size-condition-item">
-                                          <img class="product-card__size-condition-image" src="./assets/img/product-card/Sale.svg">
-                                        </div>
-                                      </div>
-                                    </div>
-                                  </div>
-                                </div>
-                              </div>
-                            </div>
-                            <div class="product-card__stock--active">
-                              <div class="product-card__stock-text">В наличии</div>
-                            </div>
-                          </div>
-                          <div class="product-card__price-panel">
-                            <div class="product-card__price product-card__price_color_green">43 990 ₽
-                              <div class="product-card__discount-price">43 099 ₽</div>
-                            </div>
-                            <div class="product-card__shop-popup">
-                              <button class="product-card__shop-popup-button">
-                                <img class="product-card__shop-cart-image" src="./assets/img/product-card/ShoppingCart.svg">
-                              </button>
-                              <div class="product-card__shop-list">
-                                <div class="product-card__shop-list-wrapper">
-                                  <div class="product-card__shop-item">
-                                    <div class="product-card__shop-item-stock">в наличии</div>
-                                    <div class="product-card__shop-image">
-                                      <img src="./assets/img/product-card/shop-images/Leroy 2.svg">
-                                    </div>
-                                    <div class="product-card__shop-name">Леруа Мерлен</div>
-                                  </div>
-                                  <div class="product-card__shop-separator"></div>
-                                  <div class="product-card__shop-item">
-                                    <div class="product-card__shop-item-stock">в наличии</div>
-                                    <div class="product-card__shop-image">
-                                      <img src="./assets/img/product-card/shop-images/Vector.svg">
-                                    </div>
-                                    <div class="product-card__shop-name">OZON</div>
-                                  </div>
-                                  <div class="product-card__shop-separator"></div>
-                                  <div class="product-card__shop-item">
-                                    <div class="product-card__shop-item-stock">в наличии</div>
-                                    <div class="product-card__shop-image">
-                                      <img src="./assets/img/product-card/shop-images/Wildberries 2.svg">
-                                    </div>
-                                    <div class="product-card__shop-name">Wildberries</div>
-                                  </div>
-                                  <div class="product-card__shop-separator"></div>
-                                  <div class="product-card__shop-item">
-                                    <div class="product-card__shop-item-stock">в наличии</div>
-                                    <div class="product-card__shop-image">
-                                      <img src="./assets/img/product-card/shop-images/Group 214.svg">
-                                    </div>
-                                    <div class="product-card__shop-name">Яндекс Маркет</div>
-                                  </div>
-                                  <div class="product-card__shop-separator"></div>
-                                  <div class="product-card__shop-item product-card__shop-item_disable">
-                                    <div class="product-card__shop-item-stock">закончился</div>
-                                    <div class="product-card__shop-image">
-                                      <img src="./assets/img/product-card/shop-images/DM_logo_3_RGB 2.svg">
-                                    </div>
-                                    <div class="product-card__shop-name">Детский Мир</div>
-                                  </div>
-                                  <div class="product-card__shop-separator"></div>
-                                  <div class="product-card__shop-item">
-                                    <div class="product-card__shop-item-stock">в наличии</div>
-                                    <div class="product-card__shop-image">
-                                      <img src="./assets/img/product-card/shop-images/Aliexpress_logo 2.svg">
-                                    </div>
-                                    <div class="product-card__shop-name">АлиЭкспресс</div>
-                                  </div>
-                                  <div class="product-card__shop-separator"></div>
-                                  <div class="product-card__shop-item">
-                                    <div class="product-card__shop-item-stock">в наличии</div>
-                                    <div class="product-card__shop-image">
-                                      <img src="./assets/img/product-card/shop-images/image 16.svg">
-                                    </div>
-                                    <div class="product-card__shop-name">Коломенка.ру</div>
-                                  </div>
-                                  <div class="product-card__shop-separator"></div>
-                                  <div class="product-card__shop-item product-card__shop-item_disable">
-                                    <div class="product-card__shop-item-stock">закончился</div>
-                                    <div class="product-card__shop-image">
-                                      <img src="./assets/img/product-card/shop-images/image 17.svg">
-                                    </div>
-                                    <div class="product-card__shop-name">Все инструменты</div>
-                                  </div>
-                                  <div class="product-card__shop-separator"></div>
-                                  <div class="product-card__shop-item">
-                                    <div class="product-card__shop-item-stock">в наличии</div>
-                                    <div class="product-card__shop-image">
-                                      <img src="./assets/img/product-card/shop-images/Sbermarket 2.svg">
-                                    </div>
-                                    <div class="product-card__shop-name">Сбер Маркет</div>
-                                  </div>
-                                  <div class="product-card__shop-separator"></div>
-                                  <div class="product-card__shop-item">
-                                    <div class="product-card__shop-item-stock">в наличии</div>
-                                    <div class="product-card__shop-image">
-                                      <img src="./assets/img/product-card/shop-images/EBay_logo 2.svg">
-                                    </div>
-                                    <div class="product-card__shop-name">EBAY</div>
-                                  </div>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </a>
-                    </div>
-                  </div>
-                  <div class="catalog__column">
-                    <div class="product-card">
-                      <a class="product-card__ref" href="catalog.html">
-                        <div class="product-card__body">
-                          <div class="product-card__body-info">
-                            <div class="product-card__condition-item">
-                               <!--hot-->
-                              <ul class="product-card__tool-box">
-                                <li class="product-card__tool-header">
-                                  <img class="product-card__condition-image" src="./assets/img/product-card/Hit.svg">
-                                </li>
-                                <ul class="product-card__tool-wrapper">
-                                  <span class="product-card__box-arrow"></span>
-                                  <ul class="product-card__tool-description">
-                                    <li class="product-card__tool-text">
-                                      Хит
-                                    </li>
-                                  </ul>
-                                </ul>
-                              </ul>
-                              <!--gift-box-->
-                              <ul class="product-card__tool-box">
-                                <li class="product-card__tool-header">
-                                  <img class="product-card__condition-image" src="./assets/img/product-card/Gift.svg" alt="">
-                                </li>
-                                <ul class="product-card__tool-wrapper">
-                                  <span class="product-card__box-arrow"></span>
-                                  <ul class="product-card__tool-description">
-                                    <li class="product-card__tool-text">
-                                      Светодиодная гирлянда в подарок!
-                                    </li>
-                                  </ul>
-                                </ul>
                               </ul>
                             </div>
                             <div class="product-card__shoping-cart">
-                              <img class="product-card__shoping-cart-image" src="../assets/img/product-card/shoping-cart.svg">
+                              <img class="product-card__shoping-cart-image" src="./assets/img/product-card/shoping-cart.svg">
+                              <img class="product-card__shoping-cart-image--active" src="./assets/img/product-card/shoping-cart--active.svg">
                             </div>
                           </div>
                           <div class="product-card__box-image">
-                            <img class="product-card__title-image" src="./assets/img/product-card/product-image/christmas-tree.png">
+                            <img class="product-card__title-image" src="./assets/img/product-card/product-image/shotlandija 1.png">
                           </div>
                           <div class="product-card__body-text">
-                            <div class="product-card__name">Искусственная Ель Гарда заснеженная</div>
+                            <div class="product-card__name">Искусственная Ель Шотландия</div>
                             <div class="product-card__id">артикул: KP3018</div>
                             <div class="product-card__rate">
                               <div class="product-card__rating">
@@ -5304,8 +4498,8 @@
                             </div>
                           </div>
                           <div class="product-card__price-panel">
-                            <div class="product-card__price product-card__price_color_green">43 990 ₽
-                              <div class="product-card__discount-price">43 099 ₽</div>
+                            <div class="product-card__price">28 990 ₽
+                              <div class="product-card__discount-price"></div>
                             </div>
                             <div class="product-card__shop-popup">
                               <button class="product-card__shop-popup-button">
@@ -5406,44 +4600,31 @@
                         <div class="product-card__body">
                           <div class="product-card__body-info">
                             <div class="product-card__condition-item">
-                               <!--hot-->
+                              <!--new-->
                               <ul class="product-card__tool-box">
-                                <li class="product-card__tool-header">
-                                  <img class="product-card__condition-image" src="./assets/img/product-card/Hit.svg">
-                                </li>
-                                <ul class="product-card__tool-wrapper">
-                                  <span class="product-card__box-arrow"></span>
-                                  <ul class="product-card__tool-description">
-                                    <li class="product-card__tool-text">
-                                      Хит
-                                    </li>
-                                  </ul>
+                              <li class="product-card__tool-header">
+                                <img class="product-card__condition-image" src="./assets/img/product-card/New.svg">
+                              </li>
+                              <ul class="product-card__tool-wrapper">
+                                <span class="product-card__box-arrow"></span>
+                                <ul class="product-card__tool-description">
+                                  <li class="product-card__tool-text">
+                                    Новинка
+                                  </li>
                                 </ul>
                               </ul>
-                              <!--gift-box-->
-                              <ul class="product-card__tool-box">
-                                <li class="product-card__tool-header">
-                                  <img class="product-card__condition-image" src="./assets/img/product-card/Gift.svg" alt="">
-                                </li>
-                                <ul class="product-card__tool-wrapper">
-                                  <span class="product-card__box-arrow"></span>
-                                  <ul class="product-card__tool-description">
-                                    <li class="product-card__tool-text">
-                                      Светодиодная гирлянда в подарок!
-                                    </li>
-                                  </ul>
-                                </ul>
                               </ul>
                             </div>
-                            <div class="product-card__shoping-cart ">
-                              <img class="product-card__shoping-cart-image" src="../assets/img/product-card/shoping-cart.svg">
+                            <div class="product-card__shoping-cart">
+                              <img class="product-card__shoping-cart-image" src="./assets/img/product-card/shoping-cart.svg">
+                              <img class="product-card__shoping-cart-image--active" src="./assets/img/product-card/shoping-cart--active.svg">
                             </div>
                           </div>
                           <div class="product-card__box-image">
-                            <img class="product-card__title-image" src="./assets/img/product-card/product-image/christmas-tree.png">
+                            <img class="product-card__title-image" src="./assets/img/product-card/product-image/shotlandija 1.png">
                           </div>
                           <div class="product-card__body-text">
-                            <div class="product-card__name">Искусственная Ель Гарда заснеженная</div>
+                            <div class="product-card__name">Искусственная Ель Шотландия</div>
                             <div class="product-card__id">артикул: KP3018</div>
                             <div class="product-card__rate">
                               <div class="product-card__rating">
@@ -5638,8 +4819,650 @@
                             </div>
                           </div>
                           <div class="product-card__price-panel">
-                            <div class="product-card__price product-card__price_color_green">43 990 ₽
-                              <div class="product-card__discount-price">43 099 ₽</div>
+                            <div class="product-card__price">28 990 ₽
+                              <div class="product-card__discount-price"></div>
+                            </div>
+                            <div class="product-card__shop-popup">
+                              <button class="product-card__shop-popup-button">
+                                <img class="product-card__shop-cart-image" src="./assets/img/product-card/ShoppingCart.svg">
+                              </button>
+                              <div class="product-card__shop-list">
+                                <div class="product-card__shop-list-wrapper">
+                                  <div class="product-card__shop-item">
+                                    <div class="product-card__shop-item-stock">в наличии</div>
+                                    <div class="product-card__shop-image">
+                                      <img src="./assets/img/product-card/shop-images/Leroy 2.svg">
+                                    </div>
+                                    <div class="product-card__shop-name">Леруа Мерлен</div>
+                                  </div>
+                                  <div class="product-card__shop-separator"></div>
+                                  <div class="product-card__shop-item">
+                                    <div class="product-card__shop-item-stock">в наличии</div>
+                                    <div class="product-card__shop-image">
+                                      <img src="./assets/img/product-card/shop-images/Vector.svg">
+                                    </div>
+                                    <div class="product-card__shop-name">OZON</div>
+                                  </div>
+                                  <div class="product-card__shop-separator"></div>
+                                  <div class="product-card__shop-item">
+                                    <div class="product-card__shop-item-stock">в наличии</div>
+                                    <div class="product-card__shop-image">
+                                      <img src="./assets/img/product-card/shop-images/Wildberries 2.svg">
+                                    </div>
+                                    <div class="product-card__shop-name">Wildberries</div>
+                                  </div>
+                                  <div class="product-card__shop-separator"></div>
+                                  <div class="product-card__shop-item">
+                                    <div class="product-card__shop-item-stock">в наличии</div>
+                                    <div class="product-card__shop-image">
+                                      <img src="./assets/img/product-card/shop-images/Group 214.svg">
+                                    </div>
+                                    <div class="product-card__shop-name">Яндекс Маркет</div>
+                                  </div>
+                                  <div class="product-card__shop-separator"></div>
+                                  <div class="product-card__shop-item product-card__shop-item_disable">
+                                    <div class="product-card__shop-item-stock">закончился</div>
+                                    <div class="product-card__shop-image">
+                                      <img src="./assets/img/product-card/shop-images/DM_logo_3_RGB 2.svg">
+                                    </div>
+                                    <div class="product-card__shop-name">Детский Мир</div>
+                                  </div>
+                                  <div class="product-card__shop-separator"></div>
+                                  <div class="product-card__shop-item">
+                                    <div class="product-card__shop-item-stock">в наличии</div>
+                                    <div class="product-card__shop-image">
+                                      <img src="./assets/img/product-card/shop-images/Aliexpress_logo 2.svg">
+                                    </div>
+                                    <div class="product-card__shop-name">АлиЭкспресс</div>
+                                  </div>
+                                  <div class="product-card__shop-separator"></div>
+                                  <div class="product-card__shop-item">
+                                    <div class="product-card__shop-item-stock">в наличии</div>
+                                    <div class="product-card__shop-image">
+                                      <img src="./assets/img/product-card/shop-images/image 16.svg">
+                                    </div>
+                                    <div class="product-card__shop-name">Коломенка.ру</div>
+                                  </div>
+                                  <div class="product-card__shop-separator"></div>
+                                  <div class="product-card__shop-item product-card__shop-item_disable">
+                                    <div class="product-card__shop-item-stock">закончился</div>
+                                    <div class="product-card__shop-image">
+                                      <img src="./assets/img/product-card/shop-images/image 17.svg">
+                                    </div>
+                                    <div class="product-card__shop-name">Все инструменты</div>
+                                  </div>
+                                  <div class="product-card__shop-separator"></div>
+                                  <div class="product-card__shop-item">
+                                    <div class="product-card__shop-item-stock">в наличии</div>
+                                    <div class="product-card__shop-image">
+                                      <img src="./assets/img/product-card/shop-images/Sbermarket 2.svg">
+                                    </div>
+                                    <div class="product-card__shop-name">Сбер Маркет</div>
+                                  </div>
+                                  <div class="product-card__shop-separator"></div>
+                                  <div class="product-card__shop-item">
+                                    <div class="product-card__shop-item-stock">в наличии</div>
+                                    <div class="product-card__shop-image">
+                                      <img src="./assets/img/product-card/shop-images/EBay_logo 2.svg">
+                                    </div>
+                                    <div class="product-card__shop-name">EBAY</div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="catalog__column">
+                    <div class="product-card">
+                      <a class="product-card__ref" href="catalog.html">
+                        <div class="product-card__body">
+                          <div class="product-card__body-info">
+                            <div class="product-card__condition-item">
+                              <!--new-->
+                              <ul class="product-card__tool-box">
+                              <li class="product-card__tool-header">
+                                <img class="product-card__condition-image" src="./assets/img/product-card/New.svg">
+                              </li>
+                              <ul class="product-card__tool-wrapper">
+                                <span class="product-card__box-arrow"></span>
+                                <ul class="product-card__tool-description">
+                                  <li class="product-card__tool-text">
+                                    Новинка
+                                  </li>
+                                </ul>
+                              </ul>
+                              </ul>
+                            </div>
+                            <div class="product-card__shoping-cart">
+                              <img class="product-card__shoping-cart-image" src="./assets/img/product-card/shoping-cart.svg">
+                              <img class="product-card__shoping-cart-image--active" src="./assets/img/product-card/shoping-cart--active.svg">
+                            </div>
+                          </div>
+                          <div class="product-card__box-image">
+                            <img class="product-card__title-image" src="./assets/img/product-card/product-image/shotlandija 1.png">
+                          </div>
+                          <div class="product-card__body-text">
+                            <div class="product-card__name">Искусственная Ель Шотландия</div>
+                            <div class="product-card__id">артикул: KP3018</div>
+                            <div class="product-card__rate">
+                              <div class="product-card__rating">
+                                <div class="product-card__rating-star">
+                                  <img src="./assets/img/product-card/star.svg">
+                                </div>
+                                <div class="product-card__rating-star">
+                                  <img src="./assets/img/product-card/star.svg">
+                                </div>
+                                <div class="product-card__rating-star">
+                                  <img src="./assets/img/product-card/star.svg">
+                                </div>
+                                <div class="product-card__rating-star">
+                                  <img src="./assets/img/product-card/star.svg">
+                                </div>
+                                <div class="product-card__rating-star">
+                                  <img src="./assets/img/product-card/star.svg">
+                                </div>
+                              </div>
+                              <label class="product-card__comments">
+                                <div class="product-card__comments-image">
+                                  <img src="./assets/img/product-card/comments.svg">
+                                </div>
+                                <div class="product-card__comments-ammount">12</div>
+                              </label>
+                          </div>
+                         </div>
+                        </div>
+                        <div class="product-card__footer">
+                          <div class="product-card__panel">
+                            <div class="product-card__size-popup">
+                              <button class="product-card__size-popup-button">
+                                <div class="product-card__tree-size">
+                                  <div class="product-card__type-image">
+                                    <img src="./assets/img/product-card/ListDashes.svg">
+                                  </div>
+                                  <div class="product-card__size-text_color_white">180 см</div>
+                                </div>
+                              </button>
+                              <div class="product-card__size-list">
+                                <div class="product-card__size-container">
+                                  <div class="product-card__size-item">
+                                    <div class="product-card__size-left-panel">
+                                      <div class="product-card__size-left-header">
+                                        <div class="product-card__size-size-icon">
+                                          <img src="./assets/img/product-card/TreeEvergreen.svg">
+                                        </div>
+                                        <div class="product-card__size-size-text">120 см</div>
+                                      </div>
+                                      <div class="product-card__size-price-panel">
+                                        <div class="product-card__size-item-price">
+                                          8 590 ₽
+                                        </div>
+                                      </div>
+                                    </div>
+                                    <div class="product-card__size-right-panel">
+                                      <div class="product-card__size-condition-list">
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <div class="product-card__size-item">
+                                    <div class="product-card__size-left-panel">
+                                      <div class="product-card__size-left-header">
+                                        <div class="product-card__size-size-icon">
+                                          <img src="./assets/img/product-card/TreeEvergreen.svg">
+                                        </div>
+                                        <div class="product-card__size-size-text">155 см</div>
+                                      </div>
+                                      <div class="product-card__size-price-panel">
+                                        <div class="product-card__size-item-price">
+                                          15 990 ₽
+                                        </div>
+                                      </div>
+                                    </div>
+                                    <div class="product-card__size-right-panel">
+                                      <div class="product-card__size-condition-list">
+                                        <div class="product-card__size-condition-item">
+                                          <img class="product-card__condition-image" src="./assets/img/product-card/Gift.svg" alt="">
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <div class="product-card__size-item">
+                                    <div class="product-card__size-left-panel">
+                                      <div class="product-card__size-left-header">
+                                        <div class="product-card__size-size-icon">
+                                          <img src="./assets/img/product-card/TreeEvergreen.svg">
+                                        </div>
+                                        <div class="product-card__size-size-text">180 см</div>
+                                      </div>
+                                      <div class="product-card__size-price-panel">
+                                        <div class="product-card__size-item-price">
+                                          35 990 ₽
+                                        </div>
+                                      </div>
+                                    </div>
+                                    <div class="product-card__size-right-panel">
+                                      <div class="product-card__size-condition-list">
+                                        <div class="product-card__size-condition-item">
+                                          <img class="product-card__condition-image" src="./assets/img/product-card/Gift.svg" alt="">
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <div class="product-card__size-item product-card__size-item_disable">
+                                    <div class="product-card__size-left-panel">
+                                      <div class="product-card__size-left-header">
+                                        <div class="product-card__size-size-icon">
+                                          <img src="./assets/img/product-card/TreeEvergreen.svg">
+                                        </div>
+                                        <div class="product-card__size-size-text">200 см</div>
+                                      </div>
+                                      <div class="product-card__size-price-panel">
+                                        <div class="product-card__size-item-price">
+                                          40 490 ₽
+                                        </div>
+                                      </div>
+                                    </div>
+                                    <div class="product-card__size-right-panel">
+                                      <div class="product-card__size-condition-list">
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <div class="product-card__size-item">
+                                    <div class="product-card__size-left-panel">
+                                      <div class="product-card__size-left-header">
+                                        <div class="product-card__size-size-icon">
+                                          <img src="./assets/img/product-card/TreeEvergreen.svg">
+                                        </div>
+                                        <div class="product-card__size-size-text">215 см</div>
+                                      </div>
+                                      <div class="product-card__size-price-panel">
+                                        <div class="product-card__size-item-price">
+                                          50 590 ₽
+                                        </div>
+                                      </div>
+                                    </div>
+                                    <div class="product-card__size-right-panel">
+                                      <div class="product-card__size-condition-list">
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <div class="product-card__size-item product-card__size-item_disable">
+                                    <div class="product-card__size-left-panel">
+                                      <div class="product-card__size-left-header">
+                                        <div class="product-card__size-size-icon">
+                                          <img src="./assets/img/product-card/TreeEvergreen.svg">
+                                        </div>
+                                        <div class="product-card__size-size-text">230 см</div>
+                                      </div>
+                                      <div class="product-card__size-price-panel">
+                                        <div class="product-card__size-item-price">
+                                          60 790 ₽
+                                        </div>
+                                      </div>
+                                    </div>
+                                    <div class="product-card__size-right-panel">
+                                      <div class="product-card__size-condition-list">
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <div class="product-card__size-item">
+                                    <div class="product-card__size-left-panel">
+                                      <div class="product-card__size-left-header">
+                                        <div class="product-card__size-size-icon">
+                                          <img src="./assets/img/product-card/TreeEvergreen.svg">
+                                        </div>
+                                        <div class="product-card__size-size-text">260 см</div>
+                                      </div>
+                                      <div class="product-card__size-price-panel">
+                                        <div class="product-card__size-item-price-discount">
+                                          68 190 ₽
+                                        </div>
+                                        <div class="product-card__size-item-price_text-decoration-line_line-through">
+                                          43 099 ₽
+                                        </div>
+                                      </div>
+                                    </div>
+                                    <div class="product-card__size-right-panel">
+                                      <div class="product-card__size-condition-list">
+                                        <div class="product-card__size-condition-item">
+                                          <img class="product-card__size-condition-image" src="./assets/img/product-card/Sale.svg">
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="product-card__stock--active">
+                              <div class="product-card__stock-text">В наличии</div>
+                            </div>
+                          </div>
+                          <div class="product-card__price-panel">
+                            <div class="product-card__price">28 990 ₽
+                              <div class="product-card__discount-price"></div>
+                            </div>
+                            <div class="product-card__shop-popup">
+                              <button class="product-card__shop-popup-button">
+                                <img class="product-card__shop-cart-image" src="./assets/img/product-card/ShoppingCart.svg">
+                              </button>
+                              <div class="product-card__shop-list">
+                                <div class="product-card__shop-list-wrapper">
+                                  <div class="product-card__shop-item">
+                                    <div class="product-card__shop-item-stock">в наличии</div>
+                                    <div class="product-card__shop-image">
+                                      <img src="./assets/img/product-card/shop-images/Leroy 2.svg">
+                                    </div>
+                                    <div class="product-card__shop-name">Леруа Мерлен</div>
+                                  </div>
+                                  <div class="product-card__shop-separator"></div>
+                                  <div class="product-card__shop-item">
+                                    <div class="product-card__shop-item-stock">в наличии</div>
+                                    <div class="product-card__shop-image">
+                                      <img src="./assets/img/product-card/shop-images/Vector.svg">
+                                    </div>
+                                    <div class="product-card__shop-name">OZON</div>
+                                  </div>
+                                  <div class="product-card__shop-separator"></div>
+                                  <div class="product-card__shop-item">
+                                    <div class="product-card__shop-item-stock">в наличии</div>
+                                    <div class="product-card__shop-image">
+                                      <img src="./assets/img/product-card/shop-images/Wildberries 2.svg">
+                                    </div>
+                                    <div class="product-card__shop-name">Wildberries</div>
+                                  </div>
+                                  <div class="product-card__shop-separator"></div>
+                                  <div class="product-card__shop-item">
+                                    <div class="product-card__shop-item-stock">в наличии</div>
+                                    <div class="product-card__shop-image">
+                                      <img src="./assets/img/product-card/shop-images/Group 214.svg">
+                                    </div>
+                                    <div class="product-card__shop-name">Яндекс Маркет</div>
+                                  </div>
+                                  <div class="product-card__shop-separator"></div>
+                                  <div class="product-card__shop-item product-card__shop-item_disable">
+                                    <div class="product-card__shop-item-stock">закончился</div>
+                                    <div class="product-card__shop-image">
+                                      <img src="./assets/img/product-card/shop-images/DM_logo_3_RGB 2.svg">
+                                    </div>
+                                    <div class="product-card__shop-name">Детский Мир</div>
+                                  </div>
+                                  <div class="product-card__shop-separator"></div>
+                                  <div class="product-card__shop-item">
+                                    <div class="product-card__shop-item-stock">в наличии</div>
+                                    <div class="product-card__shop-image">
+                                      <img src="./assets/img/product-card/shop-images/Aliexpress_logo 2.svg">
+                                    </div>
+                                    <div class="product-card__shop-name">АлиЭкспресс</div>
+                                  </div>
+                                  <div class="product-card__shop-separator"></div>
+                                  <div class="product-card__shop-item">
+                                    <div class="product-card__shop-item-stock">в наличии</div>
+                                    <div class="product-card__shop-image">
+                                      <img src="./assets/img/product-card/shop-images/image 16.svg">
+                                    </div>
+                                    <div class="product-card__shop-name">Коломенка.ру</div>
+                                  </div>
+                                  <div class="product-card__shop-separator"></div>
+                                  <div class="product-card__shop-item product-card__shop-item_disable">
+                                    <div class="product-card__shop-item-stock">закончился</div>
+                                    <div class="product-card__shop-image">
+                                      <img src="./assets/img/product-card/shop-images/image 17.svg">
+                                    </div>
+                                    <div class="product-card__shop-name">Все инструменты</div>
+                                  </div>
+                                  <div class="product-card__shop-separator"></div>
+                                  <div class="product-card__shop-item">
+                                    <div class="product-card__shop-item-stock">в наличии</div>
+                                    <div class="product-card__shop-image">
+                                      <img src="./assets/img/product-card/shop-images/Sbermarket 2.svg">
+                                    </div>
+                                    <div class="product-card__shop-name">Сбер Маркет</div>
+                                  </div>
+                                  <div class="product-card__shop-separator"></div>
+                                  <div class="product-card__shop-item">
+                                    <div class="product-card__shop-item-stock">в наличии</div>
+                                    <div class="product-card__shop-image">
+                                      <img src="./assets/img/product-card/shop-images/EBay_logo 2.svg">
+                                    </div>
+                                    <div class="product-card__shop-name">EBAY</div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="catalog__column">
+                    <div class="product-card">
+                      <a class="product-card__ref" href="catalog.html">
+                        <div class="product-card__body">
+                          <div class="product-card__body-info">
+                            <div class="product-card__condition-item">
+                              <!--new-->
+                              <ul class="product-card__tool-box">
+                              <li class="product-card__tool-header">
+                                <img class="product-card__condition-image" src="./assets/img/product-card/New.svg">
+                              </li>
+                              <ul class="product-card__tool-wrapper">
+                                <span class="product-card__box-arrow"></span>
+                                <ul class="product-card__tool-description">
+                                  <li class="product-card__tool-text">
+                                    Новинка
+                                  </li>
+                                </ul>
+                              </ul>
+                              </ul>
+                            </div>
+                            <div class="product-card__shoping-cart">
+                              <img class="product-card__shoping-cart-image" src="./assets/img/product-card/shoping-cart.svg">
+                              <img class="product-card__shoping-cart-image--active" src="./assets/img/product-card/shoping-cart--active.svg">
+                            </div>
+                          </div>
+                          <div class="product-card__box-image">
+                            <img class="product-card__title-image" src="./assets/img/product-card/product-image/shotlandija 1.png">
+                          </div>
+                          <div class="product-card__body-text">
+                            <div class="product-card__name">Искусственная Ель Шотландия</div>
+                            <div class="product-card__id">артикул: KP3018</div>
+                            <div class="product-card__rate">
+                              <div class="product-card__rating">
+                                <div class="product-card__rating-star">
+                                  <img src="./assets/img/product-card/star.svg">
+                                </div>
+                                <div class="product-card__rating-star">
+                                  <img src="./assets/img/product-card/star.svg">
+                                </div>
+                                <div class="product-card__rating-star">
+                                  <img src="./assets/img/product-card/star.svg">
+                                </div>
+                                <div class="product-card__rating-star">
+                                  <img src="./assets/img/product-card/star.svg">
+                                </div>
+                                <div class="product-card__rating-star">
+                                  <img src="./assets/img/product-card/star.svg">
+                                </div>
+                              </div>
+                              <label class="product-card__comments">
+                                <div class="product-card__comments-image">
+                                  <img src="./assets/img/product-card/comments.svg">
+                                </div>
+                                <div class="product-card__comments-ammount">12</div>
+                              </label>
+                          </div>
+                         </div>
+                        </div>
+                        <div class="product-card__footer">
+                          <div class="product-card__panel">
+                            <div class="product-card__size-popup">
+                              <button class="product-card__size-popup-button">
+                                <div class="product-card__tree-size">
+                                  <div class="product-card__type-image">
+                                    <img src="./assets/img/product-card/ListDashes.svg">
+                                  </div>
+                                  <div class="product-card__size-text_color_white">180 см</div>
+                                </div>
+                              </button>
+                              <div class="product-card__size-list">
+                                <div class="product-card__size-container">
+                                  <div class="product-card__size-item">
+                                    <div class="product-card__size-left-panel">
+                                      <div class="product-card__size-left-header">
+                                        <div class="product-card__size-size-icon">
+                                          <img src="./assets/img/product-card/TreeEvergreen.svg">
+                                        </div>
+                                        <div class="product-card__size-size-text">120 см</div>
+                                      </div>
+                                      <div class="product-card__size-price-panel">
+                                        <div class="product-card__size-item-price">
+                                          8 590 ₽
+                                        </div>
+                                      </div>
+                                    </div>
+                                    <div class="product-card__size-right-panel">
+                                      <div class="product-card__size-condition-list">
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <div class="product-card__size-item">
+                                    <div class="product-card__size-left-panel">
+                                      <div class="product-card__size-left-header">
+                                        <div class="product-card__size-size-icon">
+                                          <img src="./assets/img/product-card/TreeEvergreen.svg">
+                                        </div>
+                                        <div class="product-card__size-size-text">155 см</div>
+                                      </div>
+                                      <div class="product-card__size-price-panel">
+                                        <div class="product-card__size-item-price">
+                                          15 990 ₽
+                                        </div>
+                                      </div>
+                                    </div>
+                                    <div class="product-card__size-right-panel">
+                                      <div class="product-card__size-condition-list">
+                                        <div class="product-card__size-condition-item">
+                                          <img class="product-card__condition-image" src="./assets/img/product-card/Gift.svg" alt="">
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <div class="product-card__size-item">
+                                    <div class="product-card__size-left-panel">
+                                      <div class="product-card__size-left-header">
+                                        <div class="product-card__size-size-icon">
+                                          <img src="./assets/img/product-card/TreeEvergreen.svg">
+                                        </div>
+                                        <div class="product-card__size-size-text">180 см</div>
+                                      </div>
+                                      <div class="product-card__size-price-panel">
+                                        <div class="product-card__size-item-price">
+                                          35 990 ₽
+                                        </div>
+                                      </div>
+                                    </div>
+                                    <div class="product-card__size-right-panel">
+                                      <div class="product-card__size-condition-list">
+                                        <div class="product-card__size-condition-item">
+                                          <img class="product-card__condition-image" src="./assets/img/product-card/Gift.svg" alt="">
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <div class="product-card__size-item product-card__size-item_disable">
+                                    <div class="product-card__size-left-panel">
+                                      <div class="product-card__size-left-header">
+                                        <div class="product-card__size-size-icon">
+                                          <img src="./assets/img/product-card/TreeEvergreen.svg">
+                                        </div>
+                                        <div class="product-card__size-size-text">200 см</div>
+                                      </div>
+                                      <div class="product-card__size-price-panel">
+                                        <div class="product-card__size-item-price">
+                                          40 490 ₽
+                                        </div>
+                                      </div>
+                                    </div>
+                                    <div class="product-card__size-right-panel">
+                                      <div class="product-card__size-condition-list">
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <div class="product-card__size-item">
+                                    <div class="product-card__size-left-panel">
+                                      <div class="product-card__size-left-header">
+                                        <div class="product-card__size-size-icon">
+                                          <img src="./assets/img/product-card/TreeEvergreen.svg">
+                                        </div>
+                                        <div class="product-card__size-size-text">215 см</div>
+                                      </div>
+                                      <div class="product-card__size-price-panel">
+                                        <div class="product-card__size-item-price">
+                                          50 590 ₽
+                                        </div>
+                                      </div>
+                                    </div>
+                                    <div class="product-card__size-right-panel">
+                                      <div class="product-card__size-condition-list">
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <div class="product-card__size-item product-card__size-item_disable">
+                                    <div class="product-card__size-left-panel">
+                                      <div class="product-card__size-left-header">
+                                        <div class="product-card__size-size-icon">
+                                          <img src="./assets/img/product-card/TreeEvergreen.svg">
+                                        </div>
+                                        <div class="product-card__size-size-text">230 см</div>
+                                      </div>
+                                      <div class="product-card__size-price-panel">
+                                        <div class="product-card__size-item-price">
+                                          60 790 ₽
+                                        </div>
+                                      </div>
+                                    </div>
+                                    <div class="product-card__size-right-panel">
+                                      <div class="product-card__size-condition-list">
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <div class="product-card__size-item">
+                                    <div class="product-card__size-left-panel">
+                                      <div class="product-card__size-left-header">
+                                        <div class="product-card__size-size-icon">
+                                          <img src="./assets/img/product-card/TreeEvergreen.svg">
+                                        </div>
+                                        <div class="product-card__size-size-text">260 см</div>
+                                      </div>
+                                      <div class="product-card__size-price-panel">
+                                        <div class="product-card__size-item-price-discount">
+                                          68 190 ₽
+                                        </div>
+                                        <div class="product-card__size-item-price_text-decoration-line_line-through">
+                                          43 099 ₽
+                                        </div>
+                                      </div>
+                                    </div>
+                                    <div class="product-card__size-right-panel">
+                                      <div class="product-card__size-condition-list">
+                                        <div class="product-card__size-condition-item">
+                                          <img class="product-card__size-condition-image" src="./assets/img/product-card/Sale.svg">
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="product-card__stock--active">
+                              <div class="product-card__stock-text">В наличии</div>
+                            </div>
+                          </div>
+                          <div class="product-card__price-panel">
+                            <div class="product-card__price">28 990 ₽
+                              <div class="product-card__discount-price"></div>
                             </div>
                             <div class="product-card__shop-popup">
                               <button class="product-card__shop-popup-button">
@@ -5788,8 +5611,9 @@
                                 </ul>
                               </ul>
                             </div>
-                            <div class="product-card__shoping-cart ">
-                              <img class="product-card__shoping-cart-image" src="../assets/img/product-card/shoping-cart.svg">
+                             <div class="product-card__shoping-cart">
+                              <img class="product-card__shoping-cart-image" src="./assets/img/product-card/shoping-cart.svg">
+                              <img class="product-card__shoping-cart-image--active" src="./assets/img/product-card/shoping-cart--active.svg">
                             </div>
                           </div>
                           <div class="product-card__box-image">
@@ -6108,8 +5932,9 @@
                               </ul>
                               </ul>
                             </div>
-                            <div class="product-card__shoping-cart ">
-                              <img class="product-card__shoping-cart-image" src="../assets/img/product-card/shoping-cart.svg">
+                             <div class="product-card__shoping-cart">
+                              <img class="product-card__shoping-cart-image" src="./assets/img/product-card/shoping-cart.svg">
+                              <img class="product-card__shoping-cart-image--active" src="./assets/img/product-card/shoping-cart--active.svg">
                             </div>
                           </div>
                           <div class="product-card__box-image">
@@ -6428,8 +6253,9 @@
                                 </ul>
                                 </ul>
                             </div>
-                            <div class="product-card__shoping-cart ">
-                              <img class="product-card__shoping-cart-image" src="../assets/img/product-card/shoping-cart.svg">
+                             <div class="product-card__shoping-cart">
+                              <img class="product-card__shoping-cart-image" src="./assets/img/product-card/shoping-cart.svg">
+                              <img class="product-card__shoping-cart-image--active" src="./assets/img/product-card/shoping-cart--active.svg">
                             </div>
                           </div>
                           <div class="product-card__box-image">
@@ -6762,8 +6588,9 @@
                                 </ul>
                                 </ul>
                             </div>
-                            <div class="product-card__shoping-cart ">
-                              <img class="product-card__shoping-cart-image" src="../assets/img/product-card/shoping-cart.svg">
+                             <div class="product-card__shoping-cart">
+                              <img class="product-card__shoping-cart-image" src="./assets/img/product-card/shoping-cart.svg">
+                              <img class="product-card__shoping-cart-image--active" src="./assets/img/product-card/shoping-cart--active.svg">
                             </div>
                           </div>
                           <div class="product-card__box-image">
@@ -7082,8 +6909,9 @@
                                 </ul>
                               </ul>
                             </div>
-                            <div class="product-card__shoping-cart ">
-                              <img class="product-card__shoping-cart-image" src="../assets/img/product-card/shoping-cart.svg">
+                             <div class="product-card__shoping-cart">
+                              <img class="product-card__shoping-cart-image" src="./assets/img/product-card/shoping-cart.svg">
+                              <img class="product-card__shoping-cart-image--active" src="./assets/img/product-card/shoping-cart--active.svg">
                             </div>
                           </div>
                           <div class="product-card__box-image">

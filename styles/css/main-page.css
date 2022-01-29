@@ -21,6 +21,25 @@
   text-decoration: none;
 }
 
+.product-card__shoping-cart {
+  position: relative;
+}
+
+.product-card__shoping-cart-image:hover ~ .product-card__shoping-cart-image--active {
+  visibility: visible;
+}
+
+.product-card__shoping-cart-image--active:hover {
+  visibility: visible;
+}
+
+.product-card__shoping-cart-image--active {
+  position: absolute;
+  top: 4px;
+  left: 4px;
+  visibility: hidden;
+}
+
 .product-card__body {
   display: -ms-grid;
   display: grid;
@@ -327,6 +346,26 @@
   border: 0px;
 }
 
+.product-card__shop-list {
+  visibility: hidden;
+  position: absolute;
+  left: -270px;
+  bottom: 36px;
+  width: 363px;
+  z-index: 2;
+}
+
+.product-card__shop-list-wrapper {
+  margin-bottom: 12px;
+  background: #FFFFFF;
+  border: 1px solid #E0E0DD;
+  border-radius: 4px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  -webkit-box-shadow: 0px 7px 20px rgba(0, 0, 0, 0.05);
+          box-shadow: 0px 7px 20px rgba(0, 0, 0, 0.05);
+}
+
 .product-card__shop-popup-button {
   width: 100%;
   height: 100%;
@@ -353,20 +392,12 @@
   transition: all .3s;
 }
 
-.product-card__shop-list {
-  display: none;
-  position: absolute;
-  left: -270px;
-  bottom: 55px;
-  background: #FFFFFF;
-  border: 1px solid #E0E0DD;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  -webkit-box-shadow: 0px 7px 20px rgba(0, 0, 0, 0.05);
-          box-shadow: 0px 7px 20px rgba(0, 0, 0, 0.05);
-  border-radius: 4px;
-  width: 363px;
-  z-index: 2;
+.product-card__shop-popup-button:hover ~ .product-card__shop-list {
+  visibility: visible;
+}
+
+.product-card__shop-list:hover {
+  visibility: visible;
 }
 
 .product-card__shop-item {
@@ -433,6 +464,18 @@
   border: 0px;
 }
 
+.product-card__size-list {
+  visibility: hidden;
+  position: absolute;
+  left: 0px;
+  bottom: 28px;
+  padding-bottom: 12px;
+  background: transparent;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  z-index: 2;
+}
+
 .product-card__size-popup-button {
   padding: 0;
   margin: 0;
@@ -448,15 +491,12 @@
   transition: all .3s;
 }
 
-.product-card__size-list {
-  display: none;
-  position: absolute;
-  left: 0px;
-  bottom: 40px;
-  background: transparent;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  z-index: 2;
+.product-card__size-popup-button:hover ~ .product-card__size-list {
+  visibility: visible;
+}
+
+.product-card__size-list:hover {
+  visibility: visible;
 }
 
 .product-card__size-container {
@@ -629,23 +669,6 @@
   color: #333333;
 }
 
-.filter-panel__button--active, .filter-panel__button {
-  background: #FFFFFF;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  border-radius: 100px;
-  width: 120px;
-  height: 40px;
-}
-
-.filter-panel__button--active {
-  border: 1px solid #188145;
-}
-
-.filter-panel__button {
-  border: 1px solid #E0E0DD;
-}
-
 .nav-arrow .nav-arrow__left, .nav-arrow .nav-arrow__right {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -660,6 +683,13 @@
   border-radius: 4px;
   width: 36px;
   height: 36px;
+  border: none;
+  cursor: pointer;
+}
+
+.nav-arrow .nav-arrow__left:hover, .nav-arrow .nav-arrow__right:hover {
+  -webkit-filter: opacity(0.85);
+          filter: opacity(0.85);
 }
 
 .nav-button {
@@ -668,6 +698,13 @@
   border-radius: 50%;
   background: #FFFFFF;
   border: 0px;
+}
+
+.nav-button:hover {
+  -webkit-filter: invert(10%);
+          filter: invert(10%);
+  -webkit-transition: all .3s;
+  transition: all .3s;
 }
 
 /* Regular */
@@ -1357,6 +1394,14 @@
   padding-right: 71px;
 }
 
+.menu__shoping-cart-image:hover path {
+  stroke: #27AE60;
+}
+
+.menu__search-image:hover path {
+  stroke: #27AE60;
+}
+
 .menu__item-list {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1450,13 +1495,93 @@
           align-items: center;
 }
 
+.menu__search-checkbox {
+  visibility: hidden;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.menu__search-checkbox:checked ~ .menu__search-panel {
+  visibility: visible;
+}
+
+.menu__search-field:focus ~ .menu__search-block {
+  visibility: visible;
+}
+
+.menu__search-block {
+  visibility: hidden;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.menu__search-result-list {
+  margin-top: 60px;
+  margin-left: 20px;
+  background: #FFFFFF;
+  -webkit-box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.1);
+          box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.1);
+  border-radius: 6px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 406px;
+  padding-bottom: 18px;
+  padding-top: 18px;
+}
+
+.menu__search-result-item {
+  padding-left: 23px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: start;
+  cursor: pointer;
+  height: 48px;
+  font-size: 16px;
+  line-height: 50px;
+  color: #333333;
+}
+
+.menu__search-result-item:hover {
+  background: rgba(111, 207, 151, 0.15);
+}
+
 .menu__search-field {
   width: 350px;
   outline: none;
   border: none;
   font-size: 18px;
   line-height: 25px;
-  color: #9C9C9C;
+  color: #188145;
+}
+
+.menu__search-result-item-button {
+  margin-left: 23px;
+  cursor: pointer;
+  margin-right: 23px;
+  margin-top: 18px;
+  background: #F1F1F1;
+  border-radius: 4px;
+  height: 44px;
+  border: none;
+  font-size: 15px;
+  color: #333333;
+}
+
+.menu__search-result-item-button:hover {
+  background: #c5c5c5;
+  -webkit-transition: all .3s;
+  transition: all .3s;
 }
 
 .menu__search-separator {
@@ -1982,6 +2107,20 @@ body .body__wrapper {
       -ms-flex-direction: row;
           flex-direction: row;
   gap: 30px;
+}
+
+.best-deals__filter-panel-button {
+  background: #FFFFFF;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 100px;
+  border: 1px solid #E0E0DD;
+  width: 120px;
+  height: 40px;
+}
+
+.best-deals__filter-panel-button:hover {
+  border: 1px solid #188145;
 }
 
 .best-deals__row {

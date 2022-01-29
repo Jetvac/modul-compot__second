@@ -5,3 +5,10 @@
   background: #FFFFFF;
   border: 0px;
 }
+
+.nav-button:hover {
+  -webkit-filter: invert(10%);
+          filter: invert(10%);
+  -webkit-transition: all .3s;
+  transition: all .3s;
+}

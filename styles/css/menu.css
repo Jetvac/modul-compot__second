@@ -28,6 +28,14 @@
   padding-right: 71px;
 }
 
+.menu__shoping-cart-image:hover path {
+  stroke: #27AE60;
+}
+
+.menu__search-image:hover path {
+  stroke: #27AE60;
+}
+
 .menu__item-list {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -121,13 +129,93 @@
           align-items: center;
 }
 
+.menu__search-checkbox {
+  visibility: hidden;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.menu__search-checkbox:checked ~ .menu__search-panel {
+  visibility: visible;
+}
+
+.menu__search-field:focus ~ .menu__search-block {
+  visibility: visible;
+}
+
+.menu__search-block {
+  visibility: hidden;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.menu__search-result-list {
+  margin-top: 60px;
+  margin-left: 20px;
+  background: #FFFFFF;
+  -webkit-box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.1);
+          box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.1);
+  border-radius: 6px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 406px;
+  padding-bottom: 18px;
+  padding-top: 18px;
+}
+
+.menu__search-result-item {
+  padding-left: 23px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: start;
+  cursor: pointer;
+  height: 48px;
+  font-size: 16px;
+  line-height: 50px;
+  color: #333333;
+}
+
+.menu__search-result-item:hover {
+  background: rgba(111, 207, 151, 0.15);
+}
+
 .menu__search-field {
   width: 350px;
   outline: none;
   border: none;
   font-size: 18px;
   line-height: 25px;
-  color: #9C9C9C;
+  color: #188145;
+}
+
+.menu__search-result-item-button {
+  margin-left: 23px;
+  cursor: pointer;
+  margin-right: 23px;
+  margin-top: 18px;
+  background: #F1F1F1;
+  border-radius: 4px;
+  height: 44px;
+  border: none;
+  font-size: 15px;
+  color: #333333;
+}
+
+.menu__search-result-item-button:hover {
+  background: #c5c5c5;
+  -webkit-transition: all .3s;
+  transition: all .3s;
 }
 
 .menu__search-separator {

@@ -18,6 +18,17 @@
         padding-right: 71px;
     }
 
+    &__shoping-cart-image:hover {
+        path {
+            stroke: #27AE60;
+        }
+    }
+    &__search-image:hover {
+        path {
+            stroke: #27AE60;
+        }
+    }
+
     &__item-list {
         display: flex;
         flex-direction: row;
@@ -60,6 +71,8 @@
         color: #FFFFFF;
     }
 
+
+    // Search
     &__search {
         position: relative;
     }
@@ -74,13 +87,77 @@
         align-items: center;
     }
     
+    &__search-checkbox {
+        visibility: hidden;
+        position: absolute;
+        left: 0; top: 0;
+    }
+    &__search-checkbox:checked ~ &__search-panel {
+        visibility: visible;
+    }
+    &__search-field:focus ~ &__search-block {
+        visibility: visible;
+    }
+    
+    &__search-block {
+        visibility: hidden;
+        position: absolute;
+        left: 0; top: 0;
+    }
+
+    &__search-result-list {
+        margin-top: 60px;
+        margin-left: 20px;
+        background: #FFFFFF;
+        box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.1);
+        border-radius: 6px;
+        display: flex;
+        flex-direction: column;
+        width: 406px;
+        padding-bottom: 18px;
+        padding-top: 18px;
+    }
+
+    &__search-result-item {
+        padding-left: 23px;
+        display: flex;
+        align-items: center;
+        text-align: start;
+        cursor: pointer;
+        height: 48px;
+        font-size: 16px;
+        line-height: 50px;
+        color: #333333;
+    }
+    &__search-result-item:hover {
+        background: rgba(111, 207, 151, 0.15);
+    }
+
+
     &__search-field {
         width: 350px;
         outline: none;
         border: none;
         font-size: 18px;
         line-height: 25px;
-        color: #9C9C9C;
+        color: #188145;
+    }
+
+    &__search-result-item-button {
+        margin-left: 23px;
+        cursor: pointer;
+        margin-right: 23px;
+        margin-top: 18px;
+        background: #F1F1F1;
+        border-radius: 4px;
+        height: 44px;
+        border: none;
+        font-size: 15px;
+        color: #333333;
+    }
+    &__search-result-item-button:hover {
+        background: #c5c5c5;
+        transition: all .3s;
     }
 
     &__search-separator {

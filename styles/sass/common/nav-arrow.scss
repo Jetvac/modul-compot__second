@@ -7,6 +7,11 @@
         border-radius: 4px;
         width: 36px;
         height: 36px;
+        border: none;
+        cursor: pointer;
+    }
+    %button:hover {
+        filter: opacity(.85);
     }
 
     &__left {
