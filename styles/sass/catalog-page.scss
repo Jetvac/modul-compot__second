@@ -116,7 +116,44 @@ body, html
 
     &__header {
         margin-bottom: 60px;
+        width: 100%;
+        grid-column-start: 1;
+        grid-column-end: 3;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
     }
+
+    // Catalog-filter
+    &__filter-panel {
+        display: flex;
+        flex-direction: row;
+        gap: 10px;
+    }
+    
+    &__filter-select {
+        background: #FFFFFF;
+        border: 1px solid #E0E0DD;
+        border-radius: 6px;
+        height: 40px;
+        display: flex;
+        padding-left: 17px;
+        padding-right: 8px;
+        color: #333333;
+        font-size: 16px;
+        line-height: 20px;
+    }
+
+    &__filter-option-text {
+        font-size: 16px;
+        color: #333333;
+    }
+
+    &__filter-option-ammount {
+        font-size: 16px;
+        color: #27AE60;
+    }
+
 
     &__row {
         display: grid;
@@ -145,7 +182,6 @@ body, html
         width: 100%;
         height: auto;
     }
-
 
     //filter
     &__filter-panel {
@@ -211,6 +247,25 @@ body, html
         color: #27AE60;
     }
 
+    &__slider-range {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin-bottom: 20px;
+    }
+
+    &__slider-range-from {
+        color: #6F6F6F;
+        opacity: 0.9;
+        font-size: 18px;
+        line-height: 24px;
+    }
+
+    &__filter-checkbox:checked ~ &__filter-checkbox-visual {
+        background: #3AB46D;
+        border: 1px solid #3AB46D;
+    }
+
     &__filter-button {
         width: 100%;
         border: none;
@@ -223,9 +278,29 @@ body, html
         align-items: center;
         justify-content: center;
     }
-}
 
-.slider-range {
+    &__filter-checkbox {
+        visibility: hidden;
+        position: absolute;
+        top: 0; left: 0;
+    }
+
+    &__filter-checkbox-visual {
+        background: #FFFFFF;
+        border: 1px solid #C2C2C2;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 4px;
+        width: 18px; height: 18px;
+    }
+
+    &__slider-range-to {
+        color: #6F6F6F;
+        opacity: 0.9;
+        font-size: 18px;
+        line-height: 24px;
+    }
 }
 
 .social-network {

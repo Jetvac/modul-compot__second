@@ -280,6 +280,54 @@
             <div class="catalog__wrapper">
               <div class="catalog__header category-list__header">
                 <div class="catalog__title category-list__title">Основной каталог</div>
+
+                <div class="catalog__filter-panel">
+                  <div class="catalog__filter-item">
+                    <select class="catalog__filter-select">
+                      <div class="catalog__filter-wrapper">
+                        <option class="catalog__filter-option-header">По цене</option>
+                        <option class="catalog__filter-option">
+                          <div class="catalog__filter-option-text">Элемент</div>
+                          <div class="catalog__filter-option-ammount">3</div>
+                        </option>
+                        <option class="catalog__filter-option">
+                          <div class="catalog__filter-option-text">Элемент</div>
+                          <div class="catalog__filter-option-ammount">1</div>
+                        </option>
+                      </div>
+                    </select>
+                  </div>
+                  <div class="catalog__filter-item">
+                    <select class="catalog__filter-select">
+                      <div class="catalog__filter-wrapper">
+                        <option class="catalog__filter-option-header">По популярности</option>
+                        <option class="catalog__filter-option">
+                          <div class="catalog__filter-option-text">Элемент</div>
+                          <div class="catalog__filter-option-ammount">3</div>
+                        </option>
+                        <option class="catalog__filter-option">
+                          <div class="catalog__filter-option-text">Элемент</div>
+                          <div class="catalog__filter-option-ammount">1</div>
+                        </option>
+                      </div>
+                    </select>
+                  </div>
+                  <div class="catalog__filter-item">
+                    <select class="catalog__filter-select">
+                      <div class="catalog__filter-wrapper">
+                        <option class="catalog__filter-option-header">По высоте</option>
+                        <option class="catalog__filter-option">
+                          <div class="catalog__filter-option-text">Элемент</div>
+                          <div class="catalog__filter-option-ammount">3</div>
+                        </option>
+                        <option class="catalog__filter-option">
+                          <div class="catalog__filter-option-text">Элемент</div>
+                          <div class="catalog__filter-option-ammount">1</div>
+                        </option>
+                      </div>
+                    </select>
+                  </div>
+                </div>
               </div>
               <div class="catalog__filter-panel">
                 <div class="catalog__filter-container">
@@ -292,33 +340,69 @@
                     <div class="catalog__filter-list">
                       <div class="catalog__filter-item">
                         <div class="catalog__filter-title">Цена</div>
-                        <div class="slider-range"> </div>
+                        <img class="catalog__filter-slider-image" src="./assets/img/filter-panel/Group 2729.svg">
+                        <div class="catalog__slider-range">
+                          <div class="catalog__slider-range-from">5 590 ₽</div>
+                          <div class="catalog__slider-range-to">140 990 ₽</div>
+                        </div>
                       </div>
                       <div class="catalog__filter-delimiter"></div>
                       <div class="catalog__filter-item">
                         <div class="catalog__filter-title">Высота</div>
-                        <div class="slider-range"></div>
+                        <img class="catalog__filter-slider-image" src="./assets/img/filter-panel/Group 2730.svg">
+                        <div class="catalog__slider-range">
+                          <div class="catalog__slider-range-from">60 см</div>
+                          <div class="catalog__slider-range-to">800 см</div>
+                        </div>
                       </div>
                       <div class="catalog__filter-delimiter"></div>
                       <div class="catalog__filter-item">
                         <div class="catalog__filter-title">Тип хвои</div>
                         <label class="catalog__filter-label">
-                          <input class="catalog__filter-checkbox" id="checkbox-PVKH" type="checkbox">
+                          <label class="catalog__filter-checkbox-label" for="checkbox-1">
+                            <input class="catalog__filter-checkbox" id="checkbox-1" type="checkbox">
+                            <div class="catalog__filter-checkbox-visual">
+                              <svg width="12" height="8" viewBox="0 0 12 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M10.4286 1L4.14282 7L1 4" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                              </svg>                                
+                            </div>
+                          </label>
                           <div class="catalog__filter-text">ПВХ</div>
                           <div class="catalog__filter-ammount-text">42</div>
                         </label>
                         <label class="catalog__filter-label">
-                          <input class="catalog__filter-checkbox" id="checkbox-PVKH" type="checkbox">
+                          <label class="catalog__filter-checkbox-label" for="checkbox-2">
+                            <input class="catalog__filter-checkbox" id="checkbox-2" type="checkbox">
+                            <div class="catalog__filter-checkbox-visual">
+                              <svg width="12" height="8" viewBox="0 0 12 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M10.4286 1L4.14282 7L1 4" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                              </svg>                                
+                            </div>
+                          </label>
                           <div class="catalog__filter-text">Литье</div>
                           <div class="catalog__filter-ammount-text">10</div>
                         </label>
                         <label class="catalog__filter-label">
-                          <input class="catalog__filter-checkbox" id="checkbox-PVKH" type="checkbox">
+                          <label class="catalog__filter-checkbox-label" for="checkbox-3">
+                            <input class="catalog__filter-checkbox" id="checkbox-3" type="checkbox">
+                            <div class="catalog__filter-checkbox-visual">
+                              <svg width="12" height="8" viewBox="0 0 12 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M10.4286 1L4.14282 7L1 4" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                              </svg>                                
+                            </div>
+                          </label>
                           <div class="catalog__filter-text">ПВХ + Литье</div>
                           <div class="catalog__filter-ammount-text">32</div>
                         </label>
                         <label class="catalog__filter-label">
-                          <input class="catalog__filter-checkbox" id="checkbox-PVKH" type="checkbox">
+                          <label class="catalog__filter-checkbox-label" for="checkbox-4">
+                            <input class="catalog__filter-checkbox" id="checkbox-4" type="checkbox">
+                            <div class="catalog__filter-checkbox-visual">
+                              <svg width="12" height="8" viewBox="0 0 12 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M10.4286 1L4.14282 7L1 4" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                              </svg>                                
+                            </div>
+                          </label>
                           <div class="catalog__filter-text">Леска</div>
                           <div class="catalog__filter-ammount-text">21</div>
                         </label>
@@ -327,32 +411,74 @@
                       <div class="catalog__filter-item">
                         <div class="catalog__filter-title">Цвет хвои</div>
                         <label class="catalog__filter-label">
-                          <input class="catalog__filter-checkbox" id="checkbox-PVKH" type="checkbox">
+                          <label class="catalog__filter-checkbox-label" for="checkbox-5">
+                            <input class="catalog__filter-checkbox" id="checkbox-5" type="checkbox">
+                            <div class="catalog__filter-checkbox-visual">
+                              <svg width="12" height="8" viewBox="0 0 12 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M10.4286 1L4.14282 7L1 4" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                              </svg>                                
+                            </div>
+                          </label>
                           <div class="catalog__filter-text">Зеленая</div>
                           <div class="catalog__filter-ammount-text">42</div>
                         </label>
                         <label class="catalog__filter-label">
-                          <input class="catalog__filter-checkbox" id="checkbox-PVKH" type="checkbox">
+                          <label class="catalog__filter-checkbox-label" for="checkbox-6">
+                            <input class="catalog__filter-checkbox" id="checkbox-6" type="checkbox">
+                            <div class="catalog__filter-checkbox-visual">
+                              <svg width="12" height="8" viewBox="0 0 12 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M10.4286 1L4.14282 7L1 4" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                              </svg>                                
+                            </div>
+                          </label>
                           <div class="catalog__filter-text">Красная</div>
                           <div class="catalog__filter-ammount-text">10</div>
                         </label>
                         <label class="catalog__filter-label">
-                          <input class="catalog__filter-checkbox" id="checkbox-PVKH" type="checkbox">
+                          <label class="catalog__filter-checkbox-label" for="checkbox-7">
+                            <input class="catalog__filter-checkbox" id="checkbox-7" type="checkbox">
+                            <div class="catalog__filter-checkbox-visual">
+                              <svg width="12" height="8" viewBox="0 0 12 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M10.4286 1L4.14282 7L1 4" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                              </svg>                                
+                            </div>
+                          </label>
                           <div class="catalog__filter-text">Золотая</div>
                           <div class="catalog__filter-ammount-text">32</div>
                         </label>
                         <label class="catalog__filter-label">
-                          <input class="catalog__filter-checkbox" id="checkbox-PVKH" type="checkbox">
+                          <label class="catalog__filter-checkbox-label" for="checkbox-8">
+                            <input class="catalog__filter-checkbox" id="checkbox-8" type="checkbox">
+                            <div class="catalog__filter-checkbox-visual">
+                              <svg width="12" height="8" viewBox="0 0 12 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M10.4286 1L4.14282 7L1 4" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                              </svg>                                
+                            </div>
+                          </label>
                           <div class="catalog__filter-text">Белая</div>
                           <div class="catalog__filter-ammount-text">28</div>
                         </label>
                         <label class="catalog__filter-label">
-                          <input class="catalog__filter-checkbox" id="checkbox-PVKH" type="checkbox">
+                          <label class="catalog__filter-checkbox-label" for="checkbox-9">
+                            <input class="catalog__filter-checkbox" id="checkbox-9" type="checkbox">
+                            <div class="catalog__filter-checkbox-visual">
+                              <svg width="12" height="8" viewBox="0 0 12 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M10.4286 1L4.14282 7L1 4" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                              </svg>                                
+                            </div>
+                          </label>
                           <div class="catalog__filter-text">Голубая</div>
                           <div class="catalog__filter-ammount-text">20</div>
                         </label>
                         <label class="catalog__filter-label">
-                          <input class="catalog__filter-checkbox" id="checkbox-PVKH" type="checkbox">
+                          <label class="catalog__filter-checkbox-label" for="checkbox-10">
+                            <input class="catalog__filter-checkbox" id="checkbox-10" type="checkbox">
+                            <div class="catalog__filter-checkbox-visual">
+                              <svg width="12" height="8" viewBox="0 0 12 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M10.4286 1L4.14282 7L1 4" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                              </svg>                                
+                            </div>
+                          </label>
                           <div class="catalog__filter-text">Фиолетовая</div>
                           <div class="catalog__filter-ammount-text">16</div>
                         </label>
@@ -361,17 +487,38 @@
                       <div class="catalog__filter-item">
                         <div class="catalog__filter-title">Крепление веток</div>
                         <label class="catalog__filter-label">
-                          <input class="catalog__filter-checkbox" id="checkbox-PVKH" type="checkbox">
+                          <label class="catalog__filter-checkbox-label" for="checkbox-11">
+                            <input class="catalog__filter-checkbox" id="checkbox-11" type="checkbox">
+                            <div class="catalog__filter-checkbox-visual">
+                              <svg width="12" height="8" viewBox="0 0 12 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M10.4286 1L4.14282 7L1 4" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                              </svg>                                
+                            </div>
+                          </label>
                           <div class="catalog__filter-text">Вставные (крючок)</div>
                           <div class="catalog__filter-ammount-text">42</div>
                         </label>
                         <label class="catalog__filter-label">
-                          <input class="catalog__filter-checkbox" id="checkbox-PVKH" type="checkbox">
+                          <label class="catalog__filter-checkbox-label" for="checkbox-12">
+                            <input class="catalog__filter-checkbox" id="checkbox-12" type="checkbox">
+                            <div class="catalog__filter-checkbox-visual">
+                              <svg width="12" height="8" viewBox="0 0 12 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M10.4286 1L4.14282 7L1 4" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                              </svg>                                
+                            </div>
+                          </label>
                           <div class="catalog__filter-text">На крючках</div>
                           <div class="catalog__filter-ammount-text">10</div>
                         </label>
                         <label class="catalog__filter-label">
-                          <input class="catalog__filter-checkbox" id="checkbox-PVKH" type="checkbox">
+                          <label class="catalog__filter-checkbox-label" for="checkbox-13">
+                            <input class="catalog__filter-checkbox" id="checkbox-13" type="checkbox">
+                            <div class="catalog__filter-checkbox-visual">
+                              <svg width="12" height="8" viewBox="0 0 12 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M10.4286 1L4.14282 7L1 4" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                              </svg>                                
+                            </div>
+                          </label>
                           <div class="catalog__filter-text">Шарнирный</div>
                           <div class="catalog__filter-ammount-text">32</div>
                         </label>
@@ -380,22 +527,50 @@
                       <div class="catalog__filter-item">
                         <div class="catalog__filter-title">Дополнительный декор</div>
                         <label class="catalog__filter-label">
-                          <input class="catalog__filter-checkbox" id="checkbox-PVKH" type="checkbox">
+                          <label class="catalog__filter-checkbox-label" for="checkbox-14">
+                            <input class="catalog__filter-checkbox" id="checkbox-14" type="checkbox">
+                            <div class="catalog__filter-checkbox-visual">
+                              <svg width="12" height="8" viewBox="0 0 12 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M10.4286 1L4.14282 7L1 4" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                              </svg>                                
+                            </div>
+                          </label>
                           <div class="catalog__filter-text">Заснеженность</div>
                           <div class="catalog__filter-ammount-text">42</div>
                         </label>
                         <label class="catalog__filter-label">
-                          <input class="catalog__filter-checkbox" id="checkbox-PVKH" type="checkbox">
+                          <label class="catalog__filter-checkbox-label" for="checkbox-15">
+                            <input class="catalog__filter-checkbox" id="checkbox-15" type="checkbox">
+                            <div class="catalog__filter-checkbox-visual">
+                              <svg width="12" height="8" viewBox="0 0 12 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M10.4286 1L4.14282 7L1 4" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                              </svg>                                
+                            </div>
+                          </label>
                           <div class="catalog__filter-text">С лампочками</div>
                           <div class="catalog__filter-ammount-text">10</div>
                         </label>
                         <label class="catalog__filter-label">
-                          <input class="catalog__filter-checkbox" id="checkbox-PVKH" type="checkbox">
+                          <label class="catalog__filter-checkbox-label" for="checkbox-16">
+                            <input class="catalog__filter-checkbox" id="checkbox-16" type="checkbox">
+                            <div class="catalog__filter-checkbox-visual">
+                              <svg width="12" height="8" viewBox="0 0 12 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M10.4286 1L4.14282 7L1 4" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                              </svg>                                
+                            </div>
+                          </label>
                           <div class="catalog__filter-text">С шишками</div>
                           <div class="catalog__filter-ammount-text">32</div>
                         </label>
                         <label class="catalog__filter-label">
-                          <input class="catalog__filter-checkbox" id="checkbox-PVKH" type="checkbox">
+                          <label class="catalog__filter-checkbox-label" for="checkbox-17">
+                            <input class="catalog__filter-checkbox" id="checkbox-17" type="checkbox">
+                            <div class="catalog__filter-checkbox-visual">
+                              <svg width="12" height="8" viewBox="0 0 12 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M10.4286 1L4.14282 7L1 4" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                              </svg>                                
+                            </div>
+                          </label>
                           <div class="catalog__filter-text">С ягодами</div>
                           <div class="catalog__filter-ammount-text">32</div>
                         </label>
@@ -7346,7 +7521,14 @@
                       <div class="popup__row">
                         <div class="popup__checkbox-element">
                           <label class="popup__checkbox-placer">
-                            <input class="popup__checkbox" type="checkbox">
+                            <label class="popup__filter-checkbox-label" for="checkbox-20">
+                              <input class="popup__filter-checkbox" id="checkbox-20" type="checkbox">
+                              <div class="popup__filter-checkbox-visual">
+                                <svg width="12" height="8" viewBox="0 0 12 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                  <path d="M10.4286 1L4.14282 7L1 4" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>                                
+                              </div>
+                            </label>
                             <div class="popup__agree-text">
                               Я согласен(а) на обработку персональных данных
                             </div>
@@ -7386,7 +7568,14 @@
                       <div class="popup__row">
                         <div class="popup__checkbox-element">
                           <label class="popup__checkbox-placer">
-                            <input class="popup__checkbox" type="checkbox">
+                            <label class="popup__filter-checkbox-label" for="checkbox-21">
+                              <input class="popup__filter-checkbox" id="checkbox-21" type="checkbox">
+                              <div class="popup__filter-checkbox-visual">
+                                <svg width="12" height="8" viewBox="0 0 12 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                  <path d="M10.4286 1L4.14282 7L1 4" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>                                
+                              </div>
+                            </label>
                             <div class="popup__agree-text">
                               Я согласен(а) на обработку персональных данных
                             </div>

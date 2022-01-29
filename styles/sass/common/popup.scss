@@ -110,6 +110,28 @@
         color: #FFFFFF;
         cursor: pointer;
     }
+
+
+    // Checkbox 
+    &__filter-checkbox {
+        visibility: hidden;
+        position: absolute;
+        top: 0; left: 0;
+    }
+
+    &__filter-checkbox-visual {
+        background: #FFFFFF;
+        border: 1px solid #C2C2C2;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 4px;
+        width: 18px; height: 18px;
+    }
+    &__filter-checkbox:checked ~ &__filter-checkbox-visual {
+        background: #3AB46D;
+        border: 1px solid #3AB46D;
+    }
 }
 .popup:target {
     visibility: visible;
