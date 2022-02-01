@@ -1,3 +1,7 @@
+.header {
+  position: relative;
+}
+
 .header .wrapper {
   width: auto;
   height: 48px;
@@ -13,6 +17,10 @@
 }
 
 .header .container {
+  width: 100%;
+}
+
+.header__menu {
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -89,4 +97,102 @@
   font-size: 20px;
   line-height: 25px;
   color: white;
+}
+
+.header__mobile-panel {
+  visibility: hidden;
+  width: 0;
+  height: 0;
+}
+
+.header #header__mobile-toggle-checkbox {
+  visibility: hidden;
+  position: absolute;
+}
+
+.header #header__mobile-toggle-checkbox:checked ~ .header__mobile-drop-down {
+  visibility: visible;
+}
+
+.header #header__mobile-toggle-checkbox:checked + .header__mobile-toggle > .header__mobile-panel-arrow {
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+  -webkit-transition: all .3s;
+  transition: all .3s;
+}
+
+.header__mobile-panel-arrow {
+  -webkit-transition: all .3s;
+  transition: all .3s;
+}
+
+.header__mobile-drop-down {
+  display: none;
+  visibility: hidden;
+  position: absolute;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding-top: 18px;
+  padding-bottom: 18px;
+  left: 0;
+  top: 48px;
+  background: #333333;
+  z-index: 4;
+}
+
+.header__mobile-category-ref {
+  padding-left: 16px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  text-decoration: none;
+  color: #BDBDBD;
+  font-size: 14px;
+  line-height: 18px;
+}
+
+@media screen and (max-width: 680px) {
+  .header .wrapper {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  .header .container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .header__menu {
+    display: block;
+  }
+  .header__mobile-drop-down {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 100%;
+  }
+  .header__mobile-panel {
+    margin-right: 15px;
+    visibility: visible;
+  }
+  .header__nav-menu {
+    visibility: hidden;
+    width: 0;
+    height: 0;
+  }
+  .header__mail-text {
+    visibility: hidden;
+    width: 0;
+    height: 0;
+  }
+  .header__phone-text {
+    margin-left: 0;
+    margin-right: auto;
+  }
+  .header__info {
+    gap: 0px;
+  }
 }

@@ -1,0 +1,22 @@
+.line-nav {
+    &__nav-list {
+        margin-top: 30px;
+        display: flex;
+        flex-direction: row;
+        gap: 10px;
+    }
+
+    &__nav-item--active {
+        width: 36px;
+        height: 4px;
+        border-radius: 100px;
+        background: #27AE60;
+    }
+
+    &__nav-item {
+        width: 36px;
+        height: 4px;
+        border-radius: 100px;
+        background: #E0E0DD;
+    }
+}

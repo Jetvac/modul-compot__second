@@ -16,6 +16,10 @@ body, html
   margin: 0;
 }
 
+.mobile {
+    visibility: hidden;
+}
+
 .category-list {
     &__separator {
         margin-top: 188px;
@@ -131,6 +135,10 @@ body, html
         display: flex;
         justify-content: space-between;
         align-items: center;
+    }
+
+    &__header-mobile {
+        
     }
 
     // Catalog-filter
@@ -372,3 +380,5 @@ body, html
     flex-direction: row;
     gap: 20px;
 }
+
+@import "./media/catalog-page__media.scss";

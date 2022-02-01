@@ -639,8 +639,3 @@
           text-decoration-line: line-through;
   color: #626262;
 }
-
-.product-card:hover {
-  -webkit-transform: scale(1.01);
-          transform: scale(1.01);
-}

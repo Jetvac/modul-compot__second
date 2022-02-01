@@ -264,3 +264,118 @@
   line-height: 29px;
   color: #FFFFFF;
 }
+
+.frame-menu__category {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 0;
+  padding: 0;
+  gap: 18px;
+  width: 100%;
+}
+
+.frame-menu__burger-item-header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.frame-menu__category-drop-toggle {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.frame-menu__category-drop-arrow {
+  -webkit-transition: all .3s;
+  transition: all .3s;
+}
+
+.frame-menu__category-drop-arrow-border {
+  border-radius: 50%;
+  width: 22px;
+  height: 22px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.frame-menu__category-item-separator {
+  width: 100%;
+  margin-bottom: 25px;
+  margin-top: 20px;
+  height: 1px;
+  background: #535353;
+}
+
+.frame-menu__category-drop-checkbox:checked ~ .frame-menu__category-subcategory {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: auto;
+  -webkit-transition: all .3s;
+  transition: all .3s;
+  padding-top: 13px;
+  padding-bottom: 24px;
+}
+
+.frame-menu__category-drop-checkbox:checked + .frame-menu__category-drop-toggle > .frame-menu__category-drop-arrow-border > .frame-menu__category-drop-arrow {
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+  -webkit-transition: all .3s;
+  transition: all .3s;
+}
+
+.frame-menu__category-subcategory {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 25px;
+  padding: 0;
+  list-style: none;
+}
+
+.frame-menu__category-drop-checkbox {
+  position: absolute;
+  visibility: hidden;
+}
+
+.frame-menu__category-item-ref {
+  text-decoration: none;
+  color: #BDBDBD;
+  -webkit-transition: all .3s;
+  transition: all .3s;
+}
+
+.frame-menu__category-item-ref:hover {
+  color: #e7e7e7;
+}

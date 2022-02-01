@@ -7,6 +7,7 @@
 @import "./common/frame-footer.scss";
 @import "./common/popup.scss";
 @import "./common/menu.scss";
+@import "./common/line-nav-list.scss";
 
 body, html
 {
@@ -16,21 +17,31 @@ body, html
   margin: 0;
 }
 
+.mobile {
+    visibility: hidden;
+}
+
 body { 
     overflow: visible;
-    .body__wrapper {
-      padding-left: 60px;
-      padding-right: 60px;
-    }
 }
+
+.body__wrapper {
+    padding-left: 60px;
+    padding-right: 60px;
+  }
 
 .promote {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     width: 100%;
     height: auto;
-    gap: 21px;
     margin-top: 13px;
+
+    &__frame-list {
+        display: flex;
+        flex-direction: row;
+        gap: 13px;
+    }
 
     &__frame {
         width: 33%;
@@ -40,6 +51,12 @@ body {
     &__frame:hover {
         transform: scale(1.01);
     }
+
+    &__footer {
+        margin: auto;
+    }
+
+
 }
 
 .frame-card {
@@ -149,6 +166,11 @@ body {
         align-items: center;
         justify-content: center;
     }
+
+    &__footer {
+        display: flex;
+        justify-content: center;
+    }
 }
 
 .catalog {
@@ -182,13 +204,16 @@ body {
     }
 
     &__banner-box {
+        display: flex;
         width: 100%;
-        height: 100%;
+        height: 125%;
+        width: 145%; // Mobile
     }
 
     &__banner-image {
-        width: 100%;
+        width: auto;
         height: auto;
+        object-fit: cover; // Mobile
     }
 
     &__button {
@@ -214,6 +239,13 @@ body {
         font-size: 18px;
         line-height: 50px;
         color: #FFFFFF;
+    }
+
+    &__line-nav {
+        * { height: 0; padding: 0; margin: 0;}
+        height: 0;
+        display: flex;
+        justify-content: center;
     }
 }
 
@@ -378,31 +410,16 @@ body {
         display: flex;
         justify-content: center;
     }
-
-    %nav-item {
-        width: 36px;
-        height: 4px;
-        margin-top: 40px;
-        border-radius: 100px;
-    }
-
-    &__nav-item--active {
-        @extend %nav-item;
-        background: #27AE60;
-    }
-
-    &__nav-item {
-        @extend %nav-item;
-        background: #E0E0DD;
-    }
 }
 
 .instagram {
 
     &_body {
+        position: relative;
     }
 
     &__wrapper {
+        margin-top: 80px;
     }
 
     &__header {
@@ -435,6 +452,24 @@ body {
         position: absolute;
         right: 2%;
         top: 2%;
+    }
+
+    &__switch-button {
+        width: 60px;
+        height: 60px;
+        border-radius: 50%;
+        background: #FFFFFF;
+        display: flex;
+        justify-content: right;
+        align-items: center;
+        position: absolute;
+        left: -30px;
+        opacity: .8;
+        top: calc(50% - 30px);
+
+        svg {
+            margin-right: 16px;
+        }
     }
 }
 

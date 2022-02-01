@@ -4,21 +4,39 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="favicon.svg" />
     <link rel="stylesheet" href="./styles/css/main-page.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <title>Crystall Tree</title>
   </head>
   <header class="header">
     <div class="wrapper">
       <div class="container">
-        <div class="header__nav-menu">
-          <button class="header__button">Стать партнером</button>
-          <button class="header__button">Где купить?</button>
-          <button class="header__button">О компании</button>
-          <button class="header__button">Блог</button>
-          <button class="header__button">Контакты</button>
+        <div class="header__menu">
+          <div class="header__nav-menu">
+            <button class="header__button">Стать партнером</button>
+            <button class="header__button">Где купить?</button>
+            <button class="header__button">О компании</button>
+            <button class="header__button">Блог</button>
+            <button class="header__button">Контакты</button>
+          </div>
+          <div class="header__info">
+            <a class="header__mail-text header__button" href="mailto:world@crystaltrees.ru">world@crystaltrees.ru</a>
+            <a class="header__phone-text header__button" href="tel:+780055555724">8 (800) 55 55 57 24</a>
+          </div>
         </div>
-        <div class="header__info">
-          <a class="header__mail-text header__button" href="mailto:world@crystaltrees.ru">world@crystaltrees.ru</a>
-          <a class="header__phone-text header__button" href="tel:+780055555724">8 (800) 55 55 57 24</a>
+        <div class="header__mobile-panel">
+          <input id="header__mobile-toggle-checkbox" type="checkbox">
+          <label class="header__mobile-toggle" for="header__mobile-toggle-checkbox">
+            <svg class="header__mobile-panel-arrow" width="12" height="8" viewBox="0 0 10 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M9 1L5 5L1 1" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </label>
+          <div class="header__mobile-drop-down">
+            <a class="header__mobile-category-ref" href="#">Стать партнером</a>
+            <a class="header__mobile-category-ref" href="#">Где купить?</a>
+            <a class="header__mobile-category-ref" href="#">О компании</a>
+            <a class="header__mobile-category-ref" href="#">Блог</a>
+            <a class="header__mobile-category-ref" href="#">Контакты</a>
+          </div>
         </div>
       </div>
     </div>
@@ -34,51 +52,98 @@
         <div class="menu__burger-panel">
           <div class="menu__burger-list">
             <div class="menu__burger-item">
-              <img class="menu__category-icon" src="./assets/img/burger-menu/Snow.svg">
-              <ul class="menu__category">
-                <li class="menu__category-title">Комнатные ели</li>
-                <ul class="menu__category-subcategory">
-                  <li class="menu__category-item"><a class="menu__category-item-ref" href="catalog.html">Литые</a></li>
-                  <li class="menu__category-item"><a class="menu__category-item-ref" href="catalog.html">Комбинированые</a></li>
-                  <li class="menu__category-item"><a class="menu__category-item-ref" href="catalog.html">Елки из ПВХ</a></li>
-                  <li class="menu__category-item"><a class="menu__category-item-ref" href="catalog.html">Заснеженные, с освещением</a></li>
-                  <li class="menu__category-item"><a class="menu__category-item-ref" href="catalog.html">Дизайнерские</a></li>
-                </ul>
-              </ul>
+              <div class="menu__burger-item-header">
+                <img class="menu__category-icon" src="./assets/img/burger-menu/Snow.svg">
+                <div class="menu__category">
+                  <input class="menu__category-drop-checkbox" id="menu-category-first" type="checkbox">
+                  <label class="menu__category-drop-toggle" for="menu-category-first">
+                    <div class="menu__category-title">Комнатные ели</div>
+  
+                    <div class="menu__category-drop-arrow-border mobile">
+                      <svg class="menu__category-drop-arrow" width="10" height="6" viewBox="0 0 10 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M9 1L5 5L1 1" stroke="#333333" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                      </svg>
+                    </div>
+                  </label>
+                  <div class="menu__category-subcategory">
+                    <a class="menu__category-item-ref" href="catalog.html">Литые</a>
+                    <a class="menu__category-item-ref" href="catalog.html">Комбинированые</a>
+                    <a class="menu__category-item-ref" href="catalog.html">Елки из ПВХ</a>
+                    <a class="menu__category-item-ref" href="catalog.html">Заснеженные, с освещением</a>
+                    <a class="menu__category-item-ref" href="catalog.html">Дизайнерские</a>
+                  </div>
+                </div>
+              </div>
+              <div class="menu__category-item-separator mobile"></div>
             </div>
             <div class="menu__burger-item">
-              <img class="menu__category-icon" src="./assets/img/burger-menu/Tree.svg">
-              <ul class="menu__category">
-                <li class="menu__category-title">Высотные ели</li>
-                <ul class="menu__category-subcategory">
-                  <li class="menu__category-item"><a class="menu__category-item-ref" href="catalog.html">Уличные ели</a></li>
-                  <li class="menu__category-item"><a class="menu__category-item-ref" href="catalog.html">Интерьерные ели</a></li>
-                </ul>
-              </ul>
+              <div class="menu__burger-item-header">
+                <img class="menu__category-icon" src="./assets/img/burger-menu/Tree.svg">
+                <div class="menu__category">
+                  <input class="menu__category-drop-checkbox" id="menu-category-second" type="checkbox">
+                  <label class="menu__category-drop-toggle" for="menu-category-second">
+                    <div class="menu__category-title">Высотные ели</div>
+  
+                    <div class="menu__category-drop-arrow-border mobile">
+                      <svg class="menu__category-drop-arrow" width="10" height="6" viewBox="0 0 10 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M9 1L5 5L1 1" stroke="#333333" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                      </svg>
+                    </div>
+                  </label>
+                  <div class="menu__category-subcategory">
+                    <a class="menu__category-item-ref" href="catalog.html">Уличные ели</a>
+                    <a class="menu__category-item-ref" href="catalog.html">Интерьерные ели</a>
+                  </div>
+                </div>
+              </div>
+              <div class="menu__category-item-separator mobile"></div>
             </div>
             <div class="menu__burger-item">
-              <img class="menu__category-icon" src="./assets/img/burger-menu/Star.svg">
-              <ul class="menu__category">
-                <li class="menu__category-title">Новогодний декор</li>
-                <ul class="menu__category-subcategory">
-                  <li class="menu__category-item"><a class="menu__category-item-ref" href="catalog.html">Хвойные венки</a></li>
-                  <li class="menu__category-item"><a class="menu__category-item-ref" href="catalog.html">Хвойные гирлянды</a></li>
-                  <li class="menu__category-item"><a class="menu__category-item-ref" href="catalog.html">Хвойные сваги</a></li>
-                  <li class="menu__category-item"><a class="menu__category-item-ref" href="catalog.html">Елочные украшения</a></li>
-                  <li class="menu__category-item"><a class="menu__category-item-ref" href="catalog.html">Дизайнерские</a></li>
-                </ul>
-              </ul>
+              <div class="menu__burger-item-header">
+                <img class="menu__category-icon" src="./assets/img/burger-menu/Star.svg">
+                <div class="menu__category">
+                  <input class="menu__category-drop-checkbox" id="menu-category-third" type="checkbox">
+                  <label class="menu__category-drop-toggle" for="menu-category-third">
+                    <div class="menu__category-title">Новогодний декор</div>
+  
+                    <div class="menu__category-drop-arrow-border mobile">
+                      <svg class="menu__category-drop-arrow" width="10" height="6" viewBox="0 0 10 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M9 1L5 5L1 1" stroke="#333333" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                      </svg>
+                    </div>
+                  </label>
+                  <div class="menu__category-subcategory">
+                    <a class="menu__category-item-ref" href="catalog.html">Хвойные венки</a>
+                    <a class="menu__category-item-ref" href="catalog.html">Хвойные гирлянды</a>
+                    <a class="menu__category-item-ref" href="catalog.html">Хвойные сваги</a>
+                    <a class="menu__category-item-ref" href="catalog.html">Елочные украшения</a>
+                  </div>
+                </div>
+              </div>
+              <div class="menu__category-item-separator mobile"></div>
             </div>
             <div class="menu__burger-item">
-              <img class="menu__category-icon" src="./assets/img/burger-menu/Lamp.svg">
-              <ul class="menu__category">
-                <li class="menu__category-title">Гирлянды</li>
-                <ul class="menu__category-subcategory">
-                  <li class="menu__category-item"><a class="menu__category-item-ref" href="catalog.html">Электрогирлянды</a></li>
-                  <li class="menu__category-item"><a class="menu__category-item-ref" href="catalog.html">На батарейках</a></li>
-                  <li class="menu__category-item"><a class="menu__category-item-ref" href="catalog.html">Занавесы, сетки</a></li>
-                </ul>
-              </ul>
+              <div class="menu__burger-item-header">
+                <img class="menu__category-icon" src="./assets/img/burger-menu/Lamp.svg">
+                <div class="menu__category">
+                  <input class="menu__category-drop-checkbox" id="menu-category-fourd" type="checkbox">
+                  <label class="menu__category-drop-toggle" for="menu-category-fourd">
+                    <div class="menu__category-title">Гирлянды</div>
+  
+                    <div class="menu__category-drop-arrow-border mobile">
+                      <svg class="menu__category-drop-arrow" width="10" height="6" viewBox="0 0 10 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M9 1L5 5L1 1" stroke="#333333" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                      </svg>
+                    </div>
+                  </label>
+                  <div class="menu__category-subcategory">
+                    <a class="menu__category-item-ref" href="catalog.html">Электрогирлянды</a>
+                    <a class="menu__category-item-ref" href="catalog.html">На батарейках</a>
+                    <a class="menu__category-item-ref" href="catalog.html">Занавесы, сетки</a>
+                  </div>
+                </div>
+              </div>
+              <div class="menu__category-item-separator mobile"></div>
             </div>
             <div class="menu__burger-item menu__burger-item-social">
               <div class="social-network">
@@ -249,56 +314,65 @@
       <div class="body__container">
         <div class="category-list">
           <div class="promote">
-            <div class="promote__frame">
-              <a class="promote__frame-ref" href="#">
-                <div class="frame-card">
-                  <div class="frame-card__product-panel">
-                    <img class="frame-card__product-image" src="./assets/img/frame-card/image 1.png">
-                    <div class="frame-card__product-shadow"></div>
-                  </div>
-                  <div class="frame-card__product-wrapper">
-                    <div class="frame-card__product-description">
-                      <div class="frame-card__category">Ель искусственная</div>
-                      <div class="frame-card__product-name">Царь Елка Сапфир</div>
-                      <div class="frame-card__product-cost">19 990 ₽</div>
+            <div class="promote__frame-list">
+              <div class="promote__frame">
+                <a class="promote__frame-ref" href="#">
+                  <div class="frame-card">
+                    <div class="frame-card__product-panel">
+                      <img class="frame-card__product-image" src="./assets/img/frame-card/image 1.png">
+                      <div class="frame-card__product-shadow"></div>
+                    </div>
+                    <div class="frame-card__product-wrapper">
+                      <div class="frame-card__product-description">
+                        <div class="frame-card__category">Ель искусственная</div>
+                        <div class="frame-card__product-name">Царь Елка Сапфир</div>
+                        <div class="frame-card__product-cost">19 990 ₽</div>
+                      </div>
                     </div>
                   </div>
-                </div>
-              </a>
+                </a>
+              </div>
+              <div class="promote__frame">
+                <a class="promote__frame-ref" href="#">
+                  <div class="frame-card">
+                    <div class="frame-card__product-panel">
+                      <img class="frame-card__product-image" src="./assets/img/frame-card/image 2.png">
+                      <div class="frame-card__product-shadow"></div>
+                    </div>
+                    <div class="frame-card__product-wrapper">
+                      <div class="frame-card__product-description">
+                        <div class="frame-card__category">Ель искусственная</div>
+                        <div class="frame-card__product-name">Царь Елка Сапфир</div>
+                        <div class="frame-card__product-cost">19 990 ₽</div>
+                      </div>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <div class="promote__frame">
+                <a class="promote__frame-ref" href="#">
+                  <div class="frame-card">
+                    <div class="frame-card__product-panel">
+                      <img class="frame-card__product-image" src="./assets/img/frame-card/image 3.png">
+                      <div class="frame-card__product-shadow"></div>
+                    </div>
+                    <div class="frame-card__product-wrapper">
+                      <div class="frame-card__product-description">
+                        <div class="frame-card__category">Ель искусственная</div>
+                        <div class="frame-card__product-name">Царь Елка Сапфир</div>
+                        <div class="frame-card__product-cost">19 990 ₽</div>
+                      </div>
+                    </div>
+                  </div>
+                </a>
+              </div>
             </div>
-            <div class="promote__frame">
-              <a class="promote__frame-ref" href="#">
-                <div class="frame-card">
-                  <div class="frame-card__product-panel">
-                    <img class="frame-card__product-image" src="./assets/img/frame-card/image 2.png">
-                    <div class="frame-card__product-shadow"></div>
-                  </div>
-                  <div class="frame-card__product-wrapper">
-                    <div class="frame-card__product-description">
-                      <div class="frame-card__category">Ель искусственная</div>
-                      <div class="frame-card__product-name">Царь Елка Сапфир</div>
-                      <div class="frame-card__product-cost">19 990 ₽</div>
-                    </div>
-                  </div>
-                </div>
-              </a>
-            </div>
-            <div class="promote__frame">
-              <a class="promote__frame-ref" href="#">
-                <div class="frame-card">
-                  <div class="frame-card__product-panel">
-                    <img class="frame-card__product-image" src="./assets/img/frame-card/image 3.png">
-                    <div class="frame-card__product-shadow"></div>
-                  </div>
-                  <div class="frame-card__product-wrapper">
-                    <div class="frame-card__product-description">
-                      <div class="frame-card__category">Ель искусственная</div>
-                      <div class="frame-card__product-name">Царь Елка Сапфир</div>
-                      <div class="frame-card__product-cost">19 990 ₽</div>
-                    </div>
-                  </div>
-                </div>
-              </a>
+            <div class="promote__footer mobile">
+              <div class="line-nav__nav-list">
+                <div class="line-nav__nav-item--active"></div>
+                <div class="line-nav__nav-item"></div>
+                <div class="line-nav__nav-item"></div>
+              </div>
             </div>
           </div>
           <div class="best-deals">
@@ -1957,6 +2031,13 @@
                   </div>
                 </div>
               </div>
+              <div class="best-deals__footer mobile">
+                <div class="line-nav__nav-list">
+                  <div class="line-nav__nav-item--active"></div>
+                  <div class="line-nav__nav-item"></div>
+                  <div class="line-nav__nav-item"></div>
+                </div>
+              </div>
             </div>
           </div>
           <div class="catalog">
@@ -3600,7 +3681,16 @@
                     </div>
                   </div>
                 </div>
-                <a href="#" class="catalog__banner-box">
+                <div class="catalog__line-nav mobile">
+                  <div class="line-nav__nav-list">
+                    <div class="line-nav__nav-item--active"></div>
+                    <div class="line-nav__nav-item"></div>
+                    <div class="line-nav__nav-item"></div>
+                    <div class="line-nav__nav-item"></div>
+                    <div class="line-nav__nav-item"></div>
+                  </div>
+                </div>
+                <a class="catalog__banner-box" href="#" >
                   <img class="catalog__banner-image" src="./assets/img/banner-list/Banner.png">
                 </a>
                 <div class="catalog__row">
@@ -5236,6 +5326,15 @@
                         </div>
                       </a>
                     </div>
+                  </div>
+                </div>
+                <div class="catalog__line-nav mobile">
+                  <div class="line-nav__nav-list">
+                    <div class="line-nav__nav-item--active"></div>
+                    <div class="line-nav__nav-item"></div>
+                    <div class="line-nav__nav-item"></div>
+                    <div class="line-nav__nav-item"></div>
+                    <div class="line-nav__nav-item"></div>
                   </div>
                 </div>
                 <div class="catalog__banner-list">
@@ -6884,7 +6983,16 @@
                     </div>
                   </div>
                 </div>
-                <a href="./catalog.html" class="catalog__button">
+                <div class="catalog__line-nav mobile">
+                  <div class="line-nav__nav-list">
+                    <div class="line-nav__nav-item--active"></div>
+                    <div class="line-nav__nav-item"></div>
+                    <div class="line-nav__nav-item"></div>
+                    <div class="line-nav__nav-item"></div>
+                    <div class="line-nav__nav-item"></div>
+                  </div>
+                </div>
+                <a class="catalog__button" href="./catalog.html" >
                   <div class="catalog__button-img">
                     <img src="./assets/img/TreeEvergreen.svg">
                   </div>
@@ -6907,6 +7015,11 @@
                       <div class="about__signature-image">
                         <img src="./assets/img/about/signature-image.png">
                       </div>
+                      <button class="about__info-button-mobile nav-button mobile">
+                        <div class="about__info-image">
+                          <img src="./assets/img/nav-button/ArrowRight.svg">
+                        </div>
+                      </button>
                     </div>
                   </div>
                   <div class="about__column">
@@ -7036,10 +7149,10 @@
                 </div>
               </div>
               <div class="inspiration__footer category-list__footer">
-                <div class="inspiration__nav-list">
-                  <div class="inspiration__nav-item--active"></div>
-                  <div class="inspiration__nav-item"></div>
-                  <div class="inspiration__nav-item"></div>
+                <div class="line-nav__nav-list">
+                  <div class="line-nav__nav-item--active"></div>
+                  <div class="line-nav__nav-item"></div>
+                  <div class="line-nav__nav-item"></div>
                 </div>
               </div>
             </div>
@@ -7057,6 +7170,7 @@
             <div class="instagram__item-list">
               <div class="instagram__item">
                 <img class="instagram__item-image" src="./assets/img/instagram/item1.png">
+
                 <div class="instagram__icon">
                   <img src="./assets/img/VideoIcon.svg">
                 </div>
@@ -7116,6 +7230,12 @@
                 </div>
               </div>
             </div>
+
+            <div class="instagram__switch-button mobile">
+              <svg width="7" height="12" viewBox="0 0 7 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M6 11L1.2 6.2L6 1.4" stroke="#333333" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>                
+            </div>
           </div>
         </div>
       </div>
@@ -7144,41 +7264,99 @@
                   <img src="./assets/img/logo-01 2.png">
                 </a>
               </div>
+
+              <a class="frame__phone-text frame__button mobile" href="tel:+780055555724">8 (800) 55 55 57 24</a>
             </div>
             <div class="frame-menu__list">
               <div class="frame-menu__item">
-                <div class="frame-menu__category">
-                  <div class="frame-menu__category-title">Комнатные ели</div>
-                  <div class="frame-menu__category-text"><a class="frame-menu__category-ref" href="#">Литые</a></div>
-                  <div class="frame-menu__category-text"><a class="frame-menu__category-ref" href="#">Комбинированые</a></div>
-                  <div class="frame-menu__category-text"><a class="frame-menu__category-ref" href="#">Елки из ПВХ</a></div>
-                  <div class="frame-menu__category-text"><a class="frame-menu__category-ref" href="#">Заснеженные, с освещением</a></div>
-                  <div class="frame-menu__category-text"><a class="frame-menu__category-ref" href="#">Дизайнерские</a></div>
+                <div class="frame-menu-item-header">
+                  <div class="frame-menu__category">
+                    <input class="frame-menu__category-drop-checkbox" id="frame-menu-category-first" type="checkbox">
+                    <label class="frame-menu__category-drop-toggle" for="frame-menu-category-first">
+                      <div class="frame-menu__category-title">Комнатные ели</div>
+    
+                      <div class="frame-menu__category-drop-arrow-border mobile">
+                        <svg class="frame-menu__category-drop-arrow" width="10" height="6" viewBox="0 0 10 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M9 1L5 5L1 1" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                      </div>
+                    </label>
+                    <div class="frame-menu__category-subcategory">
+                      <a class="frame-menu__category-item-ref" href="catalog.html">Литые</a>
+                      <a class="frame-menu__category-item-ref" href="catalog.html">Комбинированые</a>
+                      <a class="frame-menu__category-item-ref" href="catalog.html">Елки из ПВХ</a>
+                      <a class="frame-menu__category-item-ref" href="catalog.html">Заснеженные, с освещением</a>
+                      <a class="frame-menu__category-item-ref" href="catalog.html">Дизайнерские</a>
+                    </div>
+                  </div>
                 </div>
+                <div class="frame-menu__category-item-separator mobile"></div>
               </div>
               <div class="frame-menu__item">
-                <div class="frame-menu__category">
-                  <div class="frame-menu__category-title">Высотные ели</div>
-                  <div class="frame-menu__category-text"><a class="frame-menu__category-ref" href="#">Уличные ели</a></div>
-                  <div class="frame-menu__category-text"><a class="frame-menu__category-ref" href="#">Интерьерные ели</a></div>
+                <div class="frame-menu-item-header">
+                  <div class="frame-menu__category">
+                    <input class="frame-menu__category-drop-checkbox" id="frame-menu-category-second" type="checkbox">
+                    <label class="frame-menu__category-drop-toggle" for="frame-menu-category-second">
+                      <div class="frame-menu__category-title">Высотные ели</div>
+    
+                      <div class="frame-menu__category-drop-arrow-border mobile">
+                        <svg class="frame-menu__category-drop-arrow" width="10" height="6" viewBox="0 0 10 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M9 1L5 5L1 1" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                      </div>
+                    </label>
+                    <div class="frame-menu__category-subcategory">
+                      <a class="frame-menu__category-item-ref" href="catalog.html">Уличные ели</a>
+                      <a class="frame-menu__category-item-ref" href="catalog.html">Интерьерные ели</a>
+                    </div>
+                  </div>
                 </div>
+                <div class="frame-menu__category-item-separator mobile"></div>
               </div>
               <div class="frame-menu__item">
-                <div class="frame-menu__category">
-                  <div class="frame-menu__category-title">Новогодний декор</div>
-                  <div class="frame-menu__category-text"><a class="frame-menu__category-ref" href="#">Хвойные венки</a></div>
-                  <div class="frame-menu__category-text"><a class="frame-menu__category-ref" href="#">Хвойные гирлянды</a></div>
-                  <div class="frame-menu__category-text"><a class="frame-menu__category-ref" href="#">Хвойные сваги</a></div>
-                  <div class="frame-menu__category-text"><a class="frame-menu__category-ref" href="#">Ёлочные украшения</a></div>
+                <div class="frame-menu-item-header">
+                  <div class="frame-menu__category">
+                    <input class="frame-menu__category-drop-checkbox" id="frame-menu-category-third" type="checkbox">
+                    <label class="frame-menu__category-drop-toggle" for="frame-menu-category-third">
+                      <div class="frame-menu__category-title">Новогодний декор</div>
+    
+                      <div class="frame-menu__category-drop-arrow-border mobile">
+                        <svg class="frame-menu__category-drop-arrow" width="10" height="6" viewBox="0 0 10 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M9 1L5 5L1 1" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                      </div>
+                    </label>
+                    <div class="frame-menu__category-subcategory">
+                      <a class="frame-menu__category-item-ref" href="catalog.html">Хвойные венки</a>
+                      <a class="frame-menu__category-item-ref" href="catalog.html">Хвойные гирлянды</a>
+                      <a class="frame-menu__category-item-ref" href="catalog.html">Хвойные сваги</a>
+                      <a class="frame-menu__category-item-ref" href="catalog.html">Елочные украшения</a>
+                    </div>
+                  </div>
                 </div>
+                <div class="frame-menu__category-item-separator mobile"></div>
               </div>
               <div class="frame-menu__item">
-                <div class="frame-menu__category">
-                  <div class="frame-menu__category-title">Гирлянды</div>
-                  <div class="frame-menu__category-text"><a class="frame-menu__category-ref" href="#">Электрогирлянды</a></div>
-                  <div class="frame-menu__category-text"><a class="frame-menu__category-ref" href="#">На батарейках</a></div>
-                  <div class="frame-menu__category-text"><a class="frame-menu__category-ref" href="#">Занавесы, сетки</a></div>
+                <div class="frame-menu-item-header">
+                  <div class="frame-menu__category">
+                    <input class="frame-menu__category-drop-checkbox" id="frame-menu-category-fourd" type="checkbox">
+                    <label class="frame-menu__category-drop-toggle" for="frame-menu-category-fourd">
+                      <div class="frame-menu__category-title">Гирлянды</div>
+    
+                      <div class="frame-menu__category-drop-arrow-border mobile">
+                        <svg class="frame-menu__category-drop-arrow" width="10" height="6" viewBox="0 0 10 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M9 1L5 5L1 1" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                      </div>
+                    </label>
+                    <div class="frame-menu__category-subcategory">
+                      <a class="frame-menu__category-item-ref" href="catalog.html">Электрогирлянды</a>
+                      <a class="frame-menu__category-item-ref" href="catalog.html">На батарейках</a>
+                      <a class="frame-menu__category-item-ref" href="catalog.html">Занавесы, сетки</a>
+                    </div>
+                  </div>
                 </div>
+                <div class="frame-menu__category-item-separator mobile"></div>
               </div>
             </div>
             <div class="frame-menu__item" id="overlay-anchor">

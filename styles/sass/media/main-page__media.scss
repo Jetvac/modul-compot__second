@@ -1,10 +1,13 @@
 @media screen and (max-width: 680px) {
-    .body {
-        .wrapper {
-            padding-left: 25px;
-            padding-right: 25px;
-        }
-    }    
+    .body__wrapper {
+        padding-left: 15px;
+        padding-right: 15px;
+    }   
+
+    .mobile {
+        visibility: visible;
+    }
+
     .category-list {
         &__header {
             font-weight: 500;
@@ -15,8 +18,28 @@
     }
 
     .header {
+        .wrapper {
+            padding-left: 15px;
+            padding-right: 15px;
+        }
+
         .container {
-            justify-content: start;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        &__menu {
+            display: block;
+        }
+
+        &__mobile-drop-down {
+            display: flex;
+            width: 100%;
+        }
+
+        &__mobile-panel {
+            margin-right: 15px;
+            visibility: visible;
         }
 
         &__nav-menu {
@@ -40,120 +63,19 @@
             gap: 0px;
         }
     }
-    .menu {
-        position: relative;
-        padding-left: 25px;
-        padding-right: 25px;
 
-        &__item-list {
-            visibility: hidden;
-            width: 0; height: 0;
-        }
-        
-        &__icon {
-            padding-left: 0;
-        }
-
-        &__toggle {
-            margin-left: 7px;
-            order: 4;
-        }
-
-        //burger panel
-        #menu__toggle-checkbox:checked ~ .menu__toggle-button > span{
-            top: 14px;
-            transform: rotate(45deg);
-        }
-        #menu__toggle-checkbox:checked ~ .menu__burger-panel {
-            top: 80px;
-            transition-duration: .25s;
-        }
-
-        &__burger-panel {
-            padding-left: 25px; padding-right: 25px;
-        }
-
-        &__category-subcategory {
-            visibility: hidden;
-            width: 0; height: 0;
-        }
-
-        &__burger-list {
-            grid-template-columns: 100%;
-            grid-template-rows: .1fr .1fr .1fr .1fr .1fr .1fr;
-            gap: 0;
-        }
-
-        &__burger-item  {
-            flex-direction: row;
-        }
-
-        &__burger-item-footer {
-            grid-column: auto;
-            grid-row: auto;
-        }
-
-        //social network
-        &__burger-item-social {
-            grid-row: 6;
-        }
-
-        //promote list
-        &__footer-list {
-            padding-top: 60px;
-            padding-bottom: 60px;
-            padding-left: 30px;
-            padding-right: 30px;
-            grid-template-columns: auto;
-            grid-template-rows: .1fr .1fr .1fr;
-        }
-
-        &__footer-button {
-            grid-column: auto;
-            grid-row: 3;
-        }
-
-        &__footer-promote {
-            grid-row: 1;
-            padding-bottom: 30px;
-        }
-
-        &__footer-image {
-            visibility: hidden;
-            width: 0; height: 0;
-        }
-
-        &__footer-benefits {
-            grid-row: 2;
-        }
-
-        &__burger-item-footer {
-            grid-row: 5;
-        }
-
-        //social
-        &__disclaimer {
-            margin-left: auto;
-            margin-right: auto;
-        }
-
-        &__burger-item-social {
-            display: flex;
-            flex-direction: column;
-            margin-right: auto;
-            gap: 40px;
-            margin-top: 40px;
-        }
-    }
     .promote {
-        overflow: hidden;
-        width: 300%;
-        gap: 10px;
+        &__frame-list {
+            overflow: hidden;
+            width: 300%;
+            gap: 10px;
+        }
 
         &__frame {
             width: 90%;
         }
     }
+
     .best-deals {
         //header        
         &__header {
@@ -190,6 +112,7 @@
             width: 470%;
         }
     }
+
     .catalog {
         //header
         &__header {
@@ -203,22 +126,151 @@
             width: 470%;
         }
 
-        &__banner-image {
-            margin-top: 60px;
-            margin-bottom: 60px;
-            overflow: hidden;
-            width: 250%;
+        &__banner-box {
+            padding-top: 60px;
+            padding-bottom: 45px;
+
+            img {
+                margin-left: -43%;
+                object-fit: contain;
+                width: 150%;
+            }
         }
 
         &__banner-list {
-            overflow: hidden;
-            width: 300%;
+            gap: 0;
+        }
+
+        &__banner-item {
+            width: 100%;
+            height: auto;
+
+            img {
+                object-fit: contain;
+                width: 100%;
+                height: auto;
+            }
+        }
+
+        &__banner-item:not(:first-child) {
+            visibility: collapse;
+            width: 0;
+        }
+
+        &__line-nav {
+            * { height: auto; }
+            height: auto;
+        }
+
+        .line-nav {
+            &__nav-list {
+                margin-top: 35px;
+            }
+            &__nav-item {
+                height: 4px;
+            }
+            &__nav-item--active {
+                height: 4px;
+            }
+        }
+
+        &__button {
+            margin-top: 60px;
         }
     }
+
     .about {
+        &__body {
+            padding-right: 50px;
+        }
+
         &__row {
             display: flex;
             flex-direction: column-reverse;
+            gap: 60px;
+        }
+
+        // List
+        &__item-list {
+            grid-template-columns: 45% 45%;
+            gap: 20px;
+            grid-template-rows: auto auto auto;
+        }
+
+        &__info-button {
+            visibility: hidden;
+            width: 0; height: 0;
+        }
+
+        &__santa-image {
+            margin-bottom: 64px;
+            img {
+                width: 100%;
+                height: auto;
+            }
+        }
+
+        &__signature-image {
+            margin-top: auto;
+            img {
+                width: 100%;
+                height: auto;
+            }
+        }
+
+        &__info-button-mobile {
+            margin: auto;
+        }
+
+        &__santa {
+            display: grid;
+            grid-template-columns: 30% 45% 25%;
+        }
+    }
+
+    .inspiration {
+        &__list {
+            display: block;
+        }
+
+        &__nav-arrow {
+            visibility: hidden;
+            width: 0;
+        }
+
+        &__item:first-child {
+            grid-template-columns: 100%;
+            grid-template-rows: 50% 50%;
+        }
+
+        &__item:not(:first-child) {
+            visibility: hidden;
+            width: 0;
+            height: 0;
+        }
+
+        &__item-panel {
+            gap: 15px;
+        }
+    }
+
+    .instagram {
+        margin: 11px;
+        margin-top: 90px;
+        margin-bottom: 90px;
+
+        &__header {
+            padding-left: 0;
+        }
+
+        &__item-list {
+            display: block;
+        }
+
+        &__item:not(:first-child) {
+            visibility: hidden;
+            width: 0;
+            height: 0;
         }
     }
 }

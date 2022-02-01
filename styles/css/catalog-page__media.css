@@ -1,0 +1,39 @@
+@media screen and (max-width: 680px) {
+  .body__nav-panel {
+    visibility: hidden;
+    height: 0;
+    margin-top: 0;
+  }
+  .body .menu {
+    display: none;
+    height: 0;
+  }
+  .body__breadcrumb-mobile {
+    padding-left: 18px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    gap: 15px;
+    background: #F8F8F8;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    visibility: visible;
+    height: 46px;
+  }
+  .body__breadcrumb-text {
+    text-decoration: none;
+    color: #333333;
+  }
+  .category-list__title {
+    visibility: hidden;
+    width: 0;
+  }
+  .category-list__header-mobile {
+    visibility: visible;
+  }
+}

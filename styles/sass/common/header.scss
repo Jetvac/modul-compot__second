@@ -1,4 +1,6 @@
 .header {
+    position: relative;
+
     .wrapper {
         width: auto;
         height: 48px;
@@ -10,6 +12,10 @@
     }    
 
     .container {
+        width: 100%;
+    }
+
+    &__menu {
         width: 100%;
         display: flex;
         flex-direction: row;
@@ -61,5 +67,98 @@
         font-size: 20px;
         line-height: 25px;
         color: white;
+    }
+
+    // Mobile panel
+    &__mobile-panel {
+        visibility: hidden;
+        width: 0; height: 0;
+    }
+
+    #header__mobile-toggle-checkbox {
+        visibility: hidden; position: absolute;
+
+        &:checked ~ .header__mobile-drop-down {
+            visibility: visible;
+        }
+        &:checked + .header__mobile-toggle > .header__mobile-panel-arrow {
+            transform: rotate(180deg);
+            transition: all .3s;
+        }
+    }
+
+    &__mobile-panel-arrow {
+        transition: all .3s;
+    }
+
+    &__mobile-drop-down {
+        display: none;
+        visibility: hidden;
+        position: absolute;
+        flex-direction: column;
+        padding-top: 18px;
+        padding-bottom: 18px;
+        left: 0; top: 48px;
+        background: #333333;
+        z-index: 4;
+    }
+
+    &__mobile-category-ref {
+        padding-left: 16px;
+        padding-top: 8px;
+        padding-bottom: 8px;
+        text-decoration: none;
+        color: #BDBDBD;
+        font-size: 14px;
+        line-height: 18px;
+    }
+}
+
+@media screen and (max-width: 680px) {
+    .header {
+        .wrapper {
+            padding-left: 15px;
+            padding-right: 15px;
+        }
+
+        .container {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        &__menu {
+            display: block;
+        }
+
+        &__mobile-drop-down {
+            display: flex;
+            width: 100%;
+        }
+
+        &__mobile-panel {
+            margin-right: 15px;
+            visibility: visible;
+        }
+
+        &__nav-menu {
+            visibility: hidden;
+            width: 0;
+            height: 0;
+        }
+
+        &__mail-text {
+            visibility: hidden;
+            width: 0;
+            height: 0;
+        }
+
+        &__phone-text {
+            margin-left: 0;
+            margin-right: auto;
+        }
+
+        &__info {
+            gap: 0px;
+        }
     }
 }
