@@ -1396,7 +1396,7 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  z-index: 2;
+  z-index: 4;
 }
 
 .popup__close-form {
@@ -2767,9 +2767,13 @@ body {
   gap: 20px;
   margin-top: 30px;
   margin-bottom: 30px;
+  width: 100%;
+  height: auto;
 }
 
 .catalog__banner-item {
+  width: 100%;
+  height: auto;
   -webkit-transition: all .3s;
   transition: all .3s;
 }
@@ -2784,12 +2788,11 @@ body {
   display: -ms-flexbox;
   display: flex;
   width: 100%;
-  height: 125%;
-  width: 145%;
+  height: auto;
 }
 
 .catalog__banner-image {
-  width: auto;
+  width: 100%;
   height: auto;
   -o-object-fit: cover;
      object-fit: cover;
