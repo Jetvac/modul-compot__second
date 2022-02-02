@@ -419,8 +419,19 @@
               </div>
 
               <div class="catalog__header-mobile mobile">
-                <div class="catalog__title category-list__title-mobile">Интерьерные ели</div>
+                <div class="catalog__title category-list__title">Интерьерные ели</div>
+
+                <label class="catalog__filter-toggle" for="filter-toggle-checkbox">
+                  <div class="catalog__filter-toggle-container">
+                    <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M1.5111 1H12.4889C12.5879 1 12.6848 1.03051 12.7678 1.08783C12.8508 1.14514 12.9163 1.2268 12.9563 1.32286C12.9964 1.41892 13.0093 1.52526 12.9934 1.62895C12.9776 1.73264 12.9337 1.82922 12.8671 1.90695L8.66621 6.80924C8.58068 6.90905 8.53329 7.03909 8.53329 7.17398V11.0119C8.53329 11.1011 8.51252 11.189 8.47282 11.2677C8.43311 11.3464 8.37571 11.4135 8.3057 11.463L6.26131 12.9089C6.18434 12.9634 6.09488 12.9946 6.00248 12.9994C5.91008 13.0041 5.8182 12.9821 5.73664 12.9358C5.65508 12.8895 5.58689 12.8206 5.53935 12.7364C5.49182 12.6522 5.46671 12.5559 5.46671 12.4578V7.17398C5.46671 7.03909 5.41932 6.90905 5.33379 6.80925L1.13292 1.90695C1.06631 1.82922 1.02242 1.73264 1.00658 1.62895C0.990743 1.52526 1.00363 1.41892 1.04369 1.32286C1.08375 1.2268 1.14925 1.14514 1.23222 1.08783C1.3152 1.03051 1.41208 1 1.5111 1V1Z" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                    <div class="catalog__filter-toggle-text">Фильтр</div> 
+                  </div>
+                </label>
               </div>
+
+              <input class="catalog__filter-toggle-checkbox" type="checkbox" id="filter-toggle-checkbox"> <!-- Mobile logic element -->
 
               <div class="catalog__filter-panel">
                 <div class="catalog__filter-container">
@@ -7479,12 +7490,14 @@
                     </div>
                   </div>
                 </div>
-              </div>
-              <div class="inspiration__footer category-list__footer">
-                <div class="inspiration__nav-list">
-                  <div class="inspiration__nav-item--active"></div>
-                  <div class="inspiration__nav-item"></div>
-                  <div class="inspiration__nav-item"></div>
+                <div class="viewed-later__line-nav mobile">
+                  <div class="line-nav__nav-list">
+                    <div class="line-nav__nav-item--active"></div>
+                    <div class="line-nav__nav-item"></div>
+                    <div class="line-nav__nav-item"></div>
+                    <div class="line-nav__nav-item"></div>
+                    <div class="line-nav__nav-item"></div>
+                  </div>
                 </div>
               </div>
             </div>
@@ -7512,7 +7525,7 @@
           <div class="frame-menu__row">
             <div class="frame-menu__column">
               <div class="frame-menu__icon">
-                <a class="frame-menu__icon-ref" href="#">
+                <a class="frame-menu__icon-ref" href="index.html">
                   <img src="./assets/img/logo-01 2.png">
                 </a>
               </div>

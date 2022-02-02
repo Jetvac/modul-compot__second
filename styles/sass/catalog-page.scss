@@ -7,6 +7,8 @@
 @import "./common/frame-footer.scss";
 @import "./common/popup.scss";
 @import "./common/menu.scss";
+@import "./common/line-nav-list.scss";
+
 
 body, html
 {
@@ -130,6 +132,8 @@ body, html
     &__header {
         margin-bottom: 60px;
         width: 100%;
+        grid-column: 1;
+        grid-row: 1;
         grid-column-start: 1;
         grid-column-end: 3;
         display: flex;
@@ -138,7 +142,47 @@ body, html
     }
 
     &__header-mobile {
-        
+        width: 100%;
+        grid-column: 1;
+        grid-row: 1;
+        grid-column-start: 1;
+        grid-column-end: 3;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    &__filter-toggle {
+        width: 90px;
+        height: 32px;
+        background: #27AE60;
+        border-radius: 4px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    &__filter-toggle-checkbox {
+        visibility: hidden;
+        position: absolute; left: 0; top: 0;
+        &:checked ~ .catalog__filter-panel {
+            display: block;
+        }
+    }
+
+    &__filter-toggle-container {
+        margin: auto;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        gap: 5px;
+    }
+
+    &__filter-toggle-text {
+        color: #FFFFFF;
+        font-weight: 500;
+        font-size: 14px;
     }
 
     // Catalog-filter
@@ -246,6 +290,7 @@ body, html
     }
 
     &__banner-box {
+        display: flex;
         width: auto;
         height: auto;
     }

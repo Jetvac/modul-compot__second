@@ -1,5 +1,10 @@
 @media screen and (max-width: 680px) {
     .body {
+        &__wrapper {
+            padding-left: 15px;
+            padding-right: 15px;
+        }
+
         &__nav-panel {
             visibility: hidden;
             height: 0;
@@ -28,14 +33,93 @@
         }
     }
 
-    .category-list {
+    .mobile {
+        visibility: visible;
+    }
+
+    .catalog {
+        &__header {
+            height: 0; padding: 0; margin: 0;
+            visibility: hidden;
+        }
+
+        &__header-mobile {
+            margin-bottom: 60px;
+            height: 40px;
+            visibility: visible;
+        }
+
+        &__wrapper {
+            position: relative;
+            display: flex;
+            flex-direction: column;
+        }
+
+        &__filter-container {
+            max-width: none;
+        }
+
+        &__filter-panel {
+            display: none;
+            width: 100%;
+            z-index: 1;
+            position: absolute;
+            left: 0;
+            // Header height + margin 
+            top: 100px;
+        }
+
+        &__row {
+            display: flex;
+            flex-direction: column;
+        }
+
+        &__row:nth-child(1) {
+            display: block;
+            height: 0;
+        }
+        &__row:nth-child(4) {
+            display: block;
+            height: 0;
+        }
+
+        &__banner-box {
+            padding-top: 60px;
+            padding-bottom: 45px;
+
+            img {
+                margin-left: -27%;
+                object-fit: contain;
+                width: 150%;
+            }
+        }
+    }
+
+    .category-list__separator {
+        visibility: hidden;
+        margin-top: 50px;
+    }
+
+    .viewed-later {
         &__title {
+            margin: auto;
+        }
+
+        &__nav-arrow {
+            margin: 0;
             visibility: hidden;
             width: 0;
         }
 
-        &__header-mobile {
-            visibility: visible;
+        &__row {
+            overflow: hidden;
+            width: 470%;
+        }
+
+        &__line-nav {
+            display: flex;
+            justify-content: center;
+            align-items: center;
         }
     }
 }
