@@ -1,0 +1,596 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="favicon.svg"/>
+    <link rel="stylesheet" href="./styles/css/catalog-page.css">
+    <title>Crystall Tree</title>
+  </head>
+  <header class="header">
+    <div class="wrapper">
+      <div class="container">
+        <div class="header__menu">
+          <div class="header__nav-menu">
+            <button class="header__button">Стать партнером</button>
+            <button class="header__button">Где купить?</button>
+            <button class="header__button">О компании</button>
+            <button class="header__button">Блог</button>
+            <button class="header__button">Контакты</button>
+          </div>
+          <div class="header__info">
+            <a class="header__mail-text header__button" href="mailto:world@crystaltrees.ru">world@crystaltrees.ru</a>
+            <a class="header__phone-text header__button" href="tel:+780055555724">8 (800) 55 55 57 24</a>
+          </div>
+        </div>
+        <div class="header__mobile-panel">
+          <input id="header__mobile-toggle-checkbox" type="checkbox">
+          <label class="header__mobile-toggle" for="header__mobile-toggle-checkbox">
+            <svg class="header__mobile-panel-arrow" width="12" height="8" viewBox="0 0 10 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M9 1L5 5L1 1" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </label>
+          <div class="header__mobile-drop-down">
+            <a class="header__mobile-category-ref" href="#">Стать партнером</a>
+            <a class="header__mobile-category-ref" href="#">Где купить?</a>
+            <a class="header__mobile-category-ref" href="#">О компании</a>
+            <a class="header__mobile-category-ref" href="#">Блог</a>
+            <a class="header__mobile-category-ref" href="#">Контакты</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+  <body class="body">
+    <div class="menu">
+      <!-- Burger panel -->
+      <div class="menu__toggle">
+        <input id="menu__toggle-checkbox" type="checkbox">
+        <label class="menu__toggle-button" for="menu__toggle-checkbox">
+          <span></span>
+        </label>
+        <div class="menu__burger-panel">
+          <div class="menu__burger-list">
+            <div class="menu__burger-item">
+              <div class="menu__burger-item-header">
+                <img class="menu__category-icon" src="./assets/img/burger-menu/Snow.svg">
+                <div class="menu__category">
+                  <input class="menu__category-drop-checkbox" id="menu-category-first" type="checkbox">
+                  <label class="menu__category-drop-toggle" for="menu-category-first">
+                    <div class="menu__category-title">Комнатные ели</div>
+  
+                    <div class="menu__category-drop-arrow-border mobile">
+                      <svg class="menu__category-drop-arrow" width="10" height="6" viewBox="0 0 10 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M9 1L5 5L1 1" stroke="#333333" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                      </svg>
+                    </div>
+                  </label>
+                  <div class="menu__category-subcategory">
+                    <a class="menu__category-item-ref" href="catalog.html">Литые</a>
+                    <a class="menu__category-item-ref" href="catalog.html">Комбинированые</a>
+                    <a class="menu__category-item-ref" href="catalog.html">Елки из ПВХ</a>
+                    <a class="menu__category-item-ref" href="catalog.html">Заснеженные, с освещением</a>
+                    <a class="menu__category-item-ref" href="catalog.html">Дизайнерские</a>
+                  </div>
+                </div>
+              </div>
+              <div class="menu__category-item-separator mobile"></div>
+            </div>
+            <div class="menu__burger-item">
+              <div class="menu__burger-item-header">
+                <img class="menu__category-icon" src="./assets/img/burger-menu/Tree.svg">
+                <div class="menu__category">
+                  <input class="menu__category-drop-checkbox" id="menu-category-second" type="checkbox">
+                  <label class="menu__category-drop-toggle" for="menu-category-second">
+                    <div class="menu__category-title">Высотные ели</div>
+  
+                    <div class="menu__category-drop-arrow-border mobile">
+                      <svg class="menu__category-drop-arrow" width="10" height="6" viewBox="0 0 10 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M9 1L5 5L1 1" stroke="#333333" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                      </svg>
+                    </div>
+                  </label>
+                  <div class="menu__category-subcategory">
+                    <a class="menu__category-item-ref" href="catalog.html">Уличные ели</a>
+                    <a class="menu__category-item-ref" href="catalog.html">Интерьерные ели</a>
+                  </div>
+                </div>
+              </div>
+              <div class="menu__category-item-separator mobile"></div>
+            </div>
+            <div class="menu__burger-item">
+              <div class="menu__burger-item-header">
+                <img class="menu__category-icon" src="./assets/img/burger-menu/Star.svg">
+                <div class="menu__category">
+                  <input class="menu__category-drop-checkbox" id="menu-category-third" type="checkbox">
+                  <label class="menu__category-drop-toggle" for="menu-category-third">
+                    <div class="menu__category-title">Новогодний декор</div>
+  
+                    <div class="menu__category-drop-arrow-border mobile">
+                      <svg class="menu__category-drop-arrow" width="10" height="6" viewBox="0 0 10 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M9 1L5 5L1 1" stroke="#333333" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                      </svg>
+                    </div>
+                  </label>
+                  <div class="menu__category-subcategory">
+                    <a class="menu__category-item-ref" href="catalog.html">Хвойные венки</a>
+                    <a class="menu__category-item-ref" href="catalog.html">Хвойные гирлянды</a>
+                    <a class="menu__category-item-ref" href="catalog.html">Хвойные сваги</a>
+                    <a class="menu__category-item-ref" href="catalog.html">Елочные украшения</a>
+                  </div>
+                </div>
+              </div>
+              <div class="menu__category-item-separator mobile"></div>
+            </div>
+            <div class="menu__burger-item">
+              <div class="menu__burger-item-header">
+                <img class="menu__category-icon" src="./assets/img/burger-menu/Lamp.svg">
+                <div class="menu__category">
+                  <input class="menu__category-drop-checkbox" id="menu-category-fourd" type="checkbox">
+                  <label class="menu__category-drop-toggle" for="menu-category-fourd">
+                    <div class="menu__category-title">Гирлянды</div>
+  
+                    <div class="menu__category-drop-arrow-border mobile">
+                      <svg class="menu__category-drop-arrow" width="10" height="6" viewBox="0 0 10 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M9 1L5 5L1 1" stroke="#333333" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                      </svg>
+                    </div>
+                  </label>
+                  <div class="menu__category-subcategory">
+                    <a class="menu__category-item-ref" href="catalog.html">Электрогирлянды</a>
+                    <a class="menu__category-item-ref" href="catalog.html">На батарейках</a>
+                    <a class="menu__category-item-ref" href="catalog.html">Занавесы, сетки</a>
+                  </div>
+                </div>
+              </div>
+              <div class="menu__category-item-separator mobile"></div>
+            </div>
+            <div class="menu__burger-item menu__burger-item-social">
+              <div class="social-network">
+                <div class="social-network__item social-network__facebook-icon">
+                  <a class="social-network__item-ref" href="#">
+                    <img src="./assets/img/frame/facebook-icon.svg">
+                  </a>
+                </div>
+                <div class="social-network__item social-network__instagram-icon">
+                  <a class="social-network__item-ref" href="#">
+                    <img src="./assets/img/frame/instagram-icon.svg">
+                  </a>
+                </div>
+                <div class="social-network__item social-network__youtuber-icon">
+                  <a class="social-network__item-ref" href="#">
+                    <img src="./assets/img/frame/youtube-icon.svg">
+                  </a>
+                </div>
+              </div>
+              <div class="menu__disclaimer">
+                © 2021 CRYSTAL TREES, Все права защищены
+              </div>
+            </div>
+            <div class="menu__burger-item menu__burger-item-footer">
+              <div class="menu__footer-list">
+                <div class="menu__footer-promote">
+                  Стань партнером, заработай от 700 000 рублей за 3 месяца!
+                </div>
+                <a class="menu__footer-button" href="#">Подробнее</a>
+                <img class="menu__footer-image" src="./assets/img/burger-menu/promote-image.png" alt="">
+                <div class="menu__footer-benefits">
+                  <div class="menu__benefits-item">
+                      <img class="menu__benefits-image" src="./assets/img/burger-menu/star-item.svg">
+                      <div class="menu__benefits-text">Мы работаем более 20 лет на рынке искусственных елей</div>
+                  </div>
+                  <div class="menu__benefits-item">
+                    <img class="menu__benefits-image" src="./assets/img/burger-menu/star-item.svg">
+                    <div class="menu__benefits-text">Собственные склады и шоурум в Москве</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="menu__icon">
+        <a class="menu__index-nav" href="#">
+          <img src="./assets/img/menu/menu-icon.svg">
+        </a>
+      </div>
+      <div class="menu__item-list">
+        <div class="menu__item">
+          <ul class="menu__drop-menu">
+            <li class="menu__item-title">Комнатные ели
+              <div class="menu__item-popup-arrow">
+                <img src="./assets/img/popup-arrow.svg">
+              </div>
+            </li>
+            <li class="menu__submenu-wrapper">
+              <ul class="menu__submenu-container">
+                <li class="menu__item-text"><a href="#">Литые</a></li>
+                <li class="menu__item-text"><a href="#">Комбинированые</a></li>
+                <li class="menu__item-text"><a href="#">Елки из ПВХ</a></li>
+                <li class="menu__item-text"><a href="#">Заснеженные, с освещением</a></li>
+                <li class="menu__item-text"><a href="#">Дизайнерские</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+        <div class="menu__item">
+          <ul class="menu__drop-menu">
+            <li class="menu__item-title">Высотные ели
+              <div class="menu__item-popup-arrow">
+                <img src="./assets/img/popup-arrow.svg">
+              </div>
+            </li>
+            <li class="menu__submenu-wrapper">
+              <ul class="menu__submenu-container">
+                <li class="menu__item-text"><a href="#">Уличные ели</a></li>
+                <li class="menu__item-text"><a href="#">Интерьерные ели</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+        <div class="menu__item">
+          <ul class="menu__drop-menu">
+            <li class="menu__item-title">Новогодний декор
+              <div class="menu__item-popup-arrow">
+                <img src="./assets/img/popup-arrow.svg">
+              </div>
+            </li>
+            <li class="menu__submenu-wrapper">
+              <ul class="menu__submenu-container">
+                <li class="menu__item-text"><a href="#">Хвойные венки</a></li>
+                <li class="menu__item-text"><a href="#">Хвойные гирлянды</a></li>
+                <li class="menu__item-text"><a href="#">Хвойные сваги</a></li>
+                <li class="menu__item-text"><a href="#">Елочные украшения</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+        <div class="menu__item">
+          <ul class="menu__drop-menu">
+            <li class="menu__item-title">Гирлянды
+              <div class="menu__item-popup-arrow">
+                <img src="./assets/img/popup-arrow.svg">
+              </div>
+            </li>
+            <li class="menu__submenu-wrapper">
+              <ul class="menu__submenu-container">
+                <li class="menu__item-text"><a href="#">Электрогирлянды</a></li>
+                <li class="menu__item-text"><a href="#">На батарейках</a></li>
+                <li class="menu__item-text"><a href="#">Занавесы, сетки</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="menu__interactive-panel">
+        <a class="menu__search-ref" href="#">
+          <div class="menu__search">
+            <input class="menu__search-checkbox" id="menu__checkbox" type="checkbox">
+            <label class="menu__search-button" for="menu__checkbox">
+              <svg class="menu__search-image" width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M13.5938 23.4375C19.0303 23.4375 23.4375 19.0303 23.4375 13.5938C23.4375 8.1572 19.0303 3.75 13.5938 3.75C8.1572 3.75 3.75 8.1572 3.75 13.5938C3.75 19.0303 8.1572 23.4375 13.5938 23.4375Z" stroke="#333333" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M20.554 20.5547L26.2493 26.2501" stroke="#333333" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </label>
+            <div class="menu__search-panel">
+              <div class="menu__search-separator"></div>
+              <input class="menu__search-field" type="text" placeholder="Искать Ель 180см">
+              <label class="menu__search-close-button" for="menu__checkbox">
+                <img class="menu__search-button-close" src="./assets/img/menu/button-close.svg">
+              </label>
+
+              <div class="menu__search-block">
+                <div class="menu__search-result-list">
+                  <div class="menu__search-result-item">Искусственная Ель Шотландия</div>
+                  <div class="menu__search-result-item">Комнатная ель</div>
+                  <div class="menu__search-result-item">Ель искусственная Шотландия</div>
+                  <div class="menu__search-result-item">Искусственная ель Данхил заснеженная</div>
+                  <div class="menu__search-result-item">Искусственная Ель Шотландия</div>
+                  <div class="menu__search-result-item">Комнатная ель</div>
+                  <div class="menu__search-result-item">Ель искусственная Шотландия</div>
+                  <div class="menu__search-result-item">Искусственная ель Данхил заснеженная</div>
+                  <button class="menu__search-result-item-button">Показать все</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </a>
+        <a class="menu__shopping-cart-ref" href="#">
+          <div class="menu__shopping-cart">
+            <svg class="menu__shoping-cart-image" width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M16 5V27" stroke="#333333" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M13 27H19" stroke="#333333" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M7 11L25 7" stroke="#333333" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M3 21C3 23.2091 5.5 24 7 24C8.5 24 11 23.2091 11 21L7 11L3 21Z" stroke="#333333" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M21 17C21 19.2091 23.5 20 25 20C26.5 20 29 19.2091 29 17L25 7L21 17Z" stroke="#333333" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+            <div class="menu__shoping-cart-counter"></div>
+          </div>
+        </a>
+      </div>
+    </div>
+  </body>
+  <footer>
+    <div class="frame">
+      <div class="frame__header">
+        <div class="frame__nav-menu">
+          <button class="frame__button">Стать партнером</button>
+          <button class="frame__button">Где купить?</button>
+          <button class="frame__button">О компании</button>
+          <button class="frame__button">Блог</button>
+          <button class="frame__button">Контакты</button>
+        </div>
+        <div class="frame__info">
+          <a class="frame__phone-text frame__button" href="tel:+780055555724">8 (800) 55 55 57 24</a>
+        </div>
+      </div>
+      <div class="wrapper">
+        <div class="frame__body">
+          <div class="frame-menu__row">
+            <div class="frame-menu__column">
+              <div class="frame-menu__icon">
+                <a class="frame-menu__icon-ref" href="index.html">
+                  <img src="./assets/img/logo-01 2.png">
+                </a>
+              </div>
+
+              <a class="frame__phone-text frame__button mobile" href="tel:+780055555724">8 (800) 55 55 57 24</a>
+            </div>
+            <div class="frame-menu__list">
+              <div class="frame-menu__item">
+                <div class="frame-menu-item-header">
+                  <div class="frame-menu__category">
+                    <input class="frame-menu__category-drop-checkbox" id="frame-menu-category-first" type="checkbox">
+                    <label class="frame-menu__category-drop-toggle" for="frame-menu-category-first">
+                      <div class="frame-menu__category-title">Комнатные ели</div>
+    
+                      <div class="frame-menu__category-drop-arrow-border mobile">
+                        <svg class="frame-menu__category-drop-arrow" width="10" height="6" viewBox="0 0 10 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M9 1L5 5L1 1" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                      </div>
+                    </label>
+                    <div class="frame-menu__category-subcategory">
+                      <a class="frame-menu__category-item-ref" href="catalog.html">Литые</a>
+                      <a class="frame-menu__category-item-ref" href="catalog.html">Комбинированые</a>
+                      <a class="frame-menu__category-item-ref" href="catalog.html">Елки из ПВХ</a>
+                      <a class="frame-menu__category-item-ref" href="catalog.html">Заснеженные, с освещением</a>
+                      <a class="frame-menu__category-item-ref" href="catalog.html">Дизайнерские</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="frame-menu__category-item-separator mobile"></div>
+              </div>
+              <div class="frame-menu__item">
+                <div class="frame-menu-item-header">
+                  <div class="frame-menu__category">
+                    <input class="frame-menu__category-drop-checkbox" id="frame-menu-category-second" type="checkbox">
+                    <label class="frame-menu__category-drop-toggle" for="frame-menu-category-second">
+                      <div class="frame-menu__category-title">Высотные ели</div>
+    
+                      <div class="frame-menu__category-drop-arrow-border mobile">
+                        <svg class="frame-menu__category-drop-arrow" width="10" height="6" viewBox="0 0 10 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M9 1L5 5L1 1" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                      </div>
+                    </label>
+                    <div class="frame-menu__category-subcategory">
+                      <a class="frame-menu__category-item-ref" href="catalog.html">Уличные ели</a>
+                      <a class="frame-menu__category-item-ref" href="catalog.html">Интерьерные ели</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="frame-menu__category-item-separator mobile"></div>
+              </div>
+              <div class="frame-menu__item">
+                <div class="frame-menu-item-header">
+                  <div class="frame-menu__category">
+                    <input class="frame-menu__category-drop-checkbox" id="frame-menu-category-third" type="checkbox">
+                    <label class="frame-menu__category-drop-toggle" for="frame-menu-category-third">
+                      <div class="frame-menu__category-title">Комнатные ели</div>
+    
+                      <div class="frame-menu__category-drop-arrow-border mobile">
+                        <svg class="frame-menu__category-drop-arrow" width="10" height="6" viewBox="0 0 10 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M9 1L5 5L1 1" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                      </div>
+                    </label>
+                    <div class="frame-menu__category-subcategory">
+                      <a class="frame-menu__category-item-ref" href="catalog.html">Хвойные венки</a>
+                      <a class="frame-menu__category-item-ref" href="catalog.html">Хвойные гирлянды</a>
+                      <a class="frame-menu__category-item-ref" href="catalog.html">Хвойные сваги</a>
+                      <a class="frame-menu__category-item-ref" href="catalog.html">Елочные украшения</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="frame-menu__category-item-separator mobile"></div>
+              </div>
+              <div class="frame-menu__item">
+                <div class="frame-menu-item-header">
+                  <div class="frame-menu__category">
+                    <input class="frame-menu__category-drop-checkbox" id="frame-menu-category-fourd" type="checkbox">
+                    <label class="frame-menu__category-drop-toggle" for="frame-menu-category-fourd">
+                      <div class="frame-menu__category-title">Гирлянды</div>
+    
+                      <div class="frame-menu__category-drop-arrow-border mobile">
+                        <svg class="frame-menu__category-drop-arrow" width="10" height="6" viewBox="0 0 10 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M9 1L5 5L1 1" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                      </div>
+                    </label>
+                    <div class="frame-menu__category-subcategory">
+                      <a class="frame-menu__category-item-ref" href="catalog.html">Электрогирлянды</a>
+                      <a class="frame-menu__category-item-ref" href="catalog.html">На батарейках</a>
+                      <a class="frame-menu__category-item-ref" href="catalog.html">Занавесы, сетки</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="frame-menu__category-item-separator mobile"></div>
+              </div>
+            </div>
+            <div class="frame-menu__item" id="overlay-anchor">
+              <div class="frame-menu__nav-panel">
+                <a class="frame-menu__back-call-button" href="#overlay-back-call">
+                  <div class="frame-menu__back-call-icon">
+                    <img src="./assets/img/frame-menu/backcall-icon.svg">
+                  </div>
+                  <div class="frame-menu__back-call-text">
+                    Обратный звонок
+                  </div>
+                </a>
+                <a class="frame-menu__contact-button" href="#overlay-contact">
+                  <div class="frame-menu__contact-icon">
+                    <img src="./assets/img/frame-menu/telegram-icon.svg">
+                  </div>
+                  <div class="frame-menu__contact-text">
+                    Напишите нам
+                  </div>
+                </a>
+
+                <div id="overlay-submit" class="popup submit">
+                  <div class="popup__frame submit__frame">
+                    <div class="submit__column">
+                      <div class="submit__row">
+                        <img class="submit__image" src="./assets/img/popup/popup-submit-icon.svg">
+                      </div>
+                      <div class="submit__row">
+                        <div class="submit__title submit__row">
+                          Ваша заявка успешно отправлена!
+                        </div>
+                      </div>
+                      <div class="submit__row">
+                        <div class="submit__text">
+                          Наши менеджеры свяжуться с вами в ближайшее время
+                        </div>
+                      </div>
+                      <form class="submit__input-form" action="#">
+                        <button class="submit__button">Вернуться на главную</button>
+                      </form>
+                    </div>
+                  </div>
+                </div>
+
+                <div id="overlay-back-call" class="popup">
+                  <div class="popup__frame">
+                    <form class="popup__close-form" action="#">
+                      <button class="popup__close-button">
+                        <img src="./assets/img/popup/X.svg">
+                      </button>
+                    </form>
+                    <div class="popup__column">
+                      <div class="popup__row">
+                        <div class="popup__title">Обратный звонок</div>
+                      </div>
+                      <div class="popup__row">
+                        <input class="popup__input-text" placeholder="Ваше имя *" type="text">
+                      </div>
+                      <div class="popup__row">
+                        <input class="popup__input-text" placeholder="+7 (999) 999-99-99" type="text">
+                      </div>
+                      <div class="popup__row">
+                        <div class="popup__checkbox-element">
+                          <label class="popup__checkbox-placer">
+                            <label class="popup__filter-checkbox-label" for="checkbox-20">
+                              <input class="popup__filter-checkbox" id="checkbox-20" type="checkbox">
+                              <div class="popup__filter-checkbox-visual">
+                                <svg width="12" height="8" viewBox="0 0 12 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                  <path d="M10.4286 1L4.14282 7L1 4" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>                                
+                              </div>
+                            </label>
+                            <div class="popup__agree-text">
+                              Я согласен(а) на обработку персональных данных
+                            </div>
+                          </label>
+                        </div>
+                      </div>
+                      <form class="popup__input-form" action="#overlay-submit">
+                        <button class="popup__input-button">Заказать звонок</button>
+                      </form>
+                    </div>
+                  </div>
+                </div>
+                
+                <div id="overlay-contact" class="popup">
+                  <div class="popup__frame">
+                    <form class="popup__close-form" action="#">
+                      <button class="popup__close-button">
+                        <img src="./assets/img/popup/X.svg">
+                      </button>
+                    </form>
+                    <div class="popup__column">
+                      <div class="popup__row">
+                        <div class="popup__title">Задать вопрос</div>
+                      </div>
+                      <div class="popup__row">
+                        <input class="popup__input-text" placeholder="Ваше имя *" type="text">
+                      </div>
+                      <div class="popup__row">
+                        <input class="popup__input-text" placeholder="Ваш e-mail *" type="text">
+                      </div>
+                      <div class="popup__row">
+                        <input class="popup__input-text" placeholder="+7 (999) 999-99-99" type="text">
+                      </div>
+                      <div class="popup__row">
+                        <textarea class="popup__input-text popup__input-textarea popup__input-text_height_full" placeholder="Ваш вопрос * "></textarea>
+                      </div>
+                      <div class="popup__row">
+                        <div class="popup__checkbox-element">
+                          <label class="popup__checkbox-placer">
+                            <label class="popup__filter-checkbox-label" for="checkbox-21">
+                              <input class="popup__filter-checkbox" id="checkbox-21" type="checkbox">
+                              <div class="popup__filter-checkbox-visual">
+                                <svg width="12" height="8" viewBox="0 0 12 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                  <path d="M10.4286 1L4.14282 7L1 4" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>                                
+                              </div>
+                            </label>
+                            <div class="popup__agree-text">
+                              Я согласен(а) на обработку персональных данных
+                            </div>
+                          </label>
+                        </div>
+                      </div>
+                      <div class="popup__row">
+                        <form class="popup__input-form" action="#overlay-submit">
+                          <button class="popup__input-button">Задать вопрос</button>
+                        </form>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="frame__footer">
+          <div class="frame__footer-list">
+            <div class="frame__disclaimer">© 2021 CRYSTAL TREES, Все права защищены</div>
+            <div class="social-network">
+              <div class="social-network__item social-network__facebook-icon">
+                <a class="social-network__item-ref" href="#">
+                  <img src="./assets/img/frame/facebook-icon.svg">
+                </a>
+              </div>
+              <div class="social-network__item social-network__instagram-icon">
+                <a class="social-network__item-ref" href="#">
+                  <img src="./assets/img/frame/instagram-icon.svg">
+                </a>
+              </div>
+              <div class="social-network__item social-network__youtuber-icon">
+                <a class="social-network__item-ref" href="#">
+                  <img src="./assets/img/frame/youtube-icon.svg">
+                </a>
+              </div>
+            </div>
+            <div class="frame__kompot-icon">
+              <a class="frame-menu__kompot-ref" href="https://kompot.bz/" target="_blank">
+                <img src="./assets/img/frame/kompot-icon.svg">
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+</html>
