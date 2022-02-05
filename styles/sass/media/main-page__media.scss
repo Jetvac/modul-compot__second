@@ -1,3 +1,18 @@
+@media screen and (max-width: 1480px) {
+    .body {
+        &__wrapper {
+            padding-left: 40px;
+            padding-right: 40px;
+        }
+    }
+
+    .inspiration {
+        &__item {
+            grid-template-columns: 55% 45%;
+        }
+    }
+}
+
 @media screen and (max-width: 680px) {
     .body__wrapper {
         padding-left: 15px;

@@ -1,0 +1,116 @@
+@media screen and (max-width: 1480px) {
+    .frame {
+        &__header {
+            padding-left: 100px;
+            padding-right: 100px;
+        }
+
+        &__nav-menu {
+            gap: 40px;
+        }
+
+        .wrapper {
+            margin-left: 100px;
+            margin-right: 100px;
+        }
+    }
+
+    .frame-menu {
+        &__list {
+            gap: 25px;
+        }
+    }
+}
+
+@media screen and (max-width: 680px) {
+    .frame {
+        .wrapper {
+            margin-left: 16px;
+            margin-right: 16px;
+            padding: 0;
+        }
+
+        &__header {
+            padding-top: 30px;
+            padding-left: 16px;
+            padding-bottom: 30px;
+            padding-right: 16px;
+        }
+
+        &__footer {
+            margin-top: 60px; 
+        }
+
+        &__nav-menu {
+            gap: 30px;
+            row-gap: 15px;
+            flex-wrap: wrap;
+        }
+
+        &__info {
+            visibility: hidden;
+            width: 0; height: 0;
+        }
+
+        &__footer-list {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            gap: 50px;
+        }
+
+        .social-network {
+            order: 0;
+        }
+
+        &__disclaimer {
+            order: 1;
+        }
+
+        &__kompot-icon {
+            margin-right: auto;
+            order: 2;
+        }
+
+        .frame-menu {
+            &__row {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+
+            &__item {
+                width: 100%;
+            }
+
+            &__column {
+                width: 100%;
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                align-items: center;
+                margin-bottom: 60px;
+            }
+
+            &__list {
+                width: 100%;
+                flex-direction: column;
+                gap: 10px;
+                margin-bottom: 40px;
+            }
+
+            &__back-call-button {
+                width: 100%;
+            }
+
+            &__contact-button {
+                width: 100%;
+            }
+
+            &__category-subcategory {
+                display: none;
+                height: 0;
+            }
+        }
+    }
+}
