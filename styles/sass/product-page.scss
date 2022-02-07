@@ -2,13 +2,14 @@
 @import "./common/category-list.scss";
 @import "./common/filter-panel.scss";
 @import "./common/nav-arrow.scss";
+@import "./common/nav-button.scss";
 @import "./common/cera-pro-font.scss";
 @import "./common/header.scss";
 @import "./common/frame-footer.scss";
 @import "./common/popup.scss";
 @import "./common/menu.scss";
 @import "./common/line-nav-list.scss";
-
+@import "./common/about.scss";
 
 body, html
 {
@@ -98,7 +99,7 @@ body, html
     &__info {
         display: flex;
         flex-direction: row;
-        align-items: center;
+        align-items: flex-start;
         justify-content: space-between;
     }
     &__preview-photo-list {
@@ -141,6 +142,7 @@ body, html
 
     //Product data
     &__data {
+        margin-top: 60px;
         display: flex;
         flex-direction: column;
         gap: 32px;
@@ -211,6 +213,7 @@ body, html
 
     // sell panel
     &__sell-panel {
+        margin-top: 60px;
         display: flex;
         flex-direction: column;
         gap: 26px;
@@ -271,5 +274,295 @@ body, html
         grid-template-rows: auto auto auto auto auto;
         row-gap: 20px;
         column-gap: 13px;
+    }
+
+    // tab menu
+    &__tab-panel {
+        margin-top: 60px;
+        display: grid;
+        grid-template-columns: 65% 35%;
+    }
+
+    &__tab-menu-header {
+        margin-bottom: 24px;
+        user-select: none;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    &__tab-menu-header-item {
+        cursor: pointer;
+        position: relative;
+        border: none;
+        background: transparent;
+        font-size: 24px;
+        letter-spacing: 1px;
+        color: #9C9C9C;
+    }
+
+    // tab 
+    &__video-player {
+        margin-top: 49px;
+        width: 631px;
+        height: 357px;
+    }
+
+    .active {
+        font-weight: 500;
+        font-size: 24px;
+        display: block;
+        color: #333333;
+
+        &::after {
+            position: absolute;
+            left: 0; top: 53px;
+            content: "";
+            width: 100%;
+            height: 2px;
+            border-radius: 6px;
+            background: #27AE60;
+        }
+    }
+
+    &__tab-menu-separator {
+        height: 1px;
+        width: 100%;
+        background: #E0E0DD;
+        color: #333333;
+    }
+
+    &__tab {
+        display: none;
+        margin-top: 31px;
+        font-size: 16px;
+        line-height: 28px;
+    }
+
+    .active-tab {
+        display: block;
+    }
+
+    &__characteristic-data {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    //category panel 
+    &__category-panel {
+        display: flex;
+        flex-direction: row;
+        gap: 5px;
+    }
+
+    &__type-item {
+        font-size: 16px;
+        color: #9C9C9C;
+    }
+
+    &__fill-item {
+        font-size: 16px;
+        color: #333333;
+    }
+
+    &__photo-list {
+        display: flex;
+        flex-direction: row;
+        gap: 24px;
+    }    
+
+    &__about {
+        margin-right: 240px;
+    }
+
+    &__item-list {
+        margin-top: 80px;
+        width: 100%;
+        padding: 46px 126px;
+        background: #EAF8F0;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    // reviews
+    &__reviews {
+        margin-top: 119px;
+    }
+    &__reviews-header {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    &__reviews-title {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 10px;
+    }
+    &__reviews-title-text {
+        font-weight: 500;
+        font-size: 20px;
+        color: #333333;
+    }
+    &__reviews-title-number {
+        font-weight: 500;
+        font-size: 18px;
+        color: #27AE60;
+    }
+
+    &__average-review {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 10px;
+    }
+
+    &__average-text {
+        font-weight: 500;
+        font-size: 18px;
+        color: #27AE60;
+    }
+
+    &__reviews-bottom {
+        margin-top: 17px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    &__rate {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 15px;
+    }
+    
+    &__reviews-rate {
+        display: flex;
+        flex-direction: row;
+        gap: 60px;
+    }
+
+    // slide
+    &__rate-background {
+        position: relative;
+        width: 160px;
+        height: 6px;
+        background: #E0E0DD;
+        border-radius: 10px;
+    }
+    
+    &__rate-slide {
+        position: absolute;
+        width: 133px;
+        height: 6px;
+        border-radius: 10px;
+        background: #27AE60;
+    }
+
+    &__rate-text {
+        font-size: 16px;
+        color: #8E8E8E;
+    }
+
+    // review button
+    &__review-button {
+        text-decoration: none;
+        width: 200px;
+        height: 54px;
+        background: #27AE60;
+        border-radius: 4px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    &__review-button-text {
+        color: #FFFFFF;
+        font-weight: 500;
+        font-size: 18px;
+    }
+
+    // reviews body
+    // photo gallery
+    &__reviews-photo-gallery {
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__reviews-photo-gallery-list {
+        padding-top: 39px;
+        display: flex;
+        flex-direction: row;
+        gap: 10px;
+    }
+
+    &__reviews-photo-gallery-title {
+        font-weight: 500;
+        font-size: 24px;
+        color: #333333;
+    }
+
+    &__reviews-photo-img {
+        border-radius: 10px;
+    }
+}
+
+.about {
+    &__item {
+        width: 187px;
+    }
+}
+
+.inspiration {
+    &__item {
+        margin: 52px auto auto;
+        width: 330px;
+        height: 618px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__item-box {
+        width: 100%;
+        height: 238px;
+    }
+
+    &__item-image {
+        width: 100%;
+        height: auto;
+    }
+
+    &__item-panel_color_light-purple {
+        background: #E9E4FF;
+    }
+
+    &__item-panel_color_light-green {
+        background: #D2FFE5;
+    }
+
+    &__item-panel {
+        padding: 33px;
+        gap: 30px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__item-title {
+        font-weight: 500;
+        font-size: 24px;
+        line-height: 30px;
+    }
+
+    &__item-text {
+        font-size: 16px;
+        line-height: 20px;
+    }
+
+    &__item-button {
+        margin-top: auto;
     }
 }
