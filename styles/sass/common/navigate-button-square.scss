@@ -1,0 +1,23 @@
+%btn {
+    background: #616161;
+    border-radius: 4px;
+    width: 36px;
+    height: 36px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all .3s;
+
+    &:hover {
+        filter: opacity(.75);
+    }
+}
+
+.navigate-button-square__left {
+    @extend %btn;
+}
+
+.navigate-button-square__right {
+    @extend %btn;
+    transform: rotate(-180deg);
+}
