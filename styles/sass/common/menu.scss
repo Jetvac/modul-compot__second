@@ -77,6 +77,17 @@
         position: relative;
     }
 
+    &__search-button {
+        cursor: pointer;
+    }
+    &__search-button-close {
+        cursor: pointer;
+
+        &:hover path {
+            stroke: #333333;
+        }
+    }
+
     &__search-panel {
         visibility: hidden;
         position: absolute;
@@ -261,6 +272,7 @@
     }
 
     &__category-drop-toggle {
+        margin-bottom: 35px;
         display: flex;
         flex-direction: row;
         align-items: center;

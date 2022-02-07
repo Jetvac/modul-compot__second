@@ -111,6 +111,18 @@
   position: relative;
 }
 
+.menu__search-button {
+  cursor: pointer;
+}
+
+.menu__search-button-close {
+  cursor: pointer;
+}
+
+.menu__search-button-close:hover path {
+  stroke: #333333;
+}
+
 .menu__search-panel {
   visibility: hidden;
   position: absolute;
@@ -349,6 +361,7 @@
 }
 
 .menu__category-drop-toggle {
+  margin-bottom: 35px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;

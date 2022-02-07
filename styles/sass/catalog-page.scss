@@ -33,8 +33,11 @@ body, html
 
 .body { 
     &__wrapper {
+        max-width: 1800px;
         padding-left: 60px;
         padding-right: 60px;
+        margin-left: auto;
+        margin-right: auto;
     }
 
     &__nav-panel {
@@ -204,6 +207,11 @@ body, html
         color: #333333;
         font-size: 16px;
         line-height: 20px;
+        transition: all .3s;
+
+        &:hover {
+            border-color: #27AE60;
+        }
     }
 
     &__filter-wrapper {
@@ -227,6 +235,7 @@ body, html
     }
 
     &__filter-select-header {
+        cursor: pointer;
         user-select: none;
         margin: auto;
         display: flex;
@@ -328,6 +337,7 @@ body, html
     }
 
     &__filter-item {
+        cursor: pointer;
         display: flex;
         flex-direction: column;
         gap: 15px;
@@ -346,7 +356,13 @@ body, html
         margin-bottom: 10px;
     }
 
+    &__filter-checkbox-label {
+        cursor: pointer;
+    }
+
     &__filter-label {
+        cursor: pointer;
+        user-select: none;
         display: flex;
         flex-direction: row;
         gap: 10px;
@@ -384,6 +400,7 @@ body, html
     }
 
     &__filter-button {
+        cursor: pointer;
         width: 100%;
         border: none;
         height: 44px;

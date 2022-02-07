@@ -380,6 +380,23 @@
   color: #e7e7e7;
 }
 
+@media screen and (max-width: 1480px) {
+  .frame__header {
+    padding-left: 100px;
+    padding-right: 100px;
+  }
+  .frame__nav-menu {
+    gap: 40px;
+  }
+  .frame .wrapper {
+    margin-left: 100px;
+    margin-right: 100px;
+  }
+  .frame-menu__list {
+    gap: 25px;
+  }
+}
+
 @media screen and (max-width: 680px) {
   .frame .wrapper {
     margin-left: 16px;
