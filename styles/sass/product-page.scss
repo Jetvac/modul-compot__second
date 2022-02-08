@@ -26,7 +26,7 @@ body, html
 }
 
 .mobile {
-    visibility: hidden;
+    visibility: hidden
 }
 
 .social-network {
@@ -531,6 +531,17 @@ body, html
         gap: 10px;
     }
 
+    &__reviews-photo-item {
+        background: transparent;
+        border: none;
+        transition: all .3s;
+        cursor: pointer;
+
+        &:hover {
+            transform: scale(1.015);
+        }
+    }
+
     &__reviews-photo-gallery-title {
         font-weight: 500;
         font-size: 24px;
@@ -719,4 +730,191 @@ body, html
 
 .product-menu {
     top: 80px;
+}
+
+.product-popup {
+    position: relative;
+    display: none;
+    position: fixed;
+    left: 0; top: 0;
+    width: 100%; height: 100%;
+    z-index: 5;
+
+    &__close-button {
+        background: none;
+        border: none;
+        cursor: pointer;
+        position: absolute;
+        right: 60px;
+        top: 42px;
+    }
+
+    .nav-button {
+        border: 1px solid #8E8E8E;
+
+        &__left {
+            transform: rotate(-180deg);
+        }
+    }
+}
+
+.show {
+    display: flex;       
+}
+
+// review photo gallery
+.product-popup {
+    &__review-photo-gallery {
+        width: 100%;
+        height: 100%;
+        background: white;
+    }
+
+    &__review-wrapper {
+        width: 100%;
+        height: 100%;
+        padding: 40px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__review-photo-img {
+        width: 90px;
+        height: 90px;
+        border-radius: 10px;
+        transition: all .3s;
+        cursor: pointer;
+
+        &:hover {
+            transform: scale(1.025);
+        }
+    }
+    
+    .active-image {
+        width: 110px;
+        height: 110px;
+
+        &:hover {
+            transform: none;
+        }
+    }
+
+    // photo galery
+    &__review-photo-list {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+
+    &__review-arrow-item {
+        cursor: pointer;
+    }
+
+    &__review-data {
+        margin-top: 30px;
+        display: flex;
+        gap: 130px;
+        flex-direction: row;
+        align-items: center;
+    }
+
+    // review main photo
+    &__photo-img {
+        width: 1081px;
+
+        img {
+            width: 100%;
+            height: auto;
+        }
+    }
+
+    &__review-photo-nav {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 61px;
+    }
+
+    // splitter
+    &__review-splitter {
+        margin-top: 58px;
+        margin-left: auto;
+        margin-right: auto;
+        width: 100%;
+        height: 1px;
+        background: #E0E0DD;
+    }
+
+    // review rate
+    // header
+    &__review-header {
+        margin-top: 20px;
+        display: flex;
+        flex-direction: row;
+        gap: 15px;
+    }
+
+    &__review-rate {
+        margin-left: 200px;
+        margin-right: 240px;
+    }
+
+    &__review-author {
+        color: #333333;
+        font-weight: 500;
+        font-size: 16px;
+    }
+
+    &__review-date {
+        font-size: 16px;
+        color: #ADADAD;
+    }
+
+    // rate panel
+    &__review-rate-panel {
+        display: flex;
+        flex-direction: row;
+        margin-top: 28px;
+        gap: 39px;
+    }
+
+    &__review-rate-circle {
+        width: 48px;
+        height: 48px;
+        background: #27AE60;
+        border-radius: 50%;
+        color: white;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    // critery
+    &__review-rate-critery {
+        display: flex;
+        flex-direction: column;
+        gap: 13px;
+    }
+
+    &__review-rate-critery-text {
+        color: #8E8E8E;
+        font-size: 16px;
+    }
+
+    &__review-rate-critery-slide {
+        position: absolute;
+        background: #27AE60;
+        border-radius: 10px;
+        width: 85%;
+        height: 6px;
+    }
+
+    &__review-rate-critery-slide-background {
+        position: relative;
+        width: 160px;
+        height: 6px;
+        background: #E0E0DD;
+        border-radius: 10px;
+    }
 }

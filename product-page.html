@@ -351,11 +351,11 @@
                       </svg>                                       
                     </div>
                   </div>
-                  <a class="product-menu__info-review-text" href="#">
+                  <a class="product-menu__info-review-text" href="#reviews">
                     12 отзывов
                   </a>
                 </label>
-                <a class="product-menu__info-characteristic" href="#">
+                <a class="product-menu__info-characteristic" href="#tab" onclick="openTab(event, 'Characteristic')">
                   Характеристики
                 </a>
               </div>
@@ -698,12 +698,13 @@
               </div>
             </div>
           </div>
+          <div class="anchor" id="tab"></div>
           <div class="product-panel__tab-panel">
             <div class="product-panel__tab-menu">
               <div class="product-panel__tab-menu-header">
-                <button class="product-panel__tab-menu-header-item active" onclick="openTab(event, 'AboutProduct')">О товаре</button>
-                <button class="product-panel__tab-menu-header-item" onclick="openTab(event, 'Characteristic')">Характеристики</button>
-                <button class="product-panel__tab-menu-header-item" onclick="openTab(event, 'InteriorPhoto')">Фото в интерьере</button>
+                <button class="product-panel__tab-menu-header-item active" onclick="openTab(event, 'AboutProduct')" id="AboutProduct_btn">О товаре</button>
+                <button class="product-panel__tab-menu-header-item" onclick="openTab(event, 'Characteristic')" id="Characteristic_btn">Характеристики</button>
+                <button class="product-panel__tab-menu-header-item" onclick="openTab(event, 'InteriorPhoto')" id="InteriorPhoto_btn">Фото в интерьере</button>
               </div>
               <div class="product-panel__tab-menu-separator"></div>
   
@@ -834,6 +835,7 @@
               </div>
             </div>
           </div>
+          <div class="anchor" id="reviews"></div>
           <div class="product-panel__reviews">
             <div class="product-panel__reviews-header">
               <div class="product-panel__reviews-title">
@@ -901,18 +903,18 @@
               <div class="product-panel__reviews-photo-gallery">
                 <div class="product-panel__reviews-photo-gallery-title">Фото покупателей</div>
                 <div class="product-panel__reviews-photo-gallery-list">
-                  <div class="product-panel__reviews-photo-item">
+                  <button class="product-panel__reviews-photo-item" onclick="openPopup('review-popup')">
                     <img class="product-panel__reviews-photo-img" src="./assets/img/photo-gallery/image 1_1.png">
-                  </div>
-                  <div class="product-panel__reviews-photo-item">
+                  </button>
+                  <button class="product-panel__reviews-photo-item" onclick="openPopup('review-popup')">
                     <img class="product-panel__reviews-photo-img" src="./assets/img/photo-gallery/image 1_2.png">
-                  </div>
-                  <div class="product-panel__reviews-photo-item">
+                  </button>
+                  <button class="product-panel__reviews-photo-item" onclick="openPopup('review-popup')">
                     <img class="product-panel__reviews-photo-img" src="./assets/img/photo-gallery/image 1_3.png">
-                  </div>
-                  <div class="product-panel__reviews-photo-item">
+                  </button>
+                  <button class="product-panel__reviews-photo-item" onclick="openPopup('review-popup')">
                     <img class="product-panel__reviews-photo-img" src="./assets/img/photo-gallery/image 1_4.png">
-                  </div>
+                  </button>
                 </div>
               </div>
             </div>
@@ -4991,6 +4993,90 @@
       </div>
     </div>
 
+    <div class="product-popup" id="review-popup">
+      <button class="product-popup__close-button" onclick="closePopup('review-popup')">
+        <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M23.4375 6.5625L6.5625 23.4375" stroke="#333333" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          <path d="M23.4375 23.4375L6.5625 6.5625" stroke="#333333" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>          
+      </button>
+      <div class="product-popup__review-photo-gallery">
+        <div class="product-popup__review-wrapper">
+          <div class="product-popup__review-data">
+            <div class="product-popup__review-photo-list">
+              <div class="product-popup__review-arrow-item">
+                <svg width="22" height="12" viewBox="0 0 22 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M1.625 10.75L11 1.375L20.375 10.75" stroke="#333333" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>                
+              </div>
+              <div class="product-popup__review-photo-item">
+                <img class="product-popup__review-photo-img active-image" src="./assets/img/photo-gallery/image 1_1.png">
+              </div>
+              <div class="product-popup__review-photo-item">
+                <img class="product-popup__review-photo-img" src="./assets/img/photo-gallery/image 1_2.png">
+              </div>
+              <div class="product-popup__review-photo-item">
+                <img class="product-popup__review-photo-img" src="./assets/img/photo-gallery/image 1_3.png">
+              </div>
+              <div class="product-popup__review-photo-item">
+                <img class="product-popup__review-photo-img" src="./assets/img/photo-gallery/image 1_4.png">
+              </div>
+              <div class="product-popup__review-arrow-item">
+                <svg width="22" height="12" viewBox="0 0 22 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M20.375 1.25L11 10.625L1.625 1.25" stroke="#9C9C9C" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>             
+              </div>
+            </div>
+            <div class="product-popup__review-photo-nav">
+              <button class="nav-button nav-button__left">
+                <div class="nav-button__image">
+                  <img src="./assets/img/nav-button/ArrowRight.svg">
+                </div>
+              </button>
+              <div class="product-popup__review-photo">
+                <img class="product-popup__photo-img" src="./assets/img/photo-gallery/image 36.png">
+              </div>
+              <button class="nav-button nav-button__right">
+                <div class="nav-button__image">
+                  <img src="./assets/img/nav-button/ArrowRight.svg">
+                </div>
+              </button>
+            </div>
+          </div>
+          <div class="product-popup__review-rate">
+            <div class="product-popup__review-splitter"></div>
+            <div class="product-popup__review-header">
+              <div class="product-popup__review-author">Юлия М.</div>
+              <div class="product-popup__review-date">12 агуста 2021</div>
+            </div>
+            <div class="product-popup__review-rate-panel">
+              <div class="product-popup__review-rate-circle">
+                4.5
+              </div>
+              <div class="product-popup__review-rate-critery">
+                <div class="product-popup__review-rate-critery-text">Качество материалов</div>
+                <div class="product-popup__review-rate-critery-slide-background">
+                  <div class="product-popup__review-rate-critery-slide"></div>
+                </div>
+              </div>
+              <div class="product-popup__review-rate-critery">
+                <div class="product-popup__review-rate-critery-text">Простота сборки</div>
+                <div class="product-popup__review-rate-critery-slide-background">
+                  <div class="product-popup__review-rate-critery-slide"></div>
+                </div>
+              </div>
+              <div class="product-popup__review-rate-critery">
+                <div class="product-popup__review-rate-critery-text">Внешний вид</div>
+                <div class="product-popup__review-rate-critery-slide-background">
+                  <div class="product-popup__review-rate-critery-slide"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
     <script>
       function openTab(evt, tabName) {
         var i, tabcontent, tablinks;
@@ -5010,7 +5096,25 @@
           tablinks[i].className = tablinks[i].className.replace(" active", "");
         }
         document.getElementById(tabName).className += " active-tab";
-        evt.currentTarget.className += " active";
+        
+        //evt.currentTarget.className += " active";
+        document.getElementById(tabName + "_btn").className += " active";
+      }
+
+      function openPopup(popupName) {
+        document.getElementById(popupName).className += " show";
+      }
+
+      function closeAllPopup() {
+        var tabcontent = document.getElementsByClassName("product-popup");
+        for (i = 0; i < tabcontent.length; i++) {
+          tabcontent[i].className = tabcontent[i].className.replace(" show", "");
+        }
+      }
+
+      function closePopup(popupName) {
+        var element = document.getElementById(popupName);
+        element.className = element.className.replace(" show", "");
       }
     </script>
   </body>
