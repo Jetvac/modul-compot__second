@@ -19,6 +19,8 @@ body, html
   color: #333333;
   padding: 0;
   margin: 0;
+  overflow-x: hidden;
+  min-width: 460px;
 }
 
 .menu {
@@ -36,8 +38,8 @@ body, html
     background: rgba(0, 0, 0, 0.65);
 }
 
-.mobile {
-    visibility: hidden
+.product-panel__data-mobile {
+    display: none;
 }
 
 .social-network {
@@ -57,7 +59,8 @@ body, html
     }
 
     &__nav-panel {
-        margin-top: 60px;
+        margin-top: 27px;
+        margin-bottom: 60px;
         display: flex;
         flex-direction: row;
         align-items: center;
@@ -761,6 +764,7 @@ body, html
     left: 0; top: 0;
     width: 100%; height: 100%;
     overflow-y: auto;
+    min-width: 460px;
 
     &__close-button {
         background: none;
@@ -778,6 +782,23 @@ body, html
             transform: rotate(-180deg);
         }
     }
+
+    &__send-review-button {
+        cursor: pointer;
+        border: none;
+        width: 100%;
+        height: 54px;
+        background: #27AE60;
+        border-radius: 4px;
+        color: white;
+        font-weight: 500;
+        font-size: 18px;
+        transition: all .3s;
+
+        &:hover {
+            filter: opacity(.85);
+        }
+    }
 }
 
 .show {
@@ -793,8 +814,8 @@ body, html
     }
 
     &__review-wrapper {
-        width: 100%;
-        height: 100%;
+        width: calc(100% - 80px);
+        height: calc(100% - 80px);
         padding: 40px;
         display: flex;
         flex-direction: column;
@@ -875,6 +896,7 @@ body, html
         display: flex;
         flex-direction: row;
         gap: 15px;
+        align-items: center;
     }
 
     &__review-rate {
@@ -902,6 +924,17 @@ body, html
     }
 
     &__review-rate-circle {
+        width: 48px;
+        height: 48px;
+        background: #27AE60;
+        border-radius: 50%;
+        color: white;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    &__review-rate-circle-mobile {
         width: 48px;
         height: 48px;
         background: #27AE60;
@@ -951,6 +984,10 @@ body, html
     &__create-review {
         margin: auto;
         padding: 50px;
+
+        .product-popup__send-review-button {
+            margin-top: 34px;
+        }
     }
 
     &__create-review-wrapper {
@@ -1028,7 +1065,7 @@ body, html
     }
 
     %txtbx {
-        width: 100%;
+        width: calc(100% - 18px);
         height: 54px;
         background: #FFFFFF;
         border: 1px solid #E0E0DD;
@@ -1191,6 +1228,13 @@ body, html
         font-size: 14px;
     }
 
+    &__photo-text-mobile {
+        display: none;
+        color: #8E8E8E;
+        font-weight: 500;
+        font-size: 14px;
+    }
+
     &__photo-text {
         color: #8E8E8E;
         font-weight: 500;
@@ -1214,25 +1258,6 @@ body, html
         height: 100px;
         border-radius: 6px;
     }
-
-    // send button
-    &__send-review-button {
-        cursor: pointer;
-        margin-top: 10px;
-        border: none;
-        width: 100%;
-        height: 54px;
-        background: #27AE60;
-        border-radius: 4px;
-        color: white;
-        font-weight: 500;
-        font-size: 18px;
-        transition: all .3s;
-
-        &:hover {
-            filter: opacity(.85);
-        }
-    }
 }
 
 // sucess popup
@@ -1240,6 +1265,10 @@ body, html
     &__sucess-panel {
         margin: auto;
         padding: 50px;
+
+        .product-popup__send-review-button {
+            margin-top: 34px;
+        }
     }
 
     &__sucess-wrapper {
@@ -1256,7 +1285,7 @@ body, html
         margin-top: 18px;
     }
 
-    &__send-review-button {
+    &__unsave-buttons {
         margin-top: 34px;
     }
 
@@ -1301,6 +1330,13 @@ body, html
 
 // unsave popup
 .product-popup {
+    &__unsave-panel {
+        margin: auto;
+
+        .product-popup__send-review-button {
+            margin-top: 0px;
+        }
+    }
 
     &__unsave-buttons {
         display: flex;
@@ -1334,3 +1370,9 @@ body, html
 #unsave-popup {
     z-index: 10;
 }
+
+.mobile {
+    display: none;
+}
+
+@import "./media/product-page__media.scss";
