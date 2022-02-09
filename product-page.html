@@ -42,6 +42,7 @@
     </div>
   </header>
   <body class="body">
+    <div class="product-popup__shadow-background" id="shadow-background"></div>
     <div class="menu">
       <!-- Burger panel -->
       <div class="menu__toggle">
@@ -895,7 +896,7 @@
                     <div class="product-panel__rate-text">Внешний вид</div>
                   </div>
                 </div>
-                <button class="product-panel__review-button" onclick="openPopup('create-review-popup')">
+                <button class="product-panel__review-button" onclick="openPopup('create-review-popup', 7)">
                   <div class="product-panel__review-button-text">Оставить отзыв</div>
                 </button>
               </div>
@@ -5077,9 +5078,8 @@
         </div>
       </div>
     </div>
-
     <div class="product-popup" id="create-review-popup">
-      <div class="product-popup__create-review product-popup__shadow-background">
+      <div class="product-popup__create-review">
         <div class="product-popup__create-review-wrapper">
           <button class="product-popup__close-button" onclick="closePopup('create-review-popup')">
             <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -5235,8 +5235,27 @@
             </div>
           </div>
 
-          <button class="product-popup__send-review-button" type="submit">
+          <button class="product-popup__send-review-button" type="submit" onclick="openPopup('sucess-popup', 9)">
             Отправить отзыв
+          </button>
+        </div>
+      </div>
+    </div>
+    <div class="product-popup" id="sucess-popup">
+      <div class="product-popup__sucess-panel">
+        <div class="product-popup__sucess-wrapper">
+          <button class="product-popup__close-button" onclick="closeAllPopup()">
+            <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M23.4375 6.5625L6.5625 23.4375" stroke="#333333" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M23.4375 23.4375L6.5625 6.5625" stroke="#333333" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>          
+          </button>
+          <div class="product-popup__create-review-title-inner">Спасибо!</div>
+          <div class="product-popup__sucess-text">
+            Ваш отзыв успешно отправлен и появится на сайте после модерации.
+          </div>
+          <button class="product-popup__send-review-button" onclick="closeAllPopup()">
+            Хорошо
           </button>
         </div>
       </div>

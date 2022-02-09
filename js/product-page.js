@@ -23,20 +23,32 @@ function openTab(evt, tabName) {
     document.getElementById(tabName + "_btn").className += " active";
 }
 
-function openPopup(popupName) {
+function openPopup(popupName, shadowLevel) {
+    document.getElementById('shadow-background').style.display = "block";
+    document.getElementById('shadow-background').style.zIndex = shadowLevel;
+
+    pageBody.className = pageBody.className.replace(" html_scrollbar_inactive", "");
     pageBody.className += " html_scrollbar_inactive";
     document.getElementById(popupName).className += " show";
 }
 
 function closeAllPopup() {
+    document.getElementById('shadow-background').style.display = "none";
+    pageBody.className = pageBody.className.replace(" html_scrollbar_inactive", "");
+    
     var tabcontent = document.getElementsByClassName("product-popup");
     for (i = 0; i < tabcontent.length; i++) {
         tabcontent[i].className = tabcontent[i].className.replace(" show", "");
     }
 }
 
-function closePopup(popupName) {
-    pageBody.className = pageBody.className.replace(" html_scrollbar_inactive", "");
+function closePopup(popupName, shadowLevel = -1) {
+    if (shadowLevel === -1) {
+        document.getElementById('shadow-background').style.display = "none";
+        pageBody.className = pageBody.className.replace(" html_scrollbar_inactive", "");
+    }
+
+    document.getElementById('shadow-background').style.zIndex = shadowLevel;
 
     var element = document.getElementById(popupName);
     element.className = element.className.replace(" show", "");
