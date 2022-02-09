@@ -1,3 +1,5 @@
+var pageBody = document.getElementById('page-body');
+
 function openTab(evt, tabName) {
     var i, tabcontent, tablinks;
 
@@ -22,10 +24,11 @@ function openTab(evt, tabName) {
 }
 
 function openPopup(popupName) {
+    pageBody.className += " html_scrollbar_inactive";
     document.getElementById(popupName).className += " show";
-    }
+}
 
-    function closeAllPopup() {
+function closeAllPopup() {
     var tabcontent = document.getElementsByClassName("product-popup");
     for (i = 0; i < tabcontent.length; i++) {
         tabcontent[i].className = tabcontent[i].className.replace(" show", "");
@@ -33,6 +36,8 @@ function openPopup(popupName) {
 }
 
 function closePopup(popupName) {
+    pageBody.className = pageBody.className.replace(" html_scrollbar_inactive", "");
+
     var element = document.getElementById(popupName);
     element.className = element.className.replace(" show", "");
 }
