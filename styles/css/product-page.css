@@ -4375,7 +4375,7 @@ body, html {
   font-size: 18px;
   line-height: 23px;
   padding: 18px 15px;
-  width: 460px;
+  width: calc(100% - 30px);
   height: 222px;
 }
 
@@ -4445,6 +4445,7 @@ body, html {
 }
 
 .product-popup__photo-galley-upload-error {
+  margin-top: 10px;
   display: none;
   color: #DE1205;
   font-size: 14px;

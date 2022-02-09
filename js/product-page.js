@@ -92,12 +92,13 @@ function appendFile(file) {
 
         image.onload = function() {
             // check image format
-            if (file.type != "image/png" || this.width < 800 || this.height < 600) {
+            if (file.type != "image/png" || file.size > 10485760 || this.width < 800 || this.height < 600) {
                 showUploadError();
             } else {
                  // init structure
                 image.classList += "product-popup__list-photo-image";
-                document.getElementById('photo-gallery-list').appendChild(img)
+                document.getElementById('photo-gallery-list').appendChild(image);
+                hideUploadError();
             }
         }
     }
@@ -106,4 +107,9 @@ function appendFile(file) {
 function showUploadError() {
     var errorSpan = document.getElementById('upload-image-error');
     errorSpan.style.display = "block";
+}
+
+function hideUploadError() {
+    var errorSpan = document.getElementById('upload-image-error');
+    errorSpan.style.display = "none";
 }
