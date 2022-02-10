@@ -216,6 +216,7 @@ body, html
 
     //data panel
     &__data-panel {
+        overflow: hidden;
         position: relative;
         display: flex;
         flex-direction: row;
@@ -246,6 +247,8 @@ body, html
     &__data-type-item {
         position: relative;
         display: flex;
+        overflow: hidden;
+        white-space: nowrap;
 
         span {
             font-size: 16px;
@@ -254,10 +257,13 @@ body, html
         }
 
         &::after {
+            white-space: pre;
             color: #9C9C9C;
-            content: '...........................................';
+            content: '.......................................................................................................................................................';
         }
     }
+
+
 
     &__data-ref {
         color: #27AE60;
@@ -401,7 +407,8 @@ body, html
 
     &__characteristic-data {
         display: grid;
-        grid-template-columns: 55% 50%;
+        grid-template-columns: 55% 40%;
+        column-gap: 98px;
     }
 
     //category panel 
