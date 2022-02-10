@@ -8,6 +8,11 @@
     align-items: center;
     justify-content: center;
     border: 0px;
+
+    &__image {
+        width: 20px;
+        height: 20px;
+    }
 }
 .nav-button:hover {
     filter: invert(10%);

@@ -16,6 +16,11 @@
   border: 0px;
 }
 
+.nav-button__image {
+  width: 20px;
+  height: 20px;
+}
+
 .nav-button:hover {
   -webkit-filter: invert(10%);
           filter: invert(10%);

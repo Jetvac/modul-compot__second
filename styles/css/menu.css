@@ -125,9 +125,10 @@
 
 .menu__search-panel {
   visibility: hidden;
+  height: 80px;
   position: absolute;
   right: 0;
-  top: 0;
+  top: -23px;
   background: #FFFFFF;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -139,6 +140,7 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  z-index: 1;
 }
 
 .menu__search-checkbox {
@@ -164,7 +166,7 @@
 }
 
 .menu__search-result-list {
-  margin-top: 60px;
+  margin-top: 90px;
   margin-left: 20px;
   background: #FFFFFF;
   -webkit-box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.1);
@@ -533,6 +535,7 @@
   grid-row: 1 / span 2;
   margin-left: auto;
   margin-right: auto;
+  margin-top: auto;
 }
 
 .menu__footer-benefits {
@@ -701,12 +704,34 @@
   color: #9C9C9C;
 }
 
-@media screen and (max-width: 1480px) {
+@media screen and (max-width: 1850px) {
+  .menu__item-list {
+    gap: 20px;
+  }
+  .menu__search-field {
+    width: 300px;
+  }
+}
+
+@media screen and (max-width: 1680px) {
   .menu__icon {
-    padding-right: 35px;
+    padding-right: 0px;
   }
   .menu__item-list {
-    gap: 24px;
+    gap: 0px;
+  }
+  .menu__burger-list {
+    gap: 20px;
+  }
+}
+
+@media screen and (max-width: 1520px) {
+  .menu {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+  .menu__drop-menu {
+    padding-left: 25px;
   }
 }
 
@@ -821,5 +846,15 @@
     margin-right: auto;
     gap: 40px;
     margin-top: 40px;
+  }
+  .menu__interactive-panel {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: row-reverse;
+            flex-direction: row-reverse;
+    margin-right: 10px;
+  }
+  .menu__search-result-list {
+    margin-left: 40px;
   }
 }

@@ -1,4 +1,4 @@
-@media screen and (max-width: 1480px) {
+@media screen and (max-width: 1680px) {
   .body__wrapper {
     padding-left: 40px;
     padding-right: 40px;
@@ -6,6 +6,77 @@
   .inspiration__item {
     -ms-grid-columns: 55% 45%;
         grid-template-columns: 55% 45%;
+  }
+}
+
+@media screen and (max-width: 1520px) {
+  .frame-card__product-description {
+    margin-left: 15px;
+    margin-bottom: 19px;
+  }
+  .frame-card__product-cost {
+    margin-top: 14px;
+  }
+  .frame-card__category {
+    font-size: 18px;
+  }
+  .frame-card__product-name {
+    font-size: 25px;
+  }
+  .frame-card__product-cost {
+    font-size: 24px;
+  }
+  .best-deals__column:nth-child(5) {
+    display: none;
+  }
+  .best-deals__row {
+    -ms-grid-columns: 1fr 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+  .catalog__column:nth-child(5) {
+    display: none;
+  }
+  .catalog__row {
+    -ms-grid-columns: 1fr 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+  .about__row {
+    -ms-grid-columns: 1fr 2fr 2fr;
+        grid-template-columns: 1fr 2fr 2fr;
+  }
+  .inspiration__item {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: auto;
+        grid-template-columns: auto;
+    -ms-grid-rows: 55% 45%;
+        grid-template-rows: 55% 45%;
+  }
+}
+
+@media screen and (max-width: 1150px) {
+  .best-deals__column:nth-child(4) {
+    display: none;
+  }
+  .best-deals__row {
+    -ms-grid-columns: 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
+  }
+  .catalog__column:nth-child(4) {
+    display: none;
+  }
+  .catalog__row {
+    -ms-grid-columns: 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
+  }
+  .about__item-list {
+    -ms-grid-columns: 50% 50%;
+        grid-template-columns: 50% 50%;
+    -ms-grid-rows: 33% 33% 33%;
+        grid-template-rows: 33% 33% 33%;
+  }
+  .inspiration__item-panel {
+    gap: 10px;
   }
 }
 
@@ -110,7 +181,7 @@
   }
   .best-deals__row {
     overflow: hidden;
-    width: 470%;
+    width: 285%;
   }
   .catalog__header {
     margin-left: auto;
@@ -118,14 +189,14 @@
   }
   .catalog__row {
     overflow: hidden;
-    width: 470%;
+    width: 285%;
   }
   .catalog__banner-box {
     padding-top: 60px;
     padding-bottom: 45px;
   }
   .catalog__banner-box img {
-    margin-left: -43%;
+    margin-left: -27%;
     -o-object-fit: contain;
        object-fit: contain;
     width: 150%;

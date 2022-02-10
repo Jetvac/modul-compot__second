@@ -1,4 +1,4 @@
-@media screen and (max-width: 1480px) {
+@media screen and (max-width: 1680px) {
     .body {
         &__wrapper {
             padding-left: 40px;
@@ -9,6 +9,98 @@
     .inspiration {
         &__item {
             grid-template-columns: 55% 45%;
+        }
+    }
+}
+
+@media screen and (max-width: 1520px) {
+    .frame-card {
+        &__product-description {
+            margin-left: 15px;
+            margin-bottom: 19px;
+        }
+
+        &__product-cost {
+            margin-top: 14px;
+        }
+
+        &__category {
+            font-size: 18px;
+        }
+        &__product-name {
+            font-size: 25px;
+        }
+        &__product-cost {
+            font-size: 24px;
+        }
+    }
+
+    .best-deals {
+        &__column:nth-child(5) {
+            display: none;
+        }
+
+        &__row {
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+        }
+    }
+
+    .catalog {
+        &__column:nth-child(5) {
+            display: none;
+        }
+
+        &__row {
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+        }
+    }
+
+    .about {
+        &__row {
+            grid-template-columns: 1fr 2fr 2fr;
+        }
+    }
+
+    .inspiration {
+        &__item {
+            display: grid;
+            grid-template-columns: auto;
+            grid-template-rows: 55% 45%; 
+        }
+    }
+}
+
+@media screen and (max-width: 1150px) {
+    .best-deals {
+        &__column:nth-child(4) {
+            display: none;
+        }
+
+        &__row {
+            grid-template-columns: 1fr 1fr 1fr;
+        }
+    }
+
+    .catalog {
+        &__column:nth-child(4) {
+            display: none;
+        }
+
+        &__row {
+            grid-template-columns: 1fr 1fr 1fr;
+        }
+    }
+
+    .about {
+        &__item-list {
+            grid-template-columns: 50% 50%;
+            grid-template-rows: 33% 33% 33%;
+        }
+    }
+
+    .inspiration {
+        &__item-panel {
+            gap: 10px;
         }
     }
 }
@@ -124,7 +216,7 @@
         //body - row
         &__row {
             overflow: hidden;
-            width: 470%;
+            width: 285%;
         }
     }
 
@@ -138,7 +230,7 @@
         //body
         &__row {
             overflow: hidden;
-            width: 470%;
+            width: 285%;
         }
 
         &__banner-box {
@@ -146,7 +238,7 @@
             padding-bottom: 45px;
 
             img {
-                margin-left: -43%;
+                margin-left: -27%;
                 object-fit: contain;
                 width: 150%;
             }

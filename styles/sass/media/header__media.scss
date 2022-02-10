@@ -1,7 +1,15 @@
-@media screen and (max-width: 1480px) {
+@media screen and (max-width: 1680px) {
     .header {
         &__nav-menu {
             gap: 35px;
+        }
+    }
+}
+
+@media screen and (max-width: 1520px) {
+    .header {
+        &__nav-menu {
+            gap: 15px;
         }
     }
 }

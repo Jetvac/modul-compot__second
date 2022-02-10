@@ -1,3 +1,17 @@
+@media screen and (max-width: 1850px) {
+  .product-panel {
+    padding-left: 60px;
+    padding-right: 60px;
+  }
+}
+
+@media screen and (max-width: 1520px) {
+  .product-panel {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+}
+
 @media screen and (max-width: 680px) {
   .mobile {
     display: block;
@@ -111,10 +125,13 @@
     row-gap: 5px;
   }
   .product-panel__tab-panel {
-    -ms-grid-columns: 100%;
-        grid-template-columns: 100%;
-    -ms-grid-rows: 65% 35%;
-        grid-template-rows: 65% 35%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
   .product-panel__tab-menu-header {
     width: -webkit-max-content;
@@ -123,15 +140,23 @@
     gap: 10px;
   }
   .product-panel__video-player {
-    width: 100%;
-    height: 30%;
+    margin-left: auto;
+    margin-right: auto;
+    width: 429px;
+    height: 242px;
   }
   .product-panel .inspiration__item-box {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
     height: 100%;
     width: 100%;
   }
   .product-panel .inspiration__item {
     width: 100%;
+    height: 100%;
+  }
+  .product-panel .inspiration__item-image {
     height: 100%;
   }
   .product-panel__characteristic-data {
@@ -159,6 +184,15 @@
   .product-panel .about__item {
     width: 175px;
   }
+  .product-panel__reviews {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
   .product-panel__reviews-rate {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -178,6 +212,9 @@
   }
   .product-panel__reviews-photo-gallery {
     margin-top: 50px;
+  }
+  .product-panel__reviews-list {
+    margin-bottom: 37px;
   }
   .product-panel__review:not(:nth-child(2)) {
     display: none;
