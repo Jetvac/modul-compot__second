@@ -15,12 +15,12 @@
 
 body, html
 {
-  font-family: 'CeraPro';
-  color: #333333;
-  padding: 0;
-  margin: 0;
-  overflow-x: hidden;
-  min-width: 460px;
+    position: relative;
+    font-family: 'CeraPro';
+    color: #333333;
+    padding: 0;
+    margin: 0;
+    min-width: 460px;
 }
 
 .menu {
@@ -216,12 +216,23 @@ body, html
 
     //data panel
     &__data-panel {
+        position: relative;
         display: flex;
         flex-direction: row;
         gap: 48px;
     }
 
-    &__data-type-list, &__data-fill-list {
+    &__data-type-list {
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+    }
+
+    &__data-fill-list {
+        position: absolute;
+        padding-left: 5px;
+        right: 0;
+        background-color: white;
         display: flex;
         flex-direction: column;
         gap: 5px;
@@ -234,20 +245,16 @@ body, html
 
     &__data-type-item {
         position: relative;
+        display: flex;
 
         span {
             font-size: 16px;
             background: white;
-            padding-right: 6px;
-            z-index: 1;
             color: #9C9C9C;
         }
 
-        &::before {
+        &::after {
             color: #9C9C9C;
-            z-index: -1;
-            position: absolute;
-            left: 0;
             content: '...........................................';
         }
     }
@@ -393,9 +400,8 @@ body, html
     }
 
     &__characteristic-data {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
+        display: grid;
+        grid-template-columns: 55% 50%;
     }
 
     //category panel 
