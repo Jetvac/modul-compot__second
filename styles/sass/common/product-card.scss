@@ -3,6 +3,12 @@
     border: 1px solid #E0E0DD;
     transition: all .3s;
 
+    &:hover {
+        .product-card__name {
+            color: #27AE60;
+        }
+    }
+
     &__ref {
         display: flex;
         flex-direction: column;
@@ -88,6 +94,7 @@
         font-size: 22px;
         line-height: 22px;
         color: #333333;
+        transition: all .3s;
     }
 
     &__id {

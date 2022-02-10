@@ -5,6 +5,10 @@
   transition: all .3s;
 }
 
+.product-card:hover .product-card__name {
+  color: #27AE60;
+}
+
 .product-card__ref {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -125,6 +129,8 @@
   font-size: 22px;
   line-height: 22px;
   color: #333333;
+  -webkit-transition: all .3s;
+  transition: all .3s;
 }
 
 .product-card__id {
